@@ -71,32 +71,38 @@ $( function() {
 	// 	} )
 	// 	.focus();
 	
-// 	var styles = '';
-//     $( '.icon-grid img[src$=".svg"]' ).each( function( i ) {
-//     	var $img = $( this ),
-// 			imgURL = $img.attr( 'src' ),
-// 			attributes = $img.prop( "attributes" );
-		
-//     	$.get( imgURL, function( data ) {
-//     		// Get the SVG tag, ignore the rest
-//     		var $svg = $( data ).find( 'svg' );
-//     		// $svg.find( 'defs' ).remove();
+	// var styles = '';
+    // $( '.icon-grid img[src$=".svg"]' ).each( function( i ) {
+    // 	var $img = $( this ),
+	// 		imgURL = $img.attr( 'src' ),
+	// 		attributes = $img.prop( 'attributes' ),
+	// 		svg;
+
+	// 	console.log( imgURL );
+
+    // 	$.get( {
+	// 		url: imgURL, 
+	// 		cache: false
+	// 	} ). then( function( data ) {
+    // 		// Get the SVG tag, ignore the rest
+    // 		$svg = $( data ).find( 'svg' );
+    // 		$svg.find( 'defs' ).remove();
 			
-// 			styles += $svg.find( 'style' ).text();
+	// 		// styles += $svg.find( 'style' ).text();
+
+	// 		// console.log( $svg.find( 'style' ).text() );
 			
-//     		// Remove any invalid XML tags
-//     		$svg = $svg.removeAttr( 'xmlns:a' );
-//     		// Loop through IMG attributes and apply on SVG
-//     		$.each( attributes, function() {
-//     			$svg.attr( this.name, this.value );
-//     		} );
-//     		// Replace IMG with SVG
-//     		$img.replaceWith( $svg );
+    // 		// Remove any invalid XML tags
+    // 		$svg = $svg.removeAttr( 'xmlns:a' );
+    // 		// Loop through IMG attributes and apply on SVG
+    // 		$.each( attributes, function() {
+    // 			$svg.attr( this.name, this.value );
+    // 		} );
+    // 		// Replace IMG with SVG
+    // 		$img.replaceWith( $svg );
 			
-// 			console.log( styles )
-			
-//     	}, 'xml' );
-//     } );
+    // 	}, 'xml' );
+    // } );
 } );
 
 $( window ).on( 'load resize scroll', function( e ) {

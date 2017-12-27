@@ -1,19 +1,6 @@
 @import 'utility.scss';
 /* app.css */
 
-
-a {
-	color: $primary;
-	text-decoration: underline;
-	&:hover {
-		// color: darken( $primary, 15% );
-		text-decoration: none;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		text-decoration: none;
-	}
-}
-
 // remove the demo root node, and you have the start of app.css
 // it's wrapped in .demo in order to use it in the gallery
 .demo {
@@ -24,6 +11,18 @@ a {
 	-webkit-text-size-adjust: 100%; 
 	-ms-text-size-adjust: 100%;
 	
+	a {
+		color: $primary;
+		text-decoration: underline;
+		&:hover {
+			// color: darken( $primary, 15% );
+			text-decoration: none;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			text-decoration: none;
+		}
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Merriweather", serif;
 		line-height: 1.3;
