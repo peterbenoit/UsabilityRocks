@@ -1,1 +1,11 @@
-<svg id="_01" data-name="01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-2{fill:#5a5a5a;}</style></defs><title>Artboard 34</title><rect class="cls-1" y="0.05" width="40" height="40"/><path class="cls-2" d="M.7,40V0H13.81v13.5H26.2V0H39.31V40H26.2V24.55H13.81V40Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:#5a5a5a;}
+        </style>
+    </defs>
+    <title>
+        hospital_01
+    </title>
+    <path d="M.7,40V0H13.81v13.5H26.2V0H39.31V40H26.2V24.55H13.81V40Z" class="cls-2"/>
+</svg>
