@@ -16,7 +16,7 @@ var COMPILE = {
 gulp.task( 'render', function() {
     return gulp.src( COMPILE.SRC )
     .pipe( nunjucks.compile() )
-    .pipe( gulp.dest( COMPILE.DEST ) )
+    .pipe( gulp.dest( COMPILE.DEST ) );
 } );
 
 gulp.task( 'sass', function() {
@@ -24,17 +24,22 @@ gulp.task( 'sass', function() {
     .pipe( sourcemaps.init() ) 
     .pipe( sass().on( 'error', sass.logError ) )
     .pipe( sourcemaps.write() )
-    .pipe( gulp.dest( COMPILE.DEST + '/css' ) )
+    .pipe( gulp.dest( COMPILE.DEST + '/css' ) );
 } );
 
 gulp.task( 'minify', function() {
     return gulp.src( COMPILE.JS )
     .pipe( minify() ) 
-    .pipe( gulp.dest( COMPILE.DEST + '/js' ) )
+    .pipe( gulp.dest( COMPILE.DEST + '/js' ) );
 } );
 
 gulp.task( 'stream', ['default'], function() {
     gulp.watch( COMPILE.ALL, ['default'] );
 } );
 
-gulp.task( 'default', ['render', 'sass', 'minify'] );
+gulp.task( 'copy', function() {
+    gulp.src(['src/assets/**']).pipe(gulp.dest('dist/assets'));
+} );
+
+
+gulp.task( 'default', ['render', 'sass', 'minify', 'copy'] );

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:#5a5a5a;}
+        </style>
+    </defs>
+    <title>
+        paper_01
+    </title>
+    <path d="M11.67,13.38h1.67V11.72H11.67Zm0,10h1.67V21.72H11.67Zm0-5h1.67V16.72H11.67Zm0,15h1.67V31.72H11.67Zm0-5h1.67V26.72H11.67Zm3.33-5H28.33V21.72H15Zm0-10H28.33V11.72H15ZM28.23,0H5V40H35V6.72Zm3.44,36.56H8.33V3.38H25v4.9h6.67ZM15,28.38H28.33V26.72H15Zm0-10H28.33V16.72H15Zm0,15H28.33V31.72H15Z" class="cls-2"/>
+</svg>
