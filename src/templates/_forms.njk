@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+{%include "includes/_head-forms.njk" %}
+<body class="no-js">
+	<!-- navbar -->
+	{% include "includes/_header-forms.njk" %}
+	<div class="container-fluid">
+		<div class="row flex-xl-nowrap">
+			<!--- sidebar --->
+			{% include "includes/_sidebar-forms.njk" %}
+			{% include "includes/_sectionnav.njk" %}
+			<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+  
+				{% block main %}
+				{% endblock %}
+
+  			</main>
+		</div>
+	</div>
+	{% include "includes/_footer.njk" %}
+	{% include "includes/_scripts.njk" %}
+</body>
+</html>
