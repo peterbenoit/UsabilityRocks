@@ -45,10 +45,21 @@ $( function() {
 		a.className += "rounded-top-right col";
 		$( t ).prev().append( a );
 	} );
+
+	var url = window.location.pathname,
+		target = $("a[href*='" + url.substring( url.lastIndexOf('/') + 1 ) + "']");
+	if ( location.hostname === '127.0.0.1' || location.hostname === 'localhost' ) {
+
+	}
+	if ( target.length > 0 ) {
+		target.closest( '.bd-toc-item' ).addClass( 'active' );
+	}
+
+
 	
-	$( '.icon-grid img' ).each( function( i, t ) {
-		$( t ).after( '<p>' + this.alt + '</p>' );
-	} );
+	// $( '.icon-grid img' ).each( function( i, t ) {
+	// 	$( t ).after( '<p>' + this.alt + '</p>' );
+	// } );
 
 	// make the active menu item, the selected menu item
 	var $dropdown = $( '.dropdown' ),

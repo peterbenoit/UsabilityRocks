@@ -74,6 +74,13 @@ $graylight: 	#e0e0e0 !default;
 $graylighter: 	#f0f0f0 !default;
 $graylightest: 	#f5f5f5 !default;
 
+// file colors
+$epub: 			#86b916 !default;
+$excel: 		#207245 !default;
+$govd: 			#5a5a5a !default;
+$pdf: 			#c1272d !default;
+$ppt: 			#d24625 !default;
+$fb: 			#3d5a98 !default;
 
 // Social Icons Colors
 // https://www.lockedowndesign.com/social-media-colors/
@@ -340,11 +347,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .p-fix { position: fixed!important; }
 .p-sti { position: sticky!important; }
 .p-cen { margin-left: auto!important; margin-right: auto!important; }
-.p-middle { 
-	position: absolute; 
-	top: 50%; 
-	transform: translateY(-50%)!important; 
-}
+.p-middle { position: absolute; top: 50%; transform: translateY(-50%)!important; }
 .p-abs-cen {
 	position: absolute; 
 	top: 50%!important;
@@ -358,22 +361,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .p-left { left: 0!important; }
 .p-edges { top: 0!important; right: 0!important; bottom: 0!important; left: 0!important; }
 
-.pin-top {
-	position: absolute;
-	top: 0;
-}
-.pin-right {
-	position: absolute;
-	right: 0;
-}
-.pin-bottom {
-	position: absolute;
-	bottom: 0;
-}
-.pin-left {
-	position: absolute;
-	left: 0;
-}
+.pin-top { position: absolute; top: 0; }
+.pin-right { position: absolute; right: 0; }
+.pin-bottom { position: absolute; bottom: 0; }
+.pin-left { position: absolute;	left: 0; }
+
 // Z-Index
 .z-0	{ z-index: 0; }
 .z-10	{ z-index: 10; }
@@ -393,6 +385,24 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .cur-not-allowed { cursor:not-allowed; }
 .cur-zoom-in { cursor: zoom-in; } 
 .cur-zoom-out { cursor: zoom-out; }
+
+// ===============================================================
+// SVG
+.fill-p { fill: $primary!important; }
+.fill-s { fill: $secondary!important; }
+.fill-t { fill: $tertiary!important; }
+.fill-w { fill: $white!important; }
+.fill-epub { fill: $epub!important; }
+.fill-excel { fill: $excel!important; }
+.fill-govd { fill: $govd!important; }
+.fill-pdf { fill: $pdf!important; }
+.fill-ppt { fill: $ppt!important; }
+.fill-fb { fill: $fb!important; }
+
+.fill-lg { fill:url(#linear-gradient); }
+.fill-mask { mask:url(#mask); }
+.fill-op-2 { opacity: 0.2; }
+.fr-evenodd { fill-rule: evenodd; }
 
 // ===============================================================
 // Visibility classes when JS is disabled

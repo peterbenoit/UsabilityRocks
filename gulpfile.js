@@ -11,7 +11,7 @@ var gulp = require( 'gulp' ),
 
 var COMPILE = {
     ALL: 'src/**',
-    SRC: 'src/**.html',
+    SRC: 'src/*.html',
     DEST: 'dist',
     SASS: 'src/scss/*.scss',
     JS: 'src/js/*.js'
