@@ -47,7 +47,7 @@ $( function() {
 	} );
 
 	var url = window.location.pathname,
-		target = $("a[href*='" + url.substring( url.lastIndexOf('/') + 1 ) + "']");
+		target = $("a[href='" + url.substring( url.lastIndexOf('/') + 1 ) + "']");
 	if ( location.hostname === '127.0.0.1' || location.hostname === 'localhost' ) {
 
 	}

@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 
-
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<title>Usability Rocks!</title>
-	<link rel="stylesheet prefetch" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
-	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
-	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
-	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.3/dist/instantsearch-theme-algolia.min.css">
-	<link rel="stylesheet prefetch" href="https://cdn.rawgit.com/twbs/bootstrap/gh-pages/assets/css/docs.min.css">
-	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.css">
+	<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
+	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.3/dist/instantsearch-theme-algolia.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdn.rawgit.com/twbs/bootstrap/gh-pages/assets/css/docs.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.css'>
 	
-	<link rel="stylesheet prefetch" href="https://codepen.io/peterbenoit/pen/YrXgNK.css">
-	<link rel="stylesheet" href="contrib/spectrum.css?04">
+	<link rel='stylesheet prefetch' href='https://codepen.io/peterbenoit/pen/YrXgNK.css'>
 	
 	<style>
 		.toc-h3 {
@@ -25,7 +23,7 @@
 	</style>
 	
 	<link href="css/app.css" rel="stylesheet">
-	<link href="css/docs.css" rel="stylesheet">
+	<link href="css/tp3.css" rel="stylesheet">
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
@@ -38,15 +36,15 @@
 	</script>
 </head>
 <body class="no-js">
-
 	<!-- navbar -->
 	<a class="sr-only sr-only-focusable" href="#content" id="skippy"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+
 <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
 	<a aria-label="Bootstrap" class="navbar-brand mr-0 mr-md-2" href="/"><img alt="" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.svg"></a>
 	<div class="navbar-nav-scroll">
-		<ul class="navbar-nav bd-navbar-nav flex-row">
+		<ul class="navbar-nav bd-navbar-nav flex-row d-none">
 			<li class="nav-item">
-				<a class="nav-link active" href="about.html" onclick="ga('send', 'event', 'Navbar', 'Nav links', 'About');">About</a>
+				<a class="nav-link" href="about.html" onclick="ga('send', 'event', 'Navbar', 'Nav links', 'About');">About </a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="components.html" onclick="ga('send', 'event', 'Navbar', 'Nav Links', 'Components');">Components</a>
@@ -64,11 +62,11 @@
 			<a aria-expanded="false" aria-haspopup="true" class="nav-item nav-link dropdown-toggle mr-md-2" data-toggle="dropdown" href="#" id="bd-versions">All Frameworks</a>
 			<div aria-labelledby="bd-versions" class="dropdown-menu dropdown-menu-right">
 				<a class="dropdown-item" href="about.html">All Frameworks</a> 
-				<a class="dropdown-item active" href="tp4.html">Template Package (4.x)</a>
-				<a class="dropdown-item" href="tp3.html">Template Package (3.x)</a> 
+				<a class="dropdown-item" href="tp4.html">Template Package (4.x)</a>
+				<a class="dropdown-item active" href="tp3.html">Template Package (3.x)</a> 
 				<a class="dropdown-item" href="widget.html">Widget Framework</a> 
 				<a class="dropdown-item" href="mobile.html">Mobile Framework</a>
-				<a class="dropdown-item" href="forms.html">Forms Framework</a> 
+				<a class="dropdown-item" href="forms.html">Forms Framework</a>
 			</div>
 		</li>
 		<li class="nav-item">
@@ -76,7 +74,6 @@
 			<title>GitHub</title>
 			<path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"></path></svg></a>
 		</li>
-		
 		<li class="nav-item">
 			<a aria-label="Slack" class="nav-link p-2" href="#" rel="noopener" target="_blank"><svg class="navbar-nav-svg" focusable="false" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
 			<title>Slack</title>
@@ -85,6 +82,7 @@
 		</li>
 	</ul><a class="btn btn-bd-yellow d-lg-inline-block mb-md-0 ml-md-3" href="#">Download</a>
 </header>
+
 	<div class="container-fluid">
 		<div class="row flex-xl-nowrap">
 			<!--- sidebar -->
@@ -112,8 +110,6 @@
 		</li>
     
 	</ul>  -->
-
-
 <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
 	<div class="aa-input-container" id="aa-input-container">
 		<input type="search" id="aa-search-input" class="aa-input-search" placeholder="Search..." name="search" autocomplete="off" />
@@ -130,38 +126,38 @@
 					<a class="bd-toc-link" href="index.html">Getting started</a>
 				</div>
 				<div class="bd-toc-item">
-					<a class="bd-toc-link" href="content.html">Content</a>
+					<a class="bd-toc-link" href="content-tp3.html">Content</a>
 					<ul class="nav bd-sidenav">	
 						<li>
-							<a href="typography.html">Typography</a>
+							<a href="typography-tp3.html">Typography</a>
 						</li>
 						<li>
-							<a href="text-styles.html">Text Styles</a>
+							<a href="text-styles-tp3.html">Text Styles</a>
 						</li>				
 						<li>
-							<a href="lists.html">Lists</a>
+							<a href="lists-tp3.html">Lists</a>
 						</li>
 						<li>
-							<a href="styles.html">Styles</a>
+							<a href="styles-tp3.html">Styles</a>
 						</li>						
 					</ul>
 				</div>					
 				<div class="bd-toc-item">
-					<a class="bd-toc-link" href="components.html">Components</a>
+					<a class="bd-toc-link" href="components-tp3.html">Components</a>
 					<ul class="nav bd-sidenav">
 						<li>
-							<a href="icons.html">Icons</a>
+							<a href="icons-tp3.html">Icons</a>
 						</li>
 						<li>
-							<a href="containers.html">Containers</a>
+							<a href="containers-tp3.html">Containers</a>
 						</li>
 						<li>
-							<a href="collapse.html">Collapse</a>
-						</li>
+							<a href="collapse-tp3.html">Collapse</a>
+						</li>				
 					</ul>
 				</div>
-				<div class="bd-toc-item">
-					<a class="bd-toc-link" href="layout.html">Layout</a>
+				<div class="bd-toc-item d-none">
+					<a class="bd-toc-link" href="layouts.html">Layouts</a>
 					<ul class="nav bd-sidenav">
 						<li>
 							<a href="layouts-web-pages.html">Web Pages</a>
@@ -189,6 +185,9 @@
 						<li>
 							<a href="mobile.html">Mobile Framework</a>
 						</li>
+						<li>
+							<a href="forms.html">Forms Framework</a>
+						</li>						
 					</ul>
 				</div>
 				<div class="bd-toc-item">
@@ -197,7 +196,7 @@
 				<div class="bd-toc-item">
 					<a class="bd-toc-link" href="code.html">Get Code</a>
 				</div>
-				<div class="bd-toc-item">
+				<div class="bd-toc-item d-none">
 					<a class="bd-toc-link" href="migration.html">Migration</a>
 				</div>
 			</nav>
@@ -210,9 +209,9 @@
 </div>
 
 			<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-
+  
 				
-<h1 class="bd-title" id="content">Cards</h1>
+<h1 class="bd-title" id="content">Components</h1>
 <p class="bd-lead"><span class="mark-yellow">Lead Text</span></p>
 
 
