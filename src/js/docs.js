@@ -27,7 +27,7 @@ $( function() {
 		nav += '<li class="toc-entry toc-' + name + '">' + '<a href=' + link + '>' + title + '</a>' + '</li>';
 		curval = val;
 	} );
-	console.log( 'nav', nav );
+	// console.log( 'nav', nav );
 	$( '#sectionnav ul' ).prepend( nav );
 		
 	// the hash is built into the page after page load, so run it after the section nav is built
@@ -59,6 +59,7 @@ $( function() {
 		selectedrop.text( activemenu.text() );
 	}	
 	
+	makeSVG();
 	// 1
 	// var client = algoliasearch( 'G2FUZ82WJ6', '6ed2ed9a83a0bd747f2986aa04722cb0' );
 	// var index = client.initIndex( 'docs_search' );
@@ -70,40 +71,65 @@ $( function() {
 	// 		}, searchCallback );
 	// 	} )
 	// 	.focus();
-	
-	// var styles = '';
-    // $( '.icon-grid img[src$=".svg"]' ).each( function( i ) {
-    // 	var $img = $( this ),
-	// 		imgURL = $img.attr( 'src' ),
-	// 		attributes = $img.prop( 'attributes' ),
-	// 		svg;
-
-	// 	console.log( imgURL );
-
-    // 	$.get( {
-	// 		url: imgURL, 
-	// 		cache: false
-	// 	} ). then( function( data ) {
-    // 		// Get the SVG tag, ignore the rest
-    // 		$svg = $( data ).find( 'svg' );
-    // 		$svg.find( 'defs' ).remove();
-			
-	// 		// styles += $svg.find( 'style' ).text();
-
-	// 		// console.log( $svg.find( 'style' ).text() );
-			
-    // 		// Remove any invalid XML tags
-    // 		$svg = $svg.removeAttr( 'xmlns:a' );
-    // 		// Loop through IMG attributes and apply on SVG
-    // 		$.each( attributes, function() {
-    // 			$svg.attr( this.name, this.value );
-    // 		} );
-    // 		// Replace IMG with SVG
-    // 		$img.replaceWith( $svg );
-			
-    // 	}, 'xml' );
-    // } );
 } );
+
+function makeSVG() {
+	var styles = '';
+
+	$( '.icon-grid img[src$=".svg"]' ).each( function( i ) {
+		var $img = $( this ),
+			imgURL = $img.attr( 'src' ),
+			attributes = $img.prop( 'attributes' ),
+			svg;
+
+		$.get( {
+			url: imgURL, 
+			cache: false
+		} ). then( function( data ) {
+
+			// Get the SVG tag, ignore the rest
+			$svg = $( data ).find( 'svg' );
+			// Remove any invalid XML tags
+			$svg = $svg.removeAttr( 'xmlns:a' );
+			// Loop through IMG attributes and apply on SVG
+			$.each( attributes, function() {
+				$svg.attr( this.name, this.value );
+			} );
+			// Replace IMG with SVG
+			$img.replaceWith( $svg );
+			
+		}, 'xml' );
+	} );
+
+	$( '#fg' ).show().spectrum( {
+		// flat: true,
+		// showInput: true,
+		showPaletteOnly: true,
+		togglePaletteOnly: true,
+		preferredFormat: "hex",
+		color: "#005eaa",
+		showPalette: true,
+		palette: [['#ffffff', '#000000', '#333', '#555', '#bdbdbd', '#e0e0e0', '#f0f0f0', '#f5f5f5', "#005eaa", "#88c3ea", "#c0e9ff", "#712177", '#b890bb', '#e3d3e4', '#00695c', '#4ebaaa', '#ceece7', '#bb4d00', '#ffad42', '#ffe97d']],	
+		move: function( color ) {
+			$('head').append('<style type="text/css"></style>');
+			var ns1 = $('head').children(':last');
+			ns1.html('.fill-p{fill: ' + color.toHexString() +'!important; }');			
+		}
+	} );
+	$( '#bg' ).show().spectrum( {
+		showPaletteOnly: true,
+		togglePaletteOnly: true,
+		preferredFormat: "hex",
+		color: "#f0f0f0",
+		showPalette: true,
+		palette: [['#ffffff', '#000000', '#333', '#555', '#bdbdbd', '#e0e0e0', '#f0f0f0', '#f5f5f5', "#005eaa", "#88c3ea", "#c0e9ff", "#712177", '#b890bb', '#e3d3e4', '#00695c', '#4ebaaa', '#ceece7', '#bb4d00', '#ffad42', '#ffe97d']],	
+		move: function( color ) {
+			$('head').append('<style type="text/css"></style>');
+			var ns2 = $('head').children(':last');
+			ns2.html('.icon-grid img, .icon-grid svg { background: ' + color.toHexString() +'!important; }');
+		}
+	} );	
+}
 
 $( window ).on( 'load resize scroll', function( e ) {
 	var $std = $( '#standard' );
@@ -208,27 +234,30 @@ function searchCallback( err, content ) {
 
 var sortdir = 'desc';
 function iconsort() {
+
 	var mylist = $( '.icon-grid' ),
-		listitems = mylist.children( 'div' ).children( 'img' ).get();
-	
-	if ( sortdir === 'asc' ) {
+		listitems = mylist.children( 'div' ).children( 'svg' ).get();
+
+		if ( sortdir === 'asc' ) {
 		listitems.sort( function( a, b ) {
-			return $( b ).attr( 'alt' ).toUpperCase().localeCompare( $( a ).attr( 'alt' ).toUpperCase() );
+			return $( b ).find('title').text().trim().toUpperCase().localeCompare( $( a ).find('title').text().trim().toUpperCase() );
 		} );
 		sortdir = 'desc';
 	} else {
 		listitems.sort( function( a, b ) {
-			return $( a ).attr( 'alt' ).toUpperCase().localeCompare( $( b ).attr( 'alt' ).toUpperCase() );
+			return $( a ).find('title').text().trim().toUpperCase().localeCompare( $( b ).find('title').text().trim().toUpperCase() );
 		} );
 		sortdir = 'asc';
 	}
 
 	mylist.empty();
+
 	$.each( listitems, function( idx, item ) {
 		mylist.append( item );
 	} );
-	$( '.icon-grid img' ).each( function( i, t ) {
-		$( t ).wrap( '<div>' ).after( '<p>' + this.alt + '</p>' );
+
+	$( '.icon-grid svg' ).each( function( i, t ) {
+		$( t ).wrap( '<div>' ).after( '<p>' + $( t ).find('title').text().trim() + '</p>' );
 	} );
 }
 

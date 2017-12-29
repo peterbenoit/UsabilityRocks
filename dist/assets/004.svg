@@ -1,11 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
-    <defs>
-        <style>
-            .cls-2{fill:#5a5a5a;}
-        </style>
-    </defs>
     <title>
         stack_02
     </title>
-    <path d="M0,36.3H30.4V13.55H0ZM4.7,11.92H32v19.5h3.2V8.67H4.7ZM9.46,3.8,9.5,7H36.8v19.5H40V3.8Z" class="cls-2"/>
+    <path d="M0,36.3H30.4V13.55H0ZM4.7,11.92H32v19.5h3.2V8.67H4.7ZM9.46,3.8,9.5,7H36.8v19.5H40V3.8Z" class="fill-p"/>
 </svg>

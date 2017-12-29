@@ -1,1 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-1{fill:#005eaa;}</style></defs><title>Artboard 28</title><polygon class="cls-1" points="36 17.97 36 36 4 36 4 4 22.03 4 22.03 1 1 1 1 39 39 39 39 17.97 36 17.97"/><polygon class="cls-1" points="39 1 26.27 1 31 5.73 17.52 19.21 20.8 22.48 34.27 9 39 13.73 39 1"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-1{fill:#005eaa;}
+        </style>
+    </defs>
+    <title>
+        Artboard 28
+    </title>
+    <polygon points="36 17.97 36 36 4 36 4 4 22.03 4 22.03 1 1 1 1 39 39 39 39 17.97 36 17.97" class="cls-1"/>
+    <polygon points="39 1 26.27 1 31 5.73 17.52 19.21 20.8 22.48 34.27 9 39 13.73 39 1" class="cls-1"/>
+</svg>

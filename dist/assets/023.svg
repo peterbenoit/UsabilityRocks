@@ -1,11 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
-    <defs>
-        <style>
-            .cls-1{fill:#5a5a5a;}
-        </style>
-    </defs>
     <title>
         paper_02
     </title>
-    <path d="M27.79,40,40,34.72V0L27.79,5.38ZM14,34.72l12.12,4.8V4.85L14,0ZM0,5.38V40.05l12.23-4.8V.58Z" class="cls-1"/>
+    <path d="M27.79,40,40,34.72V0L27.79,5.38ZM14,34.72l12.12,4.8V4.85L14,0ZM0,5.38V40.05l12.23-4.8V.58Z" class="fill-p"/>
 </svg>

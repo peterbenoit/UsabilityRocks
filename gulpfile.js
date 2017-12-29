@@ -6,7 +6,8 @@ var gulp = require( 'gulp' ),
     jshint = require('jshint'),
     livereload = require('gulp-livereload'),
     watch = require( 'gulp-watch' ),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    htmlbeautify = require('gulp-html-beautify');
 
 var COMPILE = {
     ALL: 'src/**',
@@ -47,6 +48,17 @@ gulp.task( 'watch', ['default'], function() {
 gulp.task( 'copy', function() {
     gulp.src( ['src/assets/**'] )
     .pipe( gulp.dest('dist/assets') );
+} );
+
+gulp.task('beautify', function() {
+    var options = {
+        "indent_with_tabs": true,
+        "brace_style": "expand",
+        "break_chained_methods": true
+    };
+    gulp.src( './src/assets/*.svg' )
+      .pipe( htmlbeautify( options ) )
+      .pipe( gulp.dest( './dist/assets' ) );
 } );
 
 gulp.task('server',function(){  

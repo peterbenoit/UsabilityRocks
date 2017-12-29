@@ -2678,6 +2678,8 @@
 	"devDependencies": {
 		"express": "^4.16.2",
 		"gulp": "^3.9.1",
+		"gulp-beautify": "^2.0.1",
+		"gulp-html-beautify": "^1.0.1",
 		"gulp-livereload": "^3.8.1",
 		"gulp-minify": "^2.1.0",
 		"gulp-nodemon": "^2.2.1",

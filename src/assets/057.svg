@@ -1,1 +1,11 @@
-<svg id="_01" data-name="01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-2{fill:#5a5a5a;fill-rule:evenodd;}</style></defs><title>Artboard 58</title><rect class="cls-1" y="0.05" width="40" height="40"/><polygon class="cls-2" points="7.56 0.05 5.77 18.52 18.92 15.5 8.06 40.05 34.23 8.23 16.95 10.5 22.38 0.05 7.56 0.05"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:#5a5a5a;fill-rule:evenodd;}
+        </style>
+    </defs>
+    <title>
+        weather_08
+    </title>
+    <polygon points="7.56 0.05 5.77 18.52 18.92 15.5 8.06 40.05 34.23 8.23 16.95 10.5 22.38 0.05 7.56 0.05" class="fill-p"/>
+</svg>
