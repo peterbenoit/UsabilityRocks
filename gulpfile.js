@@ -48,6 +48,8 @@ gulp.task( 'watch', ['default'], function() {
 gulp.task( 'copy', function() {
     gulp.src( ['src/assets/**'] )
     .pipe( gulp.dest('dist/assets') );
+    gulp.src( ['src/contrib/**'] )
+    .pipe( gulp.dest('dist/contrib') );    
 } );
 
 gulp.task('beautify', function() {
