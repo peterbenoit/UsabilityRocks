@@ -14,8 +14,6 @@
 	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.3/dist/instantsearch-theme-algolia.min.css">
 	<link rel="stylesheet prefetch" href="https://cdn.rawgit.com/twbs/bootstrap/gh-pages/assets/css/docs.min.css">
 	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.css">
-	
-	<link rel="stylesheet prefetch" href="https://codepen.io/peterbenoit/pen/YrXgNK.css">
 	<link rel="stylesheet" href="contrib/spectrum.css?04">
 	
 	<style>
@@ -139,14 +137,20 @@
 							<a href="colors.html">Colors</a>
 						</li>
 						<li>
+							<a href="column-count.html">Column Count</a>
+						</li>
+						<li>
 							<a href="column-order.html">Column Order</a>
-						</li>						
+						</li>
 						<li>
 							<a href="cursors.html">Cursors</a>
 						</li>						
 						<li>
 							<a href="drop-shadows.html">Drop Shadows</a>
 						</li>							
+						<li>
+							<a href="flex.html">Flex</a>
+						</li>						
 						<li>
 							<a href="font-sizes.html">Font Sizes</a>
 						</li>				
@@ -262,55 +266,129 @@
 <h1 class="bd-title" id="content">Position</h1>
 <p class="lead"></p>
 
-	<div class="large-cube border border-dark">
+<div class="clearfix">
+<h2 class="">Position by Name</h2>
+	<div class="fs075 large-cube border border-dark">
 		position-static (p-sta)
-		<div class="medium-cube border border-dark p-sta float-none pin-right"></div>
+		<div class="small-cube border border-dark p-sta float-none pin-right"></div>
 	</div>
-	<div class="large-cube border border-dark">
+	<div class="fs075 large-cube border border-dark">
 		position-relative (p-rel)
-		<div class="medium-cube border border-dark p-rel float-none pin-right"></div>
+		<div class="small-cube border border-dark p-rel float-none pin-right"></div>
 	</div>
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-absolute (p-abs)
-		<div class="medium-cube border border-dark p-abs float-none pin-right"></div>
+		<div class="small-cube border border-dark p-abs float-none pin-right"></div>
 	</div>
-	<div class="large-cube border border-dark">
+	<div class="fs075 large-cube border border-dark">
 		position-fixed (p-fix)
-		<div class="medium-cube border border-dark p-fix float-none m-0"></div>
+		<div class="small-cube border border-dark p-fix float-none m-0"></div>
 	</div>
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-sticky (p-sti)
-		<div class="medium-cube border border-dark p-sti float-none m-0"></div>
+		<div class="small-cube border border-dark p-sti float-none m-0"></div>
 	</div>
-	<div class="large-cube border border-dark">
+	<div class="fs075 large-cube border border-dark">
 		position-center (p-cen)
-		<div class="medium-cube border border-dark p-cen float-none"></div>
+		<div class="small-cube border border-dark p-cen float-none"></div>
 	</div>
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-middle (p-mid)
-		<div class="medium-cube border border-dark p-mid float-none m-0"></div>
+		<div class="small-cube border border-dark p-mid float-none m-0"></div>
 	</div>
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-absolute-center (p-abs-cen)
-		<div class="medium-cube border border-dark p-abs-cen float-none m-0"></div>
+		<div class="small-cube border border-dark p-abs-cen float-none m-0"></div>
 	</div>
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-top (p-abs p-top || pin-top)
-		<div class="medium-cube border border-dark p-abs p-top float-none"></div>
+		<div class="small-cube border border-dark p-abs p-top float-none"></div>
 	</div>	
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-right (p-abs p-right || pin-right)
-		<div class="medium-cube border border-dark p-abs p-right float-none"></div>
+		<div class="small-cube border border-dark p-abs p-right float-none"></div>
 	</div>	
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-left (p-abs p-left || pin-left)
-		<div class="medium-cube border border-dark p-abs p-left float-none"></div>
+		<div class="small-cube border border-dark p-abs p-left float-none"></div>
 	</div>	
-	<div class="large-cube border border-dark p-rel">
+	<div class="fs075 large-cube border border-dark p-rel">
+		position-top-left (pin-top-left)
+		<div class="small-cube border border-dark pin-top-left float-none"></div>
+	</div>	
+	<div class="fs075 large-cube border border-dark p-rel">
+		position-top-right (pin-top-right)
+		<div class="small-cube border border-dark pin-top-right float-none"></div>
+	</div>	
+	<div class="fs075 large-cube border border-dark p-rel">
+		position-bottom-right (pin-bottom-right)
+		<div class="small-cube border border-dark pin-bottom-right float-none"></div>
+	</div>
+	<div class="fs075 large-cube border border-dark p-rel">
 		position-bottom (p-abs p-bottom || pin-bottom)
-		<div class="medium-cube border border-dark p-abs p-bottom float-none"></div>
-	</div>	
+		<div class="small-cube border border-dark p-abs p-bottom float-none"></div>
+	</div>
 
+	<h2 class="float-left cl">Position by Number</h2>
+
+	<div class="fs05 border border-dark p-rel h-128 w-100 ml-2 float-left">
+		<div class="small-cube p-abs p-x-0 p-y-0">0/0</div>
+		<div class="small-cube p-abs p-x-25 p-y-0">25/0</div>
+		<div class="small-cube p-abs p-x-33 p-y-0">33/0</div>
+		<div class="small-cube p-abs p-x-50 p-y-0">50/0</div>
+		<div class="small-cube p-abs p-x-66 p-y-0">66/0</div>
+		<div class="small-cube p-abs p-x-75 p-y-0">75/0</div>
+		<div class="small-cube p-abs p-x-100 p-y-0">100/0</div>
+
+		<div class="small-cube p-abs p-x-0 p-y-25">0/25</div>
+		<div class="small-cube p-abs p-x-25 p-y-25">25/25</div>
+		<div class="small-cube p-abs p-x-33 p-y-25">33/25</div>
+		<div class="small-cube p-abs p-x-50 p-y-25">50/25</div>
+		<div class="small-cube p-abs p-x-66 p-y-25">66/25</div>
+		<div class="small-cube p-abs p-x-75 p-y-25">75/25</div>
+		<div class="small-cube p-abs p-x-100 p-y-25">100/25</div>
+
+		<div class="small-cube p-abs p-x-0 p-y-33">0/33</div>
+		<div class="small-cube p-abs p-x-25 p-y-33">25/33</div>
+		<div class="small-cube p-abs p-x-33 p-y-33">33/33</div>
+		<div class="small-cube p-abs p-x-50 p-y-33">50/33</div>
+		<div class="small-cube p-abs p-x-66 p-y-33">66/33</div>
+		<div class="small-cube p-abs p-x-75 p-y-33">75/33</div>
+		<div class="small-cube p-abs p-x-100 p-y-33">100/33</div>
+
+		<div class="small-cube p-abs p-x-0 p-y-50">0/50</div>
+		<div class="small-cube p-abs p-x-25 p-y-50">25/50</div>
+		<div class="small-cube p-abs p-x-33 p-y-50">33/50</div>
+		<div class="small-cube p-abs p-x-50 p-y-50">50/50</div>
+		<div class="small-cube p-abs p-x-66 p-y-50">66/50</div>
+		<div class="small-cube p-abs p-x-75 p-y-50">75/50</div>
+		<div class="small-cube p-abs p-x-100 p-y-50">100/50</div>
+
+		<div class="small-cube p-abs p-x-0 p-y-66">0/66</div>
+		<div class="small-cube p-abs p-x-25 p-y-66">25/66</div>
+		<div class="small-cube p-abs p-x-33 p-y-66">33/66</div>
+		<div class="small-cube p-abs p-x-50 p-y-66">50/66</div>
+		<div class="small-cube p-abs p-x-66 p-y-66">66/66</div>
+		<div class="small-cube p-abs p-x-75 p-y-66">75/66</div>
+		<div class="small-cube p-abs p-x-100 p-y-66">100/66</div>
+
+		<div class="small-cube p-abs p-x-0 p-y-75">0/75</div>
+		<div class="small-cube p-abs p-x-25 p-y-75">25/75</div>
+		<div class="small-cube p-abs p-x-33 p-y-75">33/75</div>
+		<div class="small-cube p-abs p-x-50 p-y-75">50/75</div>
+		<div class="small-cube p-abs p-x-66 p-y-75">66/75</div>
+		<div class="small-cube p-abs p-x-75 p-y-75">75/75</div>
+		<div class="small-cube p-abs p-x-100 p-y-75">100/75</div>
+
+		<div class="small-cube p-abs p-x-0 p-y-100">0/100</div>
+		<div class="small-cube p-abs p-x-25 p-y-100">25/100</div>
+		<div class="small-cube p-abs p-x-33 p-y-100">33/100</div>
+		<div class="small-cube p-abs p-x-50 p-y-100">50/100</div>
+		<div class="small-cube p-abs p-x-66 p-y-100">66/100</div>
+		<div class="small-cube p-abs p-x-75 p-y-100">75/100</div>
+		<div class="small-cube p-abs p-x-100 p-y-100">100/100</div>	
+	</div>
+</div>
 
 
   			</main>

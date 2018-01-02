@@ -347,7 +347,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .p-fix { position: fixed!important; }
 .p-sti { position: sticky!important; }
 .p-cen { margin-left: auto!important; margin-right: auto!important; }
-.p-middle { position: absolute; top: 50%; transform: translateY(-50%)!important; }
+.p-mid { position: absolute; top: 50%; transform: translateY(-50%)!important; }
 .p-abs-cen {
 	position: absolute; 
 	top: 50%!important;
@@ -365,6 +365,50 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .pin-right { position: absolute; right: 0; }
 .pin-bottom { position: absolute; bottom: 0; }
 .pin-left { position: absolute;	left: 0; }
+.pin-top-left { position: absolute; top: 0; left: 0; }
+.pin-top-right { position: absolute; top: 0; right: 0; }
+.pin-bottom-right { position: absolute; bottom: 0; right: 0; }
+.pin-bottom-left { position: absolute; bottom: 0; left: 0; }
+
+.p-x-0 { left: 0!important; }
+.p-x-25 {
+	left: 25%!important;
+	margin-right: -25%!important;
+	transform: translate(-25%)!important;
+}
+
+.p-x-33 {
+	left: 33%!important;
+	margin-right: -33%!important;
+	transform: translate(-33%)!important;
+}
+
+.p-x-50 {
+	left: 50%!important;
+	margin-right: -50%!important;
+	transform: translate(-50%)!important;
+}
+
+.p-x-66 {
+	left: 66%!important;
+	margin-right: -66%!important;
+	transform: translate(-66%)!important;
+}
+
+.p-x-75 {
+	left: 75%!important;
+	margin-right: -75%!important;
+	transform: translate(-75%)!important;
+}
+.p-x-100 { right: 0!important; }
+
+.p-y-0 { top: 0!important; }
+.p-y-25 { top: 25%!important; }
+.p-y-33 { top: 33%!important; }
+.p-y-50 { top: 50%!important; }
+.p-y-66 { top: 66%!important; }
+.p-y-75 { top: 75%!important; }
+.p-y-100 { bottom: 0!important; }
 
 // Z-Index
 .z-0	{ z-index: 0; }
@@ -414,6 +458,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 
 // ===============================================================
 // Clears from TP3, TODO: make sure we have all the types here.
+// BS4: .clearfix
 .cl { clear:left; }
 .rl, .cr { clear:right; }
 .clear, .cb { clear:both; }
@@ -514,6 +559,12 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .bg-gray-l2 { background-color: $graylighter!important; }
 .bg-gray-l3 { background-color: $graylightest!important; }
 
+.b-gray-d2 { border-color: $graydarker!important; }
+.b-gray-d1 { border-color: $graydark!important; }
+.b-gray { border-color: $gray!important; }
+.b-gray-l1 { border-color: $graylight!important; }
+.b-gray-l2 { border-color: $graylighter!important; }
+.b-gray-l3 { border-color: $graylightest!important; }
 
 // colors
 .c-white { color: $white!important; }
@@ -630,26 +681,32 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .r-large { border-radius: 0.75rem!important; }
 .r-xlarge { border-radius: 1rem!important; }
 .r-none { border-radius: 0!important; }
+
 .r-tr { border-top-right-radius:.25rem!important; }
 .r-tl { border-top-left-radius:.25rem!important; }
 .r-br { border-bottom-right-radius:.25rem!important; }
 .r-bl { border-bottom-left-radius:.25rem!important; }
+
 .r-top-0 { border-top-left-radius: 0!important; border-top-right-radius: 0!important; }
 .r-right-0 { border-top-right-radius: 0!important; border-bottom-right-radius: 0!important; }
 .r-bottom-0 { border-bottom-left-radius: 0!important; border-bottom-right-radius: 0!important; }
 .r-left-0 { border-top-left-radius: 0!important; border-bottom-left-radius: 0!important; }
+
 .r-top-1 { border-top-left-radius: .25rem!important; border-top-right-radius: .25rem!important; }
 .r-top-2 { border-top-left-radius: .50rem!important; border-top-right-radius: .50rem!important; }
 .r-top-3 { border-top-left-radius: .75rem!important; border-top-right-radius: .75rem!important; }
 .r-top-4 { border-top-left-radius: 1rem!important; border-top-right-radius: 1rem!important; }
+
 .r-right-1 { border-bottom-right-radius: .25rem!important; border-top-right-radius: .25rem!important; }
 .r-right-2 { border-bottom-right-radius: .50rem!important; border-top-right-radius: .50rem!important; }
 .r-right-3 { border-bottom-right-radius: .75rem!important; border-top-right-radius: .75rem!important; }
 .r-right-4 { border-bottom-right-radius: 1rem!important; border-top-right-radius: 1rem!important; }
+
 .r-bottom-1 { border-bottom-left-radius: .25rem!important; border-bottom-right-radius: .25rem!important; }
 .r-bottom-2 { border-bottom-left-radius: .50rem!important; border-bottom-right-radius: .50rem!important; }
 .r-bottom-3 { border-bottom-left-radius: .75rem!important; border-bottom-right-radius: .75rem!important; }
 .r-bottom-4 { border-bottom-left-radius: 1rem!important; border-bottom-right-radius: 1rem!important; }
+
 .r-left-1 { border-top-left-radius: .25rem!important; border-bottom-left-radius: .25rem!important; }
 .r-left-2 { border-top-left-radius: .50rem!important; border-bottom-left-radius: .50rem!important; }
 .r-left-3 { border-top-left-radius: .75rem!important; border-bottom-left-radius: .75rem!important; }
@@ -693,8 +750,33 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .w-16	{ width: 4rem!important; }
 .w-24	{ width: 6rem!important; }
 .w-32	{ width: 8rem!important; }
+.w-48	{ width: 10rem!important; }
+.w-64	{ width: 12rem!important; }
+.w-96	{ width: 14rem!important; }
+.w-128	{ width: 20rem!important; }
 
-.h-33 	{ height: 33%!important; }
+.vw5 { width: 5vw; }
+.vw10 { width: 10vw; }
+.vw15 { width: 15vw; }
+.vw20 { width: 20vw; }
+.vw25 { width: 25vw; }
+.vw30 { width: 30vw; }
+.vw35 { width: 35vw; }
+.vw40 { width: 40vw; }
+.vw45 { width: 45vw; }
+.vw50 { width: 50vw; }
+.vw55 { width: 55vw; }
+.vw60 { width: 60vw; }
+.vw65 { width: 65vw; }
+.vw70 { width: 70vw; }
+.vw75 { width: 75vw; }
+.vw80 { width: 80vw; }
+.vw85 { width: 85vw; }
+.vw90 { width: 90vw; }
+.vw95 { width: 95vw; }
+.vw100 { width: 100vw; }
+
+.h-33 	{ width: 33%!important; }
 .h-66 	{ height: 66%!important; }
 .h-1	{ height: 0.25rem!important; }
 .h-2	{ height: 0.5rem!important; }
@@ -710,6 +792,10 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .h-16	{ height: 4rem!important; }
 .h-24	{ height: 6rem!important; }
 .h-32	{ height: 8rem!important; }
+.h-48	{ height: 10rem!important; }
+.h-64	{ height: 12rem!important; }
+.h-96	{ height: 14rem!important; }
+.h-128	{ height: 20rem!important; }
 
 .mw-50 { max-width: 50%!important; }
 .mh-50 { max-height: 50%!important; }
@@ -1154,14 +1240,34 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .op-25 { opacity: .25; }
 .op-0 { opacity: 0; }
 
-// theme colors as primary (blue is default, so not necessary)
+// theme colors as primary (blue is default)
+.bg-primary { background-color: $primary!important; }
+.bg-secondary { background-color: $secondary!important; }
+.bg-tertiary { background-color: $tertiary!important; }
+.b-primary { border-color: $primary!important; }
+.b-secondary { border-color: $secondary!important; }
+.b-tertiary { border-color: $tertiary!important; }	
+
 .theme-purple {
 	.bg-primary { background-color: $purple-primary!important; }
 	.bg-secondary { background-color: $purple-secondary!important; }
 	.bg-tertiary { background-color: $purple-tertiary!important; }
 	.b-primary { border-color: $purple-primary!important; }
 	.b-secondary { border-color: $purple-secondary!important; }
-	.b-tertiary { border-color: $purple-tertiary!important; }	
+	.b-tertiary { border-color: $purple-tertiary!important; }
+	.bt-primary { border-top-color: $purple-primary!important; }
+	.bt-secondary { border-top-color: $purple-secondary!important; }
+	.bt-tertiary { border-top-color: $purple-tertiary!important; }
+	.br-primary { border-right-color: $purple-primary!important; }
+	.br-secondary { border-right-color: $purple-secondary!important; }
+	.br-tertiary { border-right-color: $purple-tertiary!important; }
+	.bb-primary { border-bottom-color: $purple-primary!important; }
+	.bb-secondary { border-bottom-color: $purple-secondary!important; }
+	.bb-tertiary { border-bottom-color: $purple-tertiary!important; }
+	.bl-primary { border-left-color: $purple-primary!important; }
+	.bl-secondary { border-left-color: $purple-secondary!important; }
+	.bl-tertiary { border-left-color: $purple-tertiary!important; }
+
 }
 .theme-brown {
 	.bg-primary { background-color: $brown-primary!important; }
@@ -1169,7 +1275,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $brown-tertiary!important; }
 	.b-primary { border-color: $brown-primary!important; }
 	.b-secondary { border-color: $brown-secondary!important; }
-	.b-tertiary { border-color: $brown-tertiary!important; }		
+	.b-tertiary { border-color: $brown-tertiary!important; }
+	.bt-primary { border-top-color: $brown-primary!important; }
+	.bt-secondary { border-top-color: $brown-secondary!important; }
+	.bt-tertiary { border-top-color: $brown-tertiary!important; }
+	.br-primary { border-right-color: $brown-primary!important; }
+	.br-secondary { border-right-color: $brown-secondary!important; }
+	.br-tertiary { border-right-color: $brown-tertiary!important; }
+	.bb-primary { border-bottom-color: $brown-primary!important; }
+	.bb-secondary { border-bottom-color: $brown-secondary!important; }
+	.bb-tertiary { border-bottom-color: $brown-tertiary!important; }
+	.bl-primary { border-left-color: $brown-primary!important; }
+	.bl-secondary { border-left-color: $brown-secondary!important; }
+	.bl-tertiary { border-left-color: $brown-tertiary!important; }			
 }
 .theme-teal {
 	.bg-primary { background-color: $teal-primary!important; }
@@ -1178,6 +1296,18 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.b-primary { border-color: $teal-primary!important; }
 	.b-secondary { border-color: $teal-secondary!important; }
 	.b-tertiary { border-color: $teal-tertiary!important; }		
+	.bt-primary { border-top-color: $teal-primary!important; }
+	.bt-secondary { border-top-color: $teal-secondary!important; }
+	.bt-tertiary { border-top-color: $teal-tertiary!important; }
+	.br-primary { border-right-color: $teal-primary!important; }
+	.br-secondary { border-right-color: $teal-secondary!important; }
+	.br-tertiary { border-right-color: $teal-tertiary!important; }
+	.bb-primary { border-bottom-color: $teal-primary!important; }
+	.bb-secondary { border-bottom-color: $teal-secondary!important; }
+	.bb-tertiary { border-bottom-color: $teal-tertiary!important; }
+	.bl-primary { border-left-color: $teal-primary!important; }
+	.bl-secondary { border-left-color: $teal-secondary!important; }
+	.bl-tertiary { border-left-color: $teal-tertiary!important; }	
 }
 .theme-pink {
 	.bg-primary { background-color: $pink-primary!important; }
@@ -1185,7 +1315,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $pink-tertiary!important; }
 	.b-primary { border-color: $pink-primary!important; }
 	.b-secondary { border-color: $pink-secondary!important; }
-	.b-tertiary { border-color: $pink-tertiary!important; }		
+	.b-tertiary { border-color: $pink-tertiary!important; }
+	.bt-primary { border-top-color: $pink-primary!important; }
+	.bt-secondary { border-top-color: $pink-secondary!important; }
+	.bt-tertiary { border-top-color: $pink-tertiary!important; }
+	.br-primary { border-right-color: $pink-primary!important; }
+	.br-secondary { border-right-color: $pink-secondary!important; }
+	.br-tertiary { border-right-color: $pink-tertiary!important; }
+	.bb-primary { border-bottom-color: $pink-primary!important; }
+	.bb-secondary { border-bottom-color: $pink-secondary!important; }
+	.bb-tertiary { border-bottom-color: $pink-tertiary!important; }
+	.bl-primary { border-left-color: $pink-primary!important; }
+	.bl-secondary { border-left-color: $pink-secondary!important; }
+	.bl-tertiary { border-left-color: $pink-tertiary!important; }		
 }
 .theme-orange {
 	.bg-primary { background-color: $orange-primary!important; }
@@ -1193,7 +1335,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $orange-tertiary!important; }
 	.b-primary { border-color: $orange-primary!important; }
 	.b-secondary { border-color: $orange-secondary!important; }
-	.b-tertiary { border-color: $orange-tertiary!important; }		
+	.b-tertiary { border-color: $orange-tertiary!important; }
+	.bt-primary { border-top-color: $orange-primary!important; }
+	.bt-secondary { border-top-color: $orange-secondary!important; }
+	.bt-tertiary { border-top-color: $orange-tertiary!important; }
+	.br-primary { border-right-color: $orange-primary!important; }
+	.br-secondary { border-right-color: $orange-secondary!important; }
+	.br-tertiary { border-right-color: $orange-tertiary!important; }
+	.bb-primary { border-bottom-color: $orange-primary!important; }
+	.bb-secondary { border-bottom-color: $orange-secondary!important; }
+	.bb-tertiary { border-bottom-color: $orange-tertiary!important; }
+	.bl-primary { border-left-color: $orange-primary!important; }
+	.bl-secondary { border-left-color: $orange-secondary!important; }
+	.bl-tertiary { border-left-color: $orange-tertiary!important; }			
 }
 .theme-slate {
 	.bg-primary { background-color: $slate-primary!important; }
@@ -1201,7 +1355,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $slate-tertiary!important; }
 	.b-primary { border-color: $slate-primary!important; }
 	.b-secondary { border-color: $slate-secondary!important; }
-	.b-tertiary { border-color: $slate-tertiary!important; }	
+	.b-tertiary { border-color: $slate-tertiary!important; }
+	.bt-primary-color { border-top-color: $slate-primary!important; }
+	.bt-secondary-color { border-top-color: $slate-secondary!important; }
+	.bt-tertiary-color { border-top-color: $slate-tertiary!important; }
+	.br-primary-color { border-right-color: $slate-primary!important; }
+	.br-secondary-color { border-right-color: $slate-secondary!important; }
+	.br-tertiary-color { border-right-color: $slate-tertiary!important; }
+	.bb-primary-color { border-bottom-color: $slate-primary!important; }
+	.bb-secondary-color { border-bottom-color: $slate-secondary!important; }
+	.bb-tertiary-color { border-bottom-color: $slate-tertiary!important; }
+	.bl-primary-color { border-left-color: $slate-primary!important; }
+	.bl-secondary-color { border-left-color: $slate-secondary!important; }
+	.bl-tertiary-color { border-left-color: $slate-tertiary!important; }		
 }
 .theme-indigo {
 	.bg-primary { background-color: $indigo-primary!important; }
@@ -1209,7 +1375,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $indigo-tertiary!important; }
 	.b-primary { border-color: $indigo-primary!important; }
 	.b-secondary { border-color: $indigo-secondary!important; }
-	.b-tertiary { border-color: $indigo-tertiary!important; }	
+	.b-tertiary { border-color: $indigo-tertiary!important; }
+	.bt-primary-color { border-top-color: $indigo-primary!important; }
+	.bt-secondary-color { border-top-color: $indigo-secondary!important; }
+	.bt-tertiary-color { border-top-color: $indigo-tertiary!important; }
+	.br-primary-color { border-right-color: $indigo-primary!important; }
+	.br-secondary-color { border-right-color: $indigo-secondary!important; }
+	.br-tertiary-color { border-right-color: $indigo-tertiary!important; }
+	.bb-primary-color { border-bottom-color: $indigo-primary!important; }
+	.bb-secondary-color { border-bottom-color: $indigo-secondary!important; }
+	.bb-tertiary-color { border-bottom-color: $indigo-tertiary!important; }
+	.bl-primary-color { border-left-color: $indigo-primary!important; }
+	.bl-secondary-color { border-left-color: $indigo-secondary!important; }
+	.bl-tertiary-color { border-left-color: $indigo-tertiary!important; }	
 }
 .theme-cyan {
 	.bg-primary { background-color: $cyan-primary!important; }
@@ -1217,7 +1395,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $cyan-tertiary!important; }
 	.b-primary { border-color: $cyan-primary!important; }
 	.b-secondary { border-color: $cyan-secondary!important; }
-	.b-tertiary { border-color: $cyan-tertiary!important; }	
+	.b-tertiary { border-color: $cyan-tertiary!important; }
+	.bt-primary-color { border-top-color: $cyan-primary!important; }
+	.bt-secondary-color { border-top-color: $cyan-secondary!important; }
+	.bt-tertiary-color { border-top-color: $cyan-tertiary!important; }
+	.br-primary-color { border-right-color: $cyan-primary!important; }
+	.br-secondary-color { border-right-color: $cyan-secondary!important; }
+	.br-tertiary-color { border-right-color: $cyan-tertiary!important; }
+	.bb-primary-color { border-bottom-color: $cyan-primary!important; }
+	.bb-secondary-color { border-bottom-color: $cyan-secondary!important; }
+	.bb-tertiary-color { border-bottom-color: $cyan-tertiary!important; }
+	.bl-primary-color { border-left-color: $cyan-primary!important; }
+	.bl-secondary-color { border-left-color: $cyan-secondary!important; }
+	.bl-tertiary-color { border-left-color: $cyan-tertiary!important; }	
 }
 .theme-green {
 	.bg-primary { background-color: $green-primary!important; }
@@ -1225,7 +1415,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $green-tertiary!important; }
 	.b-primary { border-color: $green-primary!important; }
 	.b-secondary { border-color: $green-secondary!important; }
-	.b-tertiary { border-color: $green-tertiary!important; }	
+	.b-tertiary { border-color: $green-tertiary!important; }
+	.bt-primary { border-top-color: $green-primary!important; }
+	.bt-secondary { border-top-color: $green-secondary!important; }
+	.bt-tertiary { border-top-color: $green-tertiary!important; }
+	.br-primary { border-right-color: $green-primary!important; }
+	.br-secondary { border-right-color: $green-secondary!important; }
+	.br-tertiary { border-right-color: $green-tertiary!important; }
+	.bb-primary { border-bottom-color: $green-primary!important; }
+	.bb-secondary { border-bottom-color: $green-secondary!important; }
+	.bb-tertiary { border-bottom-color: $green-tertiary!important; }
+	.bl-primary { border-left-color: $green-primary!important; }
+	.bl-secondary { border-left-color: $green-secondary!important; }
+	.bl-tertiary { border-left-color: $green-tertiary!important; }		
 }
 .theme-amber {
 	.bg-primary { background-color: $amber-primary!important; }
@@ -1233,7 +1435,19 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bg-tertiary { background-color: $amber-tertiary!important; }
 	.b-primary { border-color: $amber-primary!important; }
 	.b-secondary { border-color: $amber-secondary!important; }
-	.b-tertiary { border-color: $amber-tertiary!important; }	
+	.b-tertiary { border-color: $amber-tertiary!important; }
+	.bt-primary { border-top-color: $amber-primary!important; }
+	.bt-secondary { border-top-color: $amber-secondary!important; }
+	.bt-tertiary { border-top-color: $amber-tertiary!important; }
+	.br-primary { border-right-color: $amber-primary!important; }
+	.br-secondary { border-right-color: $amber-secondary!important; }
+	.br-tertiary { border-right-color: $amber-tertiary!important; }
+	.bb-primary { border-bottom-color: $amber-primary!important; }
+	.bb-secondary { border-bottom-color: $amber-secondary!important; }
+	.bb-tertiary { border-bottom-color: $amber-tertiary!important; }
+	.bl-primary { border-left-color: $amber-primary!important; }
+	.bl-secondary { border-left-color: $amber-secondary!important; }
+	.bl-tertiary { border-left-color: $amber-tertiary!important; }		
 }
 
 // flex align
