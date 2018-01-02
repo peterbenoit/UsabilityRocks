@@ -1,0 +1,56 @@
+{% extends "templates/_gallery.njk" %} 
+
+{% block main %}
+<h1 class="bd-title" id="content">Position</h1>
+<p class="lead"></p>
+
+	<div class="large-cube border border-dark">
+		position-static (p-sta)
+		<div class="medium-cube border border-dark p-sta float-none pin-right"></div>
+	</div>
+	<div class="large-cube border border-dark">
+		position-relative (p-rel)
+		<div class="medium-cube border border-dark p-rel float-none pin-right"></div>
+	</div>
+	<div class="large-cube border border-dark p-rel">
+		position-absolute (p-abs)
+		<div class="medium-cube border border-dark p-abs float-none pin-right"></div>
+	</div>
+	<div class="large-cube border border-dark">
+		position-fixed (p-fix)
+		<div class="medium-cube border border-dark p-fix float-none m-0"></div>
+	</div>
+	<div class="large-cube border border-dark p-rel">
+		position-sticky (p-sti)
+		<div class="medium-cube border border-dark p-sti float-none m-0"></div>
+	</div>
+	<div class="large-cube border border-dark">
+		position-center (p-cen)
+		<div class="medium-cube border border-dark p-cen float-none"></div>
+	</div>
+	<div class="large-cube border border-dark p-rel">
+		position-middle (p-mid)
+		<div class="medium-cube border border-dark p-mid float-none m-0"></div>
+	</div>
+	<div class="large-cube border border-dark p-rel">
+		position-absolute-center (p-abs-cen)
+		<div class="medium-cube border border-dark p-abs-cen float-none m-0"></div>
+	</div>
+	<div class="large-cube border border-dark p-rel">
+		position-top (p-abs p-top || pin-top)
+		<div class="medium-cube border border-dark p-abs p-top float-none"></div>
+	</div>	
+	<div class="large-cube border border-dark p-rel">
+		position-right (p-abs p-right || pin-right)
+		<div class="medium-cube border border-dark p-abs p-right float-none"></div>
+	</div>	
+	<div class="large-cube border border-dark p-rel">
+		position-left (p-abs p-left || pin-left)
+		<div class="medium-cube border border-dark p-abs p-left float-none"></div>
+	</div>	
+	<div class="large-cube border border-dark p-rel">
+		position-bottom (p-abs p-bottom || pin-bottom)
+		<div class="medium-cube border border-dark p-abs p-bottom float-none"></div>
+	</div>	
+
+{% endblock %}
