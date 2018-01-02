@@ -20,6 +20,13 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
 	display: none;
 }
 
+[class^='lh'] {
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+    background: #A1C5E7;
+    padding-left: 5px;
+}
+
 .small-cube {
 	width: 20px;
 	height: 20px;
@@ -35,6 +42,42 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
     margin: 10px;
     padding: 2px;
 }
+
+.large-cube {
+	width: 175px;
+	height: 175px;
+	float: left;
+	margin: 10px;
+	padding: 2px;
+}
+
+.margin-color {
+	background-color: #F9CD9D;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+.box-color {
+	box-shadow: inset 0 0 0 1rem #C4DDB8;
+}
+.box-color span {
+	background: #A1C5E7;
+}	
+.p-1.box-color {
+	box-shadow: inset 0 0 0 1rem #C4DDB8;
+}
+.p-2.box-color {
+	box-shadow: inset 0 0 0 2rem #C4DDB8;
+}
+.p-3.box-color {
+	box-shadow: inset 0 0 0 3rem #C4DDB8;
+}	
+.p-4.box-color {
+	box-shadow: inset 0 0 0 4rem #C4DDB8;
+}	
+.p-5.box-color {
+	box-shadow: inset 0 0 0 5rem #C4DDB8;
+}	
 
 /* svg */
 .fill-none {

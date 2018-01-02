@@ -1,0 +1,42 @@
+{% extends "templates/_gallery.njk" %} 
+
+{% block main %}
+<h1 class="bd-title" id="content">Overflow</h1>
+<p class="lead">If you are using visible for either overflow-x or overflow-y and something other than visible for the other, the visible value is interpreted as auto.</p>
+
+	<style>
+		.large-cube {
+			margin: 40px;
+		}
+	</style>
+	<div class="border large-cube border-dark of-v">
+		 overflow:visible;overflow:visible; overflow: visible; overflow: visible; overflow: visible; overflow: visible; overflow: visible; overflow: visible; overflow: visible;
+	</div>
+	<div class="border large-cube border-dark of-h">
+		 overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;overflow: hidden;
+	</div>
+	<div class="border large-cube border-dark of-s">
+		<span class="text-nowrap">overflow: scroll;overflow: scroll;overflow: scroll;</span>overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;overflow: scroll;
+	</div>	
+	<div class="border large-cube border-dark of-x-s text-nowrap">
+		 overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;overflow-x: scroll;
+	</div>
+	<div class="border large-cube border-dark of-x-h text-nowrap">
+		 overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;overflow-x: hidden;
+	</div>
+	<div class="border large-cube border-dark of-x-v">
+		 <span class="text-nowrap">overflow-x:visible;overflow-x:visible;</span> overflow-x: visible; overflow-x: visible; overflow-x: visible; overflow-x: visible; overflow-x: visible; overflow-x: visible;
+	</div>	
+
+	<div class="border large-cube border-dark of-y-s"> 
+		overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;overflow-y: scroll;
+	</div>
+	<div class="border large-cube border-dark of-y-h">
+		overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;overflow-y: hidden;
+	</div>
+	<div class="border large-cube border-dark of-y-v">
+		 overflow-y: visible;overflow-y: visible;overflow-y: visible;overflow-y: visible;overflow-y: visible;overflow-y: visible;overflow-y: visible;
+	</div>	
+	
+
+{% endblock %}
