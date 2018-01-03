@@ -1,0 +1,57 @@
+{% extends "templates/_demo.njk" %}
+{% block main %}
+
+<style>
+.list-group-item img {
+	width: 30px;
+	margin-right: 10px;
+	justify-items: space-between;
+}
+
+.largerimageforthese.left .list-group-item img {
+	width: 70px;
+	float: left;
+}
+
+.largerimageforthese.right .list-group-item img {
+	width: 70px;
+	float: right;
+}
+</style>
+
+<div class="container demo mt-3">
+	<ul class="list-group">
+		<li class="list-group-item"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/028.svg" alt="home_01">Home</a></li>
+		<li class="list-group-item"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/013.svg" alt="calendar_01">Calendar</a></li>
+		<li class="list-group-item"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/061.svg" alt="map_03">Maps</a></li>
+		<li class="list-group-item"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/067.svg" alt="hazard_04">Hazard</a></li>
+	</ul>
+	<ul class="list-group mt-4">
+		<li class="list-group-item"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt="social_facebook">Facebook</a></li>
+		<li class="list-group-item"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt="social_twitter">Twitter</a></li>
+	</ul>
+	<ul class="list-group mt-4">
+		<li class="list-group-item"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-11.jfif" alt="avatar_01">This bearded Fellow has a Beard</li>
+		<li class="list-group-item" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-6.jfif" alt="avatar_02">Sunglasses are low in calories and high in fiber</li>
+		<li class="list-group-item" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-14.jfif" alt="shh">Shh.....</li>
+	</ul>
+
+	<div class="row">
+		<div class="col-md-6">
+			<ul class="list-group mt-4 largerimageforthese left">
+				<li class="list-group-item"><img class="ml-2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-1.jfif" alt="avatar_01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem, molestiae dolor blanditiis eligendi deserunt saepe sapiente nostrum officiis quos, magni perspiciatis! Ab vero ex officiis veniam. Quos, aliquam maxime?</li>
+				<li class="list-group-item" href="#"><img class="ml-2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-4.jfif" alt="avatar_02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem, molestiae dolor blanditiis eligendi deserunt saepe sapiente nostrum officiis quos, magni perspiciatis! Ab vero ex officiis veniam. Quos, aliquam maxime?</li>
+				<li class="list-group-item" href="#"><img class="ml-2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-3.jfif" alt="shh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem, molestiae dolor blanditiis eligendi deserunt saepe sapiente nostrum officiis quos, magni perspiciatis! Ab vero ex officiis veniam. Quos, aliquam maxime?</li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<ul class="list-group mt-4 largerimageforthese right">
+				<li class="list-group-item"><img class="mr-2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-7.jfif" alt="avatar_01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem, molestiae dolor blanditiis eligendi deserunt saepe sapiente nostrum officiis quos, magni perspiciatis! Ab vero ex officiis veniam. Quos, aliquam maxime?</li>
+				<li class="list-group-item" href="#"><img class="mr-2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-8.jfif" alt="avatar_02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem, molestiae dolor blanditiis eligendi deserunt saepe sapiente nostrum officiis quos, magni perspiciatis! Ab vero ex officiis veniam. Quos, aliquam maxime?</li>
+				<li class="list-group-item" href="#"><img class="mr-2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/avatar-9.jfif" alt="shh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem, molestiae dolor blanditiis eligendi deserunt saepe sapiente nostrum officiis quos, magni perspiciatis! Ab vero ex officiis veniam. Quos, aliquam maxime?</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
