@@ -1,13 +1,14 @@
-{% extends "templates/_gallery.njk" %} 
-
-{% block main %}
+{% extends "templates/_gallery.njk" %} {% block main %}
 <h1 class="bd-title" id="content">Typography</h1>
-<p class="bd-lead">Two font families are available in the Template Package 4.x framework: Merriweather and Open Sans. These fonts were selected because they were designed for legibility in digital products and support complex content and scientific notation and content. Using a two font system also allows headings to be easily distinguished from regular text.</p>
+<p class="bd-lead">Two font families are available in the Template Package 4.x framework: Merriweather and Open Sans. These fonts were selected because they were designed for legibility in digital products and support complex content and scientific notation and content.
+	Using a two font system also allows headings to be easily distinguished from regular text.</p>
 <p>References: <a href="https://standards.usa.gov/
 ">U.S. Web Design Standards</a>, <a href="https://fonts.google.com">Google Fonts</a>, <a href="https://getbootstrap.com/docs/4.0/content/typography/">Bootstrap 4 Typography</a></p>
 
 <h2>Using REMs</h2>
-<p>Headings and body text use a relative unit of measurement or REM. This allows a “base” text size to be specified and other elements to be relative to this value. For example, the Paragraph Text size is 17px – this is the base 1.0 rem. The H1 as 2.5rem would be 2.5 x 17px – 42.5px. This method helps ensure consistent sizing across browsers and allows adjustments for many elements to be made by changing a single value. The conversion from rems to pixels for web display are handled by browsers and each browser has its own rounding rules for pixels values that are not whole numbers.</p>
+<p>Headings and body text use a relative unit of measurement or REM. This allows a “base” text size to be specified and other elements to be relative to this value. For example, the Paragraph Text size is 17px – this is the base 1.0 rem. The H1 as 2.5rem
+	would be 2.5 x 17px – 42.5px. This method helps ensure consistent sizing across browsers and allows adjustments for many elements to be made by changing a single value. The conversion from rems to pixels for web display are handled by browsers and each
+	browser has its own rounding rules for pixels values that are not whole numbers.</p>
 
 <h2>Heading</h2>
 <div class="demo banana">
@@ -17,13 +18,15 @@
 		<h3 class="demo">Heading Three</h3>
 		<h4>Heading Four</h4>
 		<h5>Heading Five</h5>
-		<h6>Heading Six</h6>			
+		<h6>Heading Six</h6>
 	</div>
 </div>
 <h3>Heading Specifications</h3>
 <table class="table">
 	<thead>
-		<tr class="bg-gray-lighter"><th colspan="5">For Viewports XS, S, M, L, XL</th></tr>
+		<tr class="bg-gray-lighter">
+			<th colspan="5">For Viewports XS, S, M, L, XL</th>
+		</tr>
 		<tr class="bg-gray-lightest">
 			<th>Element</th>
 			<th>Size</th>
@@ -32,7 +35,7 @@
 			<th>Weight</th>
 		</tr>
 	</thead>
-	<tbody>		
+	<tbody>
 		<tr>
 			<td>H1</td>
 			<td>2.5rem<br/>42.5px<br/>~43px</td>
@@ -81,14 +84,17 @@
 <h2>Body</h2>
 <div class="demo open">
 	<div class="bd-example">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti molestiae labore quo hic totam similique ipsum asperiores velit adipisci iusto distinctio, explicabo maiores nam magnam, amet tempore nemo facere.</p><p>Unde placeat accusantium aperiam quia aliquid culpa asperiores consequatur similique laudantium esse voluptate dolores id natus, nobis a quae harum illum vel reprehenderit assumenda. Optio deserunt voluptate placeat nobis libero!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti molestiae labore quo hic totam similique ipsum asperiores velit adipisci iusto distinctio, explicabo maiores nam magnam, amet tempore nemo facere.</p>
+		<p>Unde placeat accusantium aperiam quia aliquid culpa asperiores consequatur similique laudantium esse voluptate dolores id natus, nobis a quae harum illum vel reprehenderit assumenda. Optio deserunt voluptate placeat nobis libero!</p>
 	</div>
 </div>
 <h3>Body Specifications</h3>
 <table class="table">
 	<thead>
-		<tr class="bg-gray-lighter"><th colspan="5">For Viewports XS, S, M, L, XL</th></tr>
-		<tr class="bg-gray-lightest">		
+		<tr class="bg-gray-lighter">
+			<th colspan="5">For Viewports XS, S, M, L, XL</th>
+		</tr>
+		<tr class="bg-gray-lightest">
 			<th>Element</th>
 			<th>Size</th>
 			<th>Line-Height</th>
@@ -96,7 +102,7 @@
 			<th>Weight</th>
 		</tr>
 	</thead>
-	<tbody>		
+	<tbody>
 		<tr>
 			<td>Body Text</td>
 			<td>1.0rem<br/>17px</td>
@@ -131,7 +137,7 @@
 			<td>1.5</td>
 			<td>0rem-1.0rem</td>
 			<td>400 - normal</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td>Small Text</td>
 			<td>.8rem<br/>13.6px<br/>~14px</td>
@@ -145,7 +151,7 @@
 			<td>1.15</td>
 			<td>NA</td>
 			<td>400 - normal</td>
-		</tr>	
+		</tr>
 	</tbody>
 </table>
 
@@ -154,8 +160,8 @@
 	<div class="bd-example">
 		<p class="font-weight-normal">font-weight-400-normal</p>
 		<p class="font-weight-bold">font-weight-700-bold</p>
-<!-- 		<p class="font-italic">font-font-italic</p>
-		<div style="width: 100px; height: 34px;"><p class="text-ellipsis">text-ellipsis text-ellipsis</p></div> -->
+		<!-- 		<p class="font-italic">font-font-italic</p>
+<div style="width: 100px; height: 34px;"><p class="text-ellipsis">text-ellipsis text-ellipsis</p></div> -->
 		<p class="fw-300">font-weight-300</p>
 	</div>
 </div>
@@ -168,13 +174,15 @@
 		<p class="display-3 cb">Display Three</p>
 		<p class="display-4 cb">Display Four</p>
 		<p class="display-5 cb">Display Five</p>
-		<p class="display-6 cb">Display Six</p>			
+		<p class="display-6 cb">Display Six</p>
 	</div>
 </div>
 <h3>Display Text Specifications</h3>
 <table class="table">
 	<thead>
-		<tr class="bg-gray-lighter"><th colspan="5">For Viewports XS, S, M, L, XL</th></tr>
+		<tr class="bg-gray-lighter">
+			<th colspan="5">For Viewports XS, S, M, L, XL</th>
+		</tr>
 		<tr class="bg-gray-lightest">
 			<th>Element</th>
 			<th>Size</th>
@@ -225,7 +233,7 @@
 			<td>1.1</td>
 			<td>0rem-1.0rem</td>
 			<td>300</td>
-		</tr>	
+		</tr>
 	</tbody>
 </table>
 
@@ -242,10 +250,12 @@
 <h2>Character Sets</h2>
 <div class="bd-example demo">
 	<h3>Merriweather</h3>
-	<div class="bd-example merri">A​‌B​‌C​‌Ć​‌Č​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌č​‌ć​‌d​‌đ​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌А​‌Б​‌В​‌Г​‌Ґ​‌Д​‌Ђ​‌Е​‌Ё​‌Є​‌Ж​‌З​‌Ѕ​‌И​‌І​‌Ї​‌Й​‌Ј​‌К​‌Л​‌Љ​‌М​‌Н​‌Њ​‌О​‌П​‌Р​‌С​‌Т​‌Ћ​‌У​‌Ў​‌Ф​‌Х​‌Ц​‌Ч​‌Џ​‌Ш​‌Щ​‌Ъ​‌Ы​‌Ь​‌Э​‌Ю​‌Я​‌а​‌б​‌в​‌г​‌ґ​‌д​‌ђ​‌е​‌ё​‌є​‌ж​‌з​‌ѕ​‌и​‌і​‌ї​‌й​‌ј​‌к​‌л​‌љ​‌м​‌н​‌њ​‌о​‌п​‌р​‌с​‌т​‌ћ​‌у​‌ў​‌ф​‌х​‌ц​‌ч​‌џ​‌ш​‌щ​‌ъ​‌ы​‌ь​‌э​‌ю​‌я​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌\​‌<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*	
+	<div class="bd-example merri">A​‌B​‌C​‌Ć​‌Č​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌č​‌ć​‌d​‌đ​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌А​‌Б​‌В​‌Г​‌Ґ​‌Д​‌Ђ​‌Е​‌Ё​‌Є​‌Ж​‌З​‌Ѕ​‌И​‌І​‌Ї​‌Й​‌Ј​‌К​‌Л​‌Љ​‌М​‌Н​‌Њ​‌О​‌П​‌Р​‌С​‌Т​‌Ћ​‌У​‌Ў​‌Ф​‌Х​‌Ц​‌Ч​‌Џ​‌Ш​‌Щ​‌Ъ​‌Ы​‌Ь​‌Э​‌Ю​‌Я​‌а​‌б​‌в​‌г​‌ґ​‌д​‌ђ​‌е​‌ё​‌є​‌ж​‌з​‌ѕ​‌и​‌і​‌ї​‌й​‌ј​‌к​‌л​‌љ​‌м​‌н​‌њ​‌о​‌п​‌р​‌с​‌т​‌ћ​‌у​‌ў​‌ф​‌х​‌ц​‌ч​‌џ​‌ш​‌щ​‌ъ​‌ы​‌ь​‌э​‌ю​‌я​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌\​‌
+		<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*
 	</div>
 	<h3 class="open">Open Sans</h3>
-	<div class="bd-example open">​‌A​‌B​‌C​‌Ć​‌Č​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌č​‌ć​‌d​‌đ​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌А​‌Б​‌В​‌Г​‌Ґ​‌Д​‌Ђ​‌Е​‌Ё​‌Є​‌Ж​‌З​‌Ѕ​‌И​‌І​‌Ї​‌Й​‌Ј​‌К​‌Л​‌Љ​‌М​‌Н​‌Њ​‌О​‌П​‌Р​‌С​‌Т​‌Ћ​‌У​‌Ў​‌Ф​‌Х​‌Ц​‌Ч​‌Џ​‌Ш​‌Щ​‌Ъ​‌Ы​‌Ь​‌Э​‌Ю​‌Я​‌а​‌б​‌в​‌г​‌ґ​‌д​‌ђ​‌е​‌ё​‌є​‌ж​‌з​‌ѕ​‌и​‌і​‌ї​‌й​‌ј​‌к​‌л​‌љ​‌м​‌н​‌њ​‌о​‌п​‌р​‌с​‌т​‌ћ​‌у​‌ў​‌ф​‌х​‌ц​‌ч​‌џ​‌ш​‌щ​‌ъ​‌ы​‌ь​‌э​‌ю​‌я​‌Α​‌Β​‌Γ​‌Δ​‌Ε​‌Ζ​‌Η​‌Θ​‌Ι​‌Κ​‌Λ​‌Μ​‌Ν​‌Ξ​‌Ο​‌Π​‌Ρ​‌Σ​‌Τ​‌Υ​‌Φ​‌Χ​‌Ψ​‌Ω​‌α​‌β​‌γ​‌δ​‌ε​‌ζ​‌η​‌θ​‌ι​‌κ​‌λ​‌μ​‌ν​‌ξ​‌ο​‌π​‌ρ​‌σ​‌τ​‌υ​‌φ​‌χ​‌ψ​‌ω​‌ά​‌Ά​‌έ​‌Έ​‌έ​‌Ή​‌ί​‌ϊ​‌ΐ​‌Ί​‌ό​‌Ό​‌ύ​‌ΰ​‌ϋ​‌Ύ​‌Ϋ​‌Ώ​‌Ă​‌Â​‌Ê​‌Ô​‌Ơ​‌Ư​‌ă​‌â​‌ê​‌ô​‌ơ​‌ư​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌\​‌<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*
+	<div class="bd-example open">​‌A​‌B​‌C​‌Ć​‌Č​‌D​‌Đ​‌E​‌F​‌G​‌H​‌I​‌J​‌K​‌L​‌M​‌N​‌O​‌P​‌Q​‌R​‌S​‌Š​‌T​‌U​‌V​‌W​‌X​‌Y​‌Z​‌Ž​‌a​‌b​‌c​‌č​‌ć​‌d​‌đ​‌e​‌f​‌g​‌h​‌i​‌j​‌k​‌l​‌m​‌n​‌o​‌p​‌q​‌r​‌s​‌š​‌t​‌u​‌v​‌w​‌x​‌y​‌z​‌ž​‌А​‌Б​‌В​‌Г​‌Ґ​‌Д​‌Ђ​‌Е​‌Ё​‌Є​‌Ж​‌З​‌Ѕ​‌И​‌І​‌Ї​‌Й​‌Ј​‌К​‌Л​‌Љ​‌М​‌Н​‌Њ​‌О​‌П​‌Р​‌С​‌Т​‌Ћ​‌У​‌Ў​‌Ф​‌Х​‌Ц​‌Ч​‌Џ​‌Ш​‌Щ​‌Ъ​‌Ы​‌Ь​‌Э​‌Ю​‌Я​‌а​‌б​‌в​‌г​‌ґ​‌д​‌ђ​‌е​‌ё​‌є​‌ж​‌з​‌ѕ​‌и​‌і​‌ї​‌й​‌ј​‌к​‌л​‌љ​‌м​‌н​‌њ​‌о​‌п​‌р​‌с​‌т​‌ћ​‌у​‌ў​‌ф​‌х​‌ц​‌ч​‌џ​‌ш​‌щ​‌ъ​‌ы​‌ь​‌э​‌ю​‌я​‌Α​‌Β​‌Γ​‌Δ​‌Ε​‌Ζ​‌Η​‌Θ​‌Ι​‌Κ​‌Λ​‌Μ​‌Ν​‌Ξ​‌Ο​‌Π​‌Ρ​‌Σ​‌Τ​‌Υ​‌Φ​‌Χ​‌Ψ​‌Ω​‌α​‌β​‌γ​‌δ​‌ε​‌ζ​‌η​‌θ​‌ι​‌κ​‌λ​‌μ​‌ν​‌ξ​‌ο​‌π​‌ρ​‌σ​‌τ​‌υ​‌φ​‌χ​‌ψ​‌ω​‌ά​‌Ά​‌έ​‌Έ​‌έ​‌Ή​‌ί​‌ϊ​‌ΐ​‌Ί​‌ό​‌Ό​‌ύ​‌ΰ​‌ϋ​‌Ύ​‌Ϋ​‌Ώ​‌Ă​‌Â​‌Ê​‌Ô​‌Ơ​‌Ư​‌ă​‌â​‌ê​‌ô​‌ơ​‌ư​‌1​‌2​‌3​‌4​‌5​‌6​‌7​‌8​‌9​‌0​‌‘​‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&​‌\​‌
+		<​‌-​‌+​‌÷​‌×​‌=​‌>​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.​‌*
 	</div>
 </div>
 {% endblock %}

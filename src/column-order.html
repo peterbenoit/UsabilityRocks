@@ -1,31 +1,29 @@
-{% extends "templates/_gallery.njk" %} 
-
-{% block main %}
+{% extends "templates/_gallery.njk" %} {% block main %}
 <h1 class="bd-title" id="content">Column Order</h1>
 <p class="lead">Easily re-order columns</p>
 
 <h2>Standard</h2>
-	<div class="row">
-		<div class="col border border-dark medium-cube">1</div>
-		<div class="col border border-dark medium-cube">2</div>
-		<div class="col border border-dark medium-cube">3</div>
-		<div class="col border border-dark medium-cube">4</div>
-		<div class="col border border-dark medium-cube">5</div>
-	</div>
-<h2>Reverse Order</h2>	
-	<div class="row">
-		<div class="col border border-dark order-5 medium-cube">1 (order-5)</div>
-		<div class="col border border-dark order-4 medium-cube">2 (order-4)</div>
-		<div class="col border border-dark order-3 medium-cube">3 (order-3)</div>
-		<div class="col border border-dark order-2 medium-cube">4 (order-2)</div>
-		<div class="col border border-dark order-1 medium-cube">5 (order-1)</div>
-	</div>
-<h2>Re-ordered</h2>		
-	<div class="row">
-		<div class="col border border-dark order-3 medium-cube">1 (order-3)</div>
-		<div class="col border border-dark order-1 medium-cube">2 (order-1)</div>
-		<div class="col border border-dark order-5 medium-cube">3 (order-5)</div>
-		<div class="col border border-dark order-2 medium-cube">4 (order-2)</div>
-		<div class="col border border-dark order-4 medium-cube">5 (order-4)</div>
-	</div>
+<div class="row">
+	<div class="col border border-dark medium-cube">1</div>
+	<div class="col border border-dark medium-cube">2</div>
+	<div class="col border border-dark medium-cube">3</div>
+	<div class="col border border-dark medium-cube">4</div>
+	<div class="col border border-dark medium-cube">5</div>
+</div>
+<h2>Reverse Order</h2>
+<div class="row">
+	<div class="col border border-dark order-5 medium-cube">1 (order-5)</div>
+	<div class="col border border-dark order-4 medium-cube">2 (order-4)</div>
+	<div class="col border border-dark order-3 medium-cube">3 (order-3)</div>
+	<div class="col border border-dark order-2 medium-cube">4 (order-2)</div>
+	<div class="col border border-dark order-1 medium-cube">5 (order-1)</div>
+</div>
+<h2>Re-ordered</h2>
+<div class="row">
+	<div class="col border border-dark order-3 medium-cube">1 (order-3)</div>
+	<div class="col border border-dark order-1 medium-cube">2 (order-1)</div>
+	<div class="col border border-dark order-5 medium-cube">3 (order-5)</div>
+	<div class="col border border-dark order-2 medium-cube">4 (order-2)</div>
+	<div class="col border border-dark order-4 medium-cube">5 (order-4)</div>
+</div>
 {% endblock %}

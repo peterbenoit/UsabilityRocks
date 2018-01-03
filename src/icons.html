@@ -1,26 +1,26 @@
-{% extends "templates/_gallery.njk" %} 
-
-{% block main %}
+{% extends "templates/_gallery.njk" %} {% block main %}
 
 <h1 class="bd-title" id="content">Icons</h1>
-<p class="bd-lead">The Template Package 4.x framework includes icons to represent a variety of health topics and communication activities. The icon set also includes standard icons to represent links to social media sites and indicate links to files and external sites. All icons are managed as SVG files so they do not lose quality when changing size. SVGs also provide flexibility for color changes and allow for easier updates.</p>
+<p class="bd-lead">The Template Package 4.x framework includes icons to represent a variety of health topics and communication activities. The icon set also includes standard icons to represent links to social media sites and indicate links to files and external sites.
+	All icons are managed as SVG files so they do not lose quality when changing size. SVGs also provide flexibility for color changes and allow for easier updates.</p>
 <link rel='stylesheet prefetch' href='//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'>
 <div class="ctrl">
-	<a href="#" onclick="iconsort('standard')"><i class="mdi mdi-sort-alphabetical"></i></a> 
-	<a href="#" onclick="iconsize('plus')"><i class="mdi mdi-arrow-expand-all"></i></a>  
-	<a href="#" onclick="iconsize('minus')"><i class="mdi mdi-arrow-collapse-all"></i></a> 
+	<a href="#" onclick="iconsort('standard')"><i class="mdi mdi-sort-alphabetical"></i></a>
+	<a href="#" onclick="iconsize('plus')"><i class="mdi mdi-arrow-expand-all"></i></a>
+	<a href="#" onclick="iconsize('minus')"><i class="mdi mdi-arrow-collapse-all"></i></a>
 	<a href="#" onclick="iconsize('reset')"><i class="mdi mdi-backup-restore"></i></a>
 </div>
 
 
-{# <p><a href="#" onclick="makeSVG();this.style.display='none'">Make SVG</a></p> #}
+{#
+<p><a href="#" onclick="makeSVG();this.style.display='none'">Make SVG</a></p> #}
 
 <input type="text" id="fg" class="d-none" />
 <input type="text" id="bg" class="d-none" />
 
 <div id="standard" class="container icon-grid">
-<!-- 	img[src=http://usability.rocks/assets/$$$.svg]*114 -->
-<!-- 	<h3>Standard</h3> -->
+	<!-- 	img[src=http://usability.rocks/assets/$$$.svg]*114 -->
+	<!-- 	<h3>Standard</h3> -->
 	<div><img src="http://usability.rocks/assets/001.svg" alt="presentation_01"></div>
 	<div><img src="http://usability.rocks/assets/002.svg" alt="chart_01"></div>
 	<div><img src="http://usability.rocks/assets/003.svg" alt="stack_01"></div>

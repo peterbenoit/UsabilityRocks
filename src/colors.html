@@ -1,24 +1,24 @@
-{% extends "templates/_gallery.njk" %} 
-
-{% block main %}
+{% extends "templates/_gallery.njk" %} {% block main %}
 <h1 class="bd-title" id="content">Colors</h1>
 <p class="bd-lead mark mark-yellow">Lead Text</p>
 
 <style>
-	table span, table a {
+	table span,
+	table a {
 		display: block;
 	}
-	
+
 	.col-4 {
 		display: flex;
 	}
+
 	.col-4 span {
 		display: inline-block;
 		width: 150px;
 		margin-left: 5px;
 	}
 </style>
-	
+
 <h3>Color Combinations</h3>
 <div class="row">
 	<div class="col-4">
@@ -27,7 +27,7 @@
 		<div class="small-cube bg-blue-t"></div>
 		<div class="small-cube bg-orange-p"></div>
 		<div class="small-cube bg-orange-s"></div>
-		<div class="small-cube bg-orange-t"></div>		
+		<div class="small-cube bg-orange-t"></div>
 		<span>blue, orange</span>
 	</div>
 	<div class="col-4">
@@ -36,7 +36,7 @@
 		<div class="small-cube bg-purple-t"></div>
 		<div class="small-cube bg-orange-p"></div>
 		<div class="small-cube bg-orange-s"></div>
-		<div class="small-cube bg-orange-t"></div>		
+		<div class="small-cube bg-orange-t"></div>
 		<span>purple, orange</span>
 	</div>
 	<div class="col-4">
@@ -45,7 +45,7 @@
 		<div class="small-cube bg-green-t"></div>
 		<div class="small-cube bg-orange-p"></div>
 		<div class="small-cube bg-orange-s"></div>
-		<div class="small-cube bg-orange-t"></div>		
+		<div class="small-cube bg-orange-t"></div>
 		<span>green, orange</span>
 	</div>
 </div>
@@ -56,16 +56,16 @@
 		<div class="small-cube bg-indigo-t"></div>
 		<div class="small-cube bg-amber-p"></div>
 		<div class="small-cube bg-amber-s"></div>
-		<div class="small-cube bg-amber-t"></div>		
+		<div class="small-cube bg-amber-t"></div>
 		<span>indigo, amber</span>
-	</div>	
+	</div>
 	<div class="col-4">
 		<div class="small-cube bg-cyan-p"></div>
 		<div class="small-cube bg-cyan-s"></div>
 		<div class="small-cube bg-cyan-t"></div>
 		<div class="small-cube bg-pink-p"></div>
 		<div class="small-cube bg-pink-s"></div>
-		<div class="small-cube bg-pink-t"></div>		
+		<div class="small-cube bg-pink-t"></div>
 		<span>cyan, pink</span>
 	</div>
 	<div class="col-4">
@@ -74,9 +74,9 @@
 		<div class="small-cube bg-purple-t"></div>
 		<div class="small-cube bg-cyan-p"></div>
 		<div class="small-cube bg-cyan-s"></div>
-		<div class="small-cube bg-cyan-t"></div>		
+		<div class="small-cube bg-cyan-t"></div>
 		<span>purple, cyan</span>
-	</div>	
+	</div>
 </div>
 <div class="row mt-1">
 	<div class="col-4">
@@ -85,16 +85,16 @@
 		<div class="small-cube bg-teal-t"></div>
 		<div class="small-cube bg-purple-p"></div>
 		<div class="small-cube bg-purple-s"></div>
-		<div class="small-cube bg-purple-t"></div>		
+		<div class="small-cube bg-purple-t"></div>
 		<span>teal, purple</span>
-	</div>	
+	</div>
 	<div class="col-4">
 		<div class="small-cube bg-brown-p"></div>
 		<div class="small-cube bg-brown-s"></div>
 		<div class="small-cube bg-brown-t"></div>
 		<div class="small-cube bg-blue-p"></div>
 		<div class="small-cube bg-blue-s"></div>
-		<div class="small-cube bg-blue-t"></div>		
+		<div class="small-cube bg-blue-t"></div>
 		<span>brown, blue</span>
 	</div>
 	<div class="col-4">
@@ -103,9 +103,9 @@
 		<div class="small-cube bg-purple-t"></div>
 		<div class="small-cube bg-green-p"></div>
 		<div class="small-cube bg-green-s"></div>
-		<div class="small-cube bg-green-t"></div>		
+		<div class="small-cube bg-green-t"></div>
 		<span>purple, green</span>
-	</div>	
+	</div>
 </div>
 <div class="row mt-1">
 	<div class="col-4">
@@ -114,16 +114,16 @@
 		<div class="small-cube bg-slate-t"></div>
 		<div class="small-cube bg-amber-p"></div>
 		<div class="small-cube bg-amber-s"></div>
-		<div class="small-cube bg-amber-t"></div>		
+		<div class="small-cube bg-amber-t"></div>
 		<span>slate, amber</span>
-	</div>	
+	</div>
 	<div class="col-4">
 		<div class="small-cube bg-purple-p"></div>
 		<div class="small-cube bg-purple-s"></div>
 		<div class="small-cube bg-purple-t"></div>
 		<div class="small-cube bg-green-p"></div>
 		<div class="small-cube bg-green-s"></div>
-		<div class="small-cube bg-green-t"></div>		
+		<div class="small-cube bg-green-t"></div>
 		<span>purple, green</span>
 	</div>
 	<div class="col-4">
@@ -132,9 +132,9 @@
 		<div class="small-cube bg-brown-t"></div>
 		<div class="small-cube bg-green-p"></div>
 		<div class="small-cube bg-green-s"></div>
-		<div class="small-cube bg-green-t"></div>		
+		<div class="small-cube bg-green-t"></div>
 		<span>brown, green</span>
-	</div>	
+	</div>
 </div>
 
 <h3>Color Specifications</h3>
@@ -149,318 +149,318 @@
 	<tbody class="demo">
 		<tr>
 			<td class="bg-blue-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>blue-primary</td>
 			<td>#005eaa<br>rgb(0, 94, 170)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-blue-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>blue-secondary</td>
 			<td>#88c3ea<br>rgb(136, 195, 234)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-blue-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>blue-tertiary</td>
 			<td>#c0e9ff<br>rgb(192, 233, 255)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-purple-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>purple-primary</td>
 			<td>#712177<br>rgb(113, 33, 119)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-purple-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>purple-secondary</td>
 			<td>#b890bb<br>rgb(184, 144, 187)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-purple-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>purple-tertiary</td>
 			<td>#e3d3e4<br>rgb(227, 211, 228)</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td class="bg-teal-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>teal-primary</td>
 			<td>#00695c<br>rgb(0, 105, 92)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-teal-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>teal-secondary</td>
 			<td>#4ebaaa<br>rgb(78, 186, 170)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-teal-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>teal-tertiary</td>
 			<td>#ceece7<br>rgb(206, 236, 231)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-green-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>green-primary</td>
 			<td>#4b830d<br>rgb(75, 131, 13)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-green-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>green-secondary</td>
 			<td>#84bc49<br>rgb(132, 188, 73)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-green-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>green-tertiary</td>
 			<td>#dcedc8<br>rgb(220, 237, 200)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-orange-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>orange-primary</td>
 			<td>#bb4d00<br>rgb(187, 77, 0)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-orange-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>orange-secondary</td>
 			<td>#ffad42<br>rgb(255, 173, 66)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-orange-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>orange-tertiary</td>
 			<td>#ffe97d<br>rgb(255, 233, 125)</td>
 		</tr>
 		<tr>
 			<td class="bg-brown-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>brown-primary</td>
 			<td>#705043<br>rgb(112, 80, 67)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-brown-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>brown-secondary</td>
 			<td>#ad907b<br>rgb(173, 144, 123)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-brown-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>brown-tertiary</td>
 			<td>#d7ccc8<br>rgb(214, 205, 200)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-pink-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>pink-primary</td>
 			<td>#af4448<br>rgb(175, 68, 72)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-pink-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>pink-secondary</td>
 			<td>#e57373<br>rgb(229, 115, 115)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-pink-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>pink-tertiary</td>
 			<td>#ffc2c2<br>rgb(255, 194, 194)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-amber-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>amber-primary</td>
 			<td>#fbab18<br>rgb(251, 171, 24)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-amber-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>amber-secondary</td>
 			<td>#ffd54f<br>rgb(255, 213, 79)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-amber-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>amber-tertiary</td>
 			<td>#ffecb3<br>rgb(255, 236, 179)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-slate-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>slate-primary</td>
 			<td>#29434e<br>rgb(41, 67, 78)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-slate-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>slate-secondary</td>
 			<td>#7e9ba5<br>rgb(126, 155, 165)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-slate-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>slate-tertiary</td>
 			<td>#b6c6d2<br>rgb(182, 198, 210)</td>
 		</tr>
 		<tr>
 			<td class="bg-indigo-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>indigo-primary</td>
 			<td>#26418f<br>rgb(38, 65, 143)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-indigo-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>indigo-secondary</td>
 			<td>#92a6dd<br>rgb(146, 166, 221)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-indigo-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>indigo-tertiary</td>
 			<td>#dee8ff<br>rgb(222, 232, 255)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-cyan-p">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>cyan-primary</td>
 			<td>#007c91<br>rgb(0, 124, 145)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-cyan-s">
-                <span class="text-black">Text Black</span>
-                <a href="#" class="text-black">Link Black</a>            
-            </td>
+				<span class="text-black">Text Black</span>
+				<a href="#" class="text-black">Link Black</a>
+			</td>
 			<td>cyan-secondary</td>
 			<td>#65b0bd<br>rgb(101, 176, 189)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-cyan-t">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>cyan-tertiary</td>
 			<td>#cce5e9<br>rgb(204, 229, 233)</td>
 		</tr>
-		
+
 		<tr>
 			<td class="bg-gray-d2">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>gray-darker</td>
 			<td>#333333<br>rgb(51, 51, 51)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-gray-d1">
-                <span class="text-white">Text White</span>
-                <a href="#" class="text-white">Link White</a>            
-            </td>
+				<span class="text-white">Text White</span>
+				<a href="#" class="text-white">Link White</a>
+			</td>
 			<td>gray-dark</td>
 			<td>#555555<br>rgb(85, 85, 85)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-gray">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>gray</td>
 			<td>#bdbdbd<br>rgb(189, 189, 189)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-gray-l1">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>gray-light</td>
 			<td>#e0e0e0<br>rgb(224, 224, 224)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-gray-l2">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>gray-lighter</td>
 			<td>#f0f0f0<br>rgb(240, 240, 240)</td>
-		</tr>		
+		</tr>
 		<tr>
 			<td class="bg-gray-l3">
-                <span>Text Black</span>
-                <a href="#">Link Blue</a>            
-            </td>
+				<span>Text Black</span>
+				<a href="#">Link Blue</a>
+			</td>
 			<td>gray-lightest</td>
 			<td>#f5f5f5<br>rgb(245, 245, 245)</td>
-		</tr>		
+		</tr>
 	</tbody>
-</table>		
-	
+</table>
+
 {% endblock %}

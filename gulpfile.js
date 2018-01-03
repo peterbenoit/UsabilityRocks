@@ -7,7 +7,8 @@ var gulp = require( 'gulp' ),
     livereload = require('gulp-livereload'),
     watch = require( 'gulp-watch' ),
     nodemon = require('gulp-nodemon'),
-    htmlbeautify = require('gulp-html-beautify');
+    htmlbeautify = require('gulp-html-beautify'),
+    trimlines = require('gulp-trimlines');
 
 var COMPILE = {
     ALL: 'src/**',
@@ -16,6 +17,12 @@ var COMPILE = {
     SASS: 'src/scss/*.scss',
     JS: 'src/js/*.js'
 };
+
+gulp.task( 'trim', function() {
+    return gulp.src( 'src/*.html' )
+      .pipe(trimlines({leading: false}))
+      .pipe(gulp.dest( './src/' ));
+} );
 
 gulp.task( 'render', function() {
     return gulp.src( COMPILE.SRC )
@@ -26,7 +33,7 @@ gulp.task( 'render', function() {
 
 gulp.task( 'sass', function() {
     return gulp.src( COMPILE.SASS )
-    .pipe( sourcemaps.init() ) 
+    .pipe( sourcemaps.init() )
     .pipe( sass().on( 'error', sass.logError ) )
     .pipe( sourcemaps.write() )
     .pipe( gulp.dest( COMPILE.DEST + '/css' ) )
@@ -35,7 +42,7 @@ gulp.task( 'sass', function() {
 
 gulp.task( 'minify', function() {
     return gulp.src( COMPILE.JS )
-    .pipe( minify() ) 
+    .pipe( minify() )
     .pipe( gulp.dest( COMPILE.DEST + '/js' ) )
     .pipe( livereload() );
 } );
@@ -49,27 +56,31 @@ gulp.task( 'copy', function() {
     gulp.src( ['src/assets/**'] )
     .pipe( gulp.dest('dist/assets') );
     gulp.src( ['src/contrib/**'] )
-    .pipe( gulp.dest('dist/contrib') );    
+    .pipe( gulp.dest('dist/contrib') );
 } );
 
 gulp.task('beautify', function() {
     var options = {
         "indent_with_tabs": true,
         "brace_style": "expand",
-        "break_chained_methods": true
+        "break_chained_methods": true,
+        "indent_size": 4,
+        "indent_char": " ",
+        "eol": "\n",
+        "indent_level": 0,
     };
-    gulp.src( './src/assets/*.svg' )
+    gulp.src( './src/*.html' )
       .pipe( htmlbeautify( options ) )
-      .pipe( gulp.dest( './dist/assets' ) );
+      .pipe( gulp.dest( './src/' ) );
 } );
 
-gulp.task('server',function(){  
+gulp.task('server',function(){
     nodemon({
         'script': 'app.js',
         'ignore': 'dist/js/*.js'
     });
 });
 
-gulp.task( 'serve', ['server','watch'] ); 
+gulp.task( 'serve', ['server','watch'] );
 
 gulp.task( 'default', ['render', 'sass', 'minify', 'copy'] );

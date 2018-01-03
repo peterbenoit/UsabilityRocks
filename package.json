@@ -2686,6 +2686,7 @@
 		"gulp-nunjucks": "^3.0.0",
 		"gulp-sass": "^3.1.0",
 		"gulp-sourcemaps": "^2.6.1",
+		"gulp-trimlines": "^1.0.1",
 		"gulp-uglify": "^3.0.0",
 		"gulp-watch": "^4.3.11",
 		"jshint": "^2.9.5"

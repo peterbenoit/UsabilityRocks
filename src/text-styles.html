@@ -1,11 +1,10 @@
-{% extends "templates/_gallery.njk" %} 
-
-{% block main %}
+{% extends "templates/_gallery.njk" %} {% block main %}
 <h1 class="bd-title" id="content">Text Styles</h1>
 <p class="bd-lead">The Template Package 4.x framework provides a variety of Text Styles that can be used to emphasize specific kinds of text, draw users' attention, or alert them to important information.</p>
 <h2>Italics</h2>
 <div class="bd-example">
-	<p>Lorem ipsum dolor <i>sit</i> amet consectetur <em>adipisicing elit</em>. Similique <span class="text-italic">reiciendis amet</span> itaque, <b><em>modi architecto</em></b> velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? Aliquid earum hic aliquam quos laudantium.</p>
+	<p>Lorem ipsum dolor <i>sit</i> amet consectetur <em>adipisicing elit</em>. Similique <span class="text-italic">reiciendis amet</span> itaque, <b><em>modi architecto</em></b> velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? Aliquid
+		earum hic aliquam quos laudantium.</p>
 </div>
 <h3>Guidance for Italics</h3>
 <h4>Use to:</h4>
@@ -19,20 +18,26 @@
 </ul>
 <h4>Options:</h4>
 <ul>
-	<li>To improve the readabilty of italicized text used in the Body, and additional space may be automatically inserted between the italicized character and the next character by using the <code class="highlighter-rouge">.tp-pad-italics</code> class on a parent element.</li>
+	<li>To improve the readabilty of italicized text used in the Body, and additional space may be automatically inserted between the italicized character and the next character by using the <code class="highlighter-rouge">.tp-pad-italics</code> class on a parent
+		element.
+	</li>
 </ul>
 
 <div class="bd-example">
 	<p class="tp-pad-italics">Lorem ipsum dolor, sit amet consectetur adipisicing <em>elit</em>. Obcaecati tempore <i>deserunt</i> dolor reiciendis vero assumenda</p>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class="tp-pad-italics"&gt;Lorem ipsum dolor, sit amet consectetur adipisicing &lt;em&gt;elit&lt;/em&gt;. Obcaecati tempore &lt;i&gt;deserunt&lt;/i&gt; dolor reiciendis vero assumenda&lt;/p&gt;</code></pre></figure>
+<figure class="highlight">
+	<pre><code class="language-html" data-lang="html">&lt;p class="tp-pad-italics"&gt;Lorem ipsum dolor, sit amet consectetur adipisicing &lt;em&gt;elit&lt;/em&gt;. Obcaecati tempore &lt;i&gt;deserunt&lt;/i&gt; dolor reiciendis vero assumenda&lt;/p&gt;</code></pre>
+</figure>
 
 <h2>Text Colors</h2>
 <p>Red text is available to alert users to critical information.</p>
 <h3>Text Color Examples</h3>
 <div class="bd-example">
 	<p><b class="color-red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Possimus deleniti molestiae labore quo hic totam similique ipsum asperiores velit adipisci iusto distinctio, explicabo maiores nam magnam, amet tempore nemo facere.</p>
-	<p>Unde placeat <span class="color-red">accusantium aperiam quia aliquid</span> culpa asperiores consequatur similique laudantium esse voluptate dolores id natus, nobis a quae harum illum vel reprehenderit assumenda. Optio deserunt voluptate placeat nobis libero!</p>
+	<p>Unde placeat <span class="color-red">accusantium aperiam quia aliquid</span> culpa asperiores consequatur similique laudantium esse voluptate dolores id natus, nobis a quae harum illum vel reprehenderit assumenda. Optio deserunt voluptate placeat nobis
+		libero!
+	</p>
 </div>
 
 <h3>Guidance for Red Text</h3>
@@ -44,7 +49,9 @@
 	<li>Alert users to outages or global system issues</li>
 </ul>
 <h4>Avoid:</h4>
-<ul><li>Placement on a background color other than white</li></ul>
+<ul>
+	<li>Placement on a background color other than white</li>
+</ul>
 <h4>Do not:</h4>
 <ul>
 	<li>Use for links, Headings, or Titles</li>
@@ -67,13 +74,15 @@
 			<td class="bg-red"></td>
 			<td>.c-red</td>
 			<td>#8f0000<br>rgb(143,0,0)</td>
-		</tr>		
+		</tr>
 	</tbody>
 </table>
 
 
 <h2>Blockquotes</h2>
-<p>Blockquotes are used to emphasize and reference quotes from an individual in an article or another source. They typically have a unique style as a way to highlight a specific point or face in an article and are displayed withing paragraphs of a content page.</p>
+<p>Blockquotes are used to emphasize and reference quotes from an individual in an article or another source. They typically have a unique style as a way to highlight a specific point or face in an article and are displayed withing paragraphs of a content
+	page.
+</p>
 <h3>Blockquote Examples</h3>
 <div class="row buttons ml-0 mt-5">
 	<a href="412px" class="rounded-top-left col">XS</a>
@@ -88,7 +97,7 @@
 	<li><b>Quote Text:</b> Open Sans, <a href="typography.html#body-specifications">Block Quote</a>, black</li>
 	<li><b>Source Text:</b> always preceded by a hyphen, Open Sans, <a href="typography.html#body-specifications">Small Text</a>, gray_darker</li>
 	<li><b>Padding:</b> p-3 (top, right, bottom, left)</li>
-	<li><b>Margin:</b> m-3 (bottom only)</li> 
+	<li><b>Margin:</b> m-3 (bottom only)</li>
 	<li><b>Borders:</b>
 		<ul>
 			<li><b>Accent:</b> br-1, bl-3, b-gray-l3</li>
@@ -103,6 +112,4 @@
 	</li>
 </ul>
 <h2>Alerts</h2>
-<span class="mark mark-yellow">TBD</span>
-
-{% endblock %}
+<span class="mark mark-yellow">TBD</span> {% endblock %}

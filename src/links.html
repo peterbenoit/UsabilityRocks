@@ -1,34 +1,42 @@
-{% extends "templates/_gallery.njk" %} 
-
-{% block main %}
+{% extends "templates/_gallery.njk" %} {% block main %}
 <h1 class="bd-title" id="content">Links</h1>
-<p class="bd-lead">Many kinds of links may be used in CDC digital communications, such as CDC.gov. Most links should point to other CDC managed pages within the same website or other CDC websites. Some may also direct users to non-HTML files such as PDFs or non-CDC content on other federal or external websites. The text, styles, and behaviors for links on CDC.gov will vary depending on the type of link, where the link is placed, HHS/CDC Web Standards, and usability best practices.</p>
+<p class="bd-lead">Many kinds of links may be used in CDC digital communications, such as CDC.gov. Most links should point to other CDC managed pages within the same website or other CDC websites. Some may also direct users to non-HTML files such as PDFs or non-CDC content
+	on other federal or external websites. The text, styles, and behaviors for links on CDC.gov will vary depending on the type of link, where the link is placed, HHS/CDC Web Standards, and usability best practices.</p>
 <h2>Link Text</h2>
-<p>For any kind of link, the link text should clearly describe the action or the content of the target page. Links to content should use keywords that help guide users to the content they need. Avoid using non-descriptive or repetitive words such as “more” or “click here” in buttons or paragraphs or text. This approach is especially important for users requiring assistive technologies, such as screens readers, to access the content. Screen readers read the text aloud and generally precede the text of a link by saying “link” or “visited link.” Be aware tha screen readers may allow users to extract the links into an alphabetically-organized list, using a keyboard shortcut within their screen reader software for that purpose. This is especially useful if they have an idea of first letter of the link for which they are looking.</p>
+<p>For any kind of link, the link text should clearly describe the action or the content of the target page. Links to content should use keywords that help guide users to the content they need. Avoid using non-descriptive or repetitive words such as “more”
+	or “click here” in buttons or paragraphs or text. This approach is especially important for users requiring assistive technologies, such as screens readers, to access the content. Screen readers read the text aloud and generally precede the text of a
+	link by saying “link” or “visited link.” Be aware tha screen readers may allow users to extract the links into an alphabetically-organized list, using a keyboard shortcut within their screen reader software for that purpose. This is especially useful
+	if they have an idea of first letter of the link for which they are looking.</p>
 <h2>Standard Links</h2>
 <p>Standard Links point to other CDC HTML content and may be displayed on their own or embedded in text. Standard Links are underlined by default so they are more easily distinguished from regular text, especially when embedded within sentences or paragraphs.</p>
 <div class="bd-example demo">
 	<a href="#">Standard Link</a>
-	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam nam possimus, This is a <a href="#">Standard Link</a> embedded in a paragraph quidem aut esse cupiditate. Vel quis rem amet vitae. Iure numquam nam facilis, velit dignissimos labore tempora! Maiores?</p><p>Exercitationem quisquam fugiat ex magnam eum autem, impedit voluptate esse debitis repellendus voluptatem corporis, ratione nam? Repudiandae quos odio voluptate! Aliquid quam distinctio eligendi. Quo doloribus deserunt esse quia voluptatibus.</p>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio magnam nam possimus, This is a <a href="#">Standard Link</a> embedded in a paragraph quidem aut esse cupiditate. Vel quis rem amet vitae. Iure numquam nam facilis, velit dignissimos labore
+		tempora! Maiores?</p>
+	<p>Exercitationem quisquam fugiat ex magnam eum autem, impedit voluptate esse debitis repellendus voluptatem corporis, ratione nam? Repudiandae quos odio voluptate! Aliquid quam distinctio eligendi. Quo doloribus deserunt esse quia voluptatibus.</p>
 	<ul>
 		<li>This is a list item with a <a href="#">Standard Link</a> embedded in the text.</li>
 		<li>This is a second list item with a <a href="#">Standard Link</a> embedded in the text.</li>
 		<li>A <a href="#">Standard Link</a> can be embedded within list items like this.</li>
 	</ul>
 	<ul class="list-group">
-	  <li class="list-group-item"><a href="#">This is a list item with a <a href="#">Standard Link</a> embedded in the text.</a></li>
-	  <li class="list-group-item"><a href="#">This is a second list item with a <a href="#">Standard Link</a> embedded in the text.</a></li>
-	  <li class="list-group-item"><a href="#">A <a href="#">Standard Link</a> can be embedded within list items like this.</a></li>
-	</ul>		
+		<li class="list-group-item"><a href="#">This is a list item with a <a href="#">Standard Link</a> embedded in the text.</a>
+		</li>
+		<li class="list-group-item"><a href="#">This is a second list item with a <a href="#">Standard Link</a> embedded in the text.</a>
+		</li>
+		<li class="list-group-item"><a href="#">A <a href="#">Standard Link</a> can be embedded within list items like this.</a>
+		</li>
+	</ul>
 </div>
 <h3>Standard Link Specifications</h3>
 <ul>
-<li><b>Color:</b> blue-primary</li>
-<li><b>Underline:</b> underline by default, no underline on rollover</li>
-<li><b>Behavior:</b> open in same browser window/tab by default, may open new windows as a result of users’ selected browser settings, devices, and platforms</li>
+	<li><b>Color:</b> blue-primary</li>
+	<li><b>Underline:</b> underline by default, no underline on rollover</li>
+	<li><b>Behavior:</b> open in same browser window/tab by default, may open new windows as a result of users’ selected browser settings, devices, and platforms</li>
 </ul>
 <h2>List Links</h2>
-<p>In some cases, grouping, placement, headings, background colors, or other styles provide users with cues about items and which items can be selected - which are links. These cues allow the way Standard Links are normally displayed to be changed. Because links appear as a single group in a List of Links, the links are not underlined by default to improve legibility.</p>
+<p>In some cases, grouping, placement, headings, background colors, or other styles provide users with cues about items and which items can be selected - which are links. These cues allow the way Standard Links are normally displayed to be changed. Because
+	links appear as a single group in a List of Links, the links are not underlined by default to improve legibility.</p>
 <div class="bd-example demo">
 	<ul>
 		<li><a href="#">This entire list item is a link.</a></li>
@@ -36,9 +44,9 @@
 		<li><a href="#">This entire list item is a link.</a></li>
 	</ul>
 	<ul class="list-group mt-3">
-	  <li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
-	  <li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
-	  <li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
+		<li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
+		<li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
+		<li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
 	</ul>
 	<ul class="mt-3">
 		<li><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
@@ -46,21 +54,24 @@
 		<li><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
 	</ul>
 	<ul class="list-group mt-3">
-	  <li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
-	  <li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
-	  <li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
-	</ul>	
+		<li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
+		<li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
+		<li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
+	</ul>
 </div>
 <h3>Guidance for List Links</h3>
 <p>To improve the readability of links displayed in Lists in which every item is a link, a special class can be applied to hide the link underlines by default (display underline on rollover).</p>
 <p>This can be achieved by applying the classes <code>.td-none</code> and <code>.td-ul-hover</code> to these links.</p>
 
 <h2>Non-HTML Links</h2>
-<p>Non-HTML files include PDFs, Word documents, and PowerPoint presentations &ndash; anything that is not a “standard” web page and may require users to have additional plug-ins to access the content in the file. <b>The use of non-HTML files to provide CDC content should be avoided.</b> In most instances, the content contained within these files could <span class="mark-red">and should be integrated into the <span class="color-red">WCMS</span> to be managed and displayed as “standard” web content</span>. This approach best supports accessibility, Search Engine Optimization (SEO), and usability as well as consistent web management practices.</p>
+<p>Non-HTML files include PDFs, Word documents, and PowerPoint presentations &ndash; anything that is not a “standard” web page and may require users to have additional plug-ins to access the content in the file. <b>The use of non-HTML files to provide CDC content should be avoided.</b>	In most instances, the content contained within these files could <span class="mark-red">and should be integrated into the <span class="color-red">WCMS</span> to be managed and displayed as “standard” web content</span>. This approach best supports accessibility,
+	Search Engine Optimization (SEO), and usability as well as consistent web management practices.</p>
 <div class="bd-example demo">
 </div>
 <h3>Non-HTML Link File Icons</h3>
-<p>CDC standardizes the display of icons to represent the file type so that users have an additional cue they are opening a file. Non-HTML links should allow wrapping within the text and between the file icon and detail so that these are always displayed together.</p>
+<p>CDC standardizes the display of icons to represent the file type so that users have an additional cue they are opening a file. Non-HTML links should allow wrapping within the text and between the file icon and detail so that these are always displayed
+	together.
+</p>
 <table>
 	<thead>
 		<tr class="bg-gray-lighter">
@@ -74,7 +85,7 @@
 			<td></td>
 			<td></td>
 			<td></td>
-		</tr>		
+		</tr>
 	</tbody>
 </table>
 

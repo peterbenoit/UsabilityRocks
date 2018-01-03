@@ -1,32 +1,8 @@
-
-    <div class="swatches">
-   {% set colors = [
-        {
-          "color_name"  : "brandColor",
-          "color_value" : "#f06d06",
-          "color_notes" : "Our main color."
-
-        },
-        {
-          "color_name"  : "brandHighlight",
-          "color_value" : "#d0b000",
-          "color_notes" : "For callouts and highlights."
-        },
-        {
-          "color_name"  : "grayDark",
-          "color_value" : "#333333",
-          "color_notes" : "For things like code block backgrounds."
-        }  
-      ]
-    %}
+<div class="swatches">
+	{% set colors = [ { "color_name" : "brandColor", "color_value" : "#f06d06", "color_notes" : "Our main color." }, { "color_name" : "brandHighlight", "color_value" : "#d0b000", "color_notes" : "For callouts and highlights." }, { "color_name" : "grayDark",
+	"color_value" : "#333333", "color_notes" : "For things like code block backgrounds." } ] %}
 
 
-    <div class="swatches">
-    {% for color in colors %}
-
-      {{ 
-         color.color_notes
-      }}
-
-    {% endfor %}
-		</div>
+	<div class="swatches">
+		{% for color in colors %} {{ color.color_notes }} {% endfor %}
+	</div>
