@@ -8,7 +8,7 @@
 	font-size: 17px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 
 	a {
@@ -36,6 +36,15 @@
 			text-decoration: none;
 		}
 	}
+
+	blockquote {
+		&.with-quote {
+			p:before, p:after {
+				content: '\201C';
+			}
+		}
+	}
+
 	.card {
 		/* headings in cards should not be Merriweather */
 		h1, h2, h3, h4, h5, h6 {
@@ -44,7 +53,7 @@
 			margin-top: 0;
 			margin-bottom: 0;
 		}
-	}	
+	}
 	.merry,
 	.merri {
 		font-family: "Merriweather", serif;
@@ -52,14 +61,14 @@
 	.open {
 		font-family: "Open Sans", sans-serif;
 	}
-	
+
 	// add a space after italics
 	.italicize {
 		i:after, em:after, .italic:after, .text-italic:after {
 			content: "\00a0";
-		}	
+		}
 	}
-	
+
 	h1, .h1 {
 		font-size: 3rem;
 	}
