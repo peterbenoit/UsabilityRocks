@@ -12,14 +12,14 @@ var gulp = require( 'gulp' ),
 
 var COMPILE = {
     ALL: 'src/**',
-    SRC: 'src/*.html',
+    SRC: 'src/**/*.html',
     DEST: 'dist',
     SASS: 'src/scss/*.scss',
     JS: 'src/js/*.js'
 };
 
 gulp.task( 'trim', function() {
-    return gulp.src( 'src/*.html' )
+    return gulp.src( 'src/**/*.njk' )
       .pipe(trimlines({leading: false}))
       .pipe(gulp.dest( './src/' ));
 } );
@@ -57,6 +57,8 @@ gulp.task( 'copy', function() {
     .pipe( gulp.dest('dist/assets') );
     gulp.src( ['src/contrib/**'] )
     .pipe( gulp.dest('dist/contrib') );
+    gulp.src( ['src/demos/**'] )
+    .pipe( gulp.dest('dist/demos') );
 } );
 
 gulp.task('beautify', function() {
@@ -69,7 +71,7 @@ gulp.task('beautify', function() {
         "eol": "\n",
         "indent_level": 0,
     };
-    gulp.src( './src/*.html' )
+    gulp.src( './src/**/*.html' )
       .pipe( htmlbeautify( options ) )
       .pipe( gulp.dest( './src/' ) );
 } );
