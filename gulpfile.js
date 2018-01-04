@@ -33,9 +33,9 @@ gulp.task( 'render', function() {
 
 gulp.task( 'sass', function() {
     return gulp.src( COMPILE.SASS )
-    .pipe( sourcemaps.init() )
-    .pipe( sass().on( 'error', sass.logError ) )
-    .pipe( sourcemaps.write() )
+    // .pipe( sourcemaps.init() )
+    .pipe( sass({outputStyle: 'compressed'}).on( 'error', sass.logError ) )
+    // .pipe( sourcemaps.write() )
     .pipe( gulp.dest( COMPILE.DEST + '/css' ) )
     .pipe( livereload() );
 } );
