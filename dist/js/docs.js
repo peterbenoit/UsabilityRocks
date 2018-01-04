@@ -1,15 +1,18 @@
 var path = window.location.pathname.split( '/' ).pop();
+
 $( '.nav a' ).each( function() {
 	var href = $( this ).attr( 'href' );
 	if ( path.substring( 0, href.length ) === href ) {
 		$( this ).closest( 'li' ).addClass( 'active' );
 	}
 } );
+
 $( '.buttons a' ).on( 'click', function() {
 	var h = $( this ).attr( 'href' );
 	$( this ).parent().next( 'iframe' ).css( 'width', h );
 	return false;
 } );
+
 $( function() {
 	var nav = '';
 	var el, title, link, name, val, curval = 0;
@@ -39,6 +42,20 @@ $( function() {
 		a.className += "rounded-top-right col";
 		$( t ).prev().append( a );
 	} );
+
+	$( '.bd-example:not(.prism-ignore)' ).each( function() { 
+		var $t = $( this ),
+			html = $t.html();
+		
+		if ( html.trim().length > 0 ) {
+			$t.after( '<pre class="language-html"><code>' + $('<div/>').text( html ).html() + '</code></pre>' );
+		}
+	} );
+	//-line-numbers
+	$( '.bd-example' ).promise().done( function() {
+		Prism.highlightAll();
+	} );
+	
 
 	var url = window.location.pathname,
 		target = $( "a[href='" + url.substring( url.lastIndexOf( '/' ) + 1 ) + "']" );

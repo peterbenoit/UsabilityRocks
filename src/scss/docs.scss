@@ -27,6 +27,25 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
     padding-left: 5px;
 }
 
+// prism
+pre[class*="language-"] {
+	margin-top: 0;
+	overflow: hidden;
+}
+
+pre.code-toolbar > .toolbar {
+	opacity: 1!important;
+}
+
+pre.code-toolbar > .toolbar a, pre.code-toolbar > .toolbar button, pre.code-toolbar > .toolbar span {
+	color: #222;
+	border-radius: 0;
+	box-shadow: none;
+	font-size: 1rem;
+	background-color: transparent;
+	text-shadow: none;
+}
+
 .small-cube {
 	width: 20px;
 	height: 20px;

@@ -16,8 +16,9 @@
 	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
 	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css">
 	<link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.3/dist/instantsearch-theme-algolia.min.css">
-	<link rel="stylesheet prefetch" href="https://cdn.rawgit.com/twbs/bootstrap/gh-pages/assets/css/docs.min.css">
-	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.css">
+		
+	<link rel="stylesheet prefetch" href="contrib/docs.min.css">
+	<link rel="stylesheet prefetch" href="contrib/prism.css">
 	<link rel="stylesheet" href="contrib/spectrum.css?04">
 
 	<style>
@@ -277,8 +278,11 @@
 <p class="bd-lead">The Template Package 4.x framework provides a variety of Text Styles that can be used to emphasize specific kinds of text, draw users' attention, or alert them to important information.</p>
 <h2>Italics</h2>
 <div class="bd-example">
-	<p>Lorem ipsum dolor <i>sit</i> amet consectetur <em>adipisicing elit</em>. Similique <span class="text-italic">reiciendis amet</span> itaque, <b><em>modi architecto</em></b> velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? Aliquid
-		earum hic aliquam quos laudantium.</p>
+	<p>Lorem ipsum dolor <i>sit</i> amet consectetur <em>adipisicing elit</em>. 
+		Similique <span class="text-italic">reiciendis amet</span> itaque, 
+		<b><em>modi architecto</em></b> velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? 
+		Aliquid	earum hic aliquam quos laudantium.
+	</p>
 </div>
 <h3>Guidance for Italics</h3>
 <h4>Use to:</h4>
@@ -292,25 +296,28 @@
 </ul>
 <h4>Options:</h4>
 <ul>
-	<li>To improve the readabilty of italicized text used in the Body, and additional space may be automatically inserted between the italicized character and the next character by using the <code class="highlighter-rouge">.tp-pad-italics</code> class on a parent
+	<li>To improve the readabilty of italicized text used in the Body, and additional space may be automatically inserted between the italicized character and the next character by using the <code class="highlighter-rouge">.pad-italics</code> class on a parent
 		element.
 	</li>
 </ul>
 
 <div class="bd-example">
-	<p class="tp-pad-italics">Lorem ipsum dolor, sit amet consectetur adipisicing <em>elit</em>. Obcaecati tempore <i>deserunt</i> dolor reiciendis vero assumenda</p>
+	<p class="pad-italics">Lorem ipsum dolor, sit amet consectetur adipisicing <em>elit</em>. 
+		Obcaecati tempore <i>deserunt</i> dolor reiciendis vero assumenda.
+	</p>
 </div>
-<figure class="highlight">
-	<pre><code class="language-html" data-lang="html">&lt;p class="tp-pad-italics"&gt;Lorem ipsum dolor, sit amet consectetur adipisicing &lt;em&gt;elit&lt;/em&gt;. Obcaecati tempore &lt;i&gt;deserunt&lt;/i&gt; dolor reiciendis vero assumenda&lt;/p&gt;</code></pre>
-</figure>
 
 <h2>Text Colors</h2>
 <p>Red text is available to alert users to critical information.</p>
 <h3>Text Color Examples</h3>
 <div class="bd-example">
-	<p><b class="color-red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Possimus deleniti molestiae labore quo hic totam similique ipsum asperiores velit adipisci iusto distinctio, explicabo maiores nam magnam, amet tempore nemo facere.</p>
-	<p>Unde placeat <span class="color-red">accusantium aperiam quia aliquid</span> culpa asperiores consequatur similique laudantium esse voluptate dolores id natus, nobis a quae harum illum vel reprehenderit assumenda. Optio deserunt voluptate placeat nobis
-		libero!
+	<p><b class="c-red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> 
+		Possimus deleniti molestiae labore quo hic totam similique ipsum asperiores velit adipisci iusto distinctio, 
+		explicabo maiores nam magnam, amet tempore nemo facere.
+	</p>
+	<p>Unde placeat <span class="c-red">accusantium aperiam quia aliquid</span> 
+		culpa asperiores consequatur similique laudantium esse voluptate dolores id natus, 
+		nobis a quae harum illum vel reprehenderit assumenda. Optio deserunt voluptate placeat nobis libero!
 	</p>
 </div>
 
@@ -400,7 +407,10 @@
 <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.2.3/dist/instantsearch.min.js"></script>
 <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/prism.min.js"></script>
+
+
+<script src="contrib/clipboard.js"></script>
+<script src="contrib/prism.min.js"></script>
 <script src="contrib/spectrum.js"></script>
 
 <script src="js/app.js?01"></script>
