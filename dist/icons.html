@@ -278,6 +278,45 @@
 <h1 class="bd-title" id="content">Icons</h1>
 <p class="bd-lead">The Template Package 4.x framework includes icons to represent a variety of health topics and communication activities. The icon set also includes standard icons to represent links to social media sites and indicate links to files and external sites.
 	All icons are managed as SVG files so they do not lose quality when changing size. SVGs also provide flexibility for color changes and allow for easier updates.</p>
+
+<h2>Usage</h2>
+<p>SVG icons can be placed on a page using several different methods, each of which have their own benefits.</p>
+
+<h3>Img Source</h3>
+<p>Using SVG icons as images is an option which generally works best when the SVG icon has the appropriate fill colors applied to it already.</p>
+<div class="bd-example">
+	<img src="assets/icons/standard/001.svg" alt="presentation_01" style="width:50px;height:50px;">
+</div>
+
+<h3>SVG Source</h3>
+<p>When you want more control over SVG icons, and you're using them a limited number of times, you can embed the SVGs directly into the page.</p>
+<div class="bd-example">
+<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
+    <title>presentation_01</title>
+    <path d="M35,5.21H5A1.29,1.29,0,1,1,5,2.63h13.7V1.34a1.3,1.3,0,0,1,2.6,0V2.63H35a1.29,1.29,0,1,1,0,2.58Zm0,20.64H5V6.5H35ZM9,15.57a5.2,5.2,0,0,0,10.4,0h-5.2V10.4A5.19,5.19,0,0,0,9,15.57Zm14.33-5.2H22v1.29h1.3Zm0,2.58H22v1.29h1.3Zm0,2.58H22v1.29h1.3Zm0,2.58H22V19.4h1.3Zm0,2.58H22V22h1.3Zm7.78-10.32H24.58v1.29h6.48Zm0,2.58H24.58v1.29h6.48Zm0,2.58H24.58v1.29h6.48Zm0,2.58H24.58V19.4h6.48Zm0,2.58H24.58V22h6.48ZM16.46,32.31h2.93V25.85h1.3v6.45h2.88l-2.88-6.45h2.6l5.18,11.61H25.88L24.15,33.6H20.69V40h-1.3V33.6H15.88l-1.76,3.87H11.53L16.8,25.85h2.59Zm4.22-6.45Zm-1.3,0Z" class="fill-p"/>
+</svg>
+</div>
+
+<h3>SVG Symbol</h3>
+<p>Use SVG symbols when you want to use standard embedding, or if you're using the icons multiple times on the page.</p>
+<div class="bd-example">
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="presentation_01" data-name="presentation_01" viewBox="0 0 40 40">
+            <title>presentation_01</title>
+            <path d="M35,5.21H5A1.29,1.29,0,1,1,5,2.63h13.7V1.34a1.3,1.3,0,0,1,2.6,0V2.63H35a1.29,1.29,0,1,1,0,2.58Zm0,20.64H5V6.5H35ZM9,15.57a5.2,5.2,0,0,0,10.4,0h-5.2V10.4A5.19,5.19,0,0,0,9,15.57Zm14.33-5.2H22v1.29h1.3Zm0,2.58H22v1.29h1.3Zm0,2.58H22v1.29h1.3Zm0,2.58H22V19.4h1.3Zm0,2.58H22V22h1.3Zm7.78-10.32H24.58v1.29h6.48Zm0,2.58H24.58v1.29h6.48Zm0,2.58H24.58v1.29h6.48Zm0,2.58H24.58V19.4h6.48Zm0,2.58H24.58V22h6.48ZM16.46,32.31h2.93V25.85h1.3v6.45h2.88l-2.88-6.45h2.6l5.18,11.61H25.88L24.15,33.6H20.69V40h-1.3V33.6H15.88l-1.76,3.87H11.53L16.8,25.85h2.59Zm4.22-6.45Zm-1.3,0Z" class="fill-p" />
+		</symbol>
+	</defs>
+</svg>
+
+<svg width="40" height="40"><use href="#presentation_01" /></svg>
+<svg width="60" height="60"><use href="#presentation_01" /></svg>
+
+</div>
+
+<h2>Standard Icon List</h2>
+
 <link rel='stylesheet prefetch' href='//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'>
 <div class="ctrl">
 	<a href="#" onclick="iconsort('standard')"><i class="mdi mdi-sort-alphabetical"></i></a>
@@ -289,163 +328,164 @@
 <input type="text" id="fg" class="d-none" />
 <input type="text" id="bg" class="d-none" />
 
+
 <div id="standard" class="container icon-grid">
-	<!-- 	img[src=assets/icons/$$$.svg]*114 -->
+	<!-- 	img[src=assets/icons/standard/$$$.svg]*114 -->
 	<!-- 	<h3>Standard</h3> -->
-	<div><img src="assets/icons/001.svg" alt="presentation_01"></div>
-	<div><img src="assets/icons/002.svg" alt="chart_01"></div>
-	<div><img src="assets/icons/003.svg" alt="stack_01"></div>
-	<div><img src="assets/icons/004.svg" alt="stack_02"></div>
-	<div><img src="assets/icons/005.svg" alt="stack_03"></div>
-	<div><img src="assets/icons/006.svg" alt="stack_04"></div>
-	<div><img src="assets/icons/007.svg" alt="cloud_01"></div>
-	<div><img src="assets/icons/008.svg" alt="bookmark_01"></div>
-	<div><img src="assets/icons/009.svg" alt="pin_01"></div>
-	<div><img src="assets/icons/010.svg" alt="clipboard_01"></div>
-	<div><img src="assets/icons/011.svg" alt="paper_01"></div>
-	<div><img src="assets/icons/012.svg" alt="medical_01"></div>
-	<div><img src="assets/icons/013.svg" alt="calendar_01"></div>
-	<div><img src="assets/icons/014.svg" alt="pin_02"></div>
-	<div><img src="assets/icons/015.svg" alt="globe_01"></div>
-	<div><img src="assets/icons/016.svg" alt="globe_02"></div>
-	<div><img src="assets/icons/017.svg" alt="edit_01"></div>
-	<div><img src="assets/icons/018.svg" alt="badge_01"></div>
-	<div><img src="assets/icons/019.svg" alt="download_01"></div>
-	<div><img src="assets/icons/020.svg" alt="photo_01"></div>
-	<div><img src="assets/icons/021.svg" alt="book_01"></div>
-	<div><img src="assets/icons/022.svg" alt="book_02"></div>
-	<div><img src="assets/icons/023.svg" alt="paper_02"></div>
-	<div><img src="assets/icons/024.svg" alt="link_01"></div>
-	<div><img src="assets/icons/025.svg" alt="question_01"></div>
-	<div><img src="assets/icons/026.svg" alt="search_01"></div>
-	<div><img src="assets/icons/027.svg" alt="building_01"></div>
-	<div><img src="assets/icons/028.svg" alt="home_01"></div>
-	<div><img src="assets/icons/029.svg" alt="alert_01"></div>
-	<div><img src="assets/icons/030.svg" alt="alert_02"></div>
-	<div><img src="assets/icons/031.svg" alt="scale_01"></div>
-	<div><img src="assets/icons/032.svg" alt="tools_01"></div>
-	<div><img src="assets/icons/033.svg" alt="hospital_01"></div>
-	<div><img src="assets/icons/034.svg" alt="money_01"></div>
-	<div><img src="assets/icons/035.svg" alt="clock_01"></div>
-	<div><img src="assets/icons/036.svg" alt="no_01"></div>
-	<div><img src="assets/icons/037.svg" alt="lab_01"></div>
-	<div><img src="assets/icons/038.svg" alt="hazard_01"></div>
-	<div><img src="assets/icons/039.svg" alt="hazard_02"></div>
-	<div><img src="assets/icons/040.svg" alt="signal_01"></div>
-	<div><img src="assets/icons/041.svg" alt="phone_01"></div>
-	<div><img src="assets/icons/042.svg" alt="lab_02"></div>
-	<div><img src="assets/icons/043.svg" alt="search_02"></div>
-	<div><img src="assets/icons/044.svg" alt="lab_03"></div>
-	<div><img src="assets/icons/045.svg" alt="chart_02"></div>
-	<div><img src="assets/icons/046.svg" alt="lab_04"></div>
-	<div><img src="assets/icons/047.svg" alt="lab_05"></div>
-	<div><img src="assets/icons/048.svg" alt="medical_02"></div>
-	<div><img src="assets/icons/049.svg" alt="medical_03"></div>
-	<div><img src="assets/icons/050.svg" alt="weather_01"></div>
-	<div><img src="assets/icons/051.svg" alt="weather_02"></div>
-	<div><img src="assets/icons/052.svg" alt="weather_03"></div>
-	<div><img src="assets/icons/053.svg" alt="weather_04"></div>
-	<div><img src="assets/icons/054.svg" alt="weather_05"></div>
-	<div><img src="assets/icons/055.svg" alt="weather_06"></div>
-	<div><img src="assets/icons/056.svg" alt="weather_07"></div>
-	<div><img src="assets/icons/057.svg" alt="weather_08"></div>
-	<div><img src="assets/icons/058.svg" alt="weather_09"></div>
-	<div><img src="assets/icons/059.svg" alt="weather_10"></div>
-	<div><img src="assets/icons/060.svg" alt="weather_11"></div>
-	<div><img src="assets/icons/061.svg" alt="map_03"></div>
-	<div><img src="assets/icons/062.svg" alt="food_01"></div>
-	<div><img src="assets/icons/063.svg" alt="hazard_03"></div>
-	<div><img src="assets/icons/064.svg" alt="idea_01"></div>
-	<div><img src="assets/icons/065.svg" alt="clothes_01"></div>
-	<div><img src="assets/icons/066.svg" alt="book_03"></div>
-	<div><img src="assets/icons/067.svg" alt="hazard_04"></div>
-	<div><img src="assets/icons/068.svg" alt="hazard_05"></div>
-	<div><img src="assets/icons/069.svg" alt="food_02"></div>
-	<div><img src="assets/icons/070.svg" alt="food_03"></div>
-	<div><img src="assets/icons/071.svg" alt="food_04"></div>
-	<div><img src="assets/icons/072.svg" alt="bag_01"></div>
-	<div><img src="assets/icons/073.svg" alt="device_02"></div>
-	<div><img src="assets/icons/074.svg" alt="allergy_01"></div>
-	<div><img src="assets/icons/075.svg" alt="medical_04"></div>
-	<div><img src="assets/icons/076.svg" alt="email_01"></div>
-	<div><img src="assets/icons/077.svg" alt="badge_02"></div>
-	<div><img src="assets/icons/078.svg" alt="medical_05"></div>
-	<div><img src="assets/icons/079.svg" alt="people_01"></div>
-	<div><img src="assets/icons/080.svg" alt="alert_03"></div>
-	<div><img src="assets/icons/081.svg" alt="search_03"></div>
-	<div><img src="assets/icons/082.svg" alt="building_02"></div>
-	<div><img src="assets/icons/083.svg" alt="people_02"></div>
-	<div><img src="assets/icons/084.svg" alt="device_03"></div>
-	<div><img src="assets/icons/085.svg" alt="data_01"></div>
-	<div><img src="assets/icons/086.svg" alt="device_04"></div>
-	<div><img src="assets/icons/087.svg" alt="badge_03"></div>
-	<div><img src="assets/icons/088.svg" alt="paper_03"></div>
-	<div><img src="assets/icons/089.svg" alt="building_03"></div>
-	<div><img src="assets/icons/090.svg" alt="sports_01"></div>
-	<div><img src="assets/icons/091.svg" alt="people_03"></div>
-	<div><img src="assets/icons/092.svg" alt="scale_02"></div>
-	<div><img src="assets/icons/093.svg" alt="direction_01"></div>
-	<div><img src="assets/icons/094.svg" alt="people_04"></div>
-	<div><img src="assets/icons/095.svg" alt="people_05"></div>
-	<div><img src="assets/icons/096.svg" alt="medical_06"></div>
-	<div><img src="assets/icons/097.svg" alt="people_06"></div>
-	<div><img src="assets/icons/098.svg" alt="travel_01"></div>
-	<div><img src="assets/icons/099.svg" alt="people_07"></div>
-	<div><img src="assets/icons/100.svg" alt="people_08"></div>
-	<div><img src="assets/icons/101.svg" alt="people_09"></div>
-	<div><img src="assets/icons/102.svg" alt="grid_01"></div>
-	<div><img src="assets/icons/103.svg" alt="device_05"></div>
-	<div><img src="assets/icons/104.svg" alt="chart_03"></div>
-	<div><img src="assets/icons/105.svg" alt="video_01"></div>
-	<div><img src="assets/icons/106.svg" alt="chat_01"></div>
-	<div><img src="assets/icons/107.svg" alt="photo_02"></div>
-	<div><img src="assets/icons/108.svg" alt="tools_02"></div>
-	<div><img src="assets/icons/109.svg" alt="tools_03"></div>
-	<div><img src="assets/icons/110.svg" alt="audio_01"></div>
-	<div><img src="assets/icons/111.svg" alt="medical_07"></div>
-	<div><img src="assets/icons/112.svg" alt="building_04"></div>
-	<div><img src="assets/icons/113.svg" alt="food_05"></div>
-	<div><img src="assets/icons/114.svg" alt="animal_05"></div>
-	<div><img src="assets/icons/Media_003.svg" class="media" alt="tools_04"></div>
-	<div><img src="assets/icons/Media_004.svg" class="media" alt="email_02"></div>
-	<div><img src="assets/icons/Media_007.svg" class="media" alt="audio_02"></div>
-	<div><img src="assets/icons/Media_008.svg" class="media" alt="alert_04"></div>
-	<div><img src="assets/icons/Media_009.svg" class="media" alt="alert_05"></div>
-	<div><img src="assets/icons/Media_010.svg" class="media" alt="audio_03"></div>
-	<div><img src="assets/icons/Media_011.svg" class="media" alt="audio_04"></div>
-	<div><img src="assets/icons/Media_012.svg" class="media" alt="chat_02"></div>
-	<div><img src="assets/icons/Media_014.svg" class="media" alt="chat_03"></div>
-	<div><img src="assets/icons/Media_015.svg" class="media" alt="chat_04"></div>
-	<div><img src="assets/icons/Media_016.svg" class="media" alt="audio_05"></div>
-	<div><img src="assets/icons/Media_019.svg" class="media" alt="book_04"></div>
-	<div><img src="assets/icons/Media_021.svg" class="media" alt="video_02"></div>
-	<div><img src="assets/icons/Media_022.svg" class="media" alt="photo_03"></div>
-	<div><img src="assets/icons/Media_023.svg" class="media" alt="photo_04"></div>
-	<div><img src="assets/icons/Media_024.svg" class="media" alt="video_03"></div>
-	<div><img src="assets/icons/Media_025.svg" class="media" alt="video_04"></div>
-	<div><img src="assets/icons/Media_026.svg" class="media" alt="photo_05"></div>
-	<div><img src="assets/icons/social_fb.svg" alt="social_facebook"></div>
-	<div><img src="assets/icons/social_flickr.svg" alt="social_flickr"></div>
-	<div><img src="assets/icons/social_googleplus.svg" alt="social_google"></div>
-	<div><img src="assets/icons/govD.svg" alt="social_govd"></div>
-	<div><img src="assets/icons/social_insta.svg" alt="social_instagram"></div>
-	<div><img src="assets/icons/social_linkedin.svg" alt="social_linkedin"></div>
-	<div><img src="assets/icons/social_pinterest.svg" alt="social_pinterest"></div>
-	<div><img src="assets/icons/social_podcast.svg" alt="social_podcast"></div>
-	<div><img src="assets/icons/social_rss.svg" alt="social_rss"></div>
-	<div><img src="assets/icons/social_syndication.svg" alt="social_syndicate"></div>
-	<div><img src="assets/icons/social_twitter.svg" alt="social_twitter"></div>
-	<div><img src="assets/icons/social_youtube.svg" alt="social_youtube"></div>
-	<div><img src="assets/icons/social_CDC-tv.svg" alt="social_cdctv"></div>
-	<div><img src="assets/icons/excel.svg" alt="file_excel"></div>
-	<div><img src="assets/icons/pdf.svg" alt="file_pdf"></div>
-	<div><img src="assets/icons/zip.svg" alt="file_zip"></div>
-	<div><img src="assets/icons/word.svg" alt="file_word"></div>
-	<div><img src="assets/icons/txt.svg" alt="file_txt"></div>
-	<div><img src="assets/icons/ppt.svg" alt="file_ppt"></div>
-	<div><img src="assets/icons/media.svg" alt="file_media"></div>
-	<div><img src="assets/icons/epub.svg" alt="file_epub"></div>
-	<div><img src="assets/icons/Media_028.svg" class="auto" alt="file_external"></div>
+	<div><img src="assets/icons/standard/001.svg" alt="presentation_01"></div>
+	<div><img src="assets/icons/standard/002.svg" alt="chart_01"></div>
+	<div><img src="assets/icons/standard/003.svg" alt="stack_01"></div>
+	<div><img src="assets/icons/standard/004.svg" alt="stack_02"></div>
+	<div><img src="assets/icons/standard/005.svg" alt="stack_03"></div>
+	<div><img src="assets/icons/standard/006.svg" alt="stack_04"></div>
+	<div><img src="assets/icons/standard/007.svg" alt="cloud_01"></div>
+	<div><img src="assets/icons/standard/008.svg" alt="bookmark_01"></div>
+	<div><img src="assets/icons/standard/009.svg" alt="pin_01"></div>
+	<div><img src="assets/icons/standard/010.svg" alt="clipboard_01"></div>
+	<div><img src="assets/icons/standard/011.svg" alt="paper_01"></div>
+	<div><img src="assets/icons/standard/012.svg" alt="medical_01"></div>
+	<div><img src="assets/icons/standard/013.svg" alt="calendar_01"></div>
+	<div><img src="assets/icons/standard/014.svg" alt="pin_02"></div>
+	<div><img src="assets/icons/standard/015.svg" alt="globe_01"></div>
+	<div><img src="assets/icons/standard/016.svg" alt="globe_02"></div>
+	<div><img src="assets/icons/standard/017.svg" alt="edit_01"></div>
+	<div><img src="assets/icons/standard/018.svg" alt="badge_01"></div>
+	<div><img src="assets/icons/standard/019.svg" alt="download_01"></div>
+	<div><img src="assets/icons/standard/020.svg" alt="photo_01"></div>
+	<div><img src="assets/icons/standard/021.svg" alt="book_01"></div>
+	<div><img src="assets/icons/standard/022.svg" alt="book_02"></div>
+	<div><img src="assets/icons/standard/023.svg" alt="paper_02"></div>
+	<div><img src="assets/icons/standard/024.svg" alt="link_01"></div>
+	<div><img src="assets/icons/standard/025.svg" alt="question_01"></div>
+	<div><img src="assets/icons/standard/026.svg" alt="search_01"></div>
+	<div><img src="assets/icons/standard/027.svg" alt="building_01"></div>
+	<div><img src="assets/icons/standard/028.svg" alt="home_01"></div>
+	<div><img src="assets/icons/standard/029.svg" alt="alert_01"></div>
+	<div><img src="assets/icons/standard/030.svg" alt="alert_02"></div>
+	<div><img src="assets/icons/standard/031.svg" alt="scale_01"></div>
+	<div><img src="assets/icons/standard/032.svg" alt="tools_01"></div>
+	<div><img src="assets/icons/standard/033.svg" alt="hospital_01"></div>
+	<div><img src="assets/icons/standard/034.svg" alt="money_01"></div>
+	<div><img src="assets/icons/standard/035.svg" alt="clock_01"></div>
+	<div><img src="assets/icons/standard/036.svg" alt="no_01"></div>
+	<div><img src="assets/icons/standard/037.svg" alt="lab_01"></div>
+	<div><img src="assets/icons/standard/038.svg" alt="hazard_01"></div>
+	<div><img src="assets/icons/standard/039.svg" alt="hazard_02"></div>
+	<div><img src="assets/icons/standard/040.svg" alt="signal_01"></div>
+	<div><img src="assets/icons/standard/041.svg" alt="phone_01"></div>
+	<div><img src="assets/icons/standard/042.svg" alt="lab_02"></div>
+	<div><img src="assets/icons/standard/043.svg" alt="search_02"></div>
+	<div><img src="assets/icons/standard/044.svg" alt="lab_03"></div>
+	<div><img src="assets/icons/standard/045.svg" alt="chart_02"></div>
+	<div><img src="assets/icons/standard/046.svg" alt="lab_04"></div>
+	<div><img src="assets/icons/standard/047.svg" alt="lab_05"></div>
+	<div><img src="assets/icons/standard/048.svg" alt="medical_02"></div>
+	<div><img src="assets/icons/standard/049.svg" alt="medical_03"></div>
+	<div><img src="assets/icons/standard/050.svg" alt="weather_01"></div>
+	<div><img src="assets/icons/standard/051.svg" alt="weather_02"></div>
+	<div><img src="assets/icons/standard/052.svg" alt="weather_03"></div>
+	<div><img src="assets/icons/standard/053.svg" alt="weather_04"></div>
+	<div><img src="assets/icons/standard/054.svg" alt="weather_05"></div>
+	<div><img src="assets/icons/standard/055.svg" alt="weather_06"></div>
+	<div><img src="assets/icons/standard/056.svg" alt="weather_07"></div>
+	<div><img src="assets/icons/standard/057.svg" alt="weather_08"></div>
+	<div><img src="assets/icons/standard/058.svg" alt="weather_09"></div>
+	<div><img src="assets/icons/standard/059.svg" alt="weather_10"></div>
+	<div><img src="assets/icons/standard/060.svg" alt="weather_11"></div>
+	<div><img src="assets/icons/standard/061.svg" alt="map_03"></div>
+	<div><img src="assets/icons/standard/062.svg" alt="food_01"></div>
+	<div><img src="assets/icons/standard/063.svg" alt="hazard_03"></div>
+	<div><img src="assets/icons/standard/064.svg" alt="idea_01"></div>
+	<div><img src="assets/icons/standard/065.svg" alt="clothes_01"></div>
+	<div><img src="assets/icons/standard/066.svg" alt="book_03"></div>
+	<div><img src="assets/icons/standard/067.svg" alt="hazard_04"></div>
+	<div><img src="assets/icons/standard/068.svg" alt="hazard_05"></div>
+	<div><img src="assets/icons/standard/069.svg" alt="food_02"></div>
+	<div><img src="assets/icons/standard/070.svg" alt="food_03"></div>
+	<div><img src="assets/icons/standard/071.svg" alt="food_04"></div>
+	<div><img src="assets/icons/standard/072.svg" alt="bag_01"></div>
+	<div><img src="assets/icons/standard/073.svg" alt="device_02"></div>
+	<div><img src="assets/icons/standard/074.svg" alt="allergy_01"></div>
+	<div><img src="assets/icons/standard/075.svg" alt="medical_04"></div>
+	<div><img src="assets/icons/standard/076.svg" alt="email_01"></div>
+	<div><img src="assets/icons/standard/077.svg" alt="badge_02"></div>
+	<div><img src="assets/icons/standard/078.svg" alt="medical_05"></div>
+	<div><img src="assets/icons/standard/079.svg" alt="people_01"></div>
+	<div><img src="assets/icons/standard/080.svg" alt="alert_03"></div>
+	<div><img src="assets/icons/standard/081.svg" alt="search_03"></div>
+	<div><img src="assets/icons/standard/082.svg" alt="building_02"></div>
+	<div><img src="assets/icons/standard/083.svg" alt="people_02"></div>
+	<div><img src="assets/icons/standard/084.svg" alt="device_03"></div>
+	<div><img src="assets/icons/standard/085.svg" alt="data_01"></div>
+	<div><img src="assets/icons/standard/086.svg" alt="device_04"></div>
+	<div><img src="assets/icons/standard/087.svg" alt="badge_03"></div>
+	<div><img src="assets/icons/standard/088.svg" alt="paper_03"></div>
+	<div><img src="assets/icons/standard/089.svg" alt="building_03"></div>
+	<div><img src="assets/icons/standard/090.svg" alt="sports_01"></div>
+	<div><img src="assets/icons/standard/091.svg" alt="people_03"></div>
+	<div><img src="assets/icons/standard/092.svg" alt="scale_02"></div>
+	<div><img src="assets/icons/standard/093.svg" alt="direction_01"></div>
+	<div><img src="assets/icons/standard/094.svg" alt="people_04"></div>
+	<div><img src="assets/icons/standard/095.svg" alt="people_05"></div>
+	<div><img src="assets/icons/standard/096.svg" alt="medical_06"></div>
+	<div><img src="assets/icons/standard/097.svg" alt="people_06"></div>
+	<div><img src="assets/icons/standard/098.svg" alt="travel_01"></div>
+	<div><img src="assets/icons/standard/099.svg" alt="people_07"></div>
+	<div><img src="assets/icons/standard/100.svg" alt="people_08"></div>
+	<div><img src="assets/icons/standard/101.svg" alt="people_09"></div>
+	<div><img src="assets/icons/standard/102.svg" alt="grid_01"></div>
+	<div><img src="assets/icons/standard/103.svg" alt="device_05"></div>
+	<div><img src="assets/icons/standard/104.svg" alt="chart_03"></div>
+	<div><img src="assets/icons/standard/105.svg" alt="video_01"></div>
+	<div><img src="assets/icons/standard/106.svg" alt="chat_01"></div>
+	<div><img src="assets/icons/standard/107.svg" alt="photo_02"></div>
+	<div><img src="assets/icons/standard/108.svg" alt="tools_02"></div>
+	<div><img src="assets/icons/standard/109.svg" alt="tools_03"></div>
+	<div><img src="assets/icons/standard/110.svg" alt="audio_01"></div>
+	<div><img src="assets/icons/standard/111.svg" alt="medical_07"></div>
+	<div><img src="assets/icons/standard/112.svg" alt="building_04"></div>
+	<div><img src="assets/icons/standard/113.svg" alt="food_05"></div>
+	<div><img src="assets/icons/standard/114.svg" alt="animal_05"></div>
+	<div><img src="assets/icons/standard/Media_003.svg" class="media" alt="tools_04"></div>
+	<div><img src="assets/icons/standard/Media_004.svg" class="media" alt="email_02"></div>
+	<div><img src="assets/icons/standard/Media_007.svg" class="media" alt="audio_02"></div>
+	<div><img src="assets/icons/standard/Media_008.svg" class="media" alt="alert_04"></div>
+	<div><img src="assets/icons/standard/Media_009.svg" class="media" alt="alert_05"></div>
+	<div><img src="assets/icons/standard/Media_010.svg" class="media" alt="audio_03"></div>
+	<div><img src="assets/icons/standard/Media_011.svg" class="media" alt="audio_04"></div>
+	<div><img src="assets/icons/standard/Media_012.svg" class="media" alt="chat_02"></div>
+	<div><img src="assets/icons/standard/Media_014.svg" class="media" alt="chat_03"></div>
+	<div><img src="assets/icons/standard/Media_015.svg" class="media" alt="chat_04"></div>
+	<div><img src="assets/icons/standard/Media_016.svg" class="media" alt="audio_05"></div>
+	<div><img src="assets/icons/standard/Media_019.svg" class="media" alt="book_04"></div>
+	<div><img src="assets/icons/standard/Media_021.svg" class="media" alt="video_02"></div>
+	<div><img src="assets/icons/standard/Media_022.svg" class="media" alt="photo_03"></div>
+	<div><img src="assets/icons/standard/Media_023.svg" class="media" alt="photo_04"></div>
+	<div><img src="assets/icons/standard/Media_024.svg" class="media" alt="video_03"></div>
+	<div><img src="assets/icons/standard/Media_025.svg" class="media" alt="video_04"></div>
+	<div><img src="assets/icons/standard/Media_026.svg" class="media" alt="photo_05"></div>
+	<div><img src="assets/icons/standard/social_fb.svg" alt="social_facebook"></div>
+	<div><img src="assets/icons/standard/social_flickr.svg" alt="social_flickr"></div>
+	<div><img src="assets/icons/standard/social_googleplus.svg" alt="social_google"></div>
+	<div><img src="assets/icons/standard/govD.svg" alt="social_govd"></div>
+	<div><img src="assets/icons/standard/social_insta.svg" alt="social_instagram"></div>
+	<div><img src="assets/icons/standard/social_linkedin.svg" alt="social_linkedin"></div>
+	<div><img src="assets/icons/standard/social_pinterest.svg" alt="social_pinterest"></div>
+	<div><img src="assets/icons/standard/social_podcast.svg" alt="social_podcast"></div>
+	<div><img src="assets/icons/standard/social_rss.svg" alt="social_rss"></div>
+	<div><img src="assets/icons/standard/social_syndication.svg" alt="social_syndicate"></div>
+	<div><img src="assets/icons/standard/social_twitter.svg" alt="social_twitter"></div>
+	<div><img src="assets/icons/standard/social_youtube.svg" alt="social_youtube"></div>
+	<div><img src="assets/icons/standard/social_CDC-tv.svg" alt="social_cdctv"></div>
+	<div><img src="assets/icons/standard/excel.svg" alt="file_excel"></div>
+	<div><img src="assets/icons/standard/pdf.svg" alt="file_pdf"></div>
+	<div><img src="assets/icons/standard/zip.svg" alt="file_zip"></div>
+	<div><img src="assets/icons/standard/word.svg" alt="file_word"></div>
+	<div><img src="assets/icons/standard/txt.svg" alt="file_txt"></div>
+	<div><img src="assets/icons/standard/ppt.svg" alt="file_ppt"></div>
+	<div><img src="assets/icons/standard/media.svg" alt="file_media"></div>
+	<div><img src="assets/icons/standard/epub.svg" alt="file_epub"></div>
+	<div><img src="assets/icons/standard/Media_028.svg" class="auto" alt="file_external"></div>
 </div>
 
 
