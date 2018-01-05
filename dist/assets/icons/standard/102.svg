@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:#5a5a5a;fill-rule:evenodd;}
+        </style>
+    </defs>
+    <title>
+        grid_01
+    </title>
+    <path d="M0,10H10V0H0Zm15,0H25V0H15ZM30,0V10H40V0ZM0,25H10V15H0Zm15,0H25V15H15Zm15,0H40V15H30ZM0,40H10V30H0Zm15,0H25V30H15Zm15,0H40V30H30Z" class="fill-p"/>
+</svg>
