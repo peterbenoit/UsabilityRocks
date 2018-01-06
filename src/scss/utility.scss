@@ -271,12 +271,15 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .of-v { overflow: visible; }
 .of-h { overflow: hidden; }
 .of-s { overflow: scroll; }
+.of-a { overflow: auto; }
 .of-x-s { overflow-x: scroll; }
 .of-x-h { overflow-x: hidden; }
 .of-x-v { overflow-x: visible; }
+.of-x-a { overflow-x: auto; }
 .of-y-s { overflow-y: scroll; }
 .of-y-h { overflow-y: hidden; }
 .of-y-v { overflow-y: visible; }
+.of-y-a { overflow-y: auto; }
 
 // ===============================================================
 // Columns
@@ -570,7 +573,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .c-white { color: $white!important; }
 .c-black { color: $black!important; }
 .c-red  { color: $red!important; }
-.c-blue { color: $primary!important; }
+.c-primary { color: $primary!important; }
 .c-gray-d2 { color: $graydarker!important; }
 .c-gray-d1 { color: $graydark!important; }
 .c-gray { color: $gray!important; }
@@ -1267,7 +1270,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $purple-primary!important; }
 	.bl-secondary { border-left-color: $purple-secondary!important; }
 	.bl-tertiary { border-left-color: $purple-tertiary!important; }
-
+	.c-primary { color: $purple-primary!important; }
 }
 .theme-brown {
 	.bg-primary { background-color: $brown-primary!important; }
@@ -1288,6 +1291,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $brown-primary!important; }
 	.bl-secondary { border-left-color: $brown-secondary!important; }
 	.bl-tertiary { border-left-color: $brown-tertiary!important; }
+	.c-primary { color: $brown-primary!important; }
 }
 .theme-teal {
 	.bg-primary { background-color: $teal-primary!important; }
@@ -1308,6 +1312,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $teal-primary!important; }
 	.bl-secondary { border-left-color: $teal-secondary!important; }
 	.bl-tertiary { border-left-color: $teal-tertiary!important; }
+	.c-primary { color: $teal-primary!important; }
 }
 .theme-pink {
 	.bg-primary { background-color: $pink-primary!important; }
@@ -1328,6 +1333,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $pink-primary!important; }
 	.bl-secondary { border-left-color: $pink-secondary!important; }
 	.bl-tertiary { border-left-color: $pink-tertiary!important; }
+	.c-primary { color: $pink-primary!important; }
 }
 .theme-orange {
 	.bg-primary { background-color: $orange-primary!important; }
@@ -1348,6 +1354,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $orange-primary!important; }
 	.bl-secondary { border-left-color: $orange-secondary!important; }
 	.bl-tertiary { border-left-color: $orange-tertiary!important; }
+	.c-primary { color: $orange-primary!important; }
 }
 .theme-slate {
 	.bg-primary { background-color: $slate-primary!important; }
@@ -1368,6 +1375,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary-color { border-left-color: $slate-primary!important; }
 	.bl-secondary-color { border-left-color: $slate-secondary!important; }
 	.bl-tertiary-color { border-left-color: $slate-tertiary!important; }
+	.c-primary { color: $slate-primary!important; }
 }
 .theme-indigo {
 	.bg-primary { background-color: $indigo-primary!important; }
@@ -1388,6 +1396,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary-color { border-left-color: $indigo-primary!important; }
 	.bl-secondary-color { border-left-color: $indigo-secondary!important; }
 	.bl-tertiary-color { border-left-color: $indigo-tertiary!important; }
+	.c-primary { color: $indigo-primary!important; }
 }
 .theme-cyan {
 	.bg-primary { background-color: $cyan-primary!important; }
@@ -1408,6 +1417,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary-color { border-left-color: $cyan-primary!important; }
 	.bl-secondary-color { border-left-color: $cyan-secondary!important; }
 	.bl-tertiary-color { border-left-color: $cyan-tertiary!important; }
+	.c-primary { color: $cyan-primary!important; }
 }
 .theme-green {
 	.bg-primary { background-color: $green-primary!important; }
@@ -1428,6 +1438,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $green-primary!important; }
 	.bl-secondary { border-left-color: $green-secondary!important; }
 	.bl-tertiary { border-left-color: $green-tertiary!important; }
+	.c-primary { color: $green-primary!important; }
 }
 .theme-amber {
 	.bg-primary { background-color: $amber-primary!important; }
@@ -1448,6 +1459,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bl-primary { border-left-color: $amber-primary!important; }
 	.bl-secondary { border-left-color: $amber-secondary!important; }
 	.bl-tertiary { border-left-color: $amber-tertiary!important; }
+	.c-primary { color: $amber-primary!important; }
 }
 
 // flex align
