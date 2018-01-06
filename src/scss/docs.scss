@@ -50,10 +50,10 @@ pre.code-toolbar > .toolbar {
 
 pre.code-toolbar > .toolbar a, pre.code-toolbar > .toolbar button, pre.code-toolbar > .toolbar span {
 	color: #222;
-	border-radius: 0;
+	border-radius: 2;
 	box-shadow: none;
 	font-size: 1rem;
-	background-color: #BFBDBB;
+	border: 1px solid #BFBDBB;
 	text-shadow: none;
 	padding: 4px;
 }
