@@ -1,7 +1,233 @@
 {% extends "templates/_gallery.njk" %} {% block main %}
-<h1 class="bd-title" id="content">Modules to Cards</h1>
-<p class="bd-lead"><span class="mark mark-yellow">Lead Text</span></p>
+<h1 class="bd-title" id="content">Migration: Modules to Cards</h1>
+<p class="bd-lead"><span class="mark mark-yellow">Modules and Cards have significantly different markup, and classes used for presentation.</span></p>
 
+<style>
+.migration .col:nth-child(2) { 
+	display: none;
+}
+</style>
 
+<section class="markup">
+	<h2 class="display-5">Module Markup Vs. Card Markup</h2>
+	<div class="row">
+		<div class="col">
+			<h5>Module Markup</h5>
+<textarea>
+<div class="module-type[A-Z]">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>
+		</div>
+		<div class="col">
+			<h5>Card Markup</h5>
+<textarea>
+<div class="card">
+	<div class="card-header h5">
+		Card Header
+	</div>
+	<img class="card-img-top" src="..." alt="Card Image Top">
+	<div class="card-body">
+		<div class="card-title">Card Title</div>
+		<div class="card-subtitle">Card Subtitle</div>
+		<div class="card-text">Card Text</div>
+	</div>
+	<img class="card-img-bottom" src="..." alt="Card Image Bottom">
+	<div class="card-footer">
+		Card Footer
+	</div>
+</div>	
+</textarea>
+		</div>
+	</div>
+</section>		
+<section class="migration">
+	<h2 class="display-5">Module to Card Migration</h2>
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeA</h5>
+<textarea>
+<div class="module-typeA">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card">
+	<div class="card-header bg-primary text-white h5">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeB</h5>
+<textarea>
+<div class="module-typeB">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card ds-5">
+	<div class="card-header h5 bg-white">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeC</h5>
+<textarea>
+<div class="module-typeC">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card bg-secondary">
+	<div class="card-header h5">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeD</h5>
+<textarea>
+<div class="module-typeD">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card border-0">
+	<div class="card-header h5 bg-white">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeH</h5>
+<textarea>
+<div class="module-typeH">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card">
+	<div class="card-header h5">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeE</h5>
+<textarea>
+<div class="module-typeE">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card bg-primary text-white">
+	<div class="card-header h5">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col">
+			<h5>Module-typeF</h5>
+<textarea>
+<div class="module-typeF">
+	<h3>Module Heading</h3>
+	<div>
+		Module Body
+	</div>
+</div>	
+</textarea>			
+		</div>
+		<div class="col">
+			<h5>Card</h5>
+<textarea>			
+<div class="card bg-gray-lighter">
+	<div class="card-header h5">
+		Card Header
+	</div>
+	<div class="card-body">
+		<div class="card-text">Card Text</div>
+	</div>
+</div>				
+</textarea>
+		</div>
+	</div>
+</section>	
 
 {% endblock %}
