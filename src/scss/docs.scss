@@ -58,6 +58,17 @@ pre.code-toolbar > .toolbar a, pre.code-toolbar > .toolbar button, pre.code-tool
 	padding: 4px;
 }
 
+.migration {
+	pre[class*="language-"] {
+		margin-bottom: 0;
+	}
+
+	.bd-example {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}	
+}
+
 .small-cube {
 	width: 20px;
 	height: 20px;

@@ -66,11 +66,16 @@ $( function() {
 		Prism.highlightAll();
 	} );	
 	
+	var i = 0;
 	$( '.migration textarea' ).each( function(){
 		var t = $(this);
-		
+
+		if ( i % 2 ) {
+			t.after( '<div class="bd-example">' + t.val() + '</div>' );
+		}
+
 		t.after( '<pre class="language-html"><code>' + $('<div/>').text( t.val() ).html() + '</code></pre>' ).hide();
-		t.parent().after( '<div class="col"><h5>Result</h5>' + t.val() + '</div>' );
+		i++;
 	} );
 	
 	$( '.migration textarea' ).promise().done( function() {
