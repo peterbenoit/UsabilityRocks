@@ -1,7 +1,6 @@
 html,
 body {
   opacity: 1;
-  -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 
@@ -26,10 +25,7 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
   width: 20px;
   height: 20px;
   outline: 1px solid #ccc;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 2px;
 }
 
@@ -68,8 +64,7 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
 
 .bd-search .form-control:focus {
   border-color: #075290;
-  -webkit-box-shadow: 0 0 0 3px rgba(7, 82, 144, 0.25);
-          box-shadow: 0 0 0 3px rgba(7, 82, 144, 0.25);
+  box-shadow: 0 0 0 3px rgba(7, 82, 144, 0.25);
 }
 
 .control {
@@ -83,6 +78,7 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
   background: #fff;
   padding: 4px;
   -webkit-box-shadow: -2px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: -2px 1px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: -2px 1px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
@@ -124,11 +120,8 @@ iframe.f-small {
 }
 
 .icon-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border-right: 1px solid #f0f0f0;
 }
 
@@ -155,11 +148,9 @@ iframe.f-small {
   padding: 12px 0;
   text-align: center;
   background: #fff;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   border-radius: 0 5px 5px 0;
-  -webkit-box-shadow: 3px 0 5px 0px rgba(133, 130, 133, 0.25);
-          box-shadow: 3px 0 5px 0px rgba(133, 130, 133, 0.25);
+  box-shadow: 3px 0 5px 0px rgba(133, 130, 133, 0.25);
 }
 
 .ctrl .mdi {
@@ -189,8 +180,7 @@ iframe.f-small {
   width: 100%;
   padding: 12px 28px 12px 12px;
   border: 1px solid #e4e4e4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -220,8 +210,7 @@ iframe.f-small {
   border: 1px solid rgba(228, 228, 228, 0.6);
   min-width: 300px;
   margin-top: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .aa-suggestion {
@@ -244,5 +233,3 @@ iframe.f-small {
 .aa-empty {
   padding: 6px 12px;
 }
-
-/*# sourceMappingURL=tp3.css.map */

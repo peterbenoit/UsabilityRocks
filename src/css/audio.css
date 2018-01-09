@@ -12,8 +12,5 @@
 }
 
 .audio-player .btn-secondary:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
-
-/*# sourceMappingURL=audio.css.map */
