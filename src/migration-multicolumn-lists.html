@@ -1,0 +1,196 @@
+{% extends "templates/_gallery.njk" %} {% block main %}
+<h1 class="bd-title" id="content">Multi-column Lists</h1>
+<p class="bd-lead"><span class="mark mark-yellow">See <a href="/dist/lists.html">Lists</a> for styles and usage.</span></p>
+<style>
+.list-group-item img {
+	width: 30px;
+	margin-right: 10px;
+}
+
+.largerimageforthese.left .list-group-item img {
+	width: 70px;
+	float: left;
+}
+
+.largerimageforthese.right .list-group-item img {
+	width: 70px;
+	float: right;
+}
+</style>
+<section class="migration">
+<h2>Bullet List</h2>
+<div class="row">
+    <div class="col">
+        <h5>Template Package 3: <a href="https://www.cdc.gov/wcms/3.0/CDCWP/flex/bullet.html">Bullet List</a></h5>
+<textarea>
+<ul class="list-bullet double listCol1" start="1">
+    <li>
+        <div><a href="#1">List Item 1</a></div>
+    </li>
+    <li>
+        <div><a href="#2">List Item 2</a></div>
+    </li>
+    <li>
+        <div><a href="#3">List Item 3</a></div>
+    </li>
+</ul>
+<ul class="list-bullet double listCol2 last" start="4">
+    <li>
+        <div><a href="#1">List Item 4</a></div>
+    </li>
+    <li>
+        <div><a href="#2">List Item 5</a></div>
+    </li>
+    <li>
+        <div><a href="#3">List Item 6</a></div>
+    </li>
+</ul>
+</textarea>
+        </div>
+        <div class="col">
+            <h5>Bullet List</h5>
+<textarea>
+<ul class="cc-2 lsp-in">
+    <li>
+        <a href="#1">List Item 1</a>
+    </li>
+    <li>
+        <a href="#2">List Item 2</a>
+    </li>
+    <li>
+        <a href="#3">List Item 3</a>
+    </li>
+    <li>
+        <a href="#4">List Item 4</a>
+    </li>
+    <li>
+        <a href="#5">List Item 5</a>
+    </li>
+    <li>
+        <a href="#6">List Item 6</a>
+    </li>
+</ul>
+</textarea>
+    </div>
+</div>
+<h2>Ordered List</h2>
+<div class="row">
+    <div class="col">
+        <h5>Template Package 3: <a href="https://www.cdc.gov/wcms/3.0/CDCWP/flex/ordered.html">Ordered List</a></h5>
+<textarea>
+<ol class="list-ordered double listCol1" start="1">
+    <li>
+        <div><a href="#1">List Item 1</a></div>
+    </li>
+    <li>
+        <div><a href="#2">List Item 2</a></div>
+    </li>
+    <li>
+        <div><a href="#3">List Item 3</a></div>
+    </li>
+</ol>
+<ol class="list-ordered double listCol2 last" start="4">
+    <li>
+        <div><a href="#1">List Item 4</a></div>
+    </li>
+    <li>
+        <div><a href="#2">List Item 5</a></div>
+    </li>
+    <li>
+        <div><a href="#3">List Item 6</a></div>
+    </li>
+</ol>
+</textarea>
+        </div>
+        <div class="col">
+            <h5>Ordered List</h5>
+<textarea>
+<ol class="cc-2 lsp-in">
+    <li>
+        <a href="#1">List Item 1</a>
+    </li>
+    <li>
+        <a href="#2">List Item 2</a>
+    </li>
+    <li>
+        <a href="#3">List Item 3</a>
+    </li>
+    <li>
+        <a href="#4">List Item 4</a>
+    </li>
+    <li>
+        <a href="#5">List Item 5</a>
+    </li>
+    <li>
+        <a href="#6">List Item 6</a>
+    </li>
+</ol>
+</textarea>
+    </div>
+</div>
+<h2>Block List</h2>
+<div class="row">
+    <div class="col">
+        <h5>Template Package 3: <a href="https://www.cdc.gov/wcms/3.0/CDCWP/flex/block.html">Block List</a></h5>
+<textarea>
+<ul class="list-block double listCol1">
+    <li>
+        <div><span class="sprite-24-apps"><!-- --></span><a href="#1">List Item 1</a></div>
+    </li>
+    <li>
+        <div><span class="sprite-24-gadgets"><!-- --></span><a href="#2">List Item 2</a></div>
+    </li>
+    <li class="listLastChildBorderBottom">
+        <div><span class="sprite-24-ecards"><!-- --></span><a href="#3">List Item 3</a></div>
+    </li>
+</ul>
+<ul class="list-block double listCol2 last">
+    <li>
+        <div><span class="sprite-24-apps"><!-- --></span><a href="#1">List Item 4</a></div>
+    </li>
+    <li>
+        <div><span class="sprite-24-gadgets"><!-- --></span><a href="#2">List Item 5</a></div>
+    </li>
+    <li class="listLastChildBorderBottom">
+        <div><span class="sprite-24-ecards"><!-- --></span><a href="#3">List Item 6</a></div>
+    </li>
+</ul>
+</textarea>
+        </div>
+        <div class="col">
+            <h5>List Group</h5>
+<textarea>
+<div class="row no-gutters">
+    <div class="col">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <a href="#1"><img src="assets/icons/standard/028.svg" alt="home_01">Home</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#2"><img src="assets/icons/standard/013.svg" alt="calendar_01">Calendar</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#3"><img src="assets/icons/standard/061.svg" alt="map_03">Maps</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <a href="#4"><img src="assets/icons/standard/028.svg" alt="home_01">Home</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#5"><img src="assets/icons/standard/013.svg" alt="calendar_01">Calendar</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#6"><img src="assets/icons/standard/061.svg" alt="map_03">Maps</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</textarea>
+    </div>
+</div>
+</section>
+
+{% endblock %}
