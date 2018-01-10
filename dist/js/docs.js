@@ -43,10 +43,14 @@ $( function() {
 		$( t ).prev().append( a );
 	} );
 
-	$( '.bd-example:not(.prism-ignore)' ).each( function() { 
+	$( '.dot' ).each( function( i ) {
+		$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
+	} );
+
+	$( '.bd-example:not(.prism-ignore)' ).each( function() {
 		var $t = $( this ),
 			html = $t.html();
-		
+
 		if ( html.trim().length > 0 ) {
 			$t.after( '<pre class="language-html"><code>' + $('<div/>').text( html ).html() + '</code></pre>' );
 		}
@@ -58,14 +62,14 @@ $( function() {
 
 	$( '.markup textarea' ).each( function(){
 		var t = $(this);
-		
+
 		t.after( '<pre class="language-html"><code>' + $('<div/>').text( t.val() ).html() + '</code></pre>' ).hide();
 	} );
 
 	$( '.markup textarea' ).promise().done( function() {
 		Prism.highlightAll();
-	} );	
-	
+	} );
+
 	var i = 0;
 	$( '.migration textarea' ).each( function(){
 		var t = $(this);
@@ -77,10 +81,10 @@ $( function() {
 		t.after( '<pre class="language-html"><code>' + $('<div/>').text( t.val() ).html() + '</code></pre>' ).hide();
 		i++;
 	} );
-	
+
 	$( '.migration textarea' ).promise().done( function() {
 		Prism.highlightAll();
-	} );	
+	} );
 
 	var url = window.location.pathname,
 		target = $( "a[href='" + url.substring( url.lastIndexOf( '/' ) + 1 ) + "']" );

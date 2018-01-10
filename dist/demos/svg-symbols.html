@@ -100,8 +100,14 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js'></script>
-	
+
 	<script src="../js/app.js?01"></script>
 	<script src="../js/audio.js?01"></script>
+
+	<script>
+		$( '.dot' ).each( function( i ) {
+			$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
+		} );
+	</script>
 </body>
 </html>

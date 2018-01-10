@@ -188,6 +188,20 @@ pre.code-toolbar > .toolbar a, pre.code-toolbar > .toolbar button, pre.code-tool
           box-shadow: 0 0 0 3px rgba(7, 82, 144, 0.25);
 }
 
+.dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background: #000;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 .control {
   position: fixed;
   top: 0;

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<title>Usability Rocks!</title>
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="../css/utility.css?01" rel="stylesheet">
+	<link href="../css/app.css?02" rel="stylesheet">
+	<link href="../css/audio.css?01" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109054116-1');
+	</script>
+</head>
+<body class="no-js">
+
+		
+
+<style>
+.borderriffic {
+	outline: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.container-fluid {
+	background-color: #f5f5f5;
+	padding-top: 10px;
+	padding-bottom: 1px;
+}
+.dot {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	background: #000;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.content, .left-nav {
+	min-height: 500px;
+}
+</style>
+
+<div class="container-fluid pl-sm-0 pr-sm-0 global-alert">
+	<div class="container pl-0 pr-0 pl-sm-15 pr-sm-15">
+		<div>
+			<span class="dot"></span>Global Alert
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<header role="banner" aria-label="Header">
+		<span class="dot"></span>Header
+	</header>
+	
+</div>
+
+<div class="container-fluid site-title d-none d-md-block">
+	<div class="container">
+		<div>
+			<span class="dot"></span>Site Title
+		</div>
+	</div>
+</div>
+
+<div class="container d-md-none">
+	<div>
+		<span class="dot"></span>&lt; Site Title
+	</div>
+</div>
+
+<div class="container">
+	
+	<nav role="navigation" aria-label="Breadcrumb" class="d-none d-md-block">
+		<span class="dot"></span>Breadcrumbs
+	</nav>
+	<div class="d-flex flex-wrap">
+		
+		<main class="col-12 -col-md-9 pt-0 pb-0" role="main" aria-label="Main Content Area">
+			<div class="row">
+				<div class="col-12">
+					<span class="dot"></span>Section/Audience Identity
+				</div>
+			</div>
+			<div class="row">
+				<nav role="navigation" aria-label="Section Nav" class="w-100 d-md-none sticky-top">
+					<span class="dot"></span>Page Title/Section Nav
+				</nav>
+			</div>
+			<div class="row">
+				<div class="col-12 content">
+					<span class="dot"></span>Content
+					<h1 class="d-none d-md-block">Page Title</h1>
+				</div>
+			</div>
+			<div class="row d-md-none">
+				<div class="col-12">
+					<span class="dot"></span>Under Left Nav
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<span class="dot"></span>PCA
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-9">
+					<span class="dot"></span>Page Share
+				</div>
+				<div class="col-lg-3">
+					<span class="dot"></span>Date Reviewed
+				</div>
+			</div>
+			<div class="row d-md-none">
+				<div class="col-12 mobile-nav">
+					<span class="dot"></span>Bottom Nav
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+<div class="container-fluid page-footer pl-sm-0 pr-sm-0">
+	<div class="container pl-0 pr-0 pl-sm-15 pr-sm-15">
+		<footer role="contentinfo" aria-label="Footer">
+			<span class="dot"></span>Footer
+		</footer>
+	</div>
+</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js'></script>
+
+	<script src="../js/app.js?01"></script>
+	<script src="../js/audio.js?01"></script>
+
+	<script>
+		$( '.dot' ).each( function( i ) {
+			$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
+		} );
+	</script>
+</body>
+</html>
