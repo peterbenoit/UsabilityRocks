@@ -31,14 +31,29 @@ gulp.task( 'render', function() {
     .pipe( livereload() );
 } );
 
-gulp.task( 'sass', function() {
+gulp.task( 'compilesass', function() {
     return gulp.src( COMPILE.SASS )
     // .pipe( sourcemaps.init() )
-    .pipe( sass({outputStyle: 'compressed'}).on( 'error', sass.logError ) )
+    // .pipe( sass({outputStyle: 'compressed'})
+    .pipe( sass({outputStyle: 'expanded'})
+    .on( 'error', sass.logError ) )
     // .pipe( sourcemaps.write() )
-    .pipe( gulp.dest( COMPILE.DEST + '/css' ) )
+    .pipe(gulp.dest('./src/css'))
     .pipe( livereload() );
 } );
+
+gulp.task( 'autoprefixer', ['compilesass'], function () {
+    var postcss      = require('gulp-postcss');
+    var autoprefixer = require('autoprefixer');
+
+    return gulp.src('./src/css/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./dist/css'));
+} );
+
+gulp.task( 'sass', ['compilesass','autoprefixer'] );
 
 gulp.task( 'minify', function() {
     return gulp.src( COMPILE.JS )

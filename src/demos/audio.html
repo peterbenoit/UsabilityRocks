@@ -1,0 +1,26 @@
+{% extends "templates/_demo.njk" %}
+{% block main %}
+
+<div class="container mt-4">
+	<div class="col-md-4">
+		<audio crossorigin preload="auto">
+			<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/peter.mp3" type="audio/mpeg">
+		</audio>
+		<div class="btn-group audio-player" role="group" aria-label="Audio Player">
+			<button class="btn btn-secondary btn-play"><span title="Play" class="fa fa-play aligned"></span></button>
+			<button class="btn btn-secondary btn-stop"><span title="Stop" class="fa fa-stop aligned"></span></button>
+			<button class="btn btn-secondary btn-restart"><span title="Restart" class="fa fa-step-backward aligned"></span></button>
+			<button class="btn btn-secondary btn-back-5"><span title="-5 seconds" class="fa fa-fast-backward aligned"></span></button>
+			<button class="btn btn-secondary btn-forward-5"><span title="+5 seconds" class="fa fa-fast-forward aligned"></span></button>
+			<button class="btn btn-secondary btn-back-1"><span title="-1 seconds" class="fa fa-chevron-left aligned"></span></button>
+			<button class="btn btn-secondary btn-forward-1"><span title="+1 seconds" class="fa fa-chevron-right aligned"></span></button>
+			<button class="btn btn-secondary btn-volume-up"><span title="Volume Up" class="fa fa-volume-up aligned"></span></button>
+			<button class="btn btn-secondary btn-volume-down"><span title="Volume Down" class="fa fa-volume-down aligned"></span></button>
+		</div>
+		<div class="progress">
+			<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

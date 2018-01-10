@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<title>Usability Rocks!</title>
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="../css/utility.css?01" rel="stylesheet">
+	<link href="../css/app.css?02" rel="stylesheet">
+	<link href="../css/audio.css?01" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109054116-1');
+	</script>
+</head>
+<body class="no-js">
+
+		
+
+<div class="container mt-4">
+	<div class="col-md-4">
+		<audio crossorigin preload="auto">
+			<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/peter.mp3" type="audio/mpeg">
+		</audio>
+		<div class="btn-group audio-player" role="group" aria-label="Audio Player">
+			<button class="btn btn-secondary btn-play"><span title="Play" class="fa fa-play aligned"></span></button>
+			<button class="btn btn-secondary btn-stop"><span title="Stop" class="fa fa-stop aligned"></span></button>
+			<button class="btn btn-secondary btn-restart"><span title="Restart" class="fa fa-step-backward aligned"></span></button>
+			<button class="btn btn-secondary btn-back-5"><span title="-5 seconds" class="fa fa-fast-backward aligned"></span></button>
+			<button class="btn btn-secondary btn-forward-5"><span title="+5 seconds" class="fa fa-fast-forward aligned"></span></button>
+			<button class="btn btn-secondary btn-back-1"><span title="-1 seconds" class="fa fa-chevron-left aligned"></span></button>
+			<button class="btn btn-secondary btn-forward-1"><span title="+1 seconds" class="fa fa-chevron-right aligned"></span></button>
+			<button class="btn btn-secondary btn-volume-up"><span title="Volume Up" class="fa fa-volume-up aligned"></span></button>
+			<button class="btn btn-secondary btn-volume-down"><span title="Volume Down" class="fa fa-volume-down aligned"></span></button>
+		</div>
+		<div class="progress">
+			<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+	</div>
+</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js'></script>
+
+	<script src="../js/app.js?01"></script>
+	<script src="../js/audio.js?01"></script>
+
+	<script>
+		$( '.dot' ).each( function( i ) {
+			$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
+		} );
+	</script>
+</body>
+</html>

@@ -43,10 +43,14 @@ $( function() {
 		$( t ).prev().append( a );
 	} );
 
-	$( '.bd-example:not(.prism-ignore)' ).each( function() { 
+	$( '.dot' ).each( function( i ) {
+		$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
+	} );
+
+	$( '.bd-example:not(.prism-ignore)' ).each( function() {
 		var $t = $( this ),
 			html = $t.html();
-		
+
 		if ( html.trim().length > 0 ) {
 			$t.after( '<pre class="language-html"><code>' + $('<div/>').text( html ).html() + '</code></pre>' );
 		}
@@ -55,7 +59,32 @@ $( function() {
 	$( '.bd-example' ).promise().done( function() {
 		Prism.highlightAll();
 	} );
-	
+
+	$( '.markup textarea' ).each( function(){
+		var t = $(this);
+
+		t.after( '<pre class="language-html"><code>' + $('<div/>').text( t.val() ).html() + '</code></pre>' ).hide();
+	} );
+
+	$( '.markup textarea' ).promise().done( function() {
+		Prism.highlightAll();
+	} );
+
+	var i = 0;
+	$( '.migration textarea' ).each( function(){
+		var t = $(this);
+
+		if ( i % 2 ) {
+			t.after( '<div class="bd-example">' + t.val() + '</div>' );
+		}
+
+		t.after( '<pre class="language-html"><code>' + $('<div/>').text( t.val() ).html() + '</code></pre>' ).hide();
+		i++;
+	} );
+
+	$( '.migration textarea' ).promise().done( function() {
+		Prism.highlightAll();
+	} );
 
 	var url = window.location.pathname,
 		target = $( "a[href='" + url.substring( url.lastIndexOf( '/' ) + 1 ) + "']" );
@@ -137,7 +166,7 @@ $( window ).on( 'load resize scroll', function( e ) {
 	}
 } );
 
-var client = algoliasearch( "G2FUZ82WJ6", "6ed2ed9a83a0bd747f2986aa04722cb0" )
+var client = algoliasearch( "G2FUZ82WJ6", "6ed2ed9a83a0bd747f2986aa04722cb0" );
 var docs_search = client.initIndex( 'docs_search' );
 
 autocomplete( '#aa-search-input', {}, [
@@ -165,7 +194,7 @@ function searchCallback( err, content ) {
 		retval += '<li><a href="' + content.hits[ i ].page_url + '">' + content.hits[ i ].page_name + '</a></li>';
 	}
 	$( '#search-results' ).html( retval );
-};
+}
 var sortdir = 'desc';
 
 function iconsort() {

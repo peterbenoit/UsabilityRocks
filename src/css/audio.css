@@ -1,0 +1,16 @@
+.progress {
+  height: 3px;
+}
+
+.audio-player > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-left-radius: 0;
+}
+
+.audio-player > .btn:last-child:not(:first-child),
+.audio-player > .dropdown-toggle:not(:first-child) {
+  border-bottom-right-radius: 0;
+}
+
+.audio-player .btn-secondary:focus {
+  box-shadow: none;
+}
