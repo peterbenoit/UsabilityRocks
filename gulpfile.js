@@ -31,7 +31,7 @@ gulp.task( 'render', function() {
     .pipe( livereload() );
 } );
 
-gulp.task( 'sass', function() {
+gulp.task( 'compilesass', function() {
     return gulp.src( COMPILE.SASS )
     // .pipe( sourcemaps.init() )
     // .pipe( sass({outputStyle: 'compressed'})
@@ -42,7 +42,7 @@ gulp.task( 'sass', function() {
     .pipe( livereload() );
 } );
 
-gulp.task( 'autoprefixer', function () {
+gulp.task( 'autoprefixer', ['compilesass'], function () {
     var postcss      = require('gulp-postcss');
     var autoprefixer = require('autoprefixer');
 
@@ -53,6 +53,7 @@ gulp.task( 'autoprefixer', function () {
         .pipe(gulp.dest('./dist/css'));
 } );
 
+gulp.task( 'sass', ['compilesass','autoprefixer'] );
 
 gulp.task( 'minify', function() {
     return gulp.src( COMPILE.JS )
