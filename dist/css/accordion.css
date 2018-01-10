@@ -1,0 +1,65 @@
+.accordion .card-header {
+  cursor: pointer;
+}
+
+.accordion.heading-right .card-title {
+  position: absolute;
+  right: 50px;
+}
+
+.accordion.indicator-plus .card-header:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: right;
+}
+
+.accordion.indicator-plus .card-header.collapsed:after {
+  content: "\f067";
+}
+
+.accordion.indicator-plus-before.round-indicator .card-header:before {
+  font-family: 'FontAwesome';
+  font-size: 14pt;
+  content: "\f056";
+  margin-right: 10px;
+  color: #ff9900;
+}
+
+.accordion.indicator-plus-before.round-indicator .card-header.collapsed:before {
+  content: "\f055";
+  color: #000;
+}
+
+.accordion.indicator-plus-before .card-header:before {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: left;
+}
+
+.accordion.indicator-plus-before .card-header.collapsed:before {
+  content: "\f067";
+}
+
+.accordion.indicator-chevron .card-header:after {
+  font-family: 'FontAwesome';
+  content: "\f078";
+  float: right;
+}
+
+.accordion.indicator-chevron .card-header.collapsed:after {
+  content: "\f077";
+}
+
+.accordion.background-none [class^="card"] {
+  background: transparent;
+}
+
+.accordion.border-0 .card {
+  border: 0;
+}
+
+.btn.hide-me[aria-expanded='true'] {
+  display: none;
+}
+
+/*# sourceMappingURL=accordion.css.map */
