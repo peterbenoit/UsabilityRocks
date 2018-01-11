@@ -326,6 +326,12 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .fill-pdf { fill: $pdf!important; }
 .fill-ppt { fill: $ppt!important; }
 .fill-fb { fill: $fb!important; }
+.fill-h {
+	fill: $primary!important;
+	&:hover {
+		fill: lighten( $primary, 15% )!important;
+	}
+}
 
 .fill-lg { fill:url(#linear-gradient); }
 .fill-mask { mask:url(#mask); }

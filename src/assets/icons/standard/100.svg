@@ -1,9 +1,4 @@
 <svg data-name="01" height="40px" id="_01" viewbox="0 0 40 40" width="40px" xmlns="http://www.w3.org/2000/svg">
-	<defs>
-		<style>
-		.cls-2{fill:#5a5a5a;}
-		</style>
-	</defs>
 	<title>people_08</title>
 	<circle class="fill-p" cx="19.25" cy="7.18" r="4.61"></circle>
 	<circle class="fill-p" cx="23.26" cy="21.07" r="2.26" transform="translate(-8.03 18.72) rotate(-37.88)"></circle>

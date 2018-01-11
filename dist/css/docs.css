@@ -686,6 +686,14 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   fill: #3d5a98 !important;
 }
 
+.fill-h {
+  fill: #005eaa !important;
+}
+
+.fill-h:hover {
+  fill: #0088f7 !important;
+}
+
 .fill-lg {
   fill: url(#linear-gradient);
 }
