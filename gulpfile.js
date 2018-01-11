@@ -14,7 +14,7 @@ var COMPILE = {
     ALL: 'src/**',
     SRC: 'src/**/*.html',
     DEST: 'dist',
-    SASS: 'src/scss/*.scss',
+    SASS: 'src/scss/',
     JS: 'src/js/*.js'
 };
 
@@ -42,7 +42,29 @@ gulp.task( 'compilesass', function() {
     .pipe( livereload() );
 } );
 
-gulp.task( 'autoprefixer', ['compilesass'], function () {
+gulp.task( 'app', function() {
+    return gulp.src( COMPILE.SASS + 'app.scss' )
+    // .pipe( sourcemaps.init() )
+    // .pipe( sass({outputStyle: 'compressed'})
+    .pipe( sass({outputStyle: 'expanded'})
+    .on( 'error', sass.logError ) )
+    // .pipe( sourcemaps.write() )
+    .pipe(gulp.dest('./src/css'))
+    .pipe( livereload() );
+} );
+
+gulp.task( 'docs', function() {
+    return gulp.src( COMPILE.SASS + 'docs.scss' )
+    // .pipe( sourcemaps.init() )
+    // .pipe( sass({outputStyle: 'compressed'})
+    .pipe( sass({outputStyle: 'expanded'})
+    .on( 'error', sass.logError ) )
+    // .pipe( sourcemaps.write() )
+    .pipe(gulp.dest('./src/css'))
+    .pipe( livereload() );
+} );
+
+gulp.task( 'autoprefixer', ['app', 'docs'], function () {
     var postcss      = require('gulp-postcss');
     var autoprefixer = require('autoprefixer');
 
@@ -53,7 +75,7 @@ gulp.task( 'autoprefixer', ['compilesass'], function () {
         .pipe(gulp.dest('./dist/css'));
 } );
 
-gulp.task( 'sass', ['compilesass','autoprefixer'] );
+gulp.task( 'sass', ['app','docs','autoprefixer'] );
 
 gulp.task( 'minify', function() {
     return gulp.src( COMPILE.JS )
