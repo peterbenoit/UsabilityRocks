@@ -1,125 +1,6 @@
-// from https://codepen.io/peterbenoit/pen/YrXgNK
-// WARN: this file might not be as updated as the original source - be sure to update!
 
-// standard colors
-$white: 		white !default;
-$black: 		black !default;
-$red: 			#8f0000 !default;
-$green: 		#80ff80 !default;
-$yellow: 		#ffff80 !default;
 
-// theme colors
-$primary: 	#005eaa !default;
-$secondary: #88c3ea !default;
-$tertiary: 	#c0e9ff !default;
 
-$purple-primary: #712177 !default;
-$purple-secondary: #b890bb !default;
-$purple-tertiary: #e3d3e4 !default;
-
-$brown-primary: #705043 !default;
-$brown-secondary: #ad907b !default;
-$brown-tertiary: #d7ccc8 !default;
-
-$teal-primary: #00695c !default;
-$teal-secondary: #4ebaaa !default;
-$teal-tertiary: #ceece7 !default;
-
-$pink-primary: #af4448 !default;
-$pink-secondary: #e57373 !default;
-$pink-tertiary: #ffc2c2 !default;
-
-$orange-primary: #bb4d00 !default;
-$orange-secondary: #ffad42 !default;
-$orange-tertiary: #ffe97d !default;
-
-$slate-primary: #29434e !default;
-$slate-secondary: #7e9ba5 !default;
-$slate-tertiary: #b6c6d2 !default;
-
-$indigo-primary: #26418f !default;
-$indigo-secondary: #92a6dd !default;
-$indigo-tertiary: #dee8ff !default;
-
-$cyan-primary: #007c91 !default;
-$cyan-secondary: #65b0bd !default;
-$cyan-tertiary: #cce5e9 !default;
-
-$green-primary: #4b830d !default;
-$green-secondary: #84bc49 !default;
-$green-tertiary: #dcedc8 !default;
-
-$amber-primary: #fbab18 !default;
-$amber-secondary: #ffd54f !default;
-$amber-tertiary: #ffecb3 !default;
-
-// engagement colors
-// TODO: TO BE DEFINED
-$success: 	#28a745 !default;
-$info: 		#17a2b8 !default;
-$warning: 	#ffc107 !default;
-$danger: 	#dc3545 !default;
-$light: 	#f8f9fa !default;
-$dark: 		#343a40 !default;
-$muted: 	#696969 !default;
-
-// alerts
-$alert-red: #870808 !default;
-
-// grays
-$graydarker: 	#333 !default;
-$graydark: 		#555 !default;
-$gray: 			#bdbdbd !default;
-$graylight: 	#e0e0e0 !default;
-$graylighter: 	#f0f0f0 !default;
-$graylightest: 	#f5f5f5 !default;
-
-// file colors
-$epub: 			#86b916 !default;
-$excel: 		#207245 !default;
-$govd: 			#5a5a5a !default;
-$pdf: 			#c1272d !default;
-$ppt: 			#d24625 !default;
-$fb: 			#3d5a98 !default;
-
-// Social Icons Colors
-// https://www.lockedowndesign.com/social-media-colors/
-// https://brandcolors.net/
-$twitter: 		#00b6f1 !default;
-$skype: 		#00aff0 !default;
-$facebook: 		#3b5998 !default;
-$linkedin: 		#007bb6 !default;
-$googleplus: 	#df4a32 !default;
-$youtube: 		#ff0000 !default;
-$flickrpink:	#f40083 !default;
-$flickrblue: 	#006add !default;
-$pinterest: 	#cb2027 !default;
-$instagram: 	#c32aa3 !default;
-$vimeo: 		#45bbff !default;
-$tumblr: 		#35465d !default;
-$soundcloud: 	#ff5500 !default;
-$foursquare: 	#fc4575 !default;
-$dribbble: 		#ea4c89 !default;
-$behance: 		#053eff !default;
-$vine: 			#00b489 !default;
-$stumbleupon: 	#eb4924 !default;
-$rss: 			#fa9b39 !default;
-$snapchat: 		#fffc00 !default;
-$whatsapp: 		#25d366 !default;
-$swarm: 		#ffb000 !default;
-$android: 		#a4c639 !default;
-$yahoo: 		#430297 !default;
-$spotify: 		#1ed760 !default;
-$reddit: 		#ff5700 !default;
-$deviantart: 	#4a5d4e !default;
-$pocket: 		#ee4056 !default;
-$quora: 		#aa2200 !default;
-$slideshare: 	#f7941e !default;
-$px500:         #0099e5 !default;	// 500px
-$listly: 		#df6d46 !default;
-$stackoverflow: #f48024 !default;
-
-$monospace: 	Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
 // Include media plugging into Bootstrap 4's Grid Breakpoints map
 //
@@ -445,6 +326,12 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .fill-pdf { fill: $pdf!important; }
 .fill-ppt { fill: $ppt!important; }
 .fill-fb { fill: $fb!important; }
+.fill-h {
+	fill: $primary!important;
+	&:hover {
+		fill: lighten( $primary, 15% )!important;
+	}
+}
 
 .fill-lg { fill:url(#linear-gradient); }
 .fill-mask { mask:url(#mask); }
@@ -470,6 +357,12 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 
 // ===============================================================
 // Colors
+
+/*
+
+WILL BE MOVED TO THEMES
+
+*/
 
 // background colors
 .bg-red, .bg-r { background-color: $red!important; }
@@ -831,76 +724,14 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 // .pb-3a, .py-3a { padding-bottom: 1.25rem!important; }
 // .pl-3a, .px-3a { padding-left: 1.25rem!important; }
 
+
+.pl-15 { padding-left: 15px!important; }
+.pr-15 { padding-right: 15px!important; }
+
 // responsive utilities
 @media (max-width: 575px) {
-	// .p-xs-0 { padding: 0!important; }
-	// .m-xs-0 { margin: 0!important; }
-	// .p-xs-1 { padding: .25rem!important; }
-	// .m-xs-1 { margin: .25rem!important; }
-	// .p-xs-2 { padding: .5rem!important; }
-	// .m-xs-2 { margin: .5rem!important; }
-	// .p-xs-3 { padding: 1rem!important; }
-	// .m-xs-3 { margin: 1rem!important; }
-	// .p-xs-4 { padding: 1.5rem!important; }
-	// .m-xs-4 { margin: 1.5rem!important; }
-	// .p-xs-5 { padding: 3rem!important; }
-	// .m-xs-6 { margin: 3rem!important; }
-
-	// .mb-xs-0 { margin-bottom: 0!important; }
-	// .mb-xs-1 { margin-bottom: .25!important; }
-	// .mb-xs-2 { margin-bottom: .5rem!important; }
-	// .mb-xs-3 { margin-bottom: 1rem!important; }
-	// .mb-xs-4 { margin-bottom: 1.5rem!important; }
-	// .mb-xs-5 { margin-bottom: 3rem!important; }
-
-	// .ml-xs-0 { margin-left: 0!important; }
-	// .ml-xs-1 { margin-left: .25!important; }
-	// .ml-xs-2 { margin-left: .5rem!important; }
-	// .ml-xs-3 { margin-left: 1rem!important; }
-	// .ml-xs-4 { margin-left: 1.5rem!important; }
-	// .ml-xs-5 { margin-left: 3rem!important; }
-
-	// .mr-xs-0 { margin-right: 0!important; }
-	// .mr-xs-1 { margin-right: .25!important; }
-	// .mr-xs-2 { margin-right: .5rem!important; }
-	// .mr-xs-3 { margin-right: 1rem!important; }
-	// .mr-xs-4 { margin-right: 1.5rem!important; }
-	// .mr-xs-5 { margin-right: 3rem!important; }
-
-	// .mt-xs-0 { margin-top: 0!important; }
-	// .mt-xs-1 { margin-top: .25!important; }
-	// .mt-xs-2 { margin-top: .5rem!important; }
-	// .mt-xs-3 { margin-top: 1rem!important; }
-	// .mt-xs-4 { margin-top: 1.5rem!important; }
-	// .mt-xs-5 { margin-top: 3rem!important; }
-
-	// .pb-xs-0 { padding-bottom: 0!important; }
-	// .pb-xs-1 { padding-bottom: .25!important; }
-	// .pb-xs-2 { padding-bottom: .5rem!important; }
-	// .pb-xs-3 { padding-bottom: 1rem!important; }
-	// .pb-xs-4 { padding-bottom: 1.5rem!important; }
-	// .pb-xs-5 { padding-bottom: 3rem!important; }
-
-	// .pl-xs-0 { padding-left: 0!important; }
-	// .pl-xs-1 { padding-left: .25!important; }
-	// .pl-xs-2 { padding-left: .5rem!important; }
-	// .pl-xs-3 { padding-left: 1rem!important; }
-	// .pl-xs-4 { padding-left: 1.5rem!important; }
-	// .pl-xs-5 { padding-left: 3rem!important; }
-
-	// .pr-xs-0 { padding-right: 0!important; }
-	// .pr-xs-1 { padding-right: .25!important; }
-	// .pr-xs-2 { padding-right: .5rem!important; }
-	// .pr-xs-3 { padding-right: 1rem!important; }
-	// .pr-xs-4 { padding-right: 1.5rem!important; }
-	// .pr-xs-5 { padding-right: 3rem!important; }
-
-	// .pt-xs-0 { padding-top: 0!important; }
-	// .pt-xs-1 { padding-top: .25!important; }
-	// .pt-xs-2 { padding-top: .5rem!important; }
-	// .pt-xs-3 { padding-top: 1rem!important; }
-	// .pt-xs-4 { padding-top: 1.5rem!important; }
-	// .pt-xs-5 { padding-top: 3rem!important; }
+	.pl-xs-15 { padding-left: 15px!important; }
+	.pr-xs-15 { padding-right: 15px!important; }
 
 	.display-xs-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
 	.display-xs-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
@@ -910,74 +741,8 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-xs-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
 }
 @media (min-width: 576px) {
-	// .p-sm-0 { padding: 0!important; }
-	// .m-sm-0 { margin: 0!important; }
-	// .p-sm-1 { padding: .25rem!important; }
-	// .m-sm-1 { margin: .25rem!important; }
-	// .p-sm-2 { padding: .5rem!important; }
-	// .m-sm-2 { margin: .5rem!important; }
-	// .p-sm-3 { padding: 1rem!important; }
-	// .m-sm-3 { margin: 1rem!important; }
-	// .p-sm-4 { padding: 1.5rem!important; }
-	// .m-sm-4 { margin: 1.5rem!important; }
-	// .p-sm-5 { padding: 3rem!important; }
-	// .m-sm-5 { margin: 3rem!important; }
-
-	// .mb-sm-0 { margin-bottom: 0!important; }
-	// .mb-sm-1 { margin-bottom: .25!important; }
-	// .mb-sm-2 { margin-bottom: .5rem!important; }
-	// .mb-sm-3 { margin-bottom: 1rem!important; }
-	// .mb-sm-4 { margin-bottom: 1.5rem!important; }
-	// .mb-sm-5 { margin-bottom: 3rem!important; }
-
-	// .ml-sm-0 { margin-left: 0!important; }
-	// .ml-sm-1 { margin-left: .25!important; }
-	// .ml-sm-2 { margin-left: .5rem!important; }
-	// .ml-sm-3 { margin-left: 1rem!important; }
-	// .ml-sm-4 { margin-left: 1.5rem!important; }
-	// .ml-sm-5 { margin-left: 3rem!important; }
-
-	// .mr-sm-0 { margin-right: 0!important; }
-	// .mr-sm-1 { margin-right: .25!important; }
-	// .mr-sm-2 { margin-right: .5rem!important; }
-	// .mr-sm-3 { margin-right: 1rem!important; }
-	// .mr-sm-4 { margin-right: 1.5rem!important; }
-	// .mr-sm-5 { margin-right: 3rem!important; }
-
-	// .mt-sm-0 { margin-top: 0!important; }
-	// .mt-sm-1 { margin-top: .25!important; }
-	// .mt-sm-2 { margin-top: .5rem!important; }
-	// .mt-sm-3 { margin-top: 1rem!important; }
-	// .mt-sm-4 { margin-top: 1.5rem!important; }
-	// .mt-sm-5 { margin-top: 3rem!important; }
-
-	// .pb-sm-0 { padding-bottom: 0!important; }
-	// .pb-sm-1 { padding-bottom: .25!important; }
-	// .pb-sm-2 { padding-bottom: .5rem!important; }
-	// .pb-sm-3 { padding-bottom: 1rem!important; }
-	// .pb-sm-4 { padding-bottom: 1.5rem!important; }
-	// .pb-sm-5 { padding-bottom: 3rem!important; }
-
-	// .pl-sm-0 { padding-left: 0!important; }
-	// .pl-sm-1 { padding-left: .25!important; }
-	// .pl-sm-2 { padding-left: .5rem!important; }
-	// .pl-sm-3 { padding-left: 1rem!important; }
-	// .pl-sm-4 { padding-left: 1.5rem!important; }
-	// .pl-sm-5 { padding-left: 3rem!important; }
-
-	// .pr-sm-0 { padding-right: 0!important; }
-	// .pr-sm-1 { padding-right: .25!important; }
-	// .pr-sm-2 { padding-right: .5rem!important; }
-	// .pr-sm-3 { padding-right: 1rem!important; }
-	// .pr-sm-4 { padding-right: 1.5rem!important; }
-	// .pr-sm-5 { padding-right: 3rem!important; }
-
-	// .pt-sm-0 { padding-top: 0!important; }
-	// .pt-sm-1 { padding-top: .25!important; }
-	// .pt-sm-2 { padding-top: .5rem!important; }
-	// .pt-sm-3 { padding-top: 1rem!important; }
-	// .pt-sm-4 { padding-top: 1.5rem!important; }
-	// .pt-sm-5 { padding-top: 3rem!important; }
+	.pl-sm-15 { padding-left: 15px!important; }
+	.pr-sm-15 { padding-right: 15px!important; }
 
 	.display-sm-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
 	.display-sm-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
@@ -987,74 +752,8 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-sm-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
 }
 @media (min-width: 768px) {
-	// .p-md-0 { padding: 0!important; }
-	// .m-md-0 { margin: 0!important; }
-	// .p-md-1 { padding: .25rem!important; }
-	// .m-md-1 { margin: .25rem!important; }
-	// .p-md-2 { padding: .5rem!important; }
-	// .m-md-2 { margin: .5rem!important; }
-	// .p-md-3 { padding: 1rem!important; }
-	// .m-md-3 { margin: 1rem!important; }
-	// .p-md-4 { padding: 1.5rem!important; }
-	// .m-md-4 { margin: 1.5rem!important; }
-	// .p-md-5 { padding: 3rem!important; }
-	// .m-md-6 { margin: 3rem!important; }
-
-	// .mb-md-0 { margin-bottom: 0!important; }
-	// .mb-md-1 { margin-bottom: .25!important; }
-	// .mb-md-2 { margin-bottom: .5rem!important; }
-	// .mb-md-3 { margin-bottom: 1rem!important; }
-	// .mb-md-4 { margin-bottom: 1.5rem!important; }
-	// .mb-md-5 { margin-bottom: 3rem!important; }
-
-	// .ml-md-0 { margin-left: 0!important; }
-	// .ml-md-1 { margin-left: .25!important; }
-	// .ml-md-2 { margin-left: .5rem!important; }
-	// .ml-md-3 { margin-left: 1rem!important; }
-	// .ml-md-4 { margin-left: 1.5rem!important; }
-	// .ml-md-5 { margin-left: 3rem!important; }
-
-	// .mr-md-0 { margin-right: 0!important; }
-	// .mr-md-1 { margin-right: .25!important; }
-	// .mr-md-2 { margin-right: .5rem!important; }
-	// .mr-md-3 { margin-right: 1rem!important; }
-	// .mr-md-4 { margin-right: 1.5rem!important; }
-	// .mr-md-5 { margin-right: 3rem!important; }
-
-	// .mt-md-0 { margin-top: 0!important; }
-	// .mt-md-1 { margin-top: .25!important; }
-	// .mt-md-2 { margin-top: .5rem!important; }
-	// .mt-md-3 { margin-top: 1rem!important; }
-	// .mt-md-4 { margin-top: 1.5rem!important; }
-	// .mt-md-5 { margin-top: 3rem!important; }
-
-	// .pb-md-0 { padding-bottom: 0!important; }
-	// .pb-md-1 { padding-bottom: .25!important; }
-	// .pb-md-2 { padding-bottom: .5rem!important; }
-	// .pb-md-3 { padding-bottom: 1rem!important; }
-	// .pb-md-4 { padding-bottom: 1.5rem!important; }
-	// .pb-md-5 { padding-bottom: 3rem!important; }
-
-	// .pl-md-0 { padding-left: 0!important; }
-	// .pl-md-1 { padding-left: .25!important; }
-	// .pl-md-2 { padding-left: .5rem!important; }
-	// .pl-md-3 { padding-left: 1rem!important; }
-	// .pl-md-4 { padding-left: 1.5rem!important; }
-	// .pl-md-5 { padding-left: 3rem!important; }
-
-	// .pr-md-0 { padding-right: 0!important; }
-	// .pr-md-1 { padding-right: .25!important; }
-	// .pr-md-2 { padding-right: .5rem!important; }
-	// .pr-md-3 { padding-right: 1rem!important; }
-	// .pr-md-4 { padding-right: 1.5rem!important; }
-	// .pr-md-5 { padding-right: 3rem!important; }
-
-	// .pt-md-0 { padding-top: 0!important; }
-	// .pt-md-1 { padding-top: .25!important; }
-	// .pt-md-2 { padding-top: .5rem!important; }
-	// .pt-md-3 { padding-top: 1rem!important; }
-	// .pt-md-4 { padding-top: 1.5rem!important; }
-	// .pt-md-5 { padding-top: 3rem!important; }
+	.pl-md-15 { padding-left: 15px!important; }
+	.pr-md-15 { padding-right: 15px!important; }
 
 	.display-md-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
 	.display-md-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
@@ -1064,74 +763,8 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-md-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
 }
 @media (min-width: 992px) {
-	// .p-lg-0 { padding: 0!important; }
-	// .m-lg-0 { margin: 0!important; }
-	// .p-lg-1 { padding: .25rem!important; }
-	// .m-lg-1 { margin: .25rem!important; }
-	// .p-lg-2 { padding: .5rem!important; }
-	// .m-lg-2 { margin: .5rem!important; }
-	// .p-lg-3 { padding: 1rem!important; }
-	// .m-lg-3 { margin: 1rem!important; }
-	// .p-lg-4 { padding: 1.5rem!important; }
-	// .m-lg-4 { margin: 1.5rem!important; }
-	// .p-lg-5 { padding: 3rem!important; }
-	// .m-lg-6 { margin: 3rem!important; }
-
-	// .mb-lg-0 { margin-bottom: 0!important; }
-	// .mb-lg-1 { margin-bottom: .25!important; }
-	// .mb-lg-2 { margin-bottom: .5rem!important; }
-	// .mb-lg-3 { margin-bottom: 1rem!important; }
-	// .mb-lg-4 { margin-bottom: 1.5rem!important; }
-	// .mb-lg-5 { margin-bottom: 3rem!important; }
-
-	// .ml-lg-0 { margin-left: 0!important; }
-	// .ml-lg-1 { margin-left: .25!important; }
-	// .ml-lg-2 { margin-left: .5rem!important; }
-	// .ml-lg-3 { margin-left: 1rem!important; }
-	// .ml-lg-4 { margin-left: 1.5rem!important; }
-	// .ml-lg-5 { margin-left: 3rem!important; }
-
-	// .mr-lg-0 { margin-right: 0!important; }
-	// .mr-lg-1 { margin-right: .25!important; }
-	// .mr-lg-2 { margin-right: .5rem!important; }
-	// .mr-lg-3 { margin-right: 1rem!important; }
-	// .mr-lg-4 { margin-right: 1.5rem!important; }
-	// .mr-lg-5 { margin-right: 3rem!important; }
-
-	// .mt-lg-0 { margin-top: 0!important; }
-	// .mt-lg-1 { margin-top: .25!important; }
-	// .mt-lg-2 { margin-top: .5rem!important; }
-	// .mt-lg-3 { margin-top: 1rem!important; }
-	// .mt-lg-4 { margin-top: 1.5rem!important; }
-	// .mt-lg-5 { margin-top: 3rem!important; }
-
-	// .pb-lg-0 { padding-bottom: 0!important; }
-	// .pb-lg-1 { padding-bottom: .25!important; }
-	// .pb-lg-2 { padding-bottom: .5rem!important; }
-	// .pb-lg-3 { padding-bottom: 1rem!important; }
-	// .pb-lg-4 { padding-bottom: 1.5rem!important; }
-	// .pb-lg-5 { padding-bottom: 3rem!important; }
-
-	// .pl-lg-0 { padding-left: 0!important; }
-	// .pl-lg-1 { padding-left: .25!important; }
-	// .pl-lg-2 { padding-left: .5rem!important; }
-	// .pl-lg-3 { padding-left: 1rem!important; }
-	// .pl-lg-4 { padding-left: 1.5rem!important; }
-	// .pl-lg-5 { padding-left: 3rem!important; }
-
-	// .pr-lg-0 { padding-right: 0!important; }
-	// .pr-lg-1 { padding-right: .25!important; }
-	// .pr-lg-2 { padding-right: .5rem!important; }
-	// .pr-lg-3 { padding-right: 1rem!important; }
-	// .pr-lg-4 { padding-right: 1.5rem!important; }
-	// .pr-lg-5 { padding-right: 3rem!important; }
-
-	// .pt-lg-0 { padding-top: 0!important; }
-	// .pt-lg-1 { padding-top: .25!important; }
-	// .pt-lg-2 { padding-top: .5rem!important; }
-	// .pt-lg-3 { padding-top: 1rem!important; }
-	// .pt-lg-4 { padding-top: 1.5rem!important; }
-	// .pt-lg-5 { padding-top: 3rem!important; }
+	.pl-lg-15 { padding-left: 15px!important; }
+	.pr-lg-15 { padding-right: 15px!important; }
 
 	.display-lg-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
 	.display-lg-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
@@ -1141,74 +774,8 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-lg-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
 }
 @media (min-width: 1200px) {
-	// .p-xl-0 { padding: 0!important; }
-	// .m-xl-0 { margin: 0!important; }
-	// .p-xl-1 { padding: .25rem!important; }
-	// .m-xl-1 { margin: .25rem!important; }
-	// .p-xl-2 { padding: .5rem!important; }
-	// .m-xl-2 { margin: .5rem!important; }
-	// .p-xl-3 { padding: 1rem!important; }
-	// .m-xl-3 { margin: 1rem!important; }
-	// .p-xl-4 { padding: 1.5rem!important; }
-	// .m-xl-4 { margin: 1.5rem!important; }
-	// .p-xl-5 { padding: 3rem!important; }
-	// .m-xl-6 { margin: 3rem!important; }
-
-	// .mb-xl-0 { margin-bottom: 0!important; }
-	// .mb-xl-1 { margin-bottom: .25!important; }
-	// .mb-xl-2 { margin-bottom: .5rem!important; }
-	// .mb-xl-3 { margin-bottom: 1rem!important; }
-	// .mb-xl-4 { margin-bottom: 1.5rem!important; }
-	// .mb-xl-5 { margin-bottom: 3rem!important; }
-
-	// .ml-xl-0 { margin-left: 0!important; }
-	// .ml-xl-1 { margin-left: .25!important; }
-	// .ml-xl-2 { margin-left: .5rem!important; }
-	// .ml-xl-3 { margin-left: 1rem!important; }
-	// .ml-xl-4 { margin-left: 1.5rem!important; }
-	// .ml-xl-5 { margin-left: 3rem!important; }
-
-	// .mr-xl-0 { margin-right: 0!important; }
-	// .mr-xl-1 { margin-right: .25!important; }
-	// .mr-xl-2 { margin-right: .5rem!important; }
-	// .mr-xl-3 { margin-right: 1rem!important; }
-	// .mr-xl-4 { margin-right: 1.5rem!important; }
-	// .mr-xl-5 { margin-right: 3rem!important; }
-
-	// .mt-xl-0 { margin-top: 0!important; }
-	// .mt-xl-1 { margin-top: .25!important; }
-	// .mt-xl-2 { margin-top: .5rem!important; }
-	// .mt-xl-3 { margin-top: 1rem!important; }
-	// .mt-xl-4 { margin-top: 1.5rem!important; }
-	// .mt-xl-5 { margin-top: 3rem!important; }
-
-	// .pb-xl-0 { padding-bottom: 0!important; }
-	// .pb-xl-1 { padding-bottom: .25!important; }
-	// .pb-xl-2 { padding-bottom: .5rem!important; }
-	// .pb-xl-3 { padding-bottom: 1rem!important; }
-	// .pb-xl-4 { padding-bottom: 1.5rem!important; }
-	// .pb-xl-5 { padding-bottom: 3rem!important; }
-
-	// .pl-xl-0 { padding-left: 0!important; }
-	// .pl-xl-1 { padding-left: .25!important; }
-	// .pl-xl-2 { padding-left: .5rem!important; }
-	// .pl-xl-3 { padding-left: 1rem!important; }
-	// .pl-xl-4 { padding-left: 1.5rem!important; }
-	// .pl-xl-5 { padding-left: 3rem!important; }
-
-	// .pr-xl-0 { padding-right: 0!important; }
-	// .pr-xl-1 { padding-right: .25!important; }
-	// .pr-xl-2 { padding-right: .5rem!important; }
-	// .pr-xl-3 { padding-right: 1rem!important; }
-	// .pr-xl-4 { padding-right: 1.5rem!important; }
-	// .pr-xl-5 { padding-right: 3rem!important; }
-
-	// .pt-xl-0 { padding-top: 0!important; }
-	// .pt-xl-1 { padding-top: .25!important; }
-	// .pt-xl-2 { padding-top: .5rem!important; }
-	// .pt-xl-3 { padding-top: 1rem!important; }
-	// .pt-xl-4 { padding-top: 1.5rem!important; }
-	// .pt-xl-5 { padding-top: 3rem!important; }
+	.pl-xl-15 { padding-left: 15px!important; }
+	.pr-xl-15 { padding-right: 15px!important; }
 
 	.display-xl-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
 	.display-xl-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }

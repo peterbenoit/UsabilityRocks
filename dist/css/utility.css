@@ -1,3 +1,12 @@
+/*
+
+
+
+WILL BE MOVED TO THEMES
+
+
+
+*/
 body:after {
   content: "xs,sm,md,lg,xl,xxl";
   display: none;
@@ -744,6 +753,11 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   clear: both;
 }
 
+/*
+
+WILL BE MOVED TO THEMES
+
+*/
 .bg-red, .bg-r {
   background-color: #8f0000 !important;
 }
@@ -1998,7 +2012,21 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   height: 100vh;
 }
 
+.pl-15 {
+  padding-left: 15px !important;
+}
+
+.pr-15 {
+  padding-right: 15px !important;
+}
+
 @media (max-width: 575px) {
+  .pl-xs-15 {
+    padding-left: 15px !important;
+  }
+  .pr-xs-15 {
+    padding-right: 15px !important;
+  }
   .display-xs-1 {
     font-size: 6rem;
     font-weight: 300;
@@ -2032,6 +2060,12 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 @media (min-width: 576px) {
+  .pl-sm-15 {
+    padding-left: 15px !important;
+  }
+  .pr-sm-15 {
+    padding-right: 15px !important;
+  }
   .display-sm-1 {
     font-size: 6rem;
     font-weight: 300;
@@ -2065,6 +2099,12 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 @media (min-width: 768px) {
+  .pl-md-15 {
+    padding-left: 15px !important;
+  }
+  .pr-md-15 {
+    padding-right: 15px !important;
+  }
   .display-md-1 {
     font-size: 6rem;
     font-weight: 300;
@@ -2098,6 +2138,12 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 @media (min-width: 992px) {
+  .pl-lg-15 {
+    padding-left: 15px !important;
+  }
+  .pr-lg-15 {
+    padding-right: 15px !important;
+  }
   .display-lg-1 {
     font-size: 6rem;
     font-weight: 300;
@@ -2131,6 +2177,12 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 @media (min-width: 1200px) {
+  .pl-xl-15 {
+    padding-left: 15px !important;
+  }
+  .pr-xl-15 {
+    padding-right: 15px !important;
+  }
   .display-xl-1 {
     font-size: 6rem;
     font-weight: 300;
