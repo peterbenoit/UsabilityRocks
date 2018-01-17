@@ -108,9 +108,11 @@ function makeSVG() {
 	var styles = '';
 	$( '.icon-grid img[src$=".svg"]' ).each( function( i ) {
 		var $img = $( this ),
+			$parent = $img.parent(),
 			imgURL = $img.attr( 'src' ),
 			attributes = $img.prop( 'attributes' ),
-			svg;
+			svg,
+			title = $img.attr( 'alt' );
 		$.get( {
 			url: imgURL,
 			cache: false
@@ -120,11 +122,13 @@ function makeSVG() {
 			// Remove any invalid XML tags
 			$svg = $svg.removeAttr( 'xmlns:a' );
 			// Loop through IMG attributes and apply on SVG
-			$.each( attributes, function() {
-				$svg.attr( this.name, this.value );
-			} );
+			// $.each( attributes, function() {
+			// 	$svg.attr( this.name, this.value );
+			// } );
 			// Replace IMG with SVG
 			$img.replaceWith( $svg );
+
+			$parent.append('<p>'+title+'</p>');
 		}, 'xml' );
 	} );
 	$( '#fg' ).show().spectrum( {

@@ -1,11 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="_01" data-name="01" viewBox="0 0 40 40">
-    <defs>
-        <style>
-            .cls-2{fill:#5a5a5a;fill-rule:evenodd;}
-        </style>
-    </defs>
     <title>
         building_01
     </title>
-    <path d="M31.75,0H8.25C4.11,0,.5,2.16.5,6.3V40h15V31h8v9h16V6.3C39.5,2.16,35.89,0,31.75,0ZM11.5,37h-7V31h7Zm0-9h-7V22h7Zm0-9h-7V13h7Zm0-9h-7V4h7Zm12,18h-8V22h8Zm0-9h-8V13h8Zm0-9h-8V4h8Zm12,27h-8V31h8Zm0-9h-8V22h8Zm0-9h-8V13h8Zm0-9h-8V4h8Z" class="fill-p"/>
+    <path d="M31.75,0H8.25C4.11,0,.5,2.16.5,6.3V40h15V31h8v9h16V6.3C39.5,2.16,35.89,0,31.75,0ZM11.5,37h-7V31h7Zm0-9h-7V22h7Zm0-9h-7V13h7Zm0-9h-7V4h7Zm12,18h-8V22h8Zm0-9h-8V13h8Zm0-9h-8V4h8Zm12,27h-8V31h8Zm0-9h-8V22h8Zm0-9h-8V13h8Zm0-9h-8V4h8Z" class="fill-p fr-evenodd"/>
 </svg>
