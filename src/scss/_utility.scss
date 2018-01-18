@@ -1,40 +1,4 @@
 
-
-
-
-// Include media plugging into Bootstrap 4's Grid Breakpoints map
-//
-// $breakpoints: $grid-breakpoints;
-// body {
-//   &::before {
-//     content: "<sm";
-//   }
-
-//   @include media(">sm") {
-//     &::before {
-//       content: ">sm";
-//     }
-//   }
-
-//   @include media(">md") {
-//     &::before {
-//       content: ">md";
-//     }
-//   }
-
-//   @include media(">lg") {
-//     &::before {
-//       content: ">lg";
-//     }
-//   }
-
-//   @include media(">xl") {
-//     &::before {
-//       content: ">xl";
-//     }
-//   }
-// }
-
 body:after {
 	content: "xs,sm,md,lg,xl,xxl";
 	display: none;
