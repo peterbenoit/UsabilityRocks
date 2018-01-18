@@ -2255,6 +2255,58 @@ WILL BE MOVED TO THEMES
   border-color: #c0e9ff !important;
 }
 
+.bt-primary {
+  border-top-color: #005eaa !important;
+}
+
+.bt-secondary {
+  border-top-color: #88c3ea !important;
+}
+
+.bt-tertiary {
+  border-top-color: #c0e9ff !important;
+}
+
+.br-primary {
+  border-right-color: #005eaa !important;
+}
+
+.br-secondary {
+  border-right-color: #88c3ea !important;
+}
+
+.br-tertiary {
+  border-right-color: #c0e9ff !important;
+}
+
+.bb-primary {
+  border-bottom-color: #005eaa !important;
+}
+
+.bb-secondary {
+  border-bottom-color: #88c3ea !important;
+}
+
+.bb-tertiary {
+  border-bottom-color: #c0e9ff !important;
+}
+
+.bl-primary {
+  border-left-color: #005eaa !important;
+}
+
+.bl-secondary {
+  border-left-color: #88c3ea !important;
+}
+
+.bl-tertiary {
+  border-left-color: #c0e9ff !important;
+}
+
+.c-primary {
+  color: #005eaa !important;
+}
+
 .theme-purple .bg-primary {
   background-color: #712177 !important;
 }
