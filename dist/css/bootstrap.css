@@ -2235,6 +2235,294 @@ pre code {
   opacity: 1;
 }
 
+.form-control-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.form-control-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.form-control-outline-primary:focus, .form-control-outline-primary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.form-control-outline-primary.disabled, .form-control-outline-primary:disabled {
+  color: #007bff;
+  background-color: transparent;
+}
+
+.form-control-outline-primary:not(:disabled):not(.disabled):active, .form-control-outline-primary:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.form-control-outline-primary:not(:disabled):not(.disabled):active:focus, .form-control-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.form-control-outline-secondary {
+  color: #6c757d;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+}
+
+.form-control-outline-secondary:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.form-control-outline-secondary:focus, .form-control-outline-secondary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.form-control-outline-secondary.disabled, .form-control-outline-secondary:disabled {
+  color: #6c757d;
+  background-color: transparent;
+}
+
+.form-control-outline-secondary:not(:disabled):not(.disabled):active, .form-control-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.form-control-outline-secondary:not(:disabled):not(.disabled):active:focus, .form-control-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.form-control-outline-success {
+  color: #28a745;
+  background-color: transparent;
+  background-image: none;
+  border-color: #28a745;
+}
+
+.form-control-outline-success:hover {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.form-control-outline-success:focus, .form-control-outline-success.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.form-control-outline-success.disabled, .form-control-outline-success:disabled {
+  color: #28a745;
+  background-color: transparent;
+}
+
+.form-control-outline-success:not(:disabled):not(.disabled):active, .form-control-outline-success:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.form-control-outline-success:not(:disabled):not(.disabled):active:focus, .form-control-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-success.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.form-control-outline-info {
+  color: #17a2b8;
+  background-color: transparent;
+  background-image: none;
+  border-color: #17a2b8;
+}
+
+.form-control-outline-info:hover {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.form-control-outline-info:focus, .form-control-outline-info.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.form-control-outline-info.disabled, .form-control-outline-info:disabled {
+  color: #17a2b8;
+  background-color: transparent;
+}
+
+.form-control-outline-info:not(:disabled):not(.disabled):active, .form-control-outline-info:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.form-control-outline-info:not(:disabled):not(.disabled):active:focus, .form-control-outline-info:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-info.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.form-control-outline-warning {
+  color: #ffc107;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffc107;
+}
+
+.form-control-outline-warning:hover {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-control-outline-warning:focus, .form-control-outline-warning.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+.form-control-outline-warning.disabled, .form-control-outline-warning:disabled {
+  color: #ffc107;
+  background-color: transparent;
+}
+
+.form-control-outline-warning:not(:disabled):not(.disabled):active, .form-control-outline-warning:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-warning.dropdown-toggle {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-control-outline-warning:not(:disabled):not(.disabled):active:focus, .form-control-outline-warning:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-warning.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+.form-control-outline-danger {
+  color: #dc3545;
+  background-color: transparent;
+  background-image: none;
+  border-color: #dc3545;
+}
+
+.form-control-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.form-control-outline-danger:focus, .form-control-outline-danger.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.form-control-outline-danger.disabled, .form-control-outline-danger:disabled {
+  color: #dc3545;
+  background-color: transparent;
+}
+
+.form-control-outline-danger:not(:disabled):not(.disabled):active, .form-control-outline-danger:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.form-control-outline-danger:not(:disabled):not(.disabled):active:focus, .form-control-outline-danger:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-danger.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.form-control-outline-light {
+  color: #f8f9fa;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f8f9fa;
+}
+
+.form-control-outline-light:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.form-control-outline-light:focus, .form-control-outline-light.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.form-control-outline-light.disabled, .form-control-outline-light:disabled {
+  color: #f8f9fa;
+  background-color: transparent;
+}
+
+.form-control-outline-light:not(:disabled):not(.disabled):active, .form-control-outline-light:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-light.dropdown-toggle {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.form-control-outline-light:not(:disabled):not(.disabled):active:focus, .form-control-outline-light:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-light.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.form-control-outline-dark {
+  color: #343a40;
+  background-color: transparent;
+  background-image: none;
+  border-color: #343a40;
+}
+
+.form-control-outline-dark:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.form-control-outline-dark:focus, .form-control-outline-dark.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.form-control-outline-dark.disabled, .form-control-outline-dark:disabled {
+  color: #343a40;
+  background-color: transparent;
+}
+
+.form-control-outline-dark:not(:disabled):not(.disabled):active, .form-control-outline-dark:not(:disabled):not(.disabled).active,
+.show > .form-control-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.form-control-outline-dark:not(:disabled):not(.disabled):active:focus, .form-control-outline-dark:not(:disabled):not(.disabled).active:focus,
+.show > .form-control-outline-dark.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
 select.form-control:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px);
 }
