@@ -56,6 +56,14 @@
   }
 }
 
+// CDC - Added for form input outline colors to match the buttons
+@each $color, $value in $theme-colors {
+  .form-control-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+
 select.form-control {
   &:not([size]):not([multiple]) {
     height: $input-height;

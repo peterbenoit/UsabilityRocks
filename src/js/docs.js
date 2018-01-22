@@ -33,6 +33,7 @@ $( function() {
 	if ( hash.length > 0 ) {
 		document.getElementById( hash ).scrollIntoView();
 	}
+
 	$( 'iframe' ).each( function( i, t ) {
 		var a = document.createElement( 'a' );
 		a.text = " Demo ";
