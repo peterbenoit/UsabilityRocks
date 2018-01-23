@@ -71,6 +71,9 @@
 			$( '.btn-volume-down' ).on( 'click', function() { 
 				defaults.this.volume( 'down' );
 			} );
+			$( '#range-slider' ).on( 'change', function() { 
+				defaults.element.volume = $(this).val() / 10;
+			} );
 		},
 		play: function(){
 			if ( defaults.status == 0 || defaults.status == 2 ) {
