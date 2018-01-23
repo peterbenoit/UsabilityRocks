@@ -7,6 +7,6 @@ $( function() {
 $( window ).on( "load resize", _.throttle( function( e ) {
     $( '.grid-demo div[class^="col"]' ).each( function() { 
         var t = $( this );
-        t.text ( t.width() );
+        t.text ( t.width() + "px" );
     } );
 }, 100 ) );

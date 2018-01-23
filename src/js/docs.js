@@ -36,7 +36,7 @@ $( function() {
 
 	$( 'iframe' ).each( function( i, t ) {
 		var a = document.createElement( 'a' );
-		a.text = " Demo ";
+		a.text = " Full ";
 		a.href = t.src;
 		a.target = "_blank";
 		a.style = "padding: 10px";
