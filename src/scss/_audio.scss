@@ -1,9 +1,3 @@
-.audio-player + div {
-	margin-top: -17px;
-    z-index: 9999;
-    position: relative;
-}
-
 .audio-player, 
 .audio-player + div {
 	>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
@@ -23,6 +17,7 @@
 		-webkit-appearance: none;
 		margin: 10px 0;
 		width: 100%;
+		// overflow: hidden;
 	}
 	input[type=range]:focus {
 		outline: none;
@@ -104,4 +99,26 @@
 	input[type=range]:focus::-ms-fill-upper {
 		background: red;
 	}
+}
+
+.audio-player + div {
+	margin-top: -9px;
+    z-index: 9999;
+	position: relative;
+	
+	input[type=range] {
+		overflow: hidden;
+	}
+
+	input[type=range]::-webkit-slider-thumb {
+		box-shadow: -100vw 0 0 100vw red;
+		margin-top: -8px;
+	}	
+	input[type=range]::-webkit-slider-runnable-track {
+		background: #fff;
+		height: 30px;
+	}
+	input[type=range]:focus::-webkit-slider-runnable-track {
+		background: #fff;
+	}	
 }

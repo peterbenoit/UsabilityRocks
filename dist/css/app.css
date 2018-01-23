@@ -3404,12 +3404,6 @@ h6, .h6 {
   text-decoration: none;
 }
 
-.audio-player + div {
-  margin-top: -17px;
-  z-index: 9999;
-  position: relative;
-}
-
 .audio-player > .btn:first-child:not(:last-child):not(.dropdown-toggle),
 .audio-player + div > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-left-radius: 0;
@@ -3544,6 +3538,30 @@ h6, .h6 {
 .audio-player input[type=range]:focus::-ms-fill-upper,
 .audio-player + div input[type=range]:focus::-ms-fill-upper {
   background: red;
+}
+
+.audio-player + div {
+  margin-top: -9px;
+  z-index: 9999;
+  position: relative;
+}
+
+.audio-player + div input[type=range] {
+  overflow: hidden;
+}
+
+.audio-player + div input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: -100vw 0 0 100vw red;
+          box-shadow: -100vw 0 0 100vw red;
+}
+
+.audio-player + div input[type=range]::-webkit-slider-runnable-track {
+  background: #fff;
+  height: 30px;
+}
+
+.audio-player + div input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #fff;
 }
 
 .accordion .card-header {
