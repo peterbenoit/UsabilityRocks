@@ -64,7 +64,18 @@ gulp.task( 'docs', function() {
     .pipe( livereload() );
 } );
 
-gulp.task( 'autoprefixer', ['app', 'docs'], function () {
+gulp.task( 'bootstrap', function() {
+    return gulp.src( 'src/contrib/bootstrap/bootstrap.scss' )
+    // .pipe( sourcemaps.init() )
+    // .pipe( sass({outputStyle: 'compressed'})
+    .pipe( sass({outputStyle: 'expanded'})
+    .on( 'error', sass.logError ) )
+    // .pipe( sourcemaps.write() )
+    .pipe(gulp.dest('./src/css'))
+    .pipe( livereload() );
+} );
+
+gulp.task( 'autoprefixer', ['app', 'docs', 'bootstrap'], function () {
     var postcss      = require('gulp-postcss');
     var autoprefixer = require('autoprefixer');
 
@@ -75,7 +86,7 @@ gulp.task( 'autoprefixer', ['app', 'docs'], function () {
         .pipe(gulp.dest('./dist/css'));
 } );
 
-gulp.task( 'sass', ['app','docs','autoprefixer'] );
+gulp.task( 'sass', ['app','docs','bootstrap', 'autoprefixer'] );
 
 gulp.task( 'minify', function() {
     return gulp.src( COMPILE.JS )
