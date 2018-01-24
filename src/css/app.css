@@ -3437,6 +3437,7 @@ h6, .h6 {
 
 .audio-player + div input[type=range]::-webkit-slider-thumb {
   box-shadow: -100vw 0 0 100vw red;
+  margin-top: -8px;
 }
 
 .audio-player + div input[type=range]::-webkit-slider-runnable-track {
