@@ -1,1 +1,18 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-1{fill:#007bb5;}.cls-2{fill:#fff;}</style></defs><title>Linkedin</title><circle class="cls-1" cx="19.99" cy="20" r="19"/><path class="cls-2" d="M8.92,16h4.66V31H8.92Zm2.33-7.45a2.7,2.7,0,1,1-2.7,2.7,2.7,2.7,0,0,1,2.7-2.7"/><path class="cls-2" d="M16.5,16H21v2.05H21a4.88,4.88,0,0,1,4.4-2.42c4.72,0,5.59,3.1,5.59,7.13V31H26.36V23.73c0-1.73,0-4-2.42-4s-2.79,1.9-2.79,3.85V31H16.5Z"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .linkedin-1 {
+                fill: #007bb5;
+            }
+
+            .linkedin-2 {
+                fill: #fff;
+            }
+        </style>
+    </defs>
+    <title>Linkedin</title>
+    <circle class="linkedin-1" cx="19.99" cy="20" r="19" />
+    <path class="linkedin-2" d="M8.92,16h4.66V31H8.92Zm2.33-7.45a2.7,2.7,0,1,1-2.7,2.7,2.7,2.7,0,0,1,2.7-2.7" />
+    <path class="linkedin-2" d="M16.5,16H21v2.05H21a4.88,4.88,0,0,1,4.4-2.42c4.72,0,5.59,3.1,5.59,7.13V31H26.36V23.73c0-1.73,0-4-2.42-4s-2.79,1.9-2.79,3.85V31H16.5Z"
+    />
+</svg>

@@ -102,7 +102,7 @@ $( function() {
 	if ( activemenu.length ) {
 		selectedrop.text( activemenu.text() );
 	}
-	// makeSVG();
+	makeSVG();
 } );
 
 function makeSVG() {
