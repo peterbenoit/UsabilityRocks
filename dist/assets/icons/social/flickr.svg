@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .flickr-1{fill:url(#flickr-linear-gradient);}
+            .flickr-2{fill:url(#flickr-linear-gradient-2);}
+            .flickr-3{fill:url(#flickr-linear-gradient-3);}
+        </style>
+        <linearGradient id="flickr-linear-gradient" x1="20" x2="20" y1="1.2" y2="38.63" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#eef3f5"/>
+            <stop offset="1" stop-color="#d2dbe0"/>
+        </linearGradient>
+        <linearGradient id="flickr-linear-gradient-2" x1="27.27" x2="27.27" y1="25.36" y2="13.59" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f078ae"/>
+            <stop offset="1" stop-color="#ec1f80"/>
+        </linearGradient>
+        <linearGradient id="flickr-linear-gradient-3" x1="12.73" x2="12.73" y1="25.36" y2="13.59" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7899cf"/>
+            <stop offset="1" stop-color="#3664ae"/>
+        </linearGradient>
+    </defs>
+    <title>
+        flickr
+    </title>
+    <rect width="38" height="38" x="1" y="1" class="flickr-1" rx="6.23" ry="6.23"/>
+    <circle cx="27.27" cy="20" r="5.62" class="flickr-2"/>
+    <circle cx="12.73" cy="20" r="5.62" class="flickr-3"/>
+</svg>
