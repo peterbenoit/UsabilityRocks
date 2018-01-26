@@ -1,0 +1,12 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .white_googleplus-1 {
+                fill: #fff;
+            }
+        </style>
+    </defs>
+    <title>white_googleplus</title>
+    <path class="white_googleplus-1" d="M13.43,18v4.53h6.19c-1,2.93-2.48,4.53-6.19,4.53a6.69,6.69,0,0,1-6.67-6.79,6.69,6.69,0,0,1,6.67-6.79,6.46,6.46,0,0,1,4.44,1.66c.95-.94.87-1.07,3.26-3.33a11.43,11.43,0,1,0-7.7,19.89c9.44,0,11.75-8.22,11-13.7ZM34,18.19v-4H31.21v4H27.13V21h4.08V25.1H34V21h4V18.19Z"
+    />
+</svg>

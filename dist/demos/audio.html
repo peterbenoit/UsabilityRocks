@@ -9,7 +9,7 @@
 	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
 	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet prefetch" href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
 	<link href="../css/utility.css?02" rel="stylesheet">
 	<link href="../css/app.css?03" rel="stylesheet">
 
@@ -27,24 +27,74 @@
 
 		
 
+<!-- just a variety of svg icons for use with audio -->
+
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="pause-circle-outline" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 13,16L 13,8L 15,8L 15,16L 13,16 Z M 8.99994,16L 8.99994,8.00004L 10.9999,8.00004L 10.9999,16L 8.99994,16 Z M 12,2C 17.5228,2 22,6.47716 22,12C 22,17.5229 17.5228,22 12,22C 6.47715,22 2,17.5229 2,12C 2,6.47716 6.47715,2 12,2 Z M 12,4C 7.58172,4 4,7.58173 4,12C 4,16.4183 7.58172,20 12,20C 16.4183,20 20,16.4183 20,12C 20,7.58173 16.4183,4 12,4 Z "/> </symbol>
+<symbol id="pause-circle" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 15,16L 13,16L 13,7.99999L 15,7.99999M 11,16L 9,16L 9,7.99999L 11,7.99999M 12,1.99999C 6.47699,1.99999 2,6.47698 2,12C 2,17.524 6.47699,22 12,22C 17.523,22 22,17.524 22,12C 22,6.47698 17.523,1.99999 12,1.99999 Z "/> </symbol>
+<symbol id="pause-octagon-outline" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 15,16L 13,16L 13,8L 15,8L 15,16 Z M 11,16L 9,16L 9,8L 11,8L 11,16 Z M 15.728,3L 21,8.27197L 21,15.728L 15.728,21L 8.27148,21L 3,15.728L 3,8.27197L 8.27148,3L 15.728,3 Z M 14.8996,5L 9.10004,5L 5,9.10043L 5,14.8996L 9.10004,19L 14.8996,19L 19,14.8996L 19,9.10043L 14.8996,5 Z "/> </symbol>
+<symbol id="pause-octagon" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 15.728,3L 21,8.27197L 21,15.728L 15.728,21L 8.27148,21L 3,15.728L 3,8.27197L 8.27148,3L 15.728,3 Z M 15,16L 15,8L 13,8L 13,16L 15,16 Z M 11,16L 11,8L 9,8L 9,16L 11,16 Z "/> </symbol>
+<symbol id="pause" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 14,19L 18,19L 18,4.99999L 14,4.99999M 6,19L 10,19L 10,4.99999L 6,4.99999L 6,19 Z "/> </symbol>
+<symbol id="play" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 7.99939,5.13684L 7.99939,19.1368L 18.9994,12.1368L 7.99939,5.13684 Z "/> </symbol>
+<symbol id="repeat-off" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 2,5.26848L 3.27711,4L 20,20.7229L 18.7315,22L 15.7315,19L 7,19L 7,22L 3,18L 7,14L 7,17L 13.7315,17L 7,10.2685L 7,11L 5,11L 5,8.26848L 2,5.26848 Z M 17,13L 19,13L 19,17.1773L 17,15.1773L 17,13 Z M 17,5.00001L 17,2.00001L 21,6.00001L 17,10L 17,7.00001L 8.82269,7.00001L 6.82269,5.00001L 17,5.00001 Z "/> </symbol>
+<symbol id="repeat-once" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-linejoin="round" d="M 13,15L 13,9L 12,9L 10,10L 10,11L 11.5,11L 11.5,15M 17,17L 7,17L 7,14L 3,18L 7,22L 7,19L 19,19L 19,13L 17,13M 7,7L 17,7L 17,10L 21,6L 17,2L 17,5L 5,5L 5,11L 7,11L 7,7 Z "/> </symbol>
+<symbol id="repeat" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-linejoin="round" d="M 17,17L 7,17L 7,14L 3,18L 7,22L 7,19L 19,19L 19,13L 17,13M 7,7L 17,7L 17,10L 21,6L 17,2L 17,5L 5,5L 5,11L 7,11L 7,7 Z "/> </symbol>
+<symbol id="replay" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-linejoin="round" d="M 12,5L 12,1L 7,6L 12,11L 12,7C 15.31,7 18,9.69 18,13C 18,16.31 15.31,19 12,19C 8.69,19 6,16.31 6,13L 4,13C 4,17.42 7.58,21 12,21C 16.42,21 20,17.42 20,13C 20,8.58 16.42,5 12,5 Z "/> </symbol>
+<symbol id="shuffle-disabled" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 16.0012,4.5025L 16.0012,6.9925L 5,7.00625L 5,8.99875L 16.0012,8.99875L 16.0012,11.4987L 19.5025,7.9975M 16.0012,12.5L 16.0012,14.99L 5,15.005L 5,17.0025L 16.0012,17.0025L 16.0012,19.5025L 19.5025,16.0012"/> </symbol>
+<symbol id="shuffle-variant" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-linejoin="round" d="M 17,3L 22.25,7.50002L 17,12L 22.25,16.5L 17,21L 17,18L 14.2574,18L 11.4393,15.182L 13.5607,13.0607L 15.5,15L 17,15L 17,12L 17,9L 15.5,9L 6.49999,18L 2,18L 2,15L 5.25736,15L 14.2574,6L 17,6L 17,3 Z M 2,6.00001L 6.5,6.00001L 9.31802,8.81803L 7.1967,10.9393L 5.25737,9.00001L 2,9.00001L 2,6.00001 Z "/> </symbol>
+<symbol id="shuffle" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-linejoin="round" d="M 14.83,13.41L 13.42,14.82L 16.55,17.95L 14.5,20L 20,20L 20,14.5L 17.96,16.54L 14.83,13.41 Z M 14.5,4L 16.54,6.04L 4,18.59L 5.41,20L 17.96,7.46L 20,9.5L 20,4M 10.59,9.17L 5.41,4L 4,5.41L 9.17,10.58L 10.59,9.17 Z "/> </symbol>
+<symbol id="skip-backward" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 20,5L 20,18.9988L 12.9975,12.0025M 6.00125,5L 6.00125,18.9988L 3.99875,18.9988L 3.99875,5M 12.9975,5L 12.9975,18.9988L 6.00125,12.0025"/> </symbol>
+<symbol id="skip-forward" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3.99875,5L 3.99875,18.9988L 11.0013,12.0025M 17.9975,5L 17.9975,18.9988L 20,18.9988L 20,5M 11.0013,5L 11.0013,18.9988L 17.9975,12.0025"/> </symbol>
+<symbol id="skip-next-circle-outline" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 12.0025,2.0025C 6.475,2.0025 2.0025,6.475 2.0025,12.0025C 2.0025,17.525 6.475,22.0025 12.0025,22.0025C 17.525,22.0025 22.0025,17.525 22.0025,12.0025C 22.0025,6.475 17.525,2.0025 12.0025,2.0025 Z M 12.0025,3.99875C 16.4112,3.99875 20,7.5875 20,12.0025C 20,16.4113 16.4112,20 12.0025,20C 7.5875,20 3.99875,16.4113 3.99875,12.0025C 3.99875,7.5875 7.5875,3.99875 12.0025,3.99875 Z M 7.9975,7.9975L 7.9975,16.0012L 12.9975,12.0025M 13.9987,7.9975L 13.9987,16.0012L 16.0012,16.0012L 16.0012,7.9975"/> </symbol>
+<symbol id="skip-next-circle" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 12.0025,2.0025C 6.475,2.0025 2.0025,6.475 2.0025,12.0025C 2.0025,17.525 6.475,22.0025 12.0025,22.0025C 17.525,22.0025 22.0025,17.525 22.0025,12.0025C 22.0025,6.475 17.525,2.0025 12.0025,2.0025 Z M 7.9975,7.9975L 12.9975,12.0025L 7.9975,16.0012M 13.9987,7.9975L 16.0012,7.9975L 16.0012,16.0012L 13.9987,16.0012"/> </symbol>
+<symbol id="skip-next" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 16,18L 18,18L 18,5.99999L 16,5.99999M 6,18L 14.5,12L 6,5.99999L 6,18 Z "/> </symbol>
+<symbol id="skip-previous-circle-outline" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 12.0025,2.0025C 17.525,2.0025 22.0025,6.475 22.0025,12.0025C 22.0025,17.525 17.525,22.0025 12.0025,22.0025C 6.475,22.0025 2.0025,17.525 2.0025,12.0025C 2.0025,6.475 6.475,2.0025 12.0025,2.0025 Z M 12.0025,3.99875C 7.5875,3.99875 3.99875,7.5875 3.99875,12.0025C 3.99875,16.4113 7.5875,20 12.0025,20C 16.4112,20 20,16.4113 20,12.0025C 20,7.5875 16.4112,3.99875 12.0025,3.99875 Z M 16.0012,7.9975L 16.0012,16.0012L 11.0013,12.0025M 10,7.9975L 10,16.0012L 7.9975,16.0012L 7.9975,7.9975"/> </symbol>
+<symbol id="skip-previous-circle" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 12.0025,2.0025C 6.475,2.0025 2.0025,6.475 2.0025,12.0025C 2.0025,17.525 6.475,22.0025 12.0025,22.0025C 17.525,22.0025 22.0025,17.525 22.0025,12.0025C 22.0025,6.475 17.525,2.0025 12.0025,2.0025 Z M 7.9975,7.9975L 10,7.9975L 10,16.0012L 7.9975,16.0012M 16.0012,7.9975L 16.0012,16.0012L 11.0013,12.0025"/> </symbol>
+<symbol id="skip-previous" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 6,17.9997L 6,5.99972L 8,5.99972L 8,17.9997L 6,17.9997 Z M 9.5,12L 18,6L 18,18L 9.5,12 Z "/> </symbol>
+<symbol id="stop" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 18,18L 6,18L 5.99988,6.00011L 18,5.99999L 18,18 Z "/> </symbol>
+<symbol id="surround-sound-2-0" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 17,7L 19,7C 20.1046,7 21,7.89543 21,9L 21,15C 21,16.1046 20.1046,17 19,17L 17,17C 15.8954,17 15,16.1046 15,15L 15,9C 15,7.89543 15.8954,7 17,7 Z M 17,9L 17,15L 19,15L 19,9L 17,9 Z M 9,17L 3,17L 3,15.0052L 7,9L 3,9.00001L 3,7.00001L 6.99999,7.00001C 8.10456,7.00001 8.99999,7.89544 8.99999,9.00001C 8.99999,9.41999 8.87055,9.80973 8.64937,10.1315L 5.40654,15L 9,15L 9,17 Z M 12,17C 11.4477,17 11,16.5523 11,16C 11,15.4477 11.4477,15 12,15C 12.5523,15 13,15.4477 13,16C 13,16.5523 12.5523,17 12,17 Z "/> </symbol>
+<symbol id="surround-sound-3-1" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 13,17C 12.4477,17 12,16.5523 12,16C 12,15.4477 12.4477,15 13,15C 13.5523,15 14,15.4477 14,16C 14,16.5523 13.5523,17 13,17 Z M 19,7.00001L 19,15L 20,15L 20,17L 16,17L 16,15L 17,15L 17,9L 16,9L 17,7.00001L 19,7.00001 Z M 4,7L 8,7.00001C 9.10457,7.00001 10,7.89544 10,9L 10,15C 10,16.1046 9.10457,17 8,17L 4,17L 4,15L 8,15L 8,13L 5,13L 5,11L 8,11L 8,9.00001L 4,9L 4,7 Z "/> </symbol>
+<symbol id="surround-sound-5-1" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 13,17C 12.4477,17 12,16.5523 12,16C 12,15.4477 12.4477,15 13,15C 13.5523,15 14,15.4477 14,16C 14,16.5523 13.5523,17 13,17 Z M 19,7.00001L 19,15L 20,15L 20,17L 16,17L 16,15L 17,15L 17,9.00001L 16,9.00001L 17,7.00001L 19,7.00001 Z M 6,13C 4.89543,13 4,12.1046 4,11L 4,7L 10,7L 10,9L 6,9.00001L 6,11L 8,11C 9.10457,11 10,11.8954 10,13L 10,15C 10,16.1046 9.10457,17 8,17L 4,17L 4,15L 8,15L 8,13L 6,13 Z "/> </symbol>
+<symbol id="surround-sound-7-1" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-linejoin="round" d="M 12,17C 11.4477,17 11,16.5523 11,16C 11,15.4477 11.4477,15 12,15C 12.5523,15 13,15.4477 13,16C 13,16.5523 12.5523,17 12,17 Z M 18,7.00001L 18,15L 19,15L 19,17L 15,17L 15,15L 16,15L 16,9.00001L 15,9.00001L 16,7.00001L 18,7.00001 Z M 11,7L 8.01508,17L 6.01508,17L 8.40302,9L 5,9L 5,7L 11,7 Z "/> </symbol>
+<symbol id="surround-sound" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="1.33333" stroke-linejoin="miter" d="M 20,4L 4,4C 2.9,4 2,4.9 2,6L 2,18C 2,19.1 2.9,20 4,20L 20,20C 21.1,20 22,19.1 22,18L 22,6C 22,4.9 21.1,4 20,4 Z M 7.76,16.24L 6.35,17.65C 4.78,16.1 4,14.05 4,12C 4,9.95 4.78,7.9 6.34,6.34L 7.75,7.75C 6.59,8.93 6,10.46 6,12C 6,13.54 6.59,15.07 7.76,16.24 Z M 12,16C 9.79,16 8,14.21 8,12C 8,9.79 9.79,8 12,8C 14.21,8 16,9.79 16,12C 16,14.21 14.21,16 12,16 Z M 17.66,17.66L 16.25,16.25C 17.41,15.07 18,13.54 18,12C 18,10.46 17.41,8.93 16.24,7.76L 17.65,6.35C 19.22,7.9 20,9.95 20,12C 20,14.05 19.22,16.1 17.66,17.66 Z M 12,10C 10.9,10 10,10.9 10,12C 10,13.1 10.9,14 12,14C 13.1,14 14,13.1 14,12C 14,10.9 13.1,10 12,10 Z "/> </symbol>
+<symbol id="volume-high" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 13.9994,3.22858L 13.9994,5.29156C 16.8904,6.15253 18.9994,8.82855 18.9994,11.9976C 18.9994,15.1675 16.8904,17.8436 13.9994,18.7045L 13.9994,20.7675C 18.0064,19.8566 20.9994,16.2805 20.9994,11.9976C 20.9994,7.71558 18.0064,4.13855 13.9994,3.22858 Z M 16.4994,11.9976C 16.4994,10.2325 15.4794,8.70752 13.9994,7.97052L 13.9994,16.0256C 15.4794,15.2875 16.4994,13.7635 16.4994,11.9976 Z M 2.9994,8.99756L 2.9994,14.9976L 6.9994,14.9976L 11.9994,19.9976L 11.9994,3.99756L 6.9994,8.99756L 2.9994,8.99756 Z "/> </symbol>
+<symbol id="volume-low" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 6.9994,8.99813L 6.9994,14.9981L 10.9994,14.9981L 15.9994,19.9981L 15.9994,3.99813L 10.9994,8.99813L 6.9994,8.99813 Z "/> </symbol>
+<symbol id="volume-medium" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4.9994,8.99805L 4.9994,14.998L 8.9994,14.998L 13.9994,19.998L 13.9994,3.99805L 8.9994,8.99805M 18.4994,11.998C 18.4994,10.2321 17.4794,8.70807 15.9994,7.97107L 15.9994,16.025C 17.4794,15.288 18.4994,13.764 18.4994,11.998 Z "/> </symbol>
+<symbol id="volume-minus" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,9.00002L 6.99998,9.00004L 12,4.00002L 12,20L 6.99998,15L 2.99998,15L 3,9.00002 Z M 14,11L 22,11L 22,13L 14,13L 14,11 Z "/> </symbol>
+<symbol id="volume-mute" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,9.00002L 6.99998,9.00004L 12,4.00002L 12,20L 6.99998,15L 2.99998,15L 3,9.00002 Z M 16.5858,12L 14,9.41422L 15.4142,8L 18,10.5858L 20.5858,8L 22,9.41421L 19.4142,12L 22,14.5858L 20.5858,16L 18,13.4142L 15.4142,16L 14,14.5858L 16.5858,12 Z "/> </symbol>
+<symbol id="volume-off" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 11.9994,3.99805L 9.9084,6.08905L 11.9994,8.18005M 4.2724,2.99805L 2.9994,4.27106L 7.7264,8.99805L 2.9994,8.99805L 2.9994,14.998L 6.9994,14.998L 11.9994,19.998L 11.9994,13.2711L 16.2544,17.5261C 15.5844,18.043 14.8304,18.4561 13.9994,18.704L 13.9994,20.767C 15.3764,20.454 16.6284,19.8201 17.6844,18.9561L 19.7264,20.998L 20.9994,19.725L 11.9994,10.725M 18.9994,11.998C 18.9994,12.9371 18.7954,13.822 18.4604,14.6401L 19.9744,16.1541C 20.6244,14.91 20.9994,13.499 20.9994,11.998C 20.9994,7.71503 18.0064,4.13806 13.9994,3.22803L 13.9994,5.29205C 16.8904,6.15204 18.9994,8.82806 18.9994,11.998 Z M 16.4994,11.998C 16.4994,10.2321 15.4794,8.70807 13.9994,7.97003L 13.9994,10.1801L 16.4534,12.634C 16.4834,12.426 16.4994,12.2141 16.4994,11.998 Z "/> </symbol>
+<symbol id="volume-plus" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,9.00002L 6.99998,9.00004L 12,4.00002L 12,20L 6.99998,15L 2.99998,15L 3,9.00002 Z M 14,11L 17,11L 17,8L 19,8L 19,11L 22,11L 22,13L 19,13L 19,16L 17,16L 17,13L 14,13L 14,11 Z "/> </symbol>
+<symbol id="volume" viewBox="0 0 24 24"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,9.00002L 6.99998,9.00004L 12,4.00002L 12,20L 6.99998,15L 2.99998,15L 3,9.00002 Z M 20.9999,12.0001C 20.9999,16.2832 18.008,19.8676 14,20.777L 14,18.7102C 16.8914,17.8496 18.9999,15.1711 18.9999,12.0001C 18.9999,8.8291 16.8914,6.15058 14,5.29L 14,3.22307C 18.008,4.13255 20.9999,7.71688 20.9999,12.0001 Z M 17,12C 17,14.0503 15.7659,15.8124 14,16.584L 14,7.41605C 15.7659,8.1876 17,9.94968 17,12 Z "/> </symbol>
+</svg>
+
+<style>
+.icon {
+	width: 32px;
+	height: 32px;
+}
+</style>
+
+
 <div class="container mt-4">
 	<div class="col-md-4">
 		<audio crossorigin preload="auto">
 			<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/peter.mp3" type="audio/mpeg">
 		</audio>
 		<div class="btn-group audio-player" role="group" aria-label="Audio Player">
-			<button class="btn btn-secondary btn-play"><span title="Play" class="fa fa-play aligned"></span></button>
-			<button class="btn btn-secondary btn-stop"><span title="Stop" class="fa fa-stop aligned"></span></button>
-			<button class="btn btn-secondary btn-restart"><span title="Restart" class="fa fa-step-backward aligned"></span></button>
-			<button class="btn btn-secondary btn-back-5"><span title="-5 seconds" class="fa fa-fast-backward aligned"></span></button>
-			<button class="btn btn-secondary btn-forward-5"><span title="+5 seconds" class="fa fa-fast-forward aligned"></span></button>
-			<button class="btn btn-secondary btn-back-1"><span title="-1 seconds" class="fa fa-chevron-left aligned"></span></button>
-			<button class="btn btn-secondary btn-forward-1"><span title="+1 seconds" class="fa fa-chevron-right aligned"></span></button>
-			<button class="btn btn-secondary btn-volume-up"><span title="Volume Up" class="fa fa-volume-up aligned"></span></button>
-			<button class="btn btn-secondary btn-volume-down"><span title="Volume Down" class="fa fa-volume-down aligned"></span></button>
+			<button class="btn btn-secondary btn-play"><svg class="icon"><use xlink:href="#play" /></svg></button>
+			<button class="btn btn-secondary btn-stop"><svg class="icon"><use xlink:href="#stop" /></svg></button>
+			
+			<button class="btn btn-secondary btn-back-5"><svg class="icon"><use xlink:href="#skip-backward" /></svg></button>
+			<button class="btn btn-secondary btn-forward-5"><svg class="icon"><use xlink:href="#skip-forward" /></svg></button>
+			
+			
+			
+			
+			<button class="btn btn-secondary btn-volume-toggle"><svg class="icon"><use xlink:href="#volume-high" /></svg></button>
+			<div class="btn btn-secondary" style="width: 100px"><input type="range" min="0" max="10" value="5" id="volume-range-slider"></div>
 		</div>
-		<div class="progress">
-			<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		<div>
+			<input type="range" min="0" max="100" value="0" id="scrub-range-slider">
 		</div>
 	</div>
 </div>

@@ -53,6 +53,13 @@ gulp.task( 'app', function() {
     .pipe( livereload() );
 } );
 
+gulp.task('audio-sprites', function () {
+    var svgSymbols = require('gulp-svg-symbols');
+    return gulp.src('src/assets/icons/audio/*.svg')
+        .pipe(svgSymbols())
+        .pipe(gulp.dest('dist/assets/icons/symbols/audio/'));
+});
+
 gulp.task( 'docs', function() {
     return gulp.src( COMPILE.SASS + 'docs.scss' )
     // .pipe( sourcemaps.init() )
