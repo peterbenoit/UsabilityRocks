@@ -1,0 +1,13 @@
+// This are controls all attributes that are Theme-able
+
+// this function appends '.theme-[color] ' in front of the attributes inside 
+@include themify($themes) {
+    .btn-primary {
+        background-color: themed('primary') !important;
+        border-color:themed('primary')  !important;
+
+        &:hover {background-color: darken(themed('primary') ,7%) !important;}
+    }
+
+    .table .thead-dark th {background-color: themed('primary');}
+}

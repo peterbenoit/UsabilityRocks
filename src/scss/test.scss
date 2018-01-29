@@ -1,7 +1,7 @@
 @import 'themes.scss';
 @import 'mixins.scss';
 
-.app-container {
+//.app-container {
   @include themify($themes) {
     color: themed('primary');
     background-color: themed('secondary');
@@ -28,4 +28,4 @@
       }
     }
   }
-}
+//}
