@@ -1,5 +1,5 @@
 $( function() {
-	$( document.body ).toggleClass( 'no-js js' ); 
+	$( document.body ).toggleClass( 'no-js js' );
 } );
 
 window.onresize = handleOnEvents;
