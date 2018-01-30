@@ -137,7 +137,7 @@
 					<ul class="nav bd-sidenav">
 						<li>
 							<a href="alignment.html">Alignment</a>
-						</li>					
+						</li>
 						<li>
 							<a href="borders.html">Borders</a>
 						</li>
@@ -155,7 +155,7 @@
 						</li>
 						<li>
 							<a href="display.html">Display</a>
-						</li>						
+						</li>
 						<li>
 							<a href="drop-shadows.html">Drop Shadows</a>
 						</li>
@@ -164,7 +164,7 @@
 						</li>
 						<li>
 							<a href="float.html">Float</a>
-						</li>						
+						</li>
 						<li>
 							<a href="font-sizes.html">Font Sizes</a>
 						</li>
@@ -185,7 +185,7 @@
 						</li>
 						<li>
 							<a href="text-utilities.html">Text Utilities</a>
-						</li>						
+						</li>
 						<li>
 							<a href="width-height.html">Width/Height</a>
 						</li>
@@ -224,6 +224,9 @@
 							<a href="audio.html">Audio</a>
 						</li>
 						<li>
+							<a href="breadcrumbs.html">Breadcrumbs</a>
+						</li>						
+						<li>
 							<a href="cards.html">Cards</a>
 						</li>
 						<li>
@@ -238,6 +241,9 @@
 						<li>
 							<a href="icons.html">Icons</a>
 						</li>
+						<li>
+							<a href="on-this-page.html">On This Page</a>
+						</li>
 					</ul>
 				</div>
 				<div class="bd-toc-item">
@@ -245,7 +251,7 @@
 					<ul class="nav bd-sidenav">
 						<li>
 							<a href="grid.html">Grid</a>
-						</li>					
+						</li>
 						<li>
 							<a href="layouts-web-apps.html">Web Applications</a>
 						</li>
@@ -329,8 +335,70 @@
 			<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
 
 				
-<h1 class="bd-title" id="content">Welcome to Sass Land</h1>
-<p>Testing styles &amp; theming</p>
+<link rel="stylesheet" href="css/app.css">
+
+<div class="theme-blue">
+
+	<h1 class="bd-title" id="content">Welcome to Sass Land</h1>
+	<p>Testing styles &amp; theming</p>
+
+	<h3>Buttons - theme wrapped</h3>
+	<div class="theme-blue">
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-secondary">Secondary</button>
+		<button type="button" class="btn btn-tertiary">tertiary</button>
+		<a class="btn btn-primary" href="#" role="button">Link</a>
+		<h4>Form Buttons</h4>
+		<button class="btn btn-primary" type="submit">Button</button>
+		<input class="btn btn-primary" type="button" value="Input">
+		<input class="btn btn-primary" type="submit" value="Submit">
+		<input class="btn btn-primary" type="reset" value="Reset">
+	</div>
+
+
+	<h3>Table</h3>
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">First</th>
+				<th scope="col">Last</th>
+				<th scope="col">Handle</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>Themed Card</h3>
+	<div class="card w-33">
+		<img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/768x480-4.jfif" alt="Card image cap">
+		<div class="card-body">
+			<h5 class="card-title">Card title</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	</div>
+
+</div><!-- theme-blue -->
 
 
 
@@ -340,7 +408,7 @@
 	<footer></footer>
 	<!-- <script src="https://unpkg.com/jquery/dist/jquery.slim.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src='../contrib/bootstrap.bundle.min.js'></script>
+<script src='contrib/bootstrap.bundle.min.js'></script>
 <script src='https://cdn.rawgit.com/twbs/bootstrap/gh-pages/assets/js/docs.min.js'></script>
 <!-- <script src='https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js'></script> -->
 <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
@@ -353,7 +421,7 @@
 <script src="contrib/spectrum.js"></script>
 
 <script src="js/app.js?02"></script>
-<script src="js/docs.js?24"></script>
+<script src="js/docs.js?26"></script>
 
 </body>
 </html>

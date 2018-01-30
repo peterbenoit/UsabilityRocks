@@ -1,0 +1,26 @@
+// This are controls all attributes that are Theme-able
+// -- this function loops over the themes, and prepends '.theme-[color] '
+@include themify($themes) {
+    .btn-primary {
+        background-color: themed('primary');
+        border-color:themed('primary');
+        &:hover {background-color: darken(themed('primary') ,5%);}
+    }
+    .btn-secondary {
+        background-color: themed('secondary');
+        border-color:themed('secondary');
+        color:$black;
+        &:hover {background-color: darken(themed('secondary') ,5%);}
+    }
+    .btn-tertiary {
+        background-color: themed('tertiary');
+        border-color:themed('tertiary');
+        color:$black;
+        &:hover {background-color: darken(themed('tertiary') ,5%);}
+    }
+
+    .table .thead-dark th {
+        background-color: themed('primary');
+        border-color: themed('primary');
+    }
+}
