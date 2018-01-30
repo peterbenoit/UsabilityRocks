@@ -27,7 +27,7 @@ body:before {
 		content: "xl";
 	}
 }
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
 	body:before {
 		content: "xxl";
 	}
@@ -742,6 +742,18 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-xl-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xl-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xl-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+}
+
+@media (min-width: 1440px) {
+	.pl-xxl-15 { padding-left: 15px!important; }
+	.pr-xxl-15 { padding-right: 15px!important; }
+
+	.display-xxl-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
 }
 
 // animations?
