@@ -795,11 +795,6 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   clear: both;
 }
 
-/*
-
-WILL BE MOVED TO THEMES
-
-*/
 .bg-red, .bg-r {
   background-color: #8f0000 !important;
 }
@@ -3631,6 +3626,19 @@ h6, .h6 {
 
 .btn.hide-me[aria-expanded='true'] {
   display: none;
+}
+
+.tp-on-this-page .card-header {
+  background-color: #e0e0e0;
+  font-weight: 700;
+}
+
+.tp-on-this-page .list-group-item {
+  background-color: #f5f5f5;
+}
+
+.card a {
+  text-decoration: none;
 }
 
 .theme-blue .btn-primary {

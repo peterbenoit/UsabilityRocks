@@ -705,11 +705,6 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   clear: both;
 }
 
-/*
-
-WILL BE MOVED TO THEMES
-
-*/
 .bg-red, .bg-r {
   background-color: #8f0000 !important;
 }
