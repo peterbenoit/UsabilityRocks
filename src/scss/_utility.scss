@@ -156,6 +156,12 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.cc-xl-3 { column-count: 3; }
 	.cc-xl-4 { column-count: 4; }
 }
+@media (min-width: 1440px) {
+	.cc-xxl-1 { column-count: 1; }
+	.cc-xxl-2 { column-count: 2; }
+	.cc-xxl-3 { column-count: 3; }
+	.cc-xxl-4 { column-count: 4; }
+}
 
 // column gap
 .cg-1 { column-gap: 10px; }
@@ -698,6 +704,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-xs-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xs-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xs-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-xs-0 {	border-top: none!important; }
+	.br-xs-0 {	border-right: none!important; }
+	.bb-xs-0 {	border-bottom: none!important; }
+	.bl-xs-0 {	border-left: none!important; }
 }
 @media (min-width: 576px) {
 	.pl-sm-15 { padding-left: 15px!important; }
@@ -709,6 +720,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-sm-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-sm-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-sm-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-sm-0 {	border-top: none!important; }
+	.br-sm-0 {	border-right: none!important; }
+	.bb-sm-0 {	border-bottom: none!important; }
+	.bl-sm-0 {	border-left: none!important; }	
 }
 @media (min-width: 768px) {
 	.pl-md-15 { padding-left: 15px!important; }
@@ -720,6 +736,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-md-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-md-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-md-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-md-0 {	border-top: none!important; }
+	.br-md-0 {	border-right: none!important; }
+	.bb-md-0 {	border-bottom: none!important; }
+	.bl-md-0 {	border-left: none!important; }	
 }
 @media (min-width: 992px) {
 	.pl-lg-15 { padding-left: 15px!important; }
@@ -731,6 +752,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-lg-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-lg-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-lg-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-lg-0 {	border-top: none!important; }
+	.br-lg-0 {	border-right: none!important; }
+	.bb-lg-0 {	border-bottom: none!important; }
+	.bl-lg-0 {	border-left: none!important; }	
 }
 @media (min-width: 1200px) {
 	.pl-xl-15 { padding-left: 15px!important; }
@@ -742,6 +768,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-xl-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xl-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xl-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-xl-0 {	border-top: none!important; }
+	.br-xl-0 {	border-right: none!important; }
+	.bb-xl-0 {	border-bottom: none!important; }
+	.bl-xl-0 {	border-left: none!important; }
 }
 
 @media (min-width: 1440px) {
@@ -754,6 +785,11 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.display-xxl-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xxl-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
 	.display-xxl-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-xxl-0 {	border-top: none!important; }
+	.br-xxl-0 {	border-right: none!important; }
+	.bb-xxl-0 {	border-bottom: none!important; }
+	.bl-xxl-0 {	border-left: none!important; }
 }
 
 // animations?
