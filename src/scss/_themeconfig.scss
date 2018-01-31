@@ -1,6 +1,7 @@
 // This are controls all attributes that are Theme-able
 // -- this function loops over the themes, and prepends '.theme-[color] '
 @include themify($themes) {
+    //buttons
     .btn-primary {
         background-color: themed('primary');
         border-color:themed('primary');
@@ -20,8 +21,15 @@
         &:hover {background-color: darken(themed('tertiary') ,5%);}
     }
 
+    // tables
     .table .thead-dark th {
         background-color: themed('primary');
         border-color: themed('primary');
     }
+    .table-dark {background-color: themed('primary');}
+    .table-dark th, .table-dark td, .table-dark thead th {border-color: lighten(themed('primary'), 5%);}
+
+    // Icons
+    svg .fill-p {fill:themed('primary');}
+
 }

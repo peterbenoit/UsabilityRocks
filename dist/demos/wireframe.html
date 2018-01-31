@@ -20,8 +20,8 @@
   gtag('config', 'UA-109054116-1');
 </script>
 
-  
-  
+
+
   <link rel='stylesheet prefetch' href='https://usability.rocks/css/bootstrap.css?2'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
@@ -542,10 +542,10 @@ address.address li {
 
     </style>
 
-  
-  
-  
-  
+
+
+
+
 
 </head>
 
@@ -624,7 +624,7 @@ address.address li {
 				<li class="breadcrumb-item"><a href="#">NCHS</a></li>
 <!-- 					<li class="breadcrumb-item active d-none d-md-inline" aria-current="page">National Vital Statistics System</li> -->
 			</ol>
-		</nav>			
+		</nav>
 	</div>
 	<div class="col-sm-4 mt-2 d-none d-md-block">
 		<!-- d-lg-block -->
@@ -634,7 +634,7 @@ address.address li {
 				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
 				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/email.svg" alt=""></a></li>
 				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt=""></a></li>
-			</ul>		
+			</ul>
 		</nav>
 	</div>
 </div>
@@ -656,7 +656,7 @@ address.address li {
 							<a class="list-group-item" href="https://cdc.gov#99">Results &amp; Publications</a>
 							<a class="list-group-item" href="#">Info for Professionals</a>
 							<a class="list-group-item bg-primary text-white" href="https://cdc.gov#99">About NIOSH</a>
-						</div>				
+						</div>
 					</nav>
 				</div>
 			</div>
@@ -904,7 +904,7 @@ address.address li {
 				</div>
 				<div class="col-5">
 					HHS.gov
-				</div>				
+				</div>
 				<div class="col-4 -offset-md-1">
 					USA.gov
 				</div>
@@ -963,7 +963,7 @@ address.address li {
 			</li>
 			<li class="active list-inline-item">
 				<a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-			</li>			
+			</li>
 		</ul> -->
 		<a class="close" href="#" id="config-close"><i class="fa fa-times-circle"></i></a>
 	</div>
@@ -989,10 +989,10 @@ address.address li {
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/CDC-tv.svg"></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/rss.svg"></a></li>
-		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>		
-	</ul>		
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>
+	</ul>
 </nav>
-  
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.bundle.js'></script>
 <script src='https://codepen.io/peterbenoit/pen/eezagz.js'></script>
@@ -1000,32 +1000,32 @@ address.address li {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.0.3/stickyfill.js'></script>
 
-  
+
 
     <script >
       'use strict';
 
 var selected = 'left';
 $( function() {
-	$( '#leftnav .list-group .list-group a.selected' ).siblings( 'a' ).css( 'border-left-color', '#e0e0e0' );	
+	$( '#leftnav .list-group .list-group a.selected' ).siblings( 'a' ).css( 'border-left-color', '#e0e0e0' );
 } )
 
 
 $( '#nav-options a' ).on( 'click', function( e ) {
 	e.preventDefault();
-	
+
 	if( $(this).attr('href') === '#left' ) {
 		selected = 'left'
 		$( '.top-nav' ).addClass( 'd-none' );
 		$( '#leftnav' ).parent().addClass( 'd-md-block' );
-		$( 'main' ).addClass( 'col-md-8 offset-md-1' );			
+		$( 'main' ).addClass( 'col-md-8 offset-md-1' );
 	} else {
 		selected = 'top'
 		$( '.top-nav' ).removeClass( 'd-none' );
 		$( '#leftnav' ).parent().removeClass( 'd-md-block' );
 		$( 'main' ).removeClass( 'col-md-8 offset-md-1' );
-	}	
-} ); 
+	}
+} );
 
 var $element = $('.sticky-top'),
 	$rsm = $( '.right-social-media' ),
@@ -1034,18 +1034,18 @@ Stickyfill.add($element);
 
 $( window ).on( 'load scroll resize', _.throttle( function( e ) {
 	// console.log( document.documentElement.scrollTop )
-	
-	
+
+
 	$rsm.css( 'left', $('main').offset().left + $('main').outerWidth() - 50 + "px" );
-	
+
 	if ( document.documentElement.scrollTop > 279 ) {
 		$rsm.css( 'opacity', '1' );
 	} else {
 		$rsm.css( 'opacity', '0' );
 	}
-	
+
 	$( '.overlay' ).hide();
-	
+
 // 	if( flag === 0 ) {
 // 		if ( document.documentElement.scrollTop <= 299 ) {
 // 			$rsm.addClass( 'd-none' );
@@ -1053,17 +1053,17 @@ $( window ).on( 'load scroll resize', _.throttle( function( e ) {
 // 		}
 // // 		if( $element[0].getBoundingClientRect().top <= 0 ) {
 // // 			$element.addClass( 'clearstyles' );
-			
+
 // // 		}
 // 	} else {
 // 		if ( $rsm[0].getBoundingClientRect().top > 299 ) {
 // 			$rsm.removeClass( 'd-none' );
 // 			flag = 1;
-// 		}		
+// 		}
 // // 		if( $element[0].getBoundingClientRect().top > 0 ) {
 // // 			$element.removeClass( 'clearstyles' );
-			
-			
+
+
 // // 			// $( '.right-social-media' ).removeClass( 'd-none' );
 // // 		}
 // 	}
@@ -1074,24 +1074,24 @@ $( window ).on( 'load scroll resize', _.throttle( function( e ) {
 $( '.dropdown' ).on( 'show.bs.dropdown', function () {
 	$( '.overlay' ).show();
 	// $( '#svg-down' ).hide();
-	
-	
+
+
 	// $( this ).css( { 'width': $(window).width(), 'position': 'absolute', 'left': 0 } );
-	
+
 	$( this ).closest( '.ct' ).removeClass( 'container' );
 	if( $element[0].getBoundingClientRect().top > 0 ) {
 		$element.css( {
 			'background-color': 'transparent',
 			'outline': 'none'
 		} );
-		flag = 0;			
+		flag = 0;
 	}
 } );
 
 $( '.dropdown' ).on( 'hide.bs.dropdown', function () {
 	$( '.overlay' ).hide();
 	// $( '#svg-down' ).show();
-	
+
 	// $( this ).closest( '.ct' ).addClass( 'container' );
 	$element[0].removeAttribute( 'style' );
 } );
@@ -1139,7 +1139,7 @@ $( '#color-options a' ).on( 'click', function( e ) {
 		$color = $( this ).attr( 'data-color' );
 	// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
 	// $( '#theme-style' ).attr( 'href', $styleSheet );
-	
+
 	$( 'html' ).removeClass().addClass( $styleSheet );
 	var $listItem = $( this ).closest( 'li' );
 	$listItem.addClass( 'active' );
@@ -1150,8 +1150,8 @@ var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code
 var crossorigin = 'https://crossorigin.me/' + lipsum,
 	allowanyorigin = 'https://allow-any-origin.appspot.com/' + lipsum,
 	anyorigin = 'https://anyorigin.com/go?url=' + lipsum;
-	
-	
+
+
 // $.get( allowanyorigin, function( data ) {
 //   $('.content').html( data );
 // });
@@ -1167,53 +1167,53 @@ var vps = ['xs','sm','md','lg','xl','xxl'],
 function handleOnEvents() {
 	vp = getViewport( 'body', 'before' );
 	idx = vps.indexOf( vp );
-	
+
 	// VP by index
 	if( idx < 3 && !cloned ) {
 		var clone = $( '#leftnav' ).clone();
-		
+
 		// give the new nav a new id
 		clone.attr( 'id', 'leftnav-mobile' );
-		
+
 		// update the primary data-parent nodes
-		clone.find( '*[data-parent]' ).each( function() { 
+		clone.find( '*[data-parent]' ).each( function() {
 			if ( $( this ).data( 'parent' ) === '#leftnav' ) {
-				$( this ).attr( 'data-parent', '#leftnav-mobile' )	
-			} 
+				$( this ).attr( 'data-parent', '#leftnav-mobile' )
+			}
 		} );
 
-		// update the href on the 
+		// update the href on the
 		clone.find( 'a[data-toggle="collapse"]' ).each( function( i, t ) {
 			t.href = t.hash + '1';
-		} );		
-		
-		clone.find( '.collapse' ).each( function( i, t ) { 
+		} );
+
+		clone.find( '.collapse' ).each( function( i, t ) {
 			t.id += '1';
 		} );
-		
-		
+
+
 		// do the clone!
 		clone.appendTo( '.mobile-nav' );
-		
+
 		// don't run again
 		cloned = true;
 	}
-		
+
 	// or VP by name
 // 	if ( vp === 'xs' ) {
-	
+
 // 	} else if ( vp === 'sm' ) {
-	
+
 // 	} else if ( vp === 'md' ) {
-	
+
 // 	} else if ( vp === 'lg' ) {
-	
+
 // 	} else if ( vp === 'xl' ) {
-	
+
 // 	} else if ( vp === 'xxl' ) {
-		
+
 // 	} else {
-	
+
 // 	}
 }
 
@@ -1235,10 +1235,9 @@ axe.run( function(err, results) {
 
 
 
-  
-  
+
+
 
 </body>
 
 </html>
- 

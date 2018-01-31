@@ -39,11 +39,11 @@ body:before {
 }
 
 a:focus, [tabindex]:focus, input:focus, radio:focus, select:focus, checkbox:focus, textarea:focus, label:focus, fieldset:focus, legend:focus, datalist:focus, output:focus, .focus:focus {
-  outline: 3px dashed black;
+  outline: 3px dashed #000;
 }
 
 a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:focus, select.c-white:focus, checkbox.c-white:focus, textarea.c-white:focus, label.c-white:focus, fieldset.c-white:focus, legend.c-white:focus, datalist.c-white:focus, output.c-white:focus, .focus.c-white:focus {
-  outline: 3px dashed white;
+  outline: 3px dashed #fff;
 }
 
 .clickthru {
@@ -117,7 +117,7 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .text-black {
-  color: black !important;
+  color: #000 !important;
 }
 
 .pad-italics h1 i:after, .pad-italics h1 em:after, .pad-italics h1 .font-italic:after, .pad-italics h2 i:after, .pad-italics h2 em:after, .pad-italics h2 .font-italic:after, .pad-italics h3 i:after, .pad-italics h3 em:after, .pad-italics h3 .font-italic:after, .pad-italics h4 i:after, .pad-italics h4 em:after, .pad-italics h4 .font-italic:after, .pad-italics h5 i:after, .pad-italics h5 em:after, .pad-italics h5 .font-italic:after, .pad-italics h6 i:after, .pad-italics h6 em:after, .pad-italics h6 .font-italic:after {
@@ -666,51 +666,51 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .fill-p {
-  fill: #005eaa !important;
+  fill: #005eaa;
 }
 
 .fill-s {
-  fill: #88c3ea !important;
+  fill: #88c3ea;
 }
 
 .fill-t {
-  fill: #c0e9ff !important;
+  fill: #c0e9ff;
 }
 
 .fill-w {
-  fill: white !important;
+  fill: #fff;
 }
 
 .fill-epub {
-  fill: #86b916 !important;
+  fill: #86b916;
 }
 
 .fill-excel {
-  fill: #207245 !important;
+  fill: #207245;
 }
 
 .fill-govd {
-  fill: #5a5a5a !important;
+  fill: #5a5a5a;
 }
 
 .fill-pdf {
-  fill: #c1272d !important;
+  fill: #c1272d;
 }
 
 .fill-ppt {
-  fill: #d24625 !important;
+  fill: #d24625;
 }
 
 .fill-fb {
-  fill: #3d5a98 !important;
+  fill: #3d5a98;
 }
 
 .fill-h {
-  fill: #005eaa !important;
+  fill: #005eaa;
 }
 
 .fill-h:hover {
-  fill: #0088f7 !important;
+  fill: #0088f7;
 }
 
 .fill-lg {
@@ -777,20 +777,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-blue-p {
   background-color: #005eaa !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-blue-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-blue-s {
   background-color: #88c3ea !important;
-  color: black;
+  color: #000;
 }
 
 .bg-blue-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-blue-t {
@@ -811,20 +811,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-purple-p {
   background-color: #712177 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-purple-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-purple-s {
   background-color: #b890bb !important;
-  color: black;
+  color: #000;
 }
 
 .bg-purple-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-purple-t {
@@ -845,20 +845,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-brown-p {
   background-color: #705043 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-brown-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-brown-s {
   background-color: #ad907b !important;
-  color: black;
+  color: #000;
 }
 
 .bg-brown-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-brown-t {
@@ -879,20 +879,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-teal-p {
   background-color: #00695c !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-teal-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-teal-s {
   background-color: #4ebaaa !important;
-  color: black;
+  color: #000;
 }
 
 .bg-teal-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-teal-t {
@@ -913,20 +913,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-orange-p {
   background-color: #bb4d00 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-orange-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-orange-s {
   background-color: #ffad42 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-orange-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-orange-t {
@@ -947,20 +947,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-pink-p {
   background-color: #af4448 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-pink-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-pink-s {
   background-color: #e57373 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-pink-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-pink-t {
@@ -981,20 +981,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-slate-p {
   background-color: #29434e !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-slate-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-slate-s {
   background-color: #7e9ba5 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-slate-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-slate-t {
@@ -1015,20 +1015,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-indigo-p {
   background-color: #26418f !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-indigo-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-indigo-s {
   background-color: #92a6dd !important;
-  color: black;
+  color: #000;
 }
 
 .bg-indigo-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-indigo-t {
@@ -1049,20 +1049,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-cyan-p {
   background-color: #007c91 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-cyan-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-cyan-s {
   background-color: #65b0bd !important;
-  color: black;
+  color: #000;
 }
 
 .bg-cyan-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-cyan-t {
@@ -1083,20 +1083,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-green-p {
   background-color: #4b830d !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-green-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-green-s {
   background-color: #84bc49 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-green-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-green-t {
@@ -1117,20 +1117,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-amber-p {
   background-color: #fbab18 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-amber-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-amber-s {
   background-color: #ffd54f !important;
-  color: black;
+  color: #000;
 }
 
 .bg-amber-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-amber-t {
@@ -1202,11 +1202,11 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .c-white {
-  color: white !important;
+  color: #fff !important;
 }
 
 .c-black {
-  color: black !important;
+  color: #000 !important;
 }
 
 .c-red {

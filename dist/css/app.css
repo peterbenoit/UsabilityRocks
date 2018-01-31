@@ -82,11 +82,11 @@ body:before {
 }
 
 a:focus, [tabindex]:focus, input:focus, radio:focus, select:focus, checkbox:focus, textarea:focus, label:focus, fieldset:focus, legend:focus, datalist:focus, output:focus, .focus:focus {
-  outline: 3px dashed black;
+  outline: 3px dashed #000;
 }
 
 a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:focus, select.c-white:focus, checkbox.c-white:focus, textarea.c-white:focus, label.c-white:focus, fieldset.c-white:focus, legend.c-white:focus, datalist.c-white:focus, output.c-white:focus, .focus.c-white:focus {
-  outline: 3px dashed white;
+  outline: 3px dashed #fff;
 }
 
 .clickthru {
@@ -160,7 +160,7 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .text-black {
-  color: black !important;
+  color: #000 !important;
 }
 
 .pad-italics h1 i:after, .pad-italics h1 em:after, .pad-italics h1 .font-italic:after, .pad-italics h2 i:after, .pad-italics h2 em:after, .pad-italics h2 .font-italic:after, .pad-italics h3 i:after, .pad-italics h3 em:after, .pad-italics h3 .font-italic:after, .pad-italics h4 i:after, .pad-italics h4 em:after, .pad-italics h4 .font-italic:after, .pad-italics h5 i:after, .pad-italics h5 em:after, .pad-italics h5 .font-italic:after, .pad-italics h6 i:after, .pad-italics h6 em:after, .pad-italics h6 .font-italic:after {
@@ -709,51 +709,51 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .fill-p {
-  fill: #005eaa !important;
+  fill: #005eaa;
 }
 
 .fill-s {
-  fill: #88c3ea !important;
+  fill: #88c3ea;
 }
 
 .fill-t {
-  fill: #c0e9ff !important;
+  fill: #c0e9ff;
 }
 
 .fill-w {
-  fill: white !important;
+  fill: #fff;
 }
 
 .fill-epub {
-  fill: #86b916 !important;
+  fill: #86b916;
 }
 
 .fill-excel {
-  fill: #207245 !important;
+  fill: #207245;
 }
 
 .fill-govd {
-  fill: #5a5a5a !important;
+  fill: #5a5a5a;
 }
 
 .fill-pdf {
-  fill: #c1272d !important;
+  fill: #c1272d;
 }
 
 .fill-ppt {
-  fill: #d24625 !important;
+  fill: #d24625;
 }
 
 .fill-fb {
-  fill: #3d5a98 !important;
+  fill: #3d5a98;
 }
 
 .fill-h {
-  fill: #005eaa !important;
+  fill: #005eaa;
 }
 
 .fill-h:hover {
-  fill: #0088f7 !important;
+  fill: #0088f7;
 }
 
 .fill-lg {
@@ -820,20 +820,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-blue-p {
   background-color: #005eaa !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-blue-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-blue-s {
   background-color: #88c3ea !important;
-  color: black;
+  color: #000;
 }
 
 .bg-blue-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-blue-t {
@@ -854,20 +854,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-purple-p {
   background-color: #712177 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-purple-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-purple-s {
   background-color: #b890bb !important;
-  color: black;
+  color: #000;
 }
 
 .bg-purple-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-purple-t {
@@ -888,20 +888,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-brown-p {
   background-color: #705043 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-brown-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-brown-s {
   background-color: #ad907b !important;
-  color: black;
+  color: #000;
 }
 
 .bg-brown-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-brown-t {
@@ -922,20 +922,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-teal-p {
   background-color: #00695c !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-teal-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-teal-s {
   background-color: #4ebaaa !important;
-  color: black;
+  color: #000;
 }
 
 .bg-teal-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-teal-t {
@@ -956,20 +956,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-orange-p {
   background-color: #bb4d00 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-orange-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-orange-s {
   background-color: #ffad42 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-orange-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-orange-t {
@@ -990,20 +990,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-pink-p {
   background-color: #af4448 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-pink-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-pink-s {
   background-color: #e57373 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-pink-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-pink-t {
@@ -1024,20 +1024,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-slate-p {
   background-color: #29434e !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-slate-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-slate-s {
   background-color: #7e9ba5 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-slate-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-slate-t {
@@ -1058,20 +1058,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-indigo-p {
   background-color: #26418f !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-indigo-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-indigo-s {
   background-color: #92a6dd !important;
-  color: black;
+  color: #000;
 }
 
 .bg-indigo-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-indigo-t {
@@ -1092,20 +1092,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-cyan-p {
   background-color: #007c91 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-cyan-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-cyan-s {
   background-color: #65b0bd !important;
-  color: black;
+  color: #000;
 }
 
 .bg-cyan-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-cyan-t {
@@ -1126,20 +1126,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-green-p {
   background-color: #4b830d !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-green-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-green-s {
   background-color: #84bc49 !important;
-  color: black;
+  color: #000;
 }
 
 .bg-green-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-green-t {
@@ -1160,20 +1160,20 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 
 .bg-amber-p {
   background-color: #fbab18 !important;
-  color: white;
+  color: #fff;
 }
 
 .bg-amber-p a {
-  color: white;
+  color: #fff;
 }
 
 .bg-amber-s {
   background-color: #ffd54f !important;
-  color: black;
+  color: #000;
 }
 
 .bg-amber-s a {
-  color: black;
+  color: #000;
 }
 
 .bg-amber-t {
@@ -1245,11 +1245,11 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .c-white {
-  color: white !important;
+  color: #fff !important;
 }
 
 .c-black {
-  color: black !important;
+  color: #000 !important;
 }
 
 .c-red {
@@ -3615,9 +3615,6 @@ h6, .h6 {
   display: none;
 }
 
-<<<<<<< HEAD
-.theme-blue .btn-primary, [class^="theme-"] .theme-blue .btn-primary {
-=======
 .tp-on-this-page .card-header {
   background-color: #e0e0e0;
   font-weight: 700;
@@ -3631,11 +3628,10 @@ h6, .h6 {
   text-decoration: none;
 }
 
-.theme-blue .btn-primary {
->>>>>>> e3d3399a583f17681cd5b03d53ddfcc14725c04f
+.theme-blue .btn-primary, [class^="theme-"] .theme-blue .btn-primary {
   background-color: #005eaa;
   border-color: #005eaa;
-  color: white;
+  color: #fff;
 }
 
 .theme-blue .btn-primary:hover, [class^="theme-"] .theme-blue .btn-primary:hover {
@@ -3645,7 +3641,7 @@ h6, .h6 {
 .theme-blue .btn-secondary, [class^="theme-"] .theme-blue .btn-secondary {
   background-color: #88c3ea;
   border-color: #88c3ea;
-  color: black;
+  color: #000;
 }
 
 .theme-blue .btn-secondary:hover, [class^="theme-"] .theme-blue .btn-secondary:hover {
@@ -3655,7 +3651,7 @@ h6, .h6 {
 .theme-blue .btn-tertiary, [class^="theme-"] .theme-blue .btn-tertiary {
   background-color: #c0e9ff;
   border-color: #c0e9ff;
-  color: black;
+  color: #000;
 }
 
 .theme-blue .btn-tertiary:hover, [class^="theme-"] .theme-blue .btn-tertiary:hover {
@@ -3667,10 +3663,22 @@ h6, .h6 {
   border-color: #005eaa;
 }
 
+.theme-blue .table-dark, [class^="theme-"] .theme-blue .table-dark {
+  background-color: #005eaa;
+}
+
+.theme-blue .table-dark th, .theme-blue .table-dark td, .theme-blue .table-dark thead th, [class^="theme-"] .theme-blue .table-dark th, [class^="theme-"] .theme-blue .table-dark td, [class^="theme-"] .theme-blue .table-dark thead th {
+  border-color: #006cc4;
+}
+
+.theme-blue svg .fill-p, [class^="theme-"] .theme-blue svg .fill-p {
+  fill: #005eaa;
+}
+
 .theme-purple .btn-primary, [class^="theme-"] .theme-purple .btn-primary {
   background-color: #712177;
   border-color: #712177;
-  color: white;
+  color: #fff;
 }
 
 .theme-purple .btn-primary:hover, [class^="theme-"] .theme-purple .btn-primary:hover {
@@ -3680,7 +3688,7 @@ h6, .h6 {
 .theme-purple .btn-secondary, [class^="theme-"] .theme-purple .btn-secondary {
   background-color: #b890bb;
   border-color: #b890bb;
-  color: black;
+  color: #000;
 }
 
 .theme-purple .btn-secondary:hover, [class^="theme-"] .theme-purple .btn-secondary:hover {
@@ -3690,7 +3698,7 @@ h6, .h6 {
 .theme-purple .btn-tertiary, [class^="theme-"] .theme-purple .btn-tertiary {
   background-color: #e3d3e4;
   border-color: #e3d3e4;
-  color: black;
+  color: #000;
 }
 
 .theme-purple .btn-tertiary:hover, [class^="theme-"] .theme-purple .btn-tertiary:hover {
@@ -3702,10 +3710,22 @@ h6, .h6 {
   border-color: #712177;
 }
 
+.theme-purple .table-dark, [class^="theme-"] .theme-purple .table-dark {
+  background-color: #712177;
+}
+
+.theme-purple .table-dark th, .theme-purple .table-dark td, .theme-purple .table-dark thead th, [class^="theme-"] .theme-purple .table-dark th, [class^="theme-"] .theme-purple .table-dark td, [class^="theme-"] .theme-purple .table-dark thead th {
+  border-color: #84278b;
+}
+
+.theme-purple svg .fill-p, [class^="theme-"] .theme-purple svg .fill-p {
+  fill: #712177;
+}
+
 .theme-brown .btn-primary, [class^="theme-"] .theme-brown .btn-primary {
   background-color: #705043;
   border-color: #705043;
-  color: white;
+  color: #fff;
 }
 
 .theme-brown .btn-primary:hover, [class^="theme-"] .theme-brown .btn-primary:hover {
@@ -3715,7 +3735,7 @@ h6, .h6 {
 .theme-brown .btn-secondary, [class^="theme-"] .theme-brown .btn-secondary {
   background-color: #ad907b;
   border-color: #ad907b;
-  color: black;
+  color: #000;
 }
 
 .theme-brown .btn-secondary:hover, [class^="theme-"] .theme-brown .btn-secondary:hover {
@@ -3725,7 +3745,7 @@ h6, .h6 {
 .theme-brown .btn-tertiary, [class^="theme-"] .theme-brown .btn-tertiary {
   background-color: #d7ccc8;
   border-color: #d7ccc8;
-  color: black;
+  color: #000;
 }
 
 .theme-brown .btn-tertiary:hover, [class^="theme-"] .theme-brown .btn-tertiary:hover {
@@ -3737,10 +3757,22 @@ h6, .h6 {
   border-color: #705043;
 }
 
+.theme-brown .table-dark, [class^="theme-"] .theme-brown .table-dark {
+  background-color: #705043;
+}
+
+.theme-brown .table-dark th, .theme-brown .table-dark td, .theme-brown .table-dark thead th, [class^="theme-"] .theme-brown .table-dark th, [class^="theme-"] .theme-brown .table-dark td, [class^="theme-"] .theme-brown .table-dark thead th {
+  border-color: #805b4d;
+}
+
+.theme-brown svg .fill-p, [class^="theme-"] .theme-brown svg .fill-p {
+  fill: #705043;
+}
+
 .theme-teal .btn-primary, [class^="theme-"] .theme-teal .btn-primary {
   background-color: #00695c;
   border-color: #00695c;
-  color: white;
+  color: #fff;
 }
 
 .theme-teal .btn-primary:hover, [class^="theme-"] .theme-teal .btn-primary:hover {
@@ -3750,7 +3782,7 @@ h6, .h6 {
 .theme-teal .btn-secondary, [class^="theme-"] .theme-teal .btn-secondary {
   background-color: #4ebaaa;
   border-color: #4ebaaa;
-  color: black;
+  color: #000;
 }
 
 .theme-teal .btn-secondary:hover, [class^="theme-"] .theme-teal .btn-secondary:hover {
@@ -3760,7 +3792,7 @@ h6, .h6 {
 .theme-teal .btn-tertiary, [class^="theme-"] .theme-teal .btn-tertiary {
   background-color: #ceece7;
   border-color: #ceece7;
-  color: black;
+  color: #000;
 }
 
 .theme-teal .btn-tertiary:hover, [class^="theme-"] .theme-teal .btn-tertiary:hover {
@@ -3772,10 +3804,22 @@ h6, .h6 {
   border-color: #00695c;
 }
 
+.theme-teal .table-dark, [class^="theme-"] .theme-teal .table-dark {
+  background-color: #00695c;
+}
+
+.theme-teal .table-dark th, .theme-teal .table-dark td, .theme-teal .table-dark thead th, [class^="theme-"] .theme-teal .table-dark th, [class^="theme-"] .theme-teal .table-dark td, [class^="theme-"] .theme-teal .table-dark thead th {
+  border-color: #008372;
+}
+
+.theme-teal svg .fill-p, [class^="theme-"] .theme-teal svg .fill-p {
+  fill: #00695c;
+}
+
 .theme-pink .btn-primary, [class^="theme-"] .theme-pink .btn-primary {
   background-color: #af4448;
   border-color: #af4448;
-  color: white;
+  color: #fff;
 }
 
 .theme-pink .btn-primary:hover, [class^="theme-"] .theme-pink .btn-primary:hover {
@@ -3785,7 +3829,7 @@ h6, .h6 {
 .theme-pink .btn-secondary, [class^="theme-"] .theme-pink .btn-secondary {
   background-color: #e57373;
   border-color: #e57373;
-  color: black;
+  color: #000;
 }
 
 .theme-pink .btn-secondary:hover, [class^="theme-"] .theme-pink .btn-secondary:hover {
@@ -3795,7 +3839,7 @@ h6, .h6 {
 .theme-pink .btn-tertiary, [class^="theme-"] .theme-pink .btn-tertiary {
   background-color: #ffc2c2;
   border-color: #ffc2c2;
-  color: black;
+  color: #000;
 }
 
 .theme-pink .btn-tertiary:hover, [class^="theme-"] .theme-pink .btn-tertiary:hover {
@@ -3807,10 +3851,22 @@ h6, .h6 {
   border-color: #af4448;
 }
 
+.theme-pink .table-dark, [class^="theme-"] .theme-pink .table-dark {
+  background-color: #af4448;
+}
+
+.theme-pink .table-dark th, .theme-pink .table-dark td, .theme-pink .table-dark thead th, [class^="theme-"] .theme-pink .table-dark th, [class^="theme-"] .theme-pink .table-dark td, [class^="theme-"] .theme-pink .table-dark thead th {
+  border-color: #bb5155;
+}
+
+.theme-pink svg .fill-p, [class^="theme-"] .theme-pink svg .fill-p {
+  fill: #af4448;
+}
+
 .theme-orange .btn-primary, [class^="theme-"] .theme-orange .btn-primary {
   background-color: #bb4d00;
   border-color: #bb4d00;
-  color: white;
+  color: #fff;
 }
 
 .theme-orange .btn-primary:hover, [class^="theme-"] .theme-orange .btn-primary:hover {
@@ -3820,7 +3876,7 @@ h6, .h6 {
 .theme-orange .btn-secondary, [class^="theme-"] .theme-orange .btn-secondary {
   background-color: #ffad42;
   border-color: #ffad42;
-  color: black;
+  color: #000;
 }
 
 .theme-orange .btn-secondary:hover, [class^="theme-"] .theme-orange .btn-secondary:hover {
@@ -3830,7 +3886,7 @@ h6, .h6 {
 .theme-orange .btn-tertiary, [class^="theme-"] .theme-orange .btn-tertiary {
   background-color: #ffe97d;
   border-color: #ffe97d;
-  color: black;
+  color: #000;
 }
 
 .theme-orange .btn-tertiary:hover, [class^="theme-"] .theme-orange .btn-tertiary:hover {
@@ -3842,10 +3898,22 @@ h6, .h6 {
   border-color: #bb4d00;
 }
 
+.theme-orange .table-dark, [class^="theme-"] .theme-orange .table-dark {
+  background-color: #bb4d00;
+}
+
+.theme-orange .table-dark th, .theme-orange .table-dark td, .theme-orange .table-dark thead th, [class^="theme-"] .theme-orange .table-dark th, [class^="theme-"] .theme-orange .table-dark td, [class^="theme-"] .theme-orange .table-dark thead th {
+  border-color: #d55800;
+}
+
+.theme-orange svg .fill-p, [class^="theme-"] .theme-orange svg .fill-p {
+  fill: #bb4d00;
+}
+
 .theme-slate .btn-primary, [class^="theme-"] .theme-slate .btn-primary {
   background-color: #29434e;
   border-color: #29434e;
-  color: white;
+  color: #fff;
 }
 
 .theme-slate .btn-primary:hover, [class^="theme-"] .theme-slate .btn-primary:hover {
@@ -3855,7 +3923,7 @@ h6, .h6 {
 .theme-slate .btn-secondary, [class^="theme-"] .theme-slate .btn-secondary {
   background-color: #7e9ba5;
   border-color: #7e9ba5;
-  color: black;
+  color: #000;
 }
 
 .theme-slate .btn-secondary:hover, [class^="theme-"] .theme-slate .btn-secondary:hover {
@@ -3865,7 +3933,7 @@ h6, .h6 {
 .theme-slate .btn-tertiary, [class^="theme-"] .theme-slate .btn-tertiary {
   background-color: #b6c6d2;
   border-color: #b6c6d2;
-  color: black;
+  color: #000;
 }
 
 .theme-slate .btn-tertiary:hover, [class^="theme-"] .theme-slate .btn-tertiary:hover {
@@ -3877,10 +3945,22 @@ h6, .h6 {
   border-color: #29434e;
 }
 
+.theme-slate .table-dark, [class^="theme-"] .theme-slate .table-dark {
+  background-color: #29434e;
+}
+
+.theme-slate .table-dark th, .theme-slate .table-dark td, .theme-slate .table-dark thead th, [class^="theme-"] .theme-slate .table-dark th, [class^="theme-"] .theme-slate .table-dark td, [class^="theme-"] .theme-slate .table-dark thead th {
+  border-color: #32515f;
+}
+
+.theme-slate svg .fill-p, [class^="theme-"] .theme-slate svg .fill-p {
+  fill: #29434e;
+}
+
 .theme-indigo .btn-primary, [class^="theme-"] .theme-indigo .btn-primary {
   background-color: #26418f;
   border-color: #26418f;
-  color: white;
+  color: #fff;
 }
 
 .theme-indigo .btn-primary:hover, [class^="theme-"] .theme-indigo .btn-primary:hover {
@@ -3890,7 +3970,7 @@ h6, .h6 {
 .theme-indigo .btn-secondary, [class^="theme-"] .theme-indigo .btn-secondary {
   background-color: #92a6dd;
   border-color: #92a6dd;
-  color: black;
+  color: #000;
 }
 
 .theme-indigo .btn-secondary:hover, [class^="theme-"] .theme-indigo .btn-secondary:hover {
@@ -3900,7 +3980,7 @@ h6, .h6 {
 .theme-indigo .btn-tertiary, [class^="theme-"] .theme-indigo .btn-tertiary {
   background-color: #dee8ff;
   border-color: #dee8ff;
-  color: black;
+  color: #000;
 }
 
 .theme-indigo .btn-tertiary:hover, [class^="theme-"] .theme-indigo .btn-tertiary:hover {
@@ -3912,10 +3992,22 @@ h6, .h6 {
   border-color: #26418f;
 }
 
+.theme-indigo .table-dark, [class^="theme-"] .theme-indigo .table-dark {
+  background-color: #26418f;
+}
+
+.theme-indigo .table-dark th, .theme-indigo .table-dark td, .theme-indigo .table-dark thead th, [class^="theme-"] .theme-indigo .table-dark th, [class^="theme-"] .theme-indigo .table-dark td, [class^="theme-"] .theme-indigo .table-dark thead th {
+  border-color: #2b4aa3;
+}
+
+.theme-indigo svg .fill-p, [class^="theme-"] .theme-indigo svg .fill-p {
+  fill: #26418f;
+}
+
 .theme-cyan .btn-primary, [class^="theme-"] .theme-cyan .btn-primary {
   background-color: #007c91;
   border-color: #007c91;
-  color: white;
+  color: #fff;
 }
 
 .theme-cyan .btn-primary:hover, [class^="theme-"] .theme-cyan .btn-primary:hover {
@@ -3925,7 +4017,7 @@ h6, .h6 {
 .theme-cyan .btn-secondary, [class^="theme-"] .theme-cyan .btn-secondary {
   background-color: #65b0bd;
   border-color: #65b0bd;
-  color: black;
+  color: #000;
 }
 
 .theme-cyan .btn-secondary:hover, [class^="theme-"] .theme-cyan .btn-secondary:hover {
@@ -3935,7 +4027,7 @@ h6, .h6 {
 .theme-cyan .btn-tertiary, [class^="theme-"] .theme-cyan .btn-tertiary {
   background-color: #cce5e9;
   border-color: #cce5e9;
-  color: black;
+  color: #000;
 }
 
 .theme-cyan .btn-tertiary:hover, [class^="theme-"] .theme-cyan .btn-tertiary:hover {
@@ -3947,10 +4039,22 @@ h6, .h6 {
   border-color: #007c91;
 }
 
+.theme-cyan .table-dark, [class^="theme-"] .theme-cyan .table-dark {
+  background-color: #007c91;
+}
+
+.theme-cyan .table-dark th, .theme-cyan .table-dark td, .theme-cyan .table-dark thead th, [class^="theme-"] .theme-cyan .table-dark th, [class^="theme-"] .theme-cyan .table-dark td, [class^="theme-"] .theme-cyan .table-dark thead th {
+  border-color: #0092ab;
+}
+
+.theme-cyan svg .fill-p, [class^="theme-"] .theme-cyan svg .fill-p {
+  fill: #007c91;
+}
+
 .theme-green .btn-primary, [class^="theme-"] .theme-green .btn-primary {
   background-color: #4b830d;
   border-color: #4b830d;
-  color: white;
+  color: #fff;
 }
 
 .theme-green .btn-primary:hover, [class^="theme-"] .theme-green .btn-primary:hover {
@@ -3960,7 +4064,7 @@ h6, .h6 {
 .theme-green .btn-secondary, [class^="theme-"] .theme-green .btn-secondary {
   background-color: #84bc49;
   border-color: #84bc49;
-  color: black;
+  color: #000;
 }
 
 .theme-green .btn-secondary:hover, [class^="theme-"] .theme-green .btn-secondary:hover {
@@ -3970,7 +4074,7 @@ h6, .h6 {
 .theme-green .btn-tertiary, [class^="theme-"] .theme-green .btn-tertiary {
   background-color: #dcedc8;
   border-color: #dcedc8;
-  color: black;
+  color: #000;
 }
 
 .theme-green .btn-tertiary:hover, [class^="theme-"] .theme-green .btn-tertiary:hover {
@@ -3982,10 +4086,22 @@ h6, .h6 {
   border-color: #4b830d;
 }
 
+.theme-green .table-dark, [class^="theme-"] .theme-green .table-dark {
+  background-color: #4b830d;
+}
+
+.theme-green .table-dark th, .theme-green .table-dark td, .theme-green .table-dark thead th, [class^="theme-"] .theme-green .table-dark th, [class^="theme-"] .theme-green .table-dark td, [class^="theme-"] .theme-green .table-dark thead th {
+  border-color: #589a0f;
+}
+
+.theme-green svg .fill-p, [class^="theme-"] .theme-green svg .fill-p {
+  fill: #4b830d;
+}
+
 .theme-amber .btn-primary, [class^="theme-"] .theme-amber .btn-primary {
   background-color: #fbab18;
   border-color: #fbab18;
-  color: white;
+  color: #fff;
 }
 
 .theme-amber .btn-primary:hover, [class^="theme-"] .theme-amber .btn-primary:hover {
@@ -3995,7 +4111,7 @@ h6, .h6 {
 .theme-amber .btn-secondary, [class^="theme-"] .theme-amber .btn-secondary {
   background-color: #ffd54f;
   border-color: #ffd54f;
-  color: black;
+  color: #000;
 }
 
 .theme-amber .btn-secondary:hover, [class^="theme-"] .theme-amber .btn-secondary:hover {
@@ -4005,7 +4121,7 @@ h6, .h6 {
 .theme-amber .btn-tertiary, [class^="theme-"] .theme-amber .btn-tertiary {
   background-color: #ffecb3;
   border-color: #ffecb3;
-  color: black;
+  color: #000;
 }
 
 .theme-amber .btn-tertiary:hover, [class^="theme-"] .theme-amber .btn-tertiary:hover {
@@ -4015,6 +4131,18 @@ h6, .h6 {
 .theme-amber .table .thead-dark th, [class^="theme-"] .theme-amber .table .thead-dark th {
   background-color: #fbab18;
   border-color: #fbab18;
+}
+
+.theme-amber .table-dark, [class^="theme-"] .theme-amber .table-dark {
+  background-color: #fbab18;
+}
+
+.theme-amber .table-dark th, .theme-amber .table-dark td, .theme-amber .table-dark thead th, [class^="theme-"] .theme-amber .table-dark th, [class^="theme-"] .theme-amber .table-dark td, [class^="theme-"] .theme-amber .table-dark thead th {
+  border-color: #fbb431;
+}
+
+.theme-amber svg .fill-p, [class^="theme-"] .theme-amber svg .fill-p {
+  fill: #fbab18;
 }
 
 /*# sourceMappingURL=app.css.map */
