@@ -3633,376 +3633,387 @@ h6, .h6 {
   display: none;
 }
 
-.theme-blue .btn-primary {
+.theme-blue .btn-primary, [class^="theme-"] .theme-blue .btn-primary {
   background-color: #005eaa;
   border-color: #005eaa;
+  color: white;
 }
 
-.theme-blue .btn-primary:hover {
+.theme-blue .btn-primary:hover, [class^="theme-"] .theme-blue .btn-primary:hover {
   background-color: #005091;
 }
 
-.theme-blue .btn-secondary {
+.theme-blue .btn-secondary, [class^="theme-"] .theme-blue .btn-secondary {
   background-color: #88c3ea;
   border-color: #88c3ea;
   color: black;
 }
 
-.theme-blue .btn-secondary:hover {
+.theme-blue .btn-secondary:hover, [class^="theme-"] .theme-blue .btn-secondary:hover {
   background-color: #72b8e6;
 }
 
-.theme-blue .btn-tertiary {
+.theme-blue .btn-tertiary, [class^="theme-"] .theme-blue .btn-tertiary {
   background-color: #c0e9ff;
   border-color: #c0e9ff;
   color: black;
 }
 
-.theme-blue .btn-tertiary:hover {
+.theme-blue .btn-tertiary:hover, [class^="theme-"] .theme-blue .btn-tertiary:hover {
   background-color: #a7e0ff;
 }
 
-.theme-blue .table .thead-dark th {
+.theme-blue .table .thead-dark th, [class^="theme-"] .theme-blue .table .thead-dark th {
   background-color: #005eaa;
   border-color: #005eaa;
 }
 
-.theme-purple .btn-primary {
+.theme-purple .btn-primary, [class^="theme-"] .theme-purple .btn-primary {
   background-color: #712177;
   border-color: #712177;
+  color: white;
 }
 
-.theme-purple .btn-primary:hover {
+.theme-purple .btn-primary:hover, [class^="theme-"] .theme-purple .btn-primary:hover {
   background-color: #5e1b63;
 }
 
-.theme-purple .btn-secondary {
+.theme-purple .btn-secondary, [class^="theme-"] .theme-purple .btn-secondary {
   background-color: #b890bb;
   border-color: #b890bb;
   color: black;
 }
 
-.theme-purple .btn-secondary:hover {
+.theme-purple .btn-secondary:hover, [class^="theme-"] .theme-purple .btn-secondary:hover {
   background-color: #ae80b1;
 }
 
-.theme-purple .btn-tertiary {
+.theme-purple .btn-tertiary, [class^="theme-"] .theme-purple .btn-tertiary {
   background-color: #e3d3e4;
   border-color: #e3d3e4;
   color: black;
 }
 
-.theme-purple .btn-tertiary:hover {
+.theme-purple .btn-tertiary:hover, [class^="theme-"] .theme-purple .btn-tertiary:hover {
   background-color: #d9c3da;
 }
 
-.theme-purple .table .thead-dark th {
+.theme-purple .table .thead-dark th, [class^="theme-"] .theme-purple .table .thead-dark th {
   background-color: #712177;
   border-color: #712177;
 }
 
-.theme-brown .btn-primary {
+.theme-brown .btn-primary, [class^="theme-"] .theme-brown .btn-primary {
   background-color: #705043;
   border-color: #705043;
+  color: white;
 }
 
-.theme-brown .btn-primary:hover {
+.theme-brown .btn-primary:hover, [class^="theme-"] .theme-brown .btn-primary:hover {
   background-color: #604539;
 }
 
-.theme-brown .btn-secondary {
+.theme-brown .btn-secondary, [class^="theme-"] .theme-brown .btn-secondary {
   background-color: #ad907b;
   border-color: #ad907b;
   color: black;
 }
 
-.theme-brown .btn-secondary:hover {
+.theme-brown .btn-secondary:hover, [class^="theme-"] .theme-brown .btn-secondary:hover {
   background-color: #a3836b;
 }
 
-.theme-brown .btn-tertiary {
+.theme-brown .btn-tertiary, [class^="theme-"] .theme-brown .btn-tertiary {
   background-color: #d7ccc8;
   border-color: #d7ccc8;
   color: black;
 }
 
-.theme-brown .btn-tertiary:hover {
+.theme-brown .btn-tertiary:hover, [class^="theme-"] .theme-brown .btn-tertiary:hover {
   background-color: #ccbeb9;
 }
 
-.theme-brown .table .thead-dark th {
+.theme-brown .table .thead-dark th, [class^="theme-"] .theme-brown .table .thead-dark th {
   background-color: #705043;
   border-color: #705043;
 }
 
-.theme-teal .btn-primary {
+.theme-teal .btn-primary, [class^="theme-"] .theme-teal .btn-primary {
   background-color: #00695c;
   border-color: #00695c;
+  color: white;
 }
 
-.theme-teal .btn-primary:hover {
+.theme-teal .btn-primary:hover, [class^="theme-"] .theme-teal .btn-primary:hover {
   background-color: #005046;
 }
 
-.theme-teal .btn-secondary {
+.theme-teal .btn-secondary, [class^="theme-"] .theme-teal .btn-secondary {
   background-color: #4ebaaa;
   border-color: #4ebaaa;
   color: black;
 }
 
-.theme-teal .btn-secondary:hover {
+.theme-teal .btn-secondary:hover, [class^="theme-"] .theme-teal .btn-secondary:hover {
   background-color: #43ac9c;
 }
 
-.theme-teal .btn-tertiary {
+.theme-teal .btn-tertiary, [class^="theme-"] .theme-teal .btn-tertiary {
   background-color: #ceece7;
   border-color: #ceece7;
   color: black;
 }
 
-.theme-teal .btn-tertiary:hover {
+.theme-teal .btn-tertiary:hover, [class^="theme-"] .theme-teal .btn-tertiary:hover {
   background-color: #bce5de;
 }
 
-.theme-teal .table .thead-dark th {
+.theme-teal .table .thead-dark th, [class^="theme-"] .theme-teal .table .thead-dark th {
   background-color: #00695c;
   border-color: #00695c;
 }
 
-.theme-pink .btn-primary {
+.theme-pink .btn-primary, [class^="theme-"] .theme-pink .btn-primary {
   background-color: #af4448;
   border-color: #af4448;
+  color: white;
 }
 
-.theme-pink .btn-primary:hover {
+.theme-pink .btn-primary:hover, [class^="theme-"] .theme-pink .btn-primary:hover {
   background-color: #9d3d40;
 }
 
-.theme-pink .btn-secondary {
+.theme-pink .btn-secondary, [class^="theme-"] .theme-pink .btn-secondary {
   background-color: #e57373;
   border-color: #e57373;
   color: black;
 }
 
-.theme-pink .btn-secondary:hover {
+.theme-pink .btn-secondary:hover, [class^="theme-"] .theme-pink .btn-secondary:hover {
   background-color: #e15d5d;
 }
 
-.theme-pink .btn-tertiary {
+.theme-pink .btn-tertiary, [class^="theme-"] .theme-pink .btn-tertiary {
   background-color: #ffc2c2;
   border-color: #ffc2c2;
   color: black;
 }
 
-.theme-pink .btn-tertiary:hover {
+.theme-pink .btn-tertiary:hover, [class^="theme-"] .theme-pink .btn-tertiary:hover {
   background-color: #ffa9a9;
 }
 
-.theme-pink .table .thead-dark th {
+.theme-pink .table .thead-dark th, [class^="theme-"] .theme-pink .table .thead-dark th {
   background-color: #af4448;
   border-color: #af4448;
 }
 
-.theme-orange .btn-primary {
+.theme-orange .btn-primary, [class^="theme-"] .theme-orange .btn-primary {
   background-color: #bb4d00;
   border-color: #bb4d00;
+  color: white;
 }
 
-.theme-orange .btn-primary:hover {
+.theme-orange .btn-primary:hover, [class^="theme-"] .theme-orange .btn-primary:hover {
   background-color: #a24300;
 }
 
-.theme-orange .btn-secondary {
+.theme-orange .btn-secondary, [class^="theme-"] .theme-orange .btn-secondary {
   background-color: #ffad42;
   border-color: #ffad42;
   color: black;
 }
 
-.theme-orange .btn-secondary:hover {
+.theme-orange .btn-secondary:hover, [class^="theme-"] .theme-orange .btn-secondary:hover {
   background-color: #ffa229;
 }
 
-.theme-orange .btn-tertiary {
+.theme-orange .btn-tertiary, [class^="theme-"] .theme-orange .btn-tertiary {
   background-color: #ffe97d;
   border-color: #ffe97d;
   color: black;
 }
 
-.theme-orange .btn-tertiary:hover {
+.theme-orange .btn-tertiary:hover, [class^="theme-"] .theme-orange .btn-tertiary:hover {
   background-color: #ffe564;
 }
 
-.theme-orange .table .thead-dark th {
+.theme-orange .table .thead-dark th, [class^="theme-"] .theme-orange .table .thead-dark th {
   background-color: #bb4d00;
   border-color: #bb4d00;
 }
 
-.theme-slate .btn-primary {
+.theme-slate .btn-primary, [class^="theme-"] .theme-slate .btn-primary {
   background-color: #29434e;
   border-color: #29434e;
+  color: white;
 }
 
-.theme-slate .btn-primary:hover {
+.theme-slate .btn-primary:hover, [class^="theme-"] .theme-slate .btn-primary:hover {
   background-color: #20353d;
 }
 
-.theme-slate .btn-secondary {
+.theme-slate .btn-secondary, [class^="theme-"] .theme-slate .btn-secondary {
   background-color: #7e9ba5;
   border-color: #7e9ba5;
   color: black;
 }
 
-.theme-slate .btn-secondary:hover {
+.theme-slate .btn-secondary:hover, [class^="theme-"] .theme-slate .btn-secondary:hover {
   background-color: #6f8f9b;
 }
 
-.theme-slate .btn-tertiary {
+.theme-slate .btn-tertiary, [class^="theme-"] .theme-slate .btn-tertiary {
   background-color: #b6c6d2;
   border-color: #b6c6d2;
   color: black;
 }
 
-.theme-slate .btn-tertiary:hover {
+.theme-slate .btn-tertiary:hover, [class^="theme-"] .theme-slate .btn-tertiary:hover {
   background-color: #a6bac8;
 }
 
-.theme-slate .table .thead-dark th {
+.theme-slate .table .thead-dark th, [class^="theme-"] .theme-slate .table .thead-dark th {
   background-color: #29434e;
   border-color: #29434e;
 }
 
-.theme-indigo .btn-primary {
+.theme-indigo .btn-primary, [class^="theme-"] .theme-indigo .btn-primary {
   background-color: #26418f;
   border-color: #26418f;
+  color: white;
 }
 
-.theme-indigo .btn-primary:hover {
+.theme-indigo .btn-primary:hover, [class^="theme-"] .theme-indigo .btn-primary:hover {
   background-color: #21387b;
 }
 
-.theme-indigo .btn-secondary {
+.theme-indigo .btn-secondary, [class^="theme-"] .theme-indigo .btn-secondary {
   background-color: #92a6dd;
   border-color: #92a6dd;
   color: black;
 }
 
-.theme-indigo .btn-secondary:hover {
+.theme-indigo .btn-secondary:hover, [class^="theme-"] .theme-indigo .btn-secondary:hover {
   background-color: #7f96d7;
 }
 
-.theme-indigo .btn-tertiary {
+.theme-indigo .btn-tertiary, [class^="theme-"] .theme-indigo .btn-tertiary {
   background-color: #dee8ff;
   border-color: #dee8ff;
   color: black;
 }
 
-.theme-indigo .btn-tertiary:hover {
+.theme-indigo .btn-tertiary:hover, [class^="theme-"] .theme-indigo .btn-tertiary:hover {
   background-color: #c5d6ff;
 }
 
-.theme-indigo .table .thead-dark th {
+.theme-indigo .table .thead-dark th, [class^="theme-"] .theme-indigo .table .thead-dark th {
   background-color: #26418f;
   border-color: #26418f;
 }
 
-.theme-cyan .btn-primary {
+.theme-cyan .btn-primary, [class^="theme-"] .theme-cyan .btn-primary {
   background-color: #007c91;
   border-color: #007c91;
+  color: white;
 }
 
-.theme-cyan .btn-primary:hover {
+.theme-cyan .btn-primary:hover, [class^="theme-"] .theme-cyan .btn-primary:hover {
   background-color: #006678;
 }
 
-.theme-cyan .btn-secondary {
+.theme-cyan .btn-secondary, [class^="theme-"] .theme-cyan .btn-secondary {
   background-color: #65b0bd;
   border-color: #65b0bd;
   color: black;
 }
 
-.theme-cyan .btn-secondary:hover {
+.theme-cyan .btn-secondary:hover, [class^="theme-"] .theme-cyan .btn-secondary:hover {
   background-color: #53a7b5;
 }
 
-.theme-cyan .btn-tertiary {
+.theme-cyan .btn-tertiary, [class^="theme-"] .theme-cyan .btn-tertiary {
   background-color: #cce5e9;
   border-color: #cce5e9;
   color: black;
 }
 
-.theme-cyan .btn-tertiary:hover {
+.theme-cyan .btn-tertiary:hover, [class^="theme-"] .theme-cyan .btn-tertiary:hover {
   background-color: #badce1;
 }
 
-.theme-cyan .table .thead-dark th {
+.theme-cyan .table .thead-dark th, [class^="theme-"] .theme-cyan .table .thead-dark th {
   background-color: #007c91;
   border-color: #007c91;
 }
 
-.theme-green .btn-primary {
+.theme-green .btn-primary, [class^="theme-"] .theme-green .btn-primary {
   background-color: #4b830d;
   border-color: #4b830d;
+  color: white;
 }
 
-.theme-green .btn-primary:hover {
+.theme-green .btn-primary:hover, [class^="theme-"] .theme-green .btn-primary:hover {
   background-color: #3e6c0b;
 }
 
-.theme-green .btn-secondary {
+.theme-green .btn-secondary, [class^="theme-"] .theme-green .btn-secondary {
   background-color: #84bc49;
   border-color: #84bc49;
   color: black;
 }
 
-.theme-green .btn-secondary:hover {
+.theme-green .btn-secondary:hover, [class^="theme-"] .theme-green .btn-secondary:hover {
   background-color: #77ac3f;
 }
 
-.theme-green .btn-tertiary {
+.theme-green .btn-tertiary, [class^="theme-"] .theme-green .btn-tertiary {
   background-color: #dcedc8;
   border-color: #dcedc8;
   color: black;
 }
 
-.theme-green .btn-tertiary:hover {
+.theme-green .btn-tertiary:hover, [class^="theme-"] .theme-green .btn-tertiary:hover {
   background-color: #d0e7b5;
 }
 
-.theme-green .table .thead-dark th {
+.theme-green .table .thead-dark th, [class^="theme-"] .theme-green .table .thead-dark th {
   background-color: #4b830d;
   border-color: #4b830d;
 }
 
-.theme-amber .btn-primary {
+.theme-amber .btn-primary, [class^="theme-"] .theme-amber .btn-primary {
   background-color: #fbab18;
   border-color: #fbab18;
+  color: white;
 }
 
-.theme-amber .btn-primary:hover {
+.theme-amber .btn-primary:hover, [class^="theme-"] .theme-amber .btn-primary:hover {
   background-color: #f5a004;
 }
 
-.theme-amber .btn-secondary {
+.theme-amber .btn-secondary, [class^="theme-"] .theme-amber .btn-secondary {
   background-color: #ffd54f;
   border-color: #ffd54f;
   color: black;
 }
 
-.theme-amber .btn-secondary:hover {
+.theme-amber .btn-secondary:hover, [class^="theme-"] .theme-amber .btn-secondary:hover {
   background-color: #ffcf36;
 }
 
-.theme-amber .btn-tertiary {
+.theme-amber .btn-tertiary, [class^="theme-"] .theme-amber .btn-tertiary {
   background-color: #ffecb3;
   border-color: #ffecb3;
   color: black;
 }
 
-.theme-amber .btn-tertiary:hover {
+.theme-amber .btn-tertiary:hover, [class^="theme-"] .theme-amber .btn-tertiary:hover {
   background-color: #ffe69a;
 }
 
-.theme-amber .table .thead-dark th {
+.theme-amber .table .thead-dark th, [class^="theme-"] .theme-amber .table .thead-dark th {
   background-color: #fbab18;
   border-color: #fbab18;
 }

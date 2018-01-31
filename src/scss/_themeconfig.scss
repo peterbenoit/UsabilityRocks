@@ -4,18 +4,19 @@
     .btn-primary {
         background-color: themed('primary');
         border-color:themed('primary');
+        color:themed('primaryTxt');
         &:hover {background-color: darken(themed('primary') ,5%);}
     }
     .btn-secondary {
         background-color: themed('secondary');
         border-color:themed('secondary');
-        color:$black;
+        color:themed('secondaryTxt');
         &:hover {background-color: darken(themed('secondary') ,5%);}
     }
     .btn-tertiary {
         background-color: themed('tertiary');
         border-color:themed('tertiary');
-        color:$black;
+        color:themed('secondaryTxt');
         &:hover {background-color: darken(themed('tertiary') ,5%);}
     }
 
