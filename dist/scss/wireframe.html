@@ -72,17 +72,29 @@
 }
 
 #svg-down {
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+ /* -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; */
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(40deg) scaleY(1.5);
+    -ms-transform: rotate(40deg) scaleY(1.5);
+    transform: rotate(40deg) scaleY(1.5)	
 }
 
 .dropdown.show #svg-down {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+ /* -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); */
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: rotate(-40deg) scaleY(1.5);
+    -ms-transform: rotate(-40deg) scaleY(1.5);
+    transform: rotate(-40deg) scaleY(1.5)	
 }
 
 
-/*
+
 #ac-localnav .ac-ln-menucta-chevron::before {
     -webkit-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
@@ -100,7 +112,7 @@
     -ms-transform: rotate(-40deg) scaleY(1.5);
     transform: rotate(-40deg) scaleY(1.5)
 }
-*/
+
 
 button.section-nav {
   text-align: left;
