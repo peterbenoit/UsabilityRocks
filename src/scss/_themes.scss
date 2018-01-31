@@ -1,57 +1,79 @@
 $themes: (
     blue: (
         primary: #005eaa,
+        primaryTxt: $white,
         secondary: #88c3ea,
+        secondaryTxt: $black,
         tertiary: #c0e9ff
     ),
     purple: (
         primary: #712177,
+        primaryTxt: $white,
         secondary: #b890bb,
+        secondaryTxt: $black,
         tertiary: #e3d3e4
     ),
     brown: (
         primary: #705043,
+        primaryTxt: $white,
         secondary: #ad907b,
+        secondaryTxt: $black,
         tertiary: #d7ccc8
     ),
     teal: (
         primary: #00695c,
+        primaryTxt: $white,
         secondary: #4ebaaa,
+        secondaryTxt: $black,
         tertiary: #ceece7
     ),
     pink: (
         primary: #af4448,
+        primaryTxt: $white,
         secondary: #e57373,
+        secondaryTxt: $black,
         tertiary: #ffc2c2
     ),
     orange: (
         primary: #bb4d00,
+        primaryTxt: $white,
         secondary: #ffad42,
+        secondaryTxt: $black,
         tertiary: #ffe97d
     ),
     slate: (
         primary: #29434e,
+        primaryTxt: $white,
         secondary: #7e9ba5,
+        secondaryTxt: $black,
         tertiary: #b6c6d2
     ),
     indigo: (
         primary: #26418f,
+        primaryTxt: $white,
         secondary: #92a6dd,
+        secondaryTxt: $black,
         tertiary: #dee8ff
     ),
     cyan: (
         primary: #007c91,
+        primaryTxt: $white,
         secondary: #65b0bd,
+        secondaryTxt: $black,
         tertiary: #cce5e9
     ),
     green: (
         primary: #4b830d,
+        primaryTxt: $white,
         secondary: #84bc49,
+        secondaryTxt: $black,
         tertiary: #dcedc8
     ),
     amber: (
         primary: #fbab18,
+        primaryTxt: $white,
         secondary: #ffd54f,
+        secondaryTxt: $black,
         tertiary: #ffecb3
     )
 );

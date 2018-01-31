@@ -286,20 +286,20 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 
 // ===============================================================
 // SVG
-.fill-p { fill: $primary!important; }
-.fill-s { fill: $secondary!important; }
-.fill-t { fill: $tertiary!important; }
-.fill-w { fill: $white!important; }
-.fill-epub { fill: $epub!important; }
-.fill-excel { fill: $excel!important; }
-.fill-govd { fill: $govd!important; }
-.fill-pdf { fill: $pdf!important; }
-.fill-ppt { fill: $ppt!important; }
-.fill-fb { fill: $fb!important; }
+.fill-p { fill: $primary; }
+.fill-s { fill: $secondary; }
+.fill-t { fill: $tertiary; }
+.fill-w { fill: $white; }
+.fill-epub { fill: $epub; }
+.fill-excel { fill: $excel; }
+.fill-govd { fill: $govd; }
+.fill-pdf { fill: $pdf; }
+.fill-ppt { fill: $ppt; }
+.fill-fb { fill: $fb; }
 .fill-h {
-	fill: $primary!important;
+	fill: $primary;
 	&:hover {
-		fill: lighten( $primary, 15% )!important;
+		fill: lighten( $primary, 15% );
 	}
 }
 
