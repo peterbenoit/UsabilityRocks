@@ -1,1 +1,22 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-1{fill:#86b916;}.cls-2{opacity:0.2;}.cls-3{fill:#fff;}</style></defs><title>ePUB</title><path class="cls-1" d="M32.64,1H1.45V38.68h38V7.36Z"/><polygon class="cls-2" points="39.47 7.39 33.07 7.39 32.64 1 39.47 7.39"/><path class="cls-3" d="M20,27.23,12.77,20,20,12.77l2.41,2.41L17.59,20,20,22.41l7.23-7.23-6.3-6.29a1.3,1.3,0,0,0-1.86,0L8.89,19.07a1.3,1.3,0,0,0,0,1.86L19.07,31.11a1.3,1.3,0,0,0,1.86,0L31.11,20.93a1.3,1.3,0,0,0,0-1.86l-1.47-1.48Z"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .fill-epub-1 {
+                fill: #86b916;
+            }
+
+            .fill-epub-2 {
+                opacity: 0.2;
+            }
+
+            .fill-epub-3 {
+                fill: #fff;
+            }
+        </style>
+    </defs>
+    <title>ePUB</title>
+    <path class="fill-epub-1" d="M32.64,1H1.45V38.68h38V7.36Z" />
+    <polygon class="fill-epub-2" points="39.47 7.39 33.07 7.39 32.64 1 39.47 7.39" />
+    <path class="fill-epub-3" d="M20,27.23,12.77,20,20,12.77l2.41,2.41L17.59,20,20,22.41l7.23-7.23-6.3-6.29a1.3,1.3,0,0,0-1.86,0L8.89,19.07a1.3,1.3,0,0,0,0,1.86L19.07,31.11a1.3,1.3,0,0,0,1.86,0L31.11,20.93a1.3,1.3,0,0,0,0-1.86l-1.47-1.48Z"
+    />
+</svg>

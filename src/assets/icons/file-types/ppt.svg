@@ -3,7 +3,7 @@
         <style>
             .fill-ppt-1 { fill: #c1272d; }
             .fill-ppt-2 { fill: #fff; }
-            .fill-op-2 { opacity: 0.2; }            
+            .fill-op-2 { opacity: 0.2; }
         </style>
     </defs>
     <title>
