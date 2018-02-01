@@ -7,21 +7,18 @@
         border-color:themed('primary');
         color:themed('primaryTxt');
         &:hover {background-color: darken(themed('primary') ,5%);}
-        &:focus, &:active {background-color: themed('primary'); border-color:themed('primary');}
     }
     .btn-secondary {
         background-color: themed('secondary');
         border-color:themed('secondary');
         color:themed('secondaryTxt');
         &:hover {background-color: darken(themed('secondary') ,5%);}
-        &:focus, &:active {background-color: themed('secondary'); border-color:themed('secondary');}
     }
     .btn-tertiary {
         background-color: themed('tertiary');
         border-color:themed('tertiary');
         color:themed('secondaryTxt');
         &:hover {background-color: darken(themed('tertiary') ,5%);}
-        &:focus, &:active {background-color: themed('tertiary'); border-color:themed('tertiary');}
     }
 
     // tables
@@ -35,19 +32,4 @@
     // Icons
     svg .fill-p {fill:themed('primary');}
 
-}
-
-// Direct application of Theme colors
-@include themify($themes) {
-    .themedirect-bg-p {background-color: themed('primary');}
-    .themedirect-border-p {border-color:themed('primary');}
-    .themedirect-color-p {color:themed('primary');}
-
-    .themedirect-bg-s {background-color: themed('secondary');}
-    .themedirect-border-s {border-color:themed('secondary');}
-    .themedirect-color-s {color:themed('secondary');}
-    
-    .themedirect-bg-t {background-color: themed('tertiary');}
-    .themedirect-border-t {border-color:themed('tertiary');}
-    .themedirect-color-t {color:themed('tertiary');}
 }
