@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .white_Linkedin-1 {
+                fill: #fff;
+            }
+        </style>
+    </defs>
+    <title>white_Linkedin</title>
+    <path class="white_Linkedin-1" d="M2.34,14.18H9.82v24H2.34ZM6.08,2.23A4.34,4.34,0,1,1,1.75,6.56,4.33,4.33,0,0,1,6.08,2.23"
+    />
+    <path class="white_Linkedin-1" d="M14.51,14.18h7.17v3.29h.1a7.85,7.85,0,0,1,7.07-3.88c7.57,0,9,5,9,11.45V38.23H30.34V26.53c0-2.79,0-6.37-3.88-6.37S22,23.2,22,26.33v11.9H14.51Z"
+    />
+</svg>
