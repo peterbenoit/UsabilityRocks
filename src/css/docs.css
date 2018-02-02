@@ -616,51 +616,51 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
 }
 
 .fill-p {
-  fill: #005eaa;
+  fill: #005eaa !important;
 }
 
 .fill-s {
-  fill: #88c3ea;
+  fill: #88c3ea !important;
 }
 
 .fill-t {
-  fill: #c0e9ff;
+  fill: #c0e9ff !important;
 }
 
 .fill-w {
-  fill: #fff;
+  fill: #fff !important;
 }
 
 .fill-epub {
-  fill: #86b916;
+  fill: #86b916 !important;
 }
 
 .fill-excel {
-  fill: #207245;
+  fill: #207245 !important;
 }
 
 .fill-govd {
-  fill: #5a5a5a;
+  fill: #5a5a5a !important;
 }
 
 .fill-pdf {
-  fill: #c1272d;
+  fill: #c1272d !important;
 }
 
 .fill-ppt {
-  fill: #d24625;
+  fill: #d24625 !important;
 }
 
 .fill-fb {
-  fill: #3d5a98;
+  fill: #3d5a98 !important;
 }
 
 .fill-h {
-  fill: #005eaa;
+  fill: #005eaa !important;
 }
 
 .fill-h:hover {
-  fill: #0088f7;
+  fill: #0088f7 !important;
 }
 
 .fill-lg {

@@ -1,0 +1,1336 @@
+
+<!DOCTYPE html>
+<html lang="en" class="theme-blue">
+
+<head>
+<!--
+
+______            _ _     _____                     _____ _     _       _____           _      _ _ 
+|  _  \          ( ) |   /  __ \                   |_   _| |   (_)     /  __ \         | |    | | |
+| | | |___  _ __ |/| |_  | /  \/ ___  _ __  _   _    | | | |__  _ ___  | /  \/ ___   __| | ___| | |
+| | | / _ \| '_ \  | __| | |    / _ \| '_ \| | | |   | | | '_ \| / __| | |    / _ \ / _` |/ _ \ | |
+| |/ / (_) | | | | | |_  | \__/\ (_) | |_) | |_| |   | | | | | | \__ \ | \__/\ (_) | (_| |  __/_|_|
+|___/ \___/|_| |_|  \__|  \____/\___/| .__/ \__, |   \_/ |_| |_|_|___/  \____/\___/ \__,_|\___(_|_)
+                                     | |     __/ |                                                 
+                                     |_|    |___/                                                  
+
+-->
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>Birth Data - MEDIUM no description no logo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109054116-1');
+</script>
+
+
+
+<link rel='stylesheet prefetch' href='https://usability.rocks/css/bootstrap.css?2'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
+<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?10'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
+
+      <style>
+			.card-header {
+				margin-bottom: 0!important;
+			}
+      @media (max-width: 767px) {
+  section:not(:first-of-type) {
+    border-top: 1px solid orange;
+  }
+
+  .top-nav .nav-item {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 26%;
+  }
+
+  body {
+    background: #fff !important;
+  }
+}
+.dropdown .dropdown-toggle {
+  background: #f5f5f5;
+}
+
+
+
+.dropdown, .dropdown-menu {
+  padding: 0;
+  float: none;
+}
+
+
+.dropdown a {
+	text-decoration: none;
+}
+
+
+.social-media-footer li {
+  width: 25%;
+	padding-left: 0!important;
+	text-align: center;
+}
+.social-media-footer li:not(:first-of-type) {
+  border-left: 1px solid #555555;
+}
+
+#svg-down {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.dropdown.show #svg-down {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+/*
+#ac-localnav .ac-ln-menucta-chevron::before {
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(40deg) scaleY(1.5);
+    -ms-transform: rotate(40deg) scaleY(1.5);
+    transform: rotate(40deg) scaleY(1.5)
+}
+
+#ac-localnav .ac-ln-menucta-chevron::after {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: rotate(-40deg) scaleY(1.5);
+    -ms-transform: rotate(-40deg) scaleY(1.5);
+    transform: rotate(-40deg) scaleY(1.5)
+}
+*/
+
+button.section-nav {
+  text-align: left;
+}
+button.section-nav:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top-nav .dropdown-menu a {
+  border-bottom: 0 !important;
+}
+.top-nav .dropdown-menu a:not(:first-child) {
+  border-top: 1px dashed #e0e0e0 !important;
+}
+.top-nav .dropdown-toggle::after {
+  border: 0 !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 2rem !important;
+}
+
+.card h1, .card .h1, .card h2, .card .h2, .card h3, .card .h3, .card h4, .card .h4, .card h5, .card .h5, .card h6, .card .h6 {
+  margin-top: 0 !important;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.nav-item {
+  border-right: 1px solid #e0e0e0;
+  width: 20%;
+}
+.nav-item:first-child {
+  border-left: 1px solid #e0e0e0;
+}
+.nav-item.active > a {
+  border-bottom: 5px solid #005eaa;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar a {
+  border-bottom: 5px solid #c0e9ff;
+}
+.navbar a:hover, .navbar a:focus {
+  border-bottom: 5px solid #005eaa;
+  color: #005eaa !important;
+}
+
+body, .breadcrumb {
+  background: #f5f5f5;
+}
+
+.nav-link:focus {
+  outline: none !important;
+}
+
+.theme-blue #leftnav .list-group a:hover {
+  border-left: 4px solid #005eaa !important;
+}
+.theme-blue #leftnav .list-group .list-group-item.active.highlight {
+  border-color: #005eaa;
+}
+.theme-blue #leftnav .list-group .list-group-item.selected {
+  border-left-color: #005eaa !important;
+  background: #f5f5f5;
+}
+
+.connect-icons img {
+  margin-left: 12px;
+}
+
+footer {
+  font-size: 13px;
+}
+footer span {
+  display: block;
+}
+footer ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+footer ul.list-inline {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+footer ul.list-inline li {
+  float: left;
+}
+footer ul.list-inline li img {
+  width: 24px;
+}
+footer ul.list-inline li.rounded-circle {
+  background: #fff;
+  padding: 7px;
+  margin-right: 7px;
+}
+
+.theme-purple #leftnav .list-group a:hover {
+  border-left: 4px solid #712177 !important;
+}
+.theme-purple #leftnav .list-group .list-group-item.active.highlight {
+  border-color: #712177;
+}
+.theme-purple #leftnav .list-group .list-group-item.selected {
+  border-left-color: #712177 !important;
+  background: #f5f5f5;
+}
+
+.list-group i.fa {
+  margin-right: 10px;
+}
+.list-group .alt-background a.list-group-item {
+  background: #f5f5f5;
+}
+.list-group .alt-background .list-group-submenu a.list-group-item {
+  background: #fff;
+}
+.list-group a {
+  color: #333;
+  border-left: 4px solid #f5f5f5;
+}
+.list-group a:hover {
+  background: #f5f5f5 !important;
+}
+
+.list-group  a.bg-primary:hover {
+  background-color: rgb(0, 94, 170) !important;
+	
+}
+.theme-blue #leftnav .list-group a.bg-primary:hover {
+border-left: 4px solid #fff !important;
+}
+
+.list-group a:focus {
+  outline: none !important;
+}
+.list-group .list-group-submenu {
+  margin-left: 20px;
+  font-size: 15px;
+}
+.list-group .list-group-submenu .list-group-submenu {
+  font-size: 13px;
+}
+.list-group.no-seperator > .list-group-item {
+  border-bottom: none;
+}
+.list-group .collapsing {
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.list-group .list-group-item:first-child,
+.list-group .list-group-item:last-child {
+  border-radius: 0;
+}
+.list-group > .list-group-submenu .list-group-submenu a .list-group-item {
+  background: #f5f5f5;
+}
+.list-group > .list-group-submenu .list-group-submenu a.selected.themed-bg {
+  background: #c0e9ff;
+}
+.list-group > .list-group-submenu.alt-background a.list-group-item {
+  background: #f5f5f5;
+}
+.list-group > .list-group-submenu.alt-background .list-group-submenu a.list-group-item {
+  background: #fff;
+}
+.list-group .list-group-item {
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px dashed #e0e0e0;
+  margin-top: 1px;
+  padding-right: 3px;
+}
+.list-group .list-group-item.active {
+  background: #fff;
+  color: #333;
+  border-left-color: #fff;
+}
+.list-group .list-group-item.selected {
+  font-weight: bold;
+}
+.list-group.indicator-plus a[data-toggle="collapse"]:after {
+  font-family: 'Material Icons';
+  content: 'add';
+  float: right;
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.list-group.indicator-plus a[data-toggle="collapse"][aria-expanded="true"] {
+  font-weight: bold;
+}
+.list-group.indicator-plus a[data-toggle="collapse"][aria-expanded="true"]:after {
+  content: "remove";
+}
+.list-group.indicator-fancy a[data-toggle="collapse"]:after {
+  font-family: 'FontAwesome';
+  content: "\f067";
+  float: right;
+  font-size: 16px;
+  color: #333;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.list-group.indicator-fancy a[data-toggle="collapse"][aria-expanded="true"] {
+  font-weight: bold;
+}
+.list-group.indicator-fancy a[data-toggle="collapse"][aria-expanded="true"]:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  content: "\f00d";
+}
+
+a.language-link {
+  font-size: .8rem;
+}
+
+.social-media {
+  list-style: none;
+  padding-left: 0 !important;
+}
+.social-media li {
+  display: inline-block;
+  padding-left: 12px;
+}
+.social-media img {
+  width: 25px;
+}
+
+body {
+  border-top: 5px solid #bdbdbd;
+}
+
+.clearstyles {
+  background: transparent;
+  padding: 0;
+  outline: none;
+  -webkit-box-shadow: 0px 5px 5px 0px #949494;
+          box-shadow: 0px 5px 5px 0px #949494;
+}
+
+.section-dropdown::after {
+  border: 0;
+}
+
+.btn:focus, .btn.focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0px;
+}
+
+.dropdown-menu {
+  top: 0 !important;
+  border: 0;
+  -webkit-transform: translate3d(0px, 42px, 0px) !important;
+          transform: translate3d(0px, 42px, 0px) !important;
+}
+
+.dropdown-toggle.section-nav::after {
+  font-family: 'Material Icons';
+  border: 0 !important;
+  content: 'keyboard_arrow_down';
+  margin-right: 40px;
+  font-size: 42px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.section-nav {
+  padding: 0;
+}
+.section-nav .dropdown-menu {
+  padding: 0;
+}
+.section-nav .btn {
+  padding: 0;
+}
+.section-nav .dropdown a {
+  padding: 0.75rem 1.25rem;
+  border-right: none;
+  border-top: none;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.section-nav .dropdown-item {
+  padding: 0.75rem 1.25rem;
+  border-right: none;
+  border-top: none;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.section-nav .dropdown-item:not(:first-child) {
+  border-top: 1px dashed #e0e0e0;
+}
+.section-nav .dropdown a {
+  text-decoration: none;
+}
+.section-nav .dropdown .btn-secondary, .section-nav .dropdown.show .btn-secondary {
+  background: #f5f5f5;
+  color: #222;
+  text-align: left;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  -webkit-box-shadow: 0px 2px 5px 0px #949494;
+          box-shadow: 0px 2px 5px 0px #949494;
+  padding-right: 50px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 9998;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+.sticky:before,
+.sticky:after {
+  content: '';
+  display: table;
+}
+
+address.address ul {
+  padding: 0;
+}
+address.address li {
+  list-style-type: none;
+}
+
+.sticky-top, .sticky-top .dropdown {
+  z-index: 9999;
+}
+
+.right-social-media {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  list-style: none;
+}
+.right-social-media li {
+  display: block;
+}
+.right-social-media img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.config-trigger {
+  position: absolute;
+  top: 30px;
+  left: -36px;
+  width: 36px;
+  height: 36px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  background-clip: padding-box;
+  text-decoration: none;
+}
+
+.config-trigger:hover {
+  background: #000;
+  text-decoration: none;
+}
+
+.config-panel:hover .fa {
+  color: #fff;
+}
+
+.config-panel .fa {
+  font-size: 22px;
+  padding-top: 7px;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.config-panel {
+  position: absolute;
+  top: 200px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  z-index: 30;
+  width: 190px;
+}
+
+.config-panel .panel-inner {
+  position: relative;
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  background-clip: padding-box;
+}
+
+.config-panel .panel-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.config-panel label {
+  color: #fff;
+}
+
+.config-panel #color-options {
+  margin-bottom: 0px;
+}
+
+.config-panel #color-options li a {
+  display: block;
+  width: 28px;
+  height: 20px;
+  border: 2px solid transparent;
+  margin-bottom: 10px;
+}
+
+.config-panel #color-options li a:hover {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.config-panel #color-options li.active a {
+  border: 2px solid #fff;
+}
+
+.config-panel .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #fff;
+}
+
+.config-panel .close .fa {
+  color: #fff;
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.dropdown.show .dropdown-menu {
+    max-height: 300px;
+}
+
+    </style>
+
+
+
+
+
+
+</head>
+
+<body translate="no" >
+
+  <div class="container-fluid bg-white -pt-3 -pb-3">
+	<div class="container text-right">
+
+	</div>
+	<div class="container mt-2">
+		<header role="banner" aria-label="Header">
+			<div class="row">
+				<div class="col">
+					<img src="https://www.cdc.gov/TemplatePackage/3.0/images/masthead_subpage.svg" alt="Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People" class="d-none d-md-block pt-3" width="570px">
+					<img src="https://www.cdc.gov/TemplatePackage/3.0/images/masthead_1-col.svg" alt="Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People" class="d-md-none">
+				</div>
+				<div class="col-2 col-lg-4 col-xl-3">
+					<div class="d-lg-block d-none">
+					<a href="https://s.codepen.io/peterbenoit/debug/JMMQdQ" class="d-inline-block fs0875 float-right" target="_blank">All A-Z Topics</a>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Search" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn" type="button"><i class="material-icons" style="color: #005eaa;font-weight:bold;font-size: 24px;padding-top:4px">search</i></button>
+						</div>
+					</div>
+					</div>
+					<div class="d-lg-none">
+						<i class="material-icons" style="color: #005eaa;font-weight:bold;font-size: 36px;padding-top:4px">search</i>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+</div>
+<!-- /header -->
+
+<!-- title bar area -->
+<div class="container-fluid bg-primary d-none d-md-block" style="height: 60px;">
+	<div class="container pl-0 pr-0">
+		<div class="site-title pt-3 pl-3">
+			<div class="row">
+				<div class="col">
+					<!-- 					<div class="display-6 display-lg-5">National Center for Health Statistics</div>
+					<p class="lead d-none d-md-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+					<div class="display-6 text-white fw-500 text-uppercase">The National Institute for Occupational Safety and Health</div>
+					<p class="d-none ">Promotion productive workplaces through safety and health research</p>
+				</div>
+				<div class="col-3 text-right d-none">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/NIOSH_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline" style="margin-top: -9px; width: 130px;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid bg-secondary d-none d-md-block"></div>
+<!-- /title bar area -->
+<div class="container-fluid bg-primary p-1 d-md-none mt-3">
+	<div class="container text-white">
+		<div class="row">
+			<div class="col-1 pt-3 d-none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve">
+	<path fill="#ffffff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 18.414,7.41398L 17,6L 11,12L 17,18L 18.414,16.586L 13.828,12L 18.414,7.41398 Z M 12.414,7.41398L 11,6L 5.00001,12L 11,18L 12.414,16.586L 7.82801,12L 12.414,7.41398 Z "/>
+</svg></div>
+			<div class="col"><a href="#" class="d-md-none mt-1 mb-0 d-inline-block text-uppercase text-white td-none pt-md-2 pb-md-2">National Institute for Occupational Safety and Health</a></div>
+		</div>
+
+	</div>
+</div>
+<div class="container-fluid bg-secondary d-md-none" style="padding: 2px"></div>
+
+<div class="container">
+<div class="row">
+	<div class="col-sm-8">
+		<nav role="navigation" aria-label="Breadcrumb">
+			<ol class="breadcrumb fs0875 mb-0 d-none d-md-flex">
+				<li class="breadcrumb-item"><a href="#">CDC</a></li>
+				<li class="breadcrumb-item"><a href="#">NCHS</a></li>
+<!-- 					<li class="breadcrumb-item active d-none d-md-inline" aria-current="page">National Vital Statistics System</li> -->
+			</ol>
+		</nav>
+	</div>
+	<div class="col-sm-4 mt-2 d-none d-md-block">
+		<!-- d-lg-block -->
+		<nav role="navigation" aria-label="Social Media">
+			<ul class="social-media float-right">
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt=""></a></li>
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/email.svg" alt=""></a></li>
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt=""></a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+	</div>
+<div class="-container-fluid bg-gray-l3 bb-2 bb-md-0 b-gray-l2">
+	<div class="-container ct">
+		<!-- section nav area -->
+		<nav role="navigation" aria-label="Section Nav" class="d-md-none sticky-top">
+
+			<div class="dropdown">
+				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold; font-size: 19px">
+			About NIOSH 	<svg id="svg-down" style="width:32px;height:32px; right: 30px;z-index:1002;" viewBox="0 0 24 24" class="p-abs mt-3 ba-1 rounded-circle bg-primary">
+                    			<path fill="#ffffff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                			</svg>
+		  </button>
+				<div class="dropdown-menu w-100 rounded-0 m-0" aria-labelledby="dropdownMenuButton">
+					<nav role="navigation" aria-label="Left Nav" id="leftnav" class="left-nav-ish">
+						<div class="list-group indicator-plus">
+							<a class="list-group-item" href="https://cdc.gov#99">Results &amp; Publications</a>
+							<a class="list-group-item" href="#">Info for Professionals</a>
+							<a class="list-group-item bg-primary text-white bb-0" href="https://cdc.gov#99"><svg style="width:24px;height:24px;vertical-align:bottom" viewBox="0 0 24 24">
+    <path fill="#ffffff" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+</svg> National Institute for Occupational Safety and Health</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+<div class="container">
+	<div class="d-flex flex-wrap bg-white pl-md-3">
+		<a href="#" class="d-md-none mt-3 mb-3 d-block language-link">En Español</a>
+		<!-- /section nav area -->
+
+		<nav role="navigation" aria-label="Social Media" class="d-none pin-bottom">
+			<ul class="social-media">
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt=""></a></li>
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/email.svg" alt=""></a></li>
+				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt=""></a></li>
+			</ul>
+		</nav>
+		<!-- nav area -->
+		<div class="col-12 col-md-3 p-0 d-none d-md-block mt-2">
+			<nav role="navigation" aria-label="Left Nav" id="leftnav" class="mb-2 mt-3 left-nav">
+				<div class="list-group indicator-plus">
+					<a class="list-group-item" href="https://cdc.gov#99">About NVSS</a>
+					<a class="list-group-item active font-weight-bold selected" data-parent="#leftnav" data-toggle="collapse" href="#lvl1" aria-expanded="false">Birth Data</a>
+					<div class="collapse list-group-submenu alt-highlight" id="lvl1">
+						<a class="list-group-item themed-bg" data-parent="#lvl1-sub" data-toggle="collapse" href="#lvl1-sub" aria-expanded="false">Results and Publications</a>
+						<div class="collapse list-group-submenu alt-highlight" id="lvl1-sub">
+							<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#1">Cohort Fertility Tables</a>
+							<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#4">About the National Vital Statistics System</a>
+							<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#2">Update to 2005 Vermont Birth Data</a>
+						</div>
+						<a class="list-group-item" href="https://cdc.gov#16">Info for Professionals</a>
+					</div>
+					<a class="list-group-item" data-parent="#leftnav" data-toggle="collapse" href="#lvl2">Reproductive Health Links</a>
+					<div class="collapse list-group-submenu" id="lvl2">
+						<a class="list-group-item" href="https://cdc.gov#6">Level 2b Link 1</a>
+						<a class="list-group-item" href="https://cdc.gov#7">Level 2b Link 2</a>
+						<a class="list-group-item" href="https://cdc.gov#8">Level 2b Link 3</a>
+					</div>
+					<a class="list-group-item" href="https://cdc.gov#9">Marriages and Divorces</a>
+					<a class="list-group-item" data-parent="#leftnav" data-toggle="collapse" href="#lvl4">Bridged Race Categories</a>
+					<div class="collapse list-group-submenu" id="lvl4">
+						<a class="list-group-item" href="https://cdc.gov#10">Level 2d Link 1</a>
+						<a class="list-group-item" href="https://cdc.gov#11">Level 2d Link 2</a>
+						<a class="list-group-item" href="https://cdc.gov#12">Level 2d Link 3</a>
+					</div>
+				</div>
+			</nav>
+			<div class="col-12 mt-5">
+				<div class="card mt-5 mr-3 mb-5">
+					<div class="card-header bg-gray-l3 h5 mt-0">
+						Related Sites
+					</div>
+					<ul class="list-group list-group-flush ">
+						<li class="list-group-item fs0875"><a class="bl-0 td-none" href="#">Surveys and Data Collection Systems</a></li>
+						<li class="list-group-item fs0875"><a class="bl-0 td-none" href="#">Vital Statistics Online</a></li>
+						<li class="list-group-item fs0875"><a class="bl-0 td-none" href="#">National Death Index</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /nav area -->
+
+		<!-- content area -->
+		<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
+			<div class="row">
+				<div class="col-12">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/unnamed.jpg" class="w-100" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h1 class="d-none d-md-inline-block h2" style="margin-top:7px!important">Birth Data</h1>
+					<a href="#" class="d-none d-md-block language-link mb-3">En Español</a>
+				</div>
+			</div>
+			<div class="row mt-3 mt-md-0">
+				<!-- content class is just to set a min-height, and should not be used normally -->
+				<div class="col-12 content">
+
+				<div class="card mt-3 mt-md-0 ml-md-3 mb-3 float-lg-right">
+					<div class="card-header bg-gray-l3 h5 mt-0">
+						On This Page
+					</div>
+					<ul class="list-group list-group-flush ">
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#research">NIOSH Research</a>
+		</li>
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#nio2">NIOSHTIC-2 Search</a>
+		</li>
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#aero">Tutorials: Aerosol 101</a>
+		</li>
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#resources">NIOSH Resources</a>
+		</li>
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#other">Other Resources</a>
+		</li>
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#org">Other Resources / Organizations</a>
+		</li>
+		<li class="list-group-item fs0875">
+			<a class="bl-0 td-none" href="#journals">Journals</a>
+		</li>
+					</ul>
+				</div>
+
+					<p>The National Vital Statistics System is the oldest and most successful example of inter-governmental data sharing in Public Health and the shared relationships, standards, and procedures form the mechanism by which NCHS collects and disseminates
+						the Nation&rsquo;s official vital statistics. These data are provided through contracts between NCHS and&nbsp;<a href="https://www.cdc.gov/stltpublichealth/sitesgovernance/index.html">vital registration systems operated in the various jurisdictions</a>						legally responsible for the registration of vital events &ndash; births, deaths, marriages, divorces, and fetal deaths. Vital Statistics data are also available online. In the United States, legal authority for the registration of these events resides
+						individually with the 50 States, 2 cities (Washington, DC, and New York City), and 5 territories (Puerto Rico, the Virgin Islands, Guam, American Samoa, and the Commonwealth of the Northern Mariana Islands). These jurisdictions are responsible for
+						maintaining registries of vital events and for issuing copies of birth, marriage, divorce, and death certificates.</p>
+					<h2 class="h3">H2(h3) Forms</h2>
+					<h3 class="h4">H3(h4) Standard Forms</h3>
+					<p><a href="/nchs/data/series/sr_04/sr04_028.pdf">Standard forms [PDF &ndash; 1.9 MB]</a> for the collection of the data and <a href="/nchs/products/misc_pubs.htm#modelstate">model procedures</a> for the uniform registration of the events are developed
+						and recommended for nationwide use through cooperative activities of the jurisdictions and NCHS. The process for implementing the latest revisions of the birth and death certificates and the fetal death report is now underway.</p>
+					<h4 class="h5">H4(h5) Certificates</h4>
+					<p><a href="/nchs/nvss/vital_certificate_revisions.htm">The final 2003 revised certificates and accompanying technical information</a> are available. NCHS has <a href="/nchs/data/dvs/Multiple_race_documentation_5-10-04.pdf">procedures [PDF, 164 KB]</a>						for collection, coding, editing, and transmitting multiple race and Hispanic original data.</p>
+					<h5 class="h6">H5(h6)Training</h5>
+					<p>NCHS also produces <a href="/nchs/nvss/writing_cod_statements.htm">training</a> and <a href="/nchs/nvss/instruction_manuals.htm">instructional material</a>, as well as an <a href="/nchs/nvss/mmds.htm">automated mortality medical data system</a> for
+						coding and classifying cause-of-death information from death certificates.</p>
+					<h2 class="h3">H2(h3) Re-engineering</h2>
+					<p><a id="reengineering" name="reengineering"></a> CDC&rsquo;s National Center for Health Statistics is working with State partners represented by the National Association of Public Health Statistics and Information Systems and the Social Security Administration
+						to fundamentally re-engineer the processes through which vital statistics are produced in the U.S., including implementation of the 2003 revised certificates. The primary objective is to improve the timeliness, quality, and sustainability of the
+						decentralized vital statistics system, along with collection of the revised and new content of the 2003 certificates, by adopting technologically sophisticated yet cost-effective model IT systems based on nationally developed standards and models.
+						Information on the re-engineering activities and technical documents are available at the <a href="http://www.naphsis.org/">NAPHSIS web site</a>, as well as at the <a href="/nchs/nvss/vital_certificate_revisions.htm">NCHS certificate revision web site</a>.</p>
+					<h3 class="h4">H3(h4) Additional Programs</h3>
+					<p>Additional programs related to the National Vital Statistics System include:</p>
+					<ul>
+						<li><a href="/nchs/nvss/linked-birth.htm">Linked Birth and Infant Death Data Set</a></li>
+						<li><a href="/nchs/nsfg/">National Survey of Family Growth</a></li>
+						<li><a href="/nchs/nvss/mmb.htm">Matched Multiple Birth Data Set</a></li>
+						<li><a href="/nchs/ndi/">National Death Index</a></li>
+						<li><a href="/nchs/nvss/nmihs.htm">National Maternal and Infant Health Survey</a></li>
+						<li><a href="/nchs/nvss/nmfs.htm">National Mortality Followback Survey</a></li>
+					</ul>
+					<h3 class="h4">H3(h4) Vital Statistics</h3>
+					<p>Through the National Vital Statistics System, data on vital events are now published in electronic form:</p>
+					<ul>
+						<li><a href="/nchs/products/vsus.htm">Vital Statistics of the United States</a>,</li>
+						<li><a href="/nchs/products/nvsr.htm">National Vital Statistics Reports</a> (formerly the <a href="/nchs/products/mvsr.htm">Monthly Vital Statistics Report</a>)</li>
+						<li><a href="/nchs/products.htm">Other selected reports</a>.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row d-md-none mt-5 mb-5">
+				<div class="col-12">
+				<div class="card mt-5 mr-3 mb-5">
+					<div class="card-header bg-gray-l3 h5 mt-0">
+						Related Sites
+					</div>
+					<ul class="list-group list-group-flush ">
+						<li class="list-group-item fs0875"><a class="bl-0 td-none" href="#">Surveys and Data Collection Systems</a></li>
+						<li class="list-group-item fs0875"><a class="bl-0 td-none" href="#">Vital Statistics Online</a></li>
+						<li class="list-group-item fs0875"><a class="bl-0 td-none" href="#">National Death Index</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="row d-none d-md-flex">
+				<div class="col mt-3 mb-3 d-none">
+					<nav role="navigation" aria-label="Social Media">
+						<ol class="social-media">
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt=""></a></li>
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt=""></a></li>
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/Media_004.svg" alt=""></a></li>
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_syndication.svg" alt=""></a></li>
+						</ol>
+					</nav>
+				</div>
+				<div class="col last-reviewed mt-3 mb-3">
+					<span class="float-right fs075 c-gray-d3">
+<!-- 						Last Reviewed:  Nov. 19, 2017<br> -->
+						Last Updated:  Nov. 18, 2017
+					</span>
+				</div>
+			</div>
+			<div class="row d-none">
+				<div class="col-12">
+					<nav role="navigation" aria-label="Social Media">
+						<ul class="social-media mt-5">
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt=""></a></li>
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt=""></a></li>
+							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/Media_004.svg" alt=""></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row d-md-none mb-3">
+				<div class="col-12 last-reviewed fs0875">Last Reviewed: Nov. 9, 2017</div>
+			</div>
+
+			<div class="row d-md-none">
+				<div class="col-12 mobile-nav">
+					<!-- mobile navigation is copied here -->
+				</div>
+			</div>
+		</main>
+		<!-- /content area -->
+	</div>
+</div>
+
+<!-- footer -->
+<div class="container-fluid bg-gray-d2 pt-3 pb-3 mt-3 text-white">
+	<footer role="contentinfo" aria-label="Footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 pl-md-5">
+					<strong>CONTACT CDC-INFO</strong>
+					<div class="row mt-2">
+						<div class="col-2 pt-1"><i class="material-icons" style="font-size: 24px;">phone</i></div>
+						<div class="col" style="margin-left: -20px;">
+							<span>Have questions? We have answers.</span>
+							<span>1-800-CDC-INFO (800-232-4636)</span>
+							<span>TTY: 888-232-6348</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 pt-1"><i class="material-icons" style="font-size: 24px;">email</i></div>
+						<div class="col" style="margin-left: -20px;">
+							<a href="#" style="color: #fff; margin-top: 5px;display: inline-block">Email CDC-INFO</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 -offset-md-1 mt-3 mt-md-0">
+					<strong>CDC INFORMATION</strong>
+					<div class="row mt-2">
+						<div class="col">
+							<ul>
+								<li>About CDC
+									<li>Jobs
+										<li>Funding
+											<li>Policies
+												<li>File Viewers &amp; Players
+							</ul>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Privacy
+									<li>FOIA
+										<li>No Fear Act
+											<li>OIG
+												<li>Nondiscrimination
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mt-2 mt-md-0 connect-icons text-md-right pr-5">
+					<strong>CONNECT WITH CDC</strong><br>
+					<ul class="list-inline mt-3">
+						<li><img src="https://usability.rocks/assets/icons/social/white/fb.svg"></li>
+						<li><img src="https://usability.rocks/assets/icons/social/white/twitter.svg"></li>
+						<li><img src="https://usability.rocks/assets/icons/social/white/youtube.svg"></li>
+						<li><img src="https://usability.rocks/assets/icons/social/white/IG.svg"></li>
+					</ul><br class="d-none d-md-block">
+					<ul class="list-inline mt-2">
+						<li><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></li>
+						<li><img src="https://usability.rocks/assets/icons/social/white/CDC-tv.svg"></li>
+						<li><img src="https://usability.rocks/assets/icons/social/white/rss.svg"></li>
+						<li><img src="https://usability.rocks/assets/icons/social/white/email.svg"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<div class="container-fluid bg-gray-l2 pt-2 pb-5 mb-3">
+	<footer role="contentinfo" aria-label="Footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-5 pl-md-5 d-none d-md-block">
+					U.S. Department of Health &amp; Human Services
+				</div>
+				<div class="col-5">
+					HHS.gov
+				</div>
+				<div class="col-4 col-md-2 -offset-md-1">
+					USA.gov
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- overlay for VP1 dropdown -->
+<div class="overlay"></div>
+
+<!-- side picker -->
+<div class="config-panel d-none d-lg-block" id="config-panel">
+	<div class="panel-inner">
+		<a class="config-trigger config-panel-hide" href="#" id="config-trigger"><i class="fa fa-cog"></i></a>
+		<p class="panel-title">Choose Theme</p>
+		<ul class="list-unstyled list-inline" id="color-options">
+			<li class="active list-inline-item">
+				<a data-color="#005eaa" data-style="theme-blue" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#712177" data-style="theme-purple" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#705043" data-style="theme-brown" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#00695c" data-style="theme-teal" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#af4448" data-style="theme-pink" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#bb4d00" data-style="theme-orange" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#4b830d" data-style="theme-green" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#29434e" data-style="theme-slate" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#26418f" data-style="theme-indigo" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#007c91" data-style="theme-cyan" href="#"></a>
+			</li>
+			<li class="list-inline-item">
+				<a data-color="#fbab18" data-style="theme-amber" href="#"></a>
+			</li>
+		</ul>
+		<!-- 		<p class="panel-title">Choose Nav</p>
+		<ul class="list-unstyled list-inline" id="nav-options">
+			<li class="active list-inline-item">
+				<a href="#left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+			</li>
+			<li class="active list-inline-item">
+				<a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+			</li>
+		</ul> -->
+		<a class="close" href="#" id="config-close"><i class="fa fa-times-circle"></i></a>
+	</div>
+</div>
+
+<!-- right side social media -->
+
+<!-- <nav role="navigation" aria-label="Social Media">
+	<ul class="right-social-media float-right d-none">
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt=""></a></li>
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/email.svg" alt=""></a></li>
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt=""></a></li>
+	</ul>
+</nav> -->
+
+<nav role="navigation" aria-label="Social Media" class="d-md-none bg-gray-d2 w-100 op-90" style="position: fixed; bottom: 0;">
+	<ul class="social-media social-media-footer d-flex flex-nowrap mt-1">
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/fb.svg" alt=""></a></li>
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/twitter.svg" alt=""></a></li>
+<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>
+		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></a></li>
+	</ul>
+</nav>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.bundle.js'></script>
+<script src='https://codepen.io/peterbenoit/pen/eezagz.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axe-core/2.4.2/axe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.0.3/stickyfill.js'></script>
+
+
+
+    <script >
+      'use strict';
+
+var selected = 'left';
+$( function() {
+	$( '#leftnav .list-group .list-group a.selected' ).siblings( 'a' ).css( 'border-left-color', '#e0e0e0' );
+} )
+
+
+$( '#nav-options a' ).on( 'click', function( e ) {
+	e.preventDefault();
+
+	if( $(this).attr('href') === '#left' ) {
+		selected = 'left'
+		$( '.top-nav' ).addClass( 'd-none' );
+		$( '#leftnav' ).parent().addClass( 'd-md-block' );
+		$( 'main' ).addClass( 'col-md-8 offset-md-1' );
+	} else {
+		selected = 'top'
+		$( '.top-nav' ).removeClass( 'd-none' );
+		$( '#leftnav' ).parent().removeClass( 'd-md-block' );
+		$( 'main' ).removeClass( 'col-md-8 offset-md-1' );
+	}
+} );
+
+var $element = $('.sticky-top'),
+	$rsm = $( '.right-social-media' ),
+	flag = 0;
+Stickyfill.add($element);
+
+$( window ).on( 'load scroll resize', _.throttle( function( e ) {
+	// console.log( document.documentElement.scrollTop )
+
+
+	$rsm.css( 'left', $('main').offset().left + $('main').outerWidth() - 50 + "px" );
+
+	if ( document.documentElement.scrollTop > 279 ) {
+		$rsm.css( 'opacity', '1' );
+	} else {
+		$rsm.css( 'opacity', '0' );
+	}
+
+	$( '.overlay' ).hide();
+
+// 	if( flag === 0 ) {
+// 		if ( document.documentElement.scrollTop <= 299 ) {
+// 			$rsm.addClass( 'd-none' );
+// 			flag = 0;
+// 		}
+// // 		if( $element[0].getBoundingClientRect().top <= 0 ) {
+// // 			$element.addClass( 'clearstyles' );
+
+// // 		}
+// 	} else {
+// 		if ( $rsm[0].getBoundingClientRect().top > 299 ) {
+// 			$rsm.removeClass( 'd-none' );
+// 			flag = 1;
+// 		}
+// // 		if( $element[0].getBoundingClientRect().top > 0 ) {
+// // 			$element.removeClass( 'clearstyles' );
+
+
+// // 			// $( '.right-social-media' ).removeClass( 'd-none' );
+// // 		}
+// 	}
+}, 100 ) );
+
+
+
+$( '.dropdown' ).on( 'show.bs.dropdown', function () {
+	$( '.overlay' ).show();
+	// $( '#svg-down' ).hide();
+
+
+	// $( this ).css( { 'width': $(window).width(), 'position': 'absolute', 'left': 0 } );
+
+	$( this ).closest( '.ct' ).removeClass( 'container' );
+	if( $element[0].getBoundingClientRect().top > 0 ) {
+		$element.css( {
+			'background-color': 'transparent',
+			'outline': 'none'
+		} );
+		flag = 0;
+	}
+} );
+
+$( '.dropdown' ).on( 'hide.bs.dropdown', function () {
+	$( '.overlay' ).hide();
+	// $( '#svg-down' ).show();
+
+	// $( this ).closest( '.ct' ).addClass( 'container' );
+	$element[0].removeAttribute( 'style' );
+} );
+
+// $.ajaxSetup({
+//     beforeSend:function(){
+//         $( '#loading' ).show();
+//     },
+//     complete:function(){
+//         $( '#loading' ).hide();
+//     }
+// });
+
+$( function() {
+	$( 'html' ).addClass( 'theme-blue' );
+	$( '.config-panel #color-options .list-inline-item a' ).each( function() {
+		$( this ).css( 'background-color', $( this ).data( 'color' ) );
+	} );
+	$( '.config-panel' ).css( {
+		'right': '-190px',
+		'display': 'block!important'
+	} );
+} );
+$( '#config-trigger' ).click( function( e ) {
+	e.preventDefault();
+	if ( $( this ).hasClass( 'config-panel-open' ) ) {
+		$( "#config-panel" ).animate( {
+			right: "-=190" //same as the panel width
+		}, 500 );
+		$( this ).removeClass( 'config-panel-open' ).addClass( 'config-panel-hide' );
+	} else {
+		$( "#config-panel" ).animate( {
+			right: "+=190" //same as the panel width
+		}, 500 );
+		$( this ).removeClass( 'config-panel-hide' ).addClass( 'config-panel-open' );
+	}
+} );
+$( '#config-close' ).on( 'click', function( e ) {
+	e.preventDefault();
+	$( '#config-trigger' ).click();
+} );
+$( '#color-options a' ).on( 'click', function( e ) {
+	e.preventDefault();
+	var $styleSheet = $( this ).attr( 'data-style' ),
+		$color = $( this ).attr( 'data-color' );
+	// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
+	// $( '#theme-style' ).attr( 'href', $styleSheet );
+
+	$( 'html' ).removeClass().addClass( $styleSheet );
+	var $listItem = $( this ).closest( 'li' );
+	$listItem.addClass( 'active' );
+	$listItem.siblings().removeClass( 'active' );
+} );
+
+var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code/';
+var crossorigin = 'https://crossorigin.me/' + lipsum,
+	allowanyorigin = 'https://allow-any-origin.appspot.com/' + lipsum,
+	anyorigin = 'https://anyorigin.com/go?url=' + lipsum;
+
+
+// $.get( allowanyorigin, function( data ) {
+//   $('.content').html( data );
+// });
+
+window.onresize = handleOnEvents;
+window.onload = handleOnEvents;
+
+var vps = ['xs','sm','md','lg','xl','xxl'],
+	vp = '',
+	idx = 0,
+	cloned = false;
+
+function handleOnEvents() {
+	vp = getViewport( 'body', 'before' );
+	idx = vps.indexOf( vp );
+
+	// VP by index
+	if( idx < 3 && !cloned ) {
+		var clone = $( '.left-nav' ).clone();
+
+		// give the new nav a new id
+		clone.attr( 'id', 'leftnav' );
+
+		// update the primary data-parent nodes
+		clone.find( '*[data-parent]' ).each( function() {
+			if ( $( this ).data( 'parent' ) === '#leftnav' ) {
+				$( this ).attr( 'data-parent', '#leftnav-mobile' )
+			}
+		} );
+
+		// update the href on the
+		clone.find( 'a[data-toggle="collapse"]' ).each( function( i, t ) {
+			t.href = t.hash + '1';
+		} );
+
+		clone.find( '.collapse' ).each( function( i, t ) {
+			t.id += '1';
+		} );
+
+
+		// do the clone!
+		clone.appendTo( '.mobile-nav' );
+
+		// don't run again
+		cloned = true;
+	}
+
+	// or VP by name
+// 	if ( vp === 'xs' ) {
+
+// 	} else if ( vp === 'sm' ) {
+
+// 	} else if ( vp === 'md' ) {
+
+// 	} else if ( vp === 'lg' ) {
+
+// 	} else if ( vp === 'xl' ) {
+
+// 	} else if ( vp === 'xxl' ) {
+
+// 	} else {
+
+// 	}
+}
+
+function getViewport( element, pseudo ) {
+	return window
+		.getComputedStyle( document.querySelector( element ), ':' + pseudo )
+		.getPropertyValue( 'content' )
+		.replace( /\"/g, '' )
+		.replace( /\'/g, '' );
+}
+
+document.documentElement.setAttribute("lang", "en");
+document.documentElement.removeAttribute("class");
+
+axe.run( function(err, results) {
+  console.log( results.violations );
+} );
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
