@@ -3434,8 +3434,8 @@ body.no-js {
 .demo h1, .demo h2, .demo h3, .demo h4, .demo h5, .demo h6 {
   font-family: "Merriweather", serif;
   line-height: 1.3;
-  margin-top: 2.0rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .demo h1 i:after, .demo h1 em:after, .demo h1 .italic:after, .demo h1 .text-italic:after, .demo h2 i:after, .demo h2 em:after, .demo h2 .italic:after, .demo h2 .text-italic:after, .demo h3 i:after, .demo h3 em:after, .demo h3 .italic:after, .demo h3 .text-italic:after, .demo h4 i:after, .demo h4 em:after, .demo h4 .italic:after, .demo h4 .text-italic:after, .demo h5 i:after, .demo h5 em:after, .demo h5 .italic:after, .demo h5 .text-italic:after, .demo h6 i:after, .demo h6 em:after, .demo h6 .italic:after, .demo h6 .text-italic:after {
@@ -3470,23 +3470,23 @@ body.no-js {
 }
 
 .demo h1, .demo .h1 {
-  font-size: 2.125rem;
+  font-size: 3rem;
 }
 
 .demo h2, .demo .h2 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
 }
 
 .demo h3, .demo .h3 {
-  font-size: 1.625rem;
+  font-size: 2rem;
 }
 
 .demo h4, .demo .h4 {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .demo h5, .demo .h5 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
 .demo h6, .demo .h6 {
