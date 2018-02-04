@@ -41,10 +41,6 @@ ______            _ _     _____                     _____ _     _       _____   
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
 
       <style>
-
-				body {
-					overflow-x: hidden;
-				}
 			.card-header {
 				margin-bottom: 0!important;
 			}
@@ -54,6 +50,10 @@ ______            _ _     _____                     _____ _     _       _____   
   }
  .smb {
 background: #005eaa; /* Old browsers */
+background: -moz-linear-gradient(top, #005eaa 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #005eaa 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #005eaa 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005eaa', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
  }
   .top-nav .nav-item {
     -webkit-box-flex: 0;
@@ -724,9 +724,9 @@ address.address li {
 		<nav role="navigation" aria-label="Section Nav" class="d-md-none sticky-top">
 
 			<div class="dropdown">
-				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="-font-weight:bold; font-size: 23px">
-			About NIOSH 	<svg id="svg-down" style="width:35px;height:35px; right: 30px;z-index:1002; top:10px;" viewBox="0 0 24 24" class="p-abs ds-7 mt-3 ba-1 rounded-circle bg-primary">
-                    			<path fill="#ffffff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight:bold; font-size: 19px">
+			About NIOSH 	<svg id="svg-down" style="width:40px;height:40px; right: 30px;z-index:1002;" viewBox="0 0 24 24" class="ds-7 p-abs mt-3 ba-1 rounded-circle bg-tertiary">
+                    			<path fill="rgb(0, 94, 170)" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
                 			</svg>
 		  </button>
 				<div class="dropdown-menu w-100 rounded-0 m-0" aria-labelledby="dropdownMenuButton">
@@ -806,7 +806,7 @@ address.address li {
 		<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
 			<div class="row">
 				<div class="col-12">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/unnamed.jpg" class="w-100" alt="">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/unnamed.jpg" class="w-1`" alt="">
 				</div>
 			</div>
 			<div class="row">
@@ -898,16 +898,16 @@ address.address li {
 					</nav>
 				</div>
 			</div>
-			<div class="row d-md-none mb-4">
+			<div class="row d-md-none mb-3">
 				<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Reviewed: Nov. 9, 2017</div>
 			</div>
 
 			<div class="container">
-			<div class="row d-md-none" style="border-bottom: 1px dashed #e0e0e0">
-				<div class="col-1 p-2" style="min-width: 40px;max-width:40px;border-top: 2px solid #005eaa">
-					<i class="material-icons" style="font-size: 22px;padding-top:4px;color:#005eaa">home</i>
+			<div class="row d-md-none">
+				<div class="col-1 bg-primary p-2" style="min-width: 40px;max-width:40px;">
+					<i class="material-icons" style="color: #fff;font-weight:bold;font-size: 24px;padding-top:4px">home</i>
 				</div>
-				<div class="col p-2 text-white" style="border-top: 2px solid #005eaa"><a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">NIOSH</a></div>
+				<div class="col bg-tertiary p-2"><a href="#" style="color:rgb(0, 94, 170); font-weight: bold; text-decoration:none;position: relative; top:4px">NIOSH</a></div>
 			</div>
 		</div>
 			<div class="row d-md-none">
@@ -1070,10 +1070,10 @@ address.address li {
 </nav> -->
 
 <nav role="navigation" aria-label="Social Media" class="d-md-none -bg-gray-d2 w-100 op-100 z-max smb" style="position: fixed; bottom: 0; -background: #005eaa">
-	<ul class="social-media social-media-footer d-flex flex-nowrap mt-0 mb-0 pt-2 pb-2">
+	<ul class="social-media social-media-footer d-flex flex-nowrap mt-1">
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/fb.svg" alt=""></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/twitter.svg" alt=""></a></li>
-		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>
+<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></a></li>
 	</ul>
 </nav>
