@@ -714,10 +714,10 @@ address.address li {
 	</div>
 </div>
 	</div>
-<div class="-container-fluid bg-gray-l3 bb-2 bb-md-0 b-gray-l2">
+<div class="-container-fluid bg-gray-l3 bb-2 bb-md-0 b-gray-l2 sticky-top">
 	<div class="-container ct">
 		<!-- section nav area -->
-		<nav role="navigation" aria-label="Section Nav" class="d-md-none sticky-top">
+		<nav role="navigation" aria-label="Section Nav" class="d-md-none -sticky-top">
 
 			<div class="dropdown">
 				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="-font-weight:bold; font-size: 25px">
@@ -1112,7 +1112,11 @@ var $element = $('.sticky-top'),
 	$rsm = $( '.right-social-media' ),
 	flag = 0;
 Stickyfill.add($element);
-
+$( window ).on( 'scroll', _.throttle( function( e ) { 
+	if( $( '.overlay' ).is(':visible') ) {
+		$('.dropdown').dropdown('toggle');
+	}
+} ) );
 $( window ).on( 'load scroll resize', _.throttle( function( e ) {
 	// console.log( document.documentElement.scrollTop )
 
