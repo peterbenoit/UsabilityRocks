@@ -96,7 +96,7 @@ $( function() {
 		target.closest( '.bd-toc-item' ).addClass( 'active' );
 	}
 
-	var $dropdown = $( '.dropdown' ),
+	var $dropdown = $( '.dropdown:first' ),
 		activemenu = $dropdown.find( '.dropdown-menu .active' ),
 		selectedrop = $dropdown.find( '[data-toggle="dropdown"]' );
 	if ( activemenu.length ) {
