@@ -3513,6 +3513,10 @@ img[src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/logo-medium-small.s
   padding-left: 5px;
 }
 
+.icon-table img {
+  width: 17px;
+}
+
 pre[class*="language-"] {
   margin-top: 0;
   overflow: hidden;

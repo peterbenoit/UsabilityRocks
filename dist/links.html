@@ -201,6 +201,9 @@
 					<a class="bd-toc-link" href="content.html">Content</a>
 					<ul class="nav bd-sidenav">
 						<li>
+							<a href="links.html">Links</a>
+						</li>
+						<li>
 							<a href="lists.html">Lists</a>
 						</li>
 						<li>
@@ -338,6 +341,15 @@
 			<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
 
 				
+
+<style>
+.icon-table
+	img {
+		width: 37px;
+
+}
+
+</style>
 <h1 class="bd-title" id="content">Links</h1>
 <p class="bd-lead">Many kinds of links may be used in CDC digital communications, such as CDC.gov. Most links should point to other CDC managed pages within the same website or other CDC websites. Some may also direct users to non-HTML files such as PDFs or non-CDC content
 	on other federal or external websites. The text, styles, and behaviors for links on CDC.gov will vary depending on the type of link, where the link is placed, HHS/CDC Web Standards, and usability best practices.</p>
@@ -359,24 +371,31 @@
 		<li>A <a href="#">Standard Link</a> can be embedded within list items like this.</li>
 	</ul>
 	<ul class="list-group">
-		<li class="list-group-item"><a href="#">This is a list item with a <a href="#">Standard Link</a> embedded in the text.</a>
+		<li class="list-group-item">This is a list item with a <a href="#">Standard Link</a> embedded in the text.</a>
 		</li>
-		<li class="list-group-item"><a href="#">This is a second list item with a <a href="#">Standard Link</a> embedded in the text.</a>
+		<li class="list-group-item">This is a second list item with a <a href="#">Standard Link</a> embedded in the text.</a>
 		</li>
-		<li class="list-group-item"><a href="#">A <a href="#">Standard Link</a> can be embedded within list items like this.</a>
+		<li class="list-group-item">A <a href="#">Standard Link</a> can be embedded within list items like this.</a>
 		</li>
 	</ul>
 </div>
 <h3>Standard Link Specifications</h3>
 <ul>
-	<li><b>Color:</b> blue-primary</li>
-	<li><b>Underline:</b> underline by default, no underline on rollover</li>
-	<li><b>Behavior:</b> open in same browser window/tab by default, may open new windows as a result of users’ selected browser settings, devices, and platforms</li>
+	<li><b>Color:</b> <a href="https://usability.rocks/colors.html#color-specifications">blue-primary</a></li>
+	<li><b>Underline:</b> <a href="https://usability.rocks/colors.html#color-specifications">blue-primary</a>, underline by default, no underline on hover</li>
+	<li><b>Behavior:</b>open in same browser window/tab by default, may open new windows as a result of users’ selected browser settings and OS</li>
+</ul>
+<h4>Exception to Standard Link Behavior</h4>
+<p>Some links may open content that is secondary or supplemental to users’ main tasks. In these instances, the <b>links may be set to override the default link behavior and open in a new window</b> to prevent users from inadvertently closing the entire site.</p>
+<ul>
+	<li>Link to large stand-alone images that may need more time to download
+	<li>Links to printable versions of page content (applies more to web applications)
+	<li>Links to Help content (applies more to web applications)
 </ul>
 <h2>List Links</h2>
-<p>In some cases, grouping, placement, headings, background colors, or other styles provide users with cues about items and which items can be selected - which are links. These cues allow the way Standard Links are normally displayed to be changed. Because
-	links appear as a single group in a List of Links, the links are not underlined by default to improve legibility.</p>
+<p>When all items in a list are links, the default underlining style for links may cause more difficultyfor users reading the text. In these situations, a special class can be applied to hide the normal link underlining.</p>
 <div class="bd-example demo">
+	<b>Default</b>
 	<ul>
 		<li><a href="#">This entire list item is a link.</a></li>
 		<li><a href="#">This entire list item is a link.</a></li>
@@ -387,6 +406,7 @@
 		<li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
 		<li class="list-group-item"><a href="#">This entire list item is a link.</a></li>
 	</ul>
+	<b>No Underline Class Applied</b>
 	<ul class="mt-3">
 		<li><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
 		<li><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
@@ -398,32 +418,94 @@
 		<li class="list-group-item"><a href="#" class="td-none td-ul-hover">This entire list item is a link.</a></li>
 	</ul>
 </div>
-<h3>Guidance for List Links</h3>
-<p>To improve the readability of links displayed in Lists in which every item is a link, a special class can be applied to hide the link underlines by default (display underline on rollover).</p>
-<p>This can be achieved by applying the classes <code>.td-none</code> and <code>.td-ul-hover</code> to these links.</p>
-
-<h2>Non-HTML Links</h2>
-<p>Non-HTML files include PDFs, Word documents, and PowerPoint presentations &ndash; anything that is not a “standard” web page and may require users to have additional plug-ins to access the content in the file. <b>The use of non-HTML files to provide CDC content should be avoided.</b>	In most instances, the content contained within these files could <span class="mark-red">and should be integrated into the <span class="color-red">WCMS</span> to be managed and displayed as “standard” web content</span>. This approach best supports accessibility,
-	Search Engine Optimization (SEO), and usability as well as consistent web management practices.</p>
+<h4>Exception to Standard Link Style</h4>
+<p>To improve the readability of <b>links displayed in Lists in which every item is a link</b>, a special class can be applied to <b>hide the link</b> underlines by default (display underline on rollover).</p>
+<h2>Non-HTML File Links</h2>
+<p>Non-HTML files include PDFs, Word documents, and PowerPoint presentations – anything that is not a “standard” web page and may require users to have additional plug-ins to access the content in the file. The use of non-HTML files to provide CDC content should be avoided. In most instances, the content contained within these files could and should be integrated into the WCMS to be managed and displayed as “standard” web content. This approach best supports accessibility, Search Engine Optimization (SEO), and usability as well as consistent web management practices.</p>
 <div class="bd-example demo">
+<pre>
+DEMO
+
+show examples of all new file types and new icons
+
+embedded in a paragraph of text
+
+within a block list
+
+within an unordered list
+</pre>
 </div>
+<h3>Guidance for Non-HTML File Links</h3>
+<h4>Avoid</h4>
+<ul><li>Using Non-HTML links Sliders or navigational elements</li></ul>
 <h3>Non-HTML Link File Icons</h3>
 <p>CDC standardizes the display of icons to represent the file type so that users have an additional cue they are opening a file. Non-HTML links should allow wrapping within the text and between the file icon and detail so that these are always displayed
 	together.
 </p>
-<table>
+<table class="icon-table">
 	<thead>
 		<tr class="bg-gray-lighter">
-			<th>Icons</th>
+			<th>Icon</th>
+			<th>Icon Width</th>
 			<th>File Extensions</th>
 			<th>File Type Abbreviation</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>file_pdf<br> <img src="assets/icons/file-types/pdf.svg" alt="file_pdf"></td>
+			<td>17px</td>
+			<td>.pdf</td>
+			<td>PDF</td>
+		</tr>
+		<tr>
+			<td>file_ppt<br> <img src="assets/icons/file-types/ppt.svg" alt="file_ppt"></td>
+			<td>17px</td>
+			<td>.pptx
+				<br>
+				.ppt
+				<br>
+				.ppsx</td>
+			<td>PPT</td>
+		</tr>
+		<tr>
+			<td>file_word<br> <img src="assets/icons/file-types/word.svg" alt="file_word"></td>
+			<td>17px</td>
+			<td>.docx<br>.doc</td>
+			<td>DOC</td>
+		</tr>
+		<tr>
+			<td>file_excel<br> <img src="assets/icons/file-types/excel.svg" alt="file_excel"></td>
+			<td>17px</td>
+			<td>.xlsx<br>.xls<br>.csv</td>
+			<td>XLS</td>
+		</tr>
+		<tr>
+			<td>file_media<br> <img src="assets/icons/file-types/media.svg" alt="file_media"></td>
+			<td>17px</td>
+			<td>.mp3
+				<br>
+				.mp4<br>.wmv<br>.webm<br>.wav<br>.ogg<br>.wma<br>.mov<br>.rm<br>.mpeg<br>.ram<br>.ogv<br>.avi<br>.qt<br>
+				.mpg</td>
+			<td>AUDIO or VIDEO</td>
+		</tr>
+		<tr>
+			<td>file_text<br> <img src="assets/icons/file-types/txt.svg" alt="file_txt"></td>
+			<td>17px</td>
+			<td>.txt<br>.rtf</td>
+			<td>TXT</td>
+		</tr>
+		<tr>
+			<td>file_zip<br> <img src="assets/icons/file-types/zip.svg" alt="file_zip"></td>
+			<td>17px</td>
+			<td>.zip</td>
+			<td>ZIP</td>
+		</tr>
+		<tr>
+			<td>file_epub<br> <img src="assets/icons/file-types/epub.svg" alt="file_epub"></td>
+			<td>17px</td>
+			<td>.epub</td>
+			<td>EPUB</td>
 		</tr>
 	</tbody>
 </table>
