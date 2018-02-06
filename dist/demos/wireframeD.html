@@ -41,6 +41,10 @@ ______            _ _     _____                     _____ _     _       _____   
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
 
       <style>
+
+				body {
+					overflow-x: hidden;
+				}
 			.card-header {
 				margin-bottom: 0!important;
 			}
@@ -658,18 +662,18 @@ address.address li {
 <!-- /header -->
 
 <!-- title bar area -->
-<div class="container-fluid bg-primary d-none d-md-block" style="height: 60px;">
+<div class="container-fluid bg-primary d-none d-md-block" style="height:60px;">
 	<div class="container pl-0 pr-0">
 		<div class="site-title pt-3 pl-3">
 			<div class="row">
 				<div class="col">
 					<!-- 					<div class="display-6 display-lg-5">National Center for Health Statistics</div>
 					<p class="lead d-none d-md-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
-					<div class="display-6 text-white fw-500 text-uppercase">The National Institute for Occupational Safety and Health</div>
-					<p class="d-none ">Promotion productive workplaces through safety and health research</p>
+					<div class="display-6 -mt-2 text-white fw-500 text-uppercase">The National Institute for Occupational Safety and Health</div>
+					<p class="d-none -d-md-inline text-white">Promotion productive workplaces through safety and health research</p>
 				</div>
-				<div class="col-3 text-right d-none">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/NIOSH_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline" style="margin-top: -9px; width: 130px;">
+				<div class="col-3 text-right -d-none">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/NIOSH_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline" style="margin-top: -7px; margin-right: 20px; width: 130px;">
 				</div>
 			</div>
 		</div>
@@ -717,11 +721,11 @@ address.address li {
 <div class="-container-fluid bg-gray-l3 bb-2 bb-md-0 b-gray-l2 sticky-top">
 	<div class="-container ct">
 		<!-- section nav area -->
-		<nav role="navigation" aria-label="Section Nav" class="d-md-none -sticky-top">
+		<nav role="navigation" aria-label="Section Nav" class="d-md-none">
 
 			<div class="dropdown">
 				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="-font-weight:bold; font-size: 23px">
-			About NIOSH 	<svg id="svg-down" style="width:35px;height:35px; right: 30px;z-index:1002; top:10px;background: #fbab18" viewBox="0 0 24 24" class="p-abs ds-7 mt-3 ba-1 rounded-circle">
+			About NIOSH 	<svg id="svg-down" style="width:40px;height:40px; right: 30px;z-index:1002; top:10px;" viewBox="0 0 24 24" class="p-abs ds-7 mt-3 ba-1 rounded-circle bg-primary">
                     			<path fill="#ffffff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
                 			</svg>
 		  </button>
@@ -802,12 +806,7 @@ address.address li {
 		<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
 			<div class="row">
 				<div class="col-12">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/unnamed.jpg" class="w-100" alt="">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<h1 class="d-none d-md-inline-block h2" style="margin-top:7px!important">Birth Data</h1>
+					<h1 class="d-none d-md-inline-block h2" style="margin-top:10px!important">Birth Data</h1>
 					<a href="#" class="d-none d-md-block language-link mb-3">En Español</a>
 				</div>
 			</div>
@@ -894,7 +893,7 @@ address.address li {
 					</nav>
 				</div>
 			</div>
-			<div class="row d-md-none mb-3">
+			<div class="row d-md-none mb-4">
 				<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Reviewed: Nov. 9, 2017</div>
 			</div>
 
@@ -1070,6 +1069,7 @@ address.address li {
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/fb.svg" alt=""></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/twitter.svg" alt=""></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>
+		<!-- <li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></a></li> -->
 	</ul>
 </nav>
 
