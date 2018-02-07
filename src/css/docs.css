@@ -98,12 +98,12 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   font-size: .875rem;
 }
 
-.fs075 {
-  font-size: .75rem;
+.fs08 {
+  font-size: .8rem;
 }
 
-.fs05 {
-  font-size: .5rem;
+.fs07 {
+  font-size: .7rem;
 }
 
 .text-monospace {
@@ -3353,23 +3353,23 @@ body.no-js {
 }
 
 .demo h1, .demo .h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .demo h2, .demo .h2 {
-  font-size: 2.5rem;
+  font-size: 2.125rem;
 }
 
 .demo h3, .demo .h3 {
-  font-size: 2rem;
+  font-size: 1.875rem;
 }
 
 .demo h4, .demo .h4 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
 }
 
 .demo h5, .demo .h5 {
-  font-size: 1.2rem;
+  font-size: 1.375rem;
 }
 
 .demo h6, .demo .h6 {
