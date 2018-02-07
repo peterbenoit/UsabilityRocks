@@ -724,7 +724,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bt-sm-0 {	border-top: none!important; }
 	.br-sm-0 {	border-right: none!important; }
 	.bb-sm-0 {	border-bottom: none!important; }
-	.bl-sm-0 {	border-left: none!important; }	
+	.bl-sm-0 {	border-left: none!important; }
 }
 @media (min-width: 768px) {
 	.pl-md-15 { padding-left: 15px!important; }
@@ -740,7 +740,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bt-md-0 {	border-top: none!important; }
 	.br-md-0 {	border-right: none!important; }
 	.bb-md-0 {	border-bottom: none!important; }
-	.bl-md-0 {	border-left: none!important; }	
+	.bl-md-0 {	border-left: none!important; }
 }
 @media (min-width: 992px) {
 	.pl-lg-15 { padding-left: 15px!important; }
@@ -756,7 +756,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 	.bt-lg-0 {	border-top: none!important; }
 	.br-lg-0 {	border-right: none!important; }
 	.bb-lg-0 {	border-bottom: none!important; }
-	.bl-lg-0 {	border-left: none!important; }	
+	.bl-lg-0 {	border-left: none!important; }
 }
 @media (min-width: 1200px) {
 	.pl-xl-15 { padding-left: 15px!important; }
@@ -1082,7 +1082,13 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 }
 
 // text decoration
-.td-none { text-decoration: none!important; }
+.td-none {
+	text-decoration: none!important;
+
+	a {
+		text-decoration: none!important;
+	}
+}
 .td-ul { text-decoration: underline!important; }
 .td-lt { text-decoration: line-through!important; }
 

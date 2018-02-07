@@ -3265,6 +3265,10 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   text-decoration: none !important;
 }
 
+.td-none a {
+  text-decoration: none !important;
+}
+
 .td-ul {
   text-decoration: underline !important;
 }
