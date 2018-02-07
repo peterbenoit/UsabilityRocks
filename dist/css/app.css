@@ -3513,6 +3513,12 @@ h6, .h6 {
 
 small, .small {
   font-size: .8rem;
+  line-height: 1.15;
+}
+
+sup, .superscript, .extrasmall {
+  font-size: .7rem;
+  line-height: 1.15;
 }
 
 a {
