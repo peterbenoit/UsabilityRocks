@@ -87,7 +87,7 @@
 	<a href="1440px" class="col">XXL</a>
 </div>
 <iframe frameborder="0" class="border-top-0" src="demos/blockquotes.html"></iframe>
-<h3>Blockquote Specification</h3>
+<h3>Blockquote Specifications</h3>
 <ul>
 	<li><b>Quote Text:</b> Open Sans, <a href="typography.html#body-specifications">Block Quote</a>, black</li>
 	<li><b>Source Text:</b> always preceded by a hyphen, Open Sans, <a href="typography.html#body-specifications">Small Text</a>, gray_darker</li>
@@ -106,5 +106,16 @@
 		</ul>
 	</li>
 </ul>
-<h2>Alerts</h2>
-<span class="mark mark-yellow">TBD</span> {% endblock %}
+<h2>Footnote Indicators</h2>
+<p>Footnote Indicators are used to connect specific information to references or supplemental information that are usually displayed toward the bottom of the content. They can be set as links to allow users to jump down to the references or unlinked.</p>
+<div class="bd-example">
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis amet itaque, modi architecto velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? Aliquid earum hic aliquam quos laudantium. <sup><a href="#">[ 2 ]</a></sup></p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis amet itaque, modi architecto velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? Aliquid earum hic aliquam quos laudantium. <sup>[ 2 ]</sup></p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis amet itaque, modi architecto velit rerum laboriosam ipsum omnis blanditiis atque expedita labore nihil? Aliquid earum hic aliquam quos laudantium. <sup>[ § ]</sup></p>
+</div>
+<h3>Footnote Indicator Specifications</h3>
+<ul>
+	<li><strong>Linked Footnote Indicator:</strong> Open Sans, <a href="https://usability.rocks/typography.html#body-specifications">Superscript</a>, <a href="https://usability.rocks/colors.html">blue-primary</a>, displayed within brackets [ ] and spaces around the number or symbol</li>
+	<li><strong>Unlinked Footnote Indicator:</strong> Open Sans, <a href="https://usability.rocks/typography.html#body-specifications">Superscript</a>, #000, displayed within brackets [ ] and spaces around the number or symbol</li>
+</ul>
+{% endblock %}
