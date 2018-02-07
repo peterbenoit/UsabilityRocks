@@ -5,14 +5,14 @@
 <head>
 <!--
 
-______            _ _     _____                     _____ _     _       _____           _      _ _ 
+______            _ _     _____                     _____ _     _       _____           _      _ _
 |  _  \          ( ) |   /  __ \                   |_   _| |   (_)     /  __ \         | |    | | |
 | | | |___  _ __ |/| |_  | /  \/ ___  _ __  _   _    | | | |__  _ ___  | /  \/ ___   __| | ___| | |
 | | | / _ \| '_ \  | __| | |    / _ \| '_ \| | | |   | | | '_ \| / __| | |    / _ \ / _` |/ _ \ | |
 | |/ / (_) | | | | | |_  | \__/\ (_) | |_) | |_| |   | | | | | | \__ \ | \__/\ (_) | (_| |  __/_|_|
 |___/ \___/|_| |_|  \__|  \____/\___/| .__/ \__, |   \_/ |_| |_|_|___/  \____/\___/ \__,_|\___(_|_)
-                                     | |     __/ |                                                 
-                                     |_|    |___/                                                  
+                                     | |     __/ |
+                                     |_|    |___/
 
 -->
   <meta charset="UTF-8">
@@ -36,7 +36,7 @@ ______            _ _     _____                     _____ _     _       _____   
 <link rel='stylesheet prefetch' href='https://usability.rocks/css/bootstrap.css?2'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
-<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?10'>
+<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?30'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
 
@@ -603,7 +603,7 @@ address.address li {
   color: #fff;
 }
 
-.dropdown .dropdown-menu {
+.section-nav .dropdown-menu {
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -679,7 +679,7 @@ address.address li {
 		</div>
 	</div>
 </div>
-<div class="container-fluid bg-secondary d-none d-md-block"></div>
+<div class="container-fluid bg-secondary d-none d-md-block" style="height:3px"></div>
 <!-- /title bar area -->
 <div class="container-fluid bg-primary p-1 d-md-none mt-3">
 	<div class="container text-white">
@@ -746,7 +746,7 @@ address.address li {
 </div>
 <div class="container">
 	<div class="d-flex flex-wrap bg-white pl-md-3">
-		<a href="#" class="d-md-none mt-3 mb-3 d-block language-link">En Español?</a>
+		<!-- <a href="#" class="d-md-none mt-3 mb-3 d-block language-link">En Español?</a> -->
 		<!-- /section nav area -->
 
 		<nav role="navigation" aria-label="Social Media" class="d-none pin-bottom">
@@ -759,34 +759,34 @@ address.address li {
 		</nav>
 		<!-- nav area -->
 		<div class="col-12 col-md-3 p-0 d-none d-md-block mt-2">
-			<nav role="navigation" aria-label="Left Nav" id="leftnav" class="mb-2 mt-3 left-nav">
-				<div class="list-group indicator-plus">
-					<a class="list-group-item" href="https://cdc.gov#99">About NIOSH</a>
-					<a class="list-group-item active font-weight-bold selected" data-parent="#leftnav" data-toggle="collapse" href="#lvl1" aria-expanded="false">Birth Data</a>
-					<div class="collapse list-group-submenu alt-highlight" id="lvl1">
-						<a class="list-group-item themed-bg" data-parent="#lvl1-sub" data-toggle="collapse" href="#lvl1-sub" aria-expanded="false">Results and Publications</a>
-						<div class="collapse list-group-submenu alt-highlight" id="lvl1-sub">
-							<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#1">Cohort Fertility Tables</a>
-							<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#4">About the National Vital Statistics System</a>
-							<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#2">Update to 2005 Vermont Birth Data</a>
+				<nav role="navigation" aria-label="Left Nav" id="leftnav" class="mb-2 mt-4 left-nav">
+						<div class="list-group indicator-plus">
+							<a class="list-group-item" href="https://cdc.gov#99">About NVSS</a>
+							<a class="list-group-item active font-weight-bold" data-parent="#leftnav" data-toggle="collapse" href="#lvl1" aria-expanded="true">Birth Data</a>
+							<div class="collapse show list-group-submenu alt-highlight" id="lvl1">
+								<a class="list-group-item active themed-bg" data-parent="#lvl1-sub" data-toggle="collapse" href="#lvl1-sub" aria-expanded="true">Results and Publications</a>
+								<div class="collapse show list-group-submenu alt-highlight" id="lvl1-sub">
+									<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#1">Cohort Fertility Tables</a>
+		<a class="list-group-item selected" data-parent="#lvl1-sub" href="https://cdc.gov#4">About the National Vital Statistics System</a>
+									<a class="list-group-item" data-parent="#lvl1-sub" href="https://cdc.gov#2">Update to 2005 Vermont Birth Data</a>
+								</div>
+								<a class="list-group-item" href="https://cdc.gov#16">Info for Professionals</a>
+							</div>
+							<a class="list-group-item" data-parent="#leftnav" data-toggle="collapse" href="#lvl2">Reproductive Health Links</a>
+							<div class="collapse list-group-submenu" id="lvl2">
+								<a class="list-group-item" href="https://cdc.gov#6">Level 2b Link 1</a>
+								<a class="list-group-item" href="https://cdc.gov#7">Level 2b Link 2</a>
+								<a class="list-group-item" href="https://cdc.gov#8">Level 2b Link 3</a>
+							</div>
+							<a class="list-group-item" href="https://cdc.gov#9">Marriages and Divorces</a>
+							<a class="list-group-item" data-parent="#leftnav" data-toggle="collapse" href="#lvl4">Bridged Race Categories</a>
+							<div class="collapse list-group-submenu" id="lvl4">
+								<a class="list-group-item" href="https://cdc.gov#10">Level 2d Link 1</a>
+								<a class="list-group-item" href="https://cdc.gov#11">Level 2d Link 2</a>
+								<a class="list-group-item" href="https://cdc.gov#12">Level 2d Link 3</a>
+							</div>
 						</div>
-						<a class="list-group-item" href="https://cdc.gov#16">Info for Professionals</a>
-					</div>
-					<a class="list-group-item" data-parent="#leftnav" data-toggle="collapse" href="#lvl2">Reproductive Health Links</a>
-					<div class="collapse list-group-submenu" id="lvl2">
-						<a class="list-group-item" href="https://cdc.gov#6">Level 2b Link 1</a>
-						<a class="list-group-item" href="https://cdc.gov#7">Level 2b Link 2</a>
-						<a class="list-group-item" href="https://cdc.gov#8">Level 2b Link 3</a>
-					</div>
-					<a class="list-group-item" href="https://cdc.gov#9">Marriages and Divorces</a>
-					<a class="list-group-item" data-parent="#leftnav" data-toggle="collapse" href="#lvl4">Bridged Race Categories</a>
-					<div class="collapse list-group-submenu" id="lvl4">
-						<a class="list-group-item" href="https://cdc.gov#10">Level 2d Link 1</a>
-						<a class="list-group-item" href="https://cdc.gov#11">Level 2d Link 2</a>
-						<a class="list-group-item" href="https://cdc.gov#12">Level 2d Link 3</a>
-					</div>
-				</div>
-			</nav>
+					</nav>
 			<div class="col-12 mt-5">
 				<div class="card mt-5 mr-3 mb-5">
 					<div class="card-header bg-gray-l3 h5 mt-0">
@@ -806,15 +806,15 @@ address.address li {
 		<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
 			<div class="row">
 				<div class="col-12">
-					<h1 class="d-none d-md-inline-block h2" style="margin-top:10px!important">Birth Data</h1>
-					<div class="dropdown">
-							<button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<h1 class="d-none d-md-inline-block h2" style="margin-top:10px!important;">Birth Data</h1>
+					<div class="dropdown" style="margin-top:-16px; margin-bottom:13px;">
+							<button class="btn bg-white dropdown-toggle fs08 c-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left:0">
 								OTHER LANGUAGES
 							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="#">En Español</a>
-								<a class="dropdown-item" href="#">用中文（表达</a>
-								<a class="dropdown-item" href="#">En français</a>
+							<div class="dropdown-menu ds-4" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item fs08" href="#">En Español</a>
+								<a class="dropdown-item fs08" href="#">用中文（表达</a>
+								<a class="dropdown-item fs08" href="#">En français</a>
 							</div>
 						</div>
 				</div>
@@ -841,8 +841,8 @@ address.address li {
 											<p>There are a variety of forms to fill out, because, you know, people looooove filling out forms.</p>
 											<a href="#" class="btn btn-primary bg-primary b-primary pull-right td-none">Forms!</a>
 										</div>
-									</div>							
-								</div>						
+									</div>
+								</div>
 							</div>
 					<p>The National Vital Statistics System is the oldest and most successful example of inter-governmental data sharing in Public Health and the shared relationships, standards, and procedures form the mechanism by which NCHS collects and disseminates
 						the Nation&rsquo;s official vital statistics. These data are provided through contracts between NCHS and&nbsp;<a href="https://www.cdc.gov/stltpublichealth/sitesgovernance/index.html">vital registration systems operated in the various jurisdictions</a>						legally responsible for the registration of vital events &ndash; births, deaths, marriages, divorces, and fetal deaths. Vital Statistics data are also available online. In the United States, legal authority for the registration of these events resides
@@ -895,11 +895,6 @@ address.address li {
 				</div>
 				</div>
 			</div>
-			<div class="row mb-3 mt-3 bg-gray-l3 p-2 pl-0 mb-4">
-					<div class="col-12">
-						<div>View page in: <img src="https://usability.rocks/assets/icons/standard/pdf.svg" alt="file_pdf" style="width: 30px;"> PDF [150k]</div>
-					</div>
-				</div>			
 			<div class="row d-none d-md-flex">
 				<div class="col mt-3 mb-3 d-none">
 					<nav role="navigation" aria-label="Social Media">
@@ -912,7 +907,7 @@ address.address li {
 					</nav>
 				</div>
 				<div class="col last-reviewed mt-3 mb-3">
-					<span class="float-right fs075 c-gray-d3">
+					<span class="float-right fs08 c-gray-d3">
 <!-- 						Last Reviewed:  Nov. 19, 2017<br> -->
 						Last Updated:  Nov. 18, 2017
 					</span>
@@ -1147,7 +1142,7 @@ var $element = $('.sticky-top'),
 	$rsm = $( '.right-social-media' ),
 	flag = 0;
 Stickyfill.add($element);
-$( window ).on( 'scroll', _.throttle( function( e ) { 
+$( window ).on( 'scroll', _.throttle( function( e ) {
 	if( $( '.overlay' ).is(':visible') ) {
 		$('.dropdown').dropdown('toggle');
 	}
