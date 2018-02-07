@@ -1,25 +1,27 @@
+/* accordions */
+
 .accordion {
 	.card-header {
 		cursor: pointer;
 	}
-	
+
 	&.heading-right {
 		.card-title {
 			position: absolute;
 			right: 50px;
 		}
 	}
-	
+
 	&.indicator-plus {
 		.card-header {
 			&:after {
-				font-family: 'FontAwesome';  
+				font-family: 'FontAwesome';
 				content: "\f068";
-				float: right; 
+				float: right;
 			}
 			&.collapsed {
 				&:after {
-					content: "\f067"; 
+					content: "\f067";
 				}
 			}
 		}
@@ -28,7 +30,7 @@
 		&.round-indicator {
 			.card-header {
 				&:before {
-					font-family: 'FontAwesome';  
+					font-family: 'FontAwesome';
 					font-size: 14pt;
 					content: "\f056";
 					margin-right: 10px;
@@ -36,52 +38,52 @@
 				}
 				&.collapsed {
 					&:before {
-						content: "\f055"; 
+						content: "\f055";
 						color: #000;
 					}
 				}
-			}			
+			}
 		}
 		.card-header {
 			&:before {
-				font-family: 'FontAwesome';  
+				font-family: 'FontAwesome';
 				content: "\f068";
-				float: left; 
+				float: left;
 			}
 			&.collapsed {
 				&:before {
-					content: "\f067"; 
+					content: "\f067";
 				}
 			}
 		}
-	}	
-	
+	}
+
 	&.indicator-chevron {
 		.card-header {
 			&:after {
-				font-family: 'FontAwesome';  
+				font-family: 'FontAwesome';
 				content: "\f078";
-				float: right; 
+				float: right;
 			}
 			&.collapsed {
 				&:after {
-					content: "\f077"; 
+					content: "\f077";
 				}
 			}
 		}
-	}	
-	
+	}
+
 	&.background-none {
 		[class^="card"] {
 			background: transparent;
 		}
 	}
-	
+
 	&.border-0 {
 		.card {
 			border: 0;
-		}	
-	} 
+		}
+	}
 }
 
 // .hide-me, used on collapsible things; when they are expanded, hide them

@@ -3352,12 +3352,6 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a {
   text-decoration: none;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Open Sans", sans-serif;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 blockquote.with-quote p:before, blockquote.with-quote p:after {
   content: '\201C';
 }
@@ -3409,6 +3403,7 @@ sup, .superscript, .extrasmall {
   line-height: 1.15;
 }
 
+/* links */
 a {
   color: #005eaa;
   text-decoration: underline;
@@ -3437,8 +3432,87 @@ a h1, a .h1, a h2, a .h2, a h3, a .h3, a h4, a .h4, a h5, a .h5, a h6, a .h6 {
   text-decoration: underline;
 }
 
+/* jumbotrons */
+/* sliders */
+/* tabs */
+/* accordions */
+.accordion .card-header {
+  cursor: pointer;
+}
+
+.accordion.heading-right .card-title {
+  position: absolute;
+  right: 50px;
+}
+
+.accordion.indicator-plus .card-header:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: right;
+}
+
+.accordion.indicator-plus .card-header.collapsed:after {
+  content: "\f067";
+}
+
+.accordion.indicator-plus-before.round-indicator .card-header:before {
+  font-family: 'FontAwesome';
+  font-size: 14pt;
+  content: "\f056";
+  margin-right: 10px;
+  color: #ff9900;
+}
+
+.accordion.indicator-plus-before.round-indicator .card-header.collapsed:before {
+  content: "\f055";
+  color: #000;
+}
+
+.accordion.indicator-plus-before .card-header:before {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: left;
+}
+
+.accordion.indicator-plus-before .card-header.collapsed:before {
+  content: "\f067";
+}
+
+.accordion.indicator-chevron .card-header:after {
+  font-family: 'FontAwesome';
+  content: "\f078";
+  float: right;
+}
+
+.accordion.indicator-chevron .card-header.collapsed:after {
+  content: "\f077";
+}
+
+.accordion.background-none [class^="card"] {
+  background: transparent;
+}
+
+.accordion.border-0 .card {
+  border: 0;
+}
+
+.btn.hide-me[aria-expanded='true'] {
+  display: none;
+}
+
+/* nav buttons */
 .left-nav a {
   text-decoration: none;
+}
+
+/* components */
+.tp-on-this-page .card-header {
+  background-color: #e0e0e0;
+  font-weight: 700;
+}
+
+.tp-on-this-page .list-group-item {
+  background-color: #f5f5f5;
 }
 
 .audio-player > .btn:first-child:not(:last-child):not(.dropdown-toggle),
@@ -3596,83 +3670,6 @@ a h1, a .h1, a h2, a .h2, a h3, a .h3, a h4, a .h4, a h5, a .h5, a h6, a .h6 {
 
 .audio-player + div input[type=range]:focus::-webkit-slider-runnable-track {
   background: #fff;
-}
-
-.accordion .card-header {
-  cursor: pointer;
-}
-
-.accordion.heading-right .card-title {
-  position: absolute;
-  right: 50px;
-}
-
-.accordion.indicator-plus .card-header:after {
-  font-family: 'FontAwesome';
-  content: "\f068";
-  float: right;
-}
-
-.accordion.indicator-plus .card-header.collapsed:after {
-  content: "\f067";
-}
-
-.accordion.indicator-plus-before.round-indicator .card-header:before {
-  font-family: 'FontAwesome';
-  font-size: 14pt;
-  content: "\f056";
-  margin-right: 10px;
-  color: #ff9900;
-}
-
-.accordion.indicator-plus-before.round-indicator .card-header.collapsed:before {
-  content: "\f055";
-  color: #000;
-}
-
-.accordion.indicator-plus-before .card-header:before {
-  font-family: 'FontAwesome';
-  content: "\f068";
-  float: left;
-}
-
-.accordion.indicator-plus-before .card-header.collapsed:before {
-  content: "\f067";
-}
-
-.accordion.indicator-chevron .card-header:after {
-  font-family: 'FontAwesome';
-  content: "\f078";
-  float: right;
-}
-
-.accordion.indicator-chevron .card-header.collapsed:after {
-  content: "\f077";
-}
-
-.accordion.background-none [class^="card"] {
-  background: transparent;
-}
-
-.accordion.border-0 .card {
-  border: 0;
-}
-
-.btn.hide-me[aria-expanded='true'] {
-  display: none;
-}
-
-.tp-on-this-page .card-header {
-  background-color: #e0e0e0;
-  font-weight: 700;
-}
-
-.tp-on-this-page .list-group-item {
-  background-color: #f5f5f5;
-}
-
-.card a {
-  text-decoration: none;
 }
 
 .theme-blue .btn-primary, [class^="theme-"] .theme-blue .btn-primary {
