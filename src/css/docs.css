@@ -3296,7 +3296,7 @@ body.no-js {
   opacity: 0;
 }
 
-.demo body {
+.demo body, .bd-example body {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
@@ -3305,80 +3305,106 @@ body.no-js {
   -ms-text-size-adjust: 100%;
 }
 
-.demo a {
+.demo a, .bd-example a {
   color: #005eaa;
   text-decoration: underline;
 }
 
-.demo a:hover {
+.demo a:hover, .bd-example a:hover {
   text-decoration: none;
 }
 
-.demo a h1, .demo a h2, .demo a h3, .demo a h4, .demo a h5, .demo a h6 {
+.demo a h1, .demo a h2, .demo a h3, .demo a h4, .demo a h5, .demo a h6, .bd-example a h1, .bd-example a h2, .bd-example a h3, .bd-example a h4, .bd-example a h5, .bd-example a h6 {
   text-decoration: none;
 }
 
-.demo h1, .demo h2, .demo h3, .demo h4, .demo h5, .demo h6 {
+.demo h1, .demo h2, .demo h3, .demo h4, .demo h5, .demo h6, .bd-example h1, .bd-example h2, .bd-example h3, .bd-example h4, .bd-example h5, .bd-example h6 {
   font-family: "Merriweather", serif;
   line-height: 1.3;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.demo h1 i:after, .demo h1 em:after, .demo h1 .italic:after, .demo h1 .text-italic:after, .demo h2 i:after, .demo h2 em:after, .demo h2 .italic:after, .demo h2 .text-italic:after, .demo h3 i:after, .demo h3 em:after, .demo h3 .italic:after, .demo h3 .text-italic:after, .demo h4 i:after, .demo h4 em:after, .demo h4 .italic:after, .demo h4 .text-italic:after, .demo h5 i:after, .demo h5 em:after, .demo h5 .italic:after, .demo h5 .text-italic:after, .demo h6 i:after, .demo h6 em:after, .demo h6 .italic:after, .demo h6 .text-italic:after {
+.demo h1 i:after, .demo h1 em:after, .demo h1 .italic:after, .demo h1 .text-italic:after, .demo h2 i:after, .demo h2 em:after, .demo h2 .italic:after, .demo h2 .text-italic:after, .demo h3 i:after, .demo h3 em:after, .demo h3 .italic:after, .demo h3 .text-italic:after, .demo h4 i:after, .demo h4 em:after, .demo h4 .italic:after, .demo h4 .text-italic:after, .demo h5 i:after, .demo h5 em:after, .demo h5 .italic:after, .demo h5 .text-italic:after, .demo h6 i:after, .demo h6 em:after, .demo h6 .italic:after, .demo h6 .text-italic:after, .bd-example h1 i:after, .bd-example h1 em:after, .bd-example h1 .italic:after, .bd-example h1 .text-italic:after, .bd-example h2 i:after, .bd-example h2 em:after, .bd-example h2 .italic:after, .bd-example h2 .text-italic:after, .bd-example h3 i:after, .bd-example h3 em:after, .bd-example h3 .italic:after, .bd-example h3 .text-italic:after, .bd-example h4 i:after, .bd-example h4 em:after, .bd-example h4 .italic:after, .bd-example h4 .text-italic:after, .bd-example h5 i:after, .bd-example h5 em:after, .bd-example h5 .italic:after, .bd-example h5 .text-italic:after, .bd-example h6 i:after, .bd-example h6 em:after, .bd-example h6 .italic:after, .bd-example h6 .text-italic:after {
   content: "";
 }
 
-.demo h1 a, .demo h2 a, .demo h3 a, .demo h4 a, .demo h5 a, .demo h6 a {
+.demo h1 a, .demo h2 a, .demo h3 a, .demo h4 a, .demo h5 a, .demo h6 a, .bd-example h1 a, .bd-example h2 a, .bd-example h3 a, .bd-example h4 a, .bd-example h5 a, .bd-example h6 a {
   text-decoration: none;
 }
 
-.demo blockquote.with-quote p:before, .demo blockquote.with-quote p:after {
+.demo blockquote.with-quote p:before, .demo blockquote.with-quote p:after, .bd-example blockquote.with-quote p:before, .bd-example blockquote.with-quote p:after {
   content: '\201C';
 }
 
-.demo .card h1, .demo .card h2, .demo .card h3, .demo .card h4, .demo .card h5, .demo .card h6 {
+.demo .card h1, .demo .card h2, .demo .card h3, .demo .card h4, .demo .card h5, .demo .card h6, .bd-example .card h1, .bd-example .card h2, .bd-example .card h3, .bd-example .card h4, .bd-example .card h5, .bd-example .card h6 {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.demo .merri {
+.demo .merri, .bd-example .merri {
   font-family: "Merriweather", serif;
 }
 
-.demo .open {
+.demo .open, .bd-example .open {
   font-family: "Open Sans", sans-serif;
 }
 
-.demo .italicize i:after, .demo .italicize em:after, .demo .italicize .italic:after, .demo .italicize .text-italic:after {
+.demo .italicize i:after, .demo .italicize em:after, .demo .italicize .italic:after, .demo .italicize .text-italic:after, .bd-example .italicize i:after, .bd-example .italicize em:after, .bd-example .italicize .italic:after, .bd-example .italicize .text-italic:after {
   content: "\00a0";
 }
 
-.demo h1, .demo .h1 {
+.demo blockquote.with-quote p:before, .demo blockquote.with-quote p:after, .bd-example blockquote.with-quote p:before, .bd-example blockquote.with-quote p:after {
+  content: '\201C';
+}
+
+.demo .merri, .bd-example .merri {
+  font-family: "Merriweather", serif;
+}
+
+.demo .open, .bd-example .open {
+  font-family: "Open Sans", sans-serif;
+}
+
+.demo .italicize i:after, .demo .italicize em:after, .demo .italicize .italic:after, .demo .italicize .text-italic:after, .bd-example .italicize i:after, .bd-example .italicize em:after, .bd-example .italicize .italic:after, .bd-example .italicize .text-italic:after {
+  content: "\00a0";
+}
+
+.demo h1, .demo .h1, .bd-example h1, .bd-example .h1 {
   font-size: 2.125rem;
 }
 
-.demo h2, .demo .h2 {
+.demo h2, .demo .h2, .bd-example h2, .bd-example .h2 {
   font-size: 1.875rem;
 }
 
-.demo h3, .demo .h3 {
+.demo h3, .demo .h3, .bd-example h3, .bd-example .h3 {
   font-size: 1.625rem;
 }
 
-.demo h4, .demo .h4 {
+.demo h4, .demo .h4, .bd-example h4, .bd-example .h4 {
   font-size: 1.375rem;
 }
 
-.demo h5, .demo .h5 {
+.demo h5, .demo .h5, .bd-example h5, .bd-example .h5 {
   font-size: 1.125rem;
 }
 
-.demo h6, .demo .h6 {
+.demo h6, .demo .h6, .bd-example h6, .bd-example .h6 {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.demo small, .demo .small, .bd-example small, .bd-example .small {
+  font-size: .8rem;
+  line-height: 1.15;
+}
+
+.demo sub, .demo sup, .demo .superscript, .demo .extrasmall, .bd-example sub, .bd-example sup, .bd-example .superscript, .bd-example .extrasmall {
+  font-size: .7rem;
+  line-height: 1.15;
 }
 
 .bd-navbar {

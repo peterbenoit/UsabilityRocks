@@ -12,7 +12,7 @@ body {
 }
 
 // demo's placed in the page
-.demo {
+.demo, .bd-example {
 	body {
 		font-family: "Open Sans", sans-serif;
 		font-size: 17px;
@@ -79,6 +79,28 @@ body {
 		}
 	}
 
+	blockquote {
+		&.with-quote {
+			p:before, p:after {
+				content: '\201C';
+			}
+		}
+	}
+	
+	.merri {
+		font-family: "Merriweather", serif;
+	}
+	.open {
+		font-family: "Open Sans", sans-serif;
+	}
+	
+	// add a space after italics
+	.italicize {
+		i:after, em:after, .italic:after, .text-italic:after {
+			content: "\00a0";
+		}
+	}
+	
 	h1, .h1 {
 		font-size: 2.125rem;
 	}
@@ -97,6 +119,16 @@ body {
 	h6, .h6 {
 		font-size: 1rem;
 		font-weight: bold;
+	}
+	
+	small, .small {
+		font-size: .8rem;
+		line-height: 1.15;
+	}
+	
+	sub, sup, .superscript, .extrasmall {
+		font-size: .7rem;
+		line-height: 1.15;
 	}
 }
 
