@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'utility';
+// @import 'variables';
+// @import 'utility';
 
 
 html,
@@ -13,123 +13,124 @@ body {
 
 // demo's placed in the page
 .demo, .bd-example {
-	body {
-		font-family: "Open Sans", sans-serif;
-		font-size: 17px;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-text-size-adjust: 100%;
-		-ms-text-size-adjust: 100%;
-	}
+	@import 'app';
+	// body {
+	// 	font-family: "Open Sans", sans-serif;
+	// 	font-size: 17px;
+	// 	-webkit-font-smoothing: antialiased;
+	// 	-moz-osx-font-smoothing: grayscale;
+	// 	-webkit-text-size-adjust: 100%;
+	// 	-ms-text-size-adjust: 100%;
+	// }
 
-	a {
-		color: $primary;
-		text-decoration: underline;
-		&:hover {
-			text-decoration: none;
-		}
-		h1, h2, h3, h4, h5, h6 {
-			text-decoration: none;
-		}
-	}
+	// a {
+	// 	color: $primary;
+	// 	text-decoration: underline;
+	// 	&:hover {
+	// 		text-decoration: none;
+	// 	}
+	// 	h1, h2, h3, h4, h5, h6 {
+	// 		text-decoration: none;
+	// 	}
+	// }
 
-	h1, h2, h3, h4, h5, h6 {
-		font-family: "Merriweather", serif;
-		line-height: 1.3;
-		margin-top: 1.5rem;
-		margin-bottom: 0.5rem;
-		// dont add a space after headings italics
-		i:after, em:after, .italic:after, .text-italic:after {
-			content: "";
-		}
-		a {
-			text-decoration: none;
-		}
-	}
+	// h1, h2, h3, h4, h5, h6 {
+	// 	font-family: "Merriweather", serif;
+	// 	line-height: 1.3;
+	// 	margin-top: 1.5rem;
+	// 	margin-bottom: 0.5rem;
+	// 	// dont add a space after headings italics
+	// 	i:after, em:after, .italic:after, .text-italic:after {
+	// 		content: "";
+	// 	}
+	// 	a {
+	// 		text-decoration: none;
+	// 	}
+	// }
 
-	blockquote {
-		&.with-quote {
-			p:before, p:after {
-				content: '\201C';
-			}
-		}
-	}
+	// blockquote {
+	// 	&.with-quote {
+	// 		p:before, p:after {
+	// 			content: '\201C';
+	// 		}
+	// 	}
+	// }
 
-	.card {
-		// headings in cards should not be Merriweather
-		h1, h2, h3, h4, h5, h6 {
-			font-family: 'Open Sans', sans-serif;
-			line-height: 1.3;
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-	}
+	// .card {
+	// 	// headings in cards should not be Merriweather
+	// 	h1, h2, h3, h4, h5, h6 {
+	// 		font-family: 'Open Sans', sans-serif;
+	// 		line-height: 1.3;
+	// 		margin-top: 0;
+	// 		margin-bottom: 0;
+	// 	}
+	// }
 
-	.merri {
-		font-family: "Merriweather", serif;
-	}
-	.open {
-		font-family: "Open Sans", sans-serif;
-	}
+	// .merri {
+	// 	font-family: "Merriweather", serif;
+	// }
+	// .open {
+	// 	font-family: "Open Sans", sans-serif;
+	// }
 
-	// add a space after italics
-	.italicize {
-		i:after, em:after, .italic:after, .text-italic:after {
-			content: "\00a0";
-		}
-	}
+	// // add a space after italics
+	// .italicize {
+	// 	i:after, em:after, .italic:after, .text-italic:after {
+	// 		content: "\00a0";
+	// 	}
+	// }
 
-	blockquote {
-		&.with-quote {
-			p:before, p:after {
-				content: '\201C';
-			}
-		}
-	}
+	// blockquote {
+	// 	&.with-quote {
+	// 		p:before, p:after {
+	// 			content: '\201C';
+	// 		}
+	// 	}
+	// }
 	
-	.merri {
-		font-family: "Merriweather", serif;
-	}
-	.open {
-		font-family: "Open Sans", sans-serif;
-	}
+	// .merri {
+	// 	font-family: "Merriweather", serif;
+	// }
+	// .open {
+	// 	font-family: "Open Sans", sans-serif;
+	// }
 	
-	// add a space after italics
-	.italicize {
-		i:after, em:after, .italic:after, .text-italic:after {
-			content: "\00a0";
-		}
-	}
+	// // add a space after italics
+	// .italicize {
+	// 	i:after, em:after, .italic:after, .text-italic:after {
+	// 		content: "\00a0";
+	// 	}
+	// }
 	
-	h1, .h1 {
-		font-size: 2.125rem;
-	}
-	h2, .h2 {
-		font-size: 1.875rem;
-	}
-	h3, .h3 {
-		font-size: 1.625rem;
-	}
-	h4, .h4 {
-		font-size: 1.375rem;
-	}
-	h5, .h5 {
-		font-size: 1.125rem;
-	}
-	h6, .h6 {
-		font-size: 1rem;
-		font-weight: bold;
-	}
+	// h1, .h1 {
+	// 	font-size: 2.125rem;
+	// }
+	// h2, .h2 {
+	// 	font-size: 1.875rem;
+	// }
+	// h3, .h3 {
+	// 	font-size: 1.625rem;
+	// }
+	// h4, .h4 {
+	// 	font-size: 1.375rem;
+	// }
+	// h5, .h5 {
+	// 	font-size: 1.125rem;
+	// }
+	// h6, .h6 {
+	// 	font-size: 1rem;
+	// 	font-weight: bold;
+	// }
 	
-	small, .small {
-		font-size: .8rem;
-		line-height: 1.15;
-	}
+	// small, .small {
+	// 	font-size: .8rem;
+	// 	line-height: 1.15;
+	// }
 	
-	sub, sup, .superscript, .extrasmall {
-		font-size: .7rem;
-		line-height: 1.15;
-	}
+	// sub, sup, .superscript, .extrasmall {
+	// 	font-size: .7rem;
+	// 	line-height: 1.15;
+	// }
 }
 
 .bd-navbar {

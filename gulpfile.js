@@ -133,4 +133,4 @@ gulp.task('server',function(){
 
 gulp.task( 'serve', ['server','watch'] );
 
-gulp.task( 'default', ['render', 'sass', 'minify', 'copy'] );
+// gulp.task( 'default', ['render', 'sass', 'minify', 'copy'] );
