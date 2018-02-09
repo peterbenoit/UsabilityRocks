@@ -159,17 +159,17 @@ function makeSVG() {
 		}
 	} );
 }
-$( window ).on( 'load resize scroll', function( e ) {
-	var $std = $( '#standard' );
-	if ( $std.length ) {
-		var top = $std.offset().top,
-			right = $std.outerWidth() + $std.offset().left;
-		$( '.ctrl' ).css( {
-			top: top,
-			left: right
-		} );
-	}
-} );
+// $( window ).on( 'load resize scroll', function( e ) {
+// 	var $std = $( '#standard' );
+// 	if ( $std.length ) {
+// 		var top = $std.offset().top,
+// 			right = $std.outerWidth() + $std.offset().left;
+// 		$( '.ctrl' ).css( {
+// 			top: top,
+// 			left: right
+// 		} );
+// 	}
+// } );
 
 var client = algoliasearch( "G2FUZ82WJ6", "6ed2ed9a83a0bd747f2986aa04722cb0" );
 var docs_search = client.initIndex( 'docs_search' );
