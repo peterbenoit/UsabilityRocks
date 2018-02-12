@@ -1278,6 +1278,10 @@ body.no-js {
   list-style-position: inside;
 }
 
+.demo .lsp-out, .bd-example .lsp-out {
+  list-style-position: outside;
+}
+
 .demo .card.flush .card, .bd-example .card.flush .card {
   border: 0;
 }

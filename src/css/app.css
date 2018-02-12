@@ -1257,6 +1257,10 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   list-style-position: inside;
 }
 
+.lsp-out {
+  list-style-position: outside;
+}
+
 .card.flush .card {
   border: 0;
 }
