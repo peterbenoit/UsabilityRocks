@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" class="theme-blue">
+<html lang="en" class="theme-purple">
 
 <head>
 <!--
@@ -36,7 +36,7 @@ ______            _ _     _____                     _____ _     _       _____   
 <link rel='stylesheet prefetch' href='https://usability.rocks/css/bootstrap.css?2'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
-<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?32'>
+<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?33'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
 
@@ -260,7 +260,7 @@ footer ul.list-inline li.rounded-circle {
 }
 
 .list-group.related a {
-  color: rgb(0, 94, 170);
+  color: #005eaa;
   border-left: 0;
 }
 .list-group a:hover {
@@ -272,11 +272,11 @@ footer ul.list-inline li.rounded-circle {
 }
 
 .list-group  a.bg-primary:hover {
-  background-color: rgb(0, 94, 170) !important;
+  background-color: rgb(113, 33, 119) !important;
 }
 
 .theme-blue #leftnav .list-group a.bg-primary {
-		border-left: 4px solid rgb(0, 94, 170);
+		border-left: 4px solid rgb(113, 33, 119);
 }
 
 .list-group a:focus {
@@ -695,7 +695,7 @@ address.address li {
 					<p class="d-none ">Promotion productive workplaces through safety and health research</p>
 				</div>
 				<div class="col-3 text-right d-none">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/NIOSH_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline" style="margin-top: -9px; width: 130px;">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/FLU_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline" style="margin-top: -9px; width: 130px;">
 				</div>
 			</div>
 		</div>
@@ -808,7 +808,7 @@ address.address li {
 					<div class="card-header bg-gray-l3 h5 mt-0">
 						Influenza Types
 					</div>
-					<div class="card-body">
+					<div class="card-body pl-3 pr-3 pb-0 pt-0">
 						<ul class="list-group -list-group-flush related related">
 							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Seasonal</a></li>
 							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Avian</a></li>
@@ -904,7 +904,7 @@ address.address li {
 					<div class="card-header bg-gray-l3 h5 mt-0">
 						Influenza Types
 					</div>
-					<div class="card-body">
+					<div class="card-body pl-3 pr-3 pb-0 pt-0">
 						<ul class="list-group -list-group-flush related">
 							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Seasonal</a></li>
 							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Avian</a></li>
@@ -958,10 +958,10 @@ address.address li {
 
 			<div class="container">
 			<div class="row d-md-none" style="border-bottom: 1px dashed #e0e0e0">
-				<div class="col-1 p-2" style="min-width: 40px;max-width:40px;border-top: 2px solid #005eaa">
-					<i class="material-icons" style="font-size: 22px;padding-top:4px;color:#005eaa">home</i>
+				<div class="col-1 p-2" style="min-width: 40px;max-width:40px;border-top: 2px solid rgb(113, 33, 119)">
+					<i class="material-icons" style="font-size: 22px;padding-top:4px;color:rgb(113, 33, 119)">home</i>
 				</div>
-				<div class="col p-2 text-white" style="border-top: 2px solid #005eaa"><a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">NIOSH</a></div>
+				<div class="col p-2 text-white" style="border-top: 2px solid rgb(113, 33, 119)"><a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">FLU</a></div>
 			</div>
 		</div>
 			<div class="row d-md-none">
@@ -1141,243 +1141,243 @@ address.address li {
 
 
 
-    <script >
-      'use strict';
+<script>
+	'use strict';
 
-var selected = 'left';
-$( function() {
-	$( '#leftnav .list-group .list-group a.selected' ).siblings( 'a' ).css( 'border-left-color', '#e0e0e0' );
-} )
-
-
-$( '#nav-options a' ).on( 'click', function( e ) {
-	e.preventDefault();
-
-	if( $(this).attr('href') === '#left' ) {
-		selected = 'left'
-		$( '.top-nav' ).addClass( 'd-none' );
-		$( '#leftnav' ).parent().addClass( 'd-md-block' );
-		$( 'main' ).addClass( 'col-md-8 offset-md-1' );
-	} else {
-		selected = 'top'
-		$( '.top-nav' ).removeClass( 'd-none' );
-		$( '#leftnav' ).parent().removeClass( 'd-md-block' );
-		$( 'main' ).removeClass( 'col-md-8 offset-md-1' );
-	}
-} );
-
-var $element = $('.sticky-top'),
-	$rsm = $( '.right-social-media' ),
-	flag = 0;
-Stickyfill.add($element);
-$( window ).on( 'scroll', _.throttle( function( e ) { 
-	if( $( '.overlay' ).is(':visible') ) {
-		$('.dropdown').dropdown('toggle');
-	}
-} ) );
-$( window ).on( 'load scroll resize', _.throttle( function( e ) {
-	// console.log( document.documentElement.scrollTop )
+	var selected = 'left';
+	$(function () {
+		$('#leftnav .list-group .list-group a.selected').siblings('a').css('border-left-color', '#e0e0e0');
+	})
 
 
-// $('[data-toggle="dropdown"]').parent().removeClass('show');
+	$('#nav-options a').on('click', function (e) {
+		e.preventDefault();
 
-	$rsm.css( 'left', $('main').offset().left + $('main').outerWidth() - 50 + "px" );
+		if ($(this).attr('href') === '#left') {
+			selected = 'left'
+			$('.top-nav').addClass('d-none');
+			$('#leftnav').parent().addClass('d-md-block');
+			$('main').addClass('col-md-8 offset-md-1');
+		} else {
+			selected = 'top'
+			$('.top-nav').removeClass('d-none');
+			$('#leftnav').parent().removeClass('d-md-block');
+			$('main').removeClass('col-md-8 offset-md-1');
+		}
+	});
 
-	if ( document.documentElement.scrollTop > 279 ) {
-		$rsm.css( 'opacity', '1' );
-	} else {
-		$rsm.css( 'opacity', '0' );
-	}
-
-	$( '.overlay' ).hide();
-
-// 	if( flag === 0 ) {
-// 		if ( document.documentElement.scrollTop <= 299 ) {
-// 			$rsm.addClass( 'd-none' );
-// 			flag = 0;
-// 		}
-// // 		if( $element[0].getBoundingClientRect().top <= 0 ) {
-// // 			$element.addClass( 'clearstyles' );
-
-// // 		}
-// 	} else {
-// 		if ( $rsm[0].getBoundingClientRect().top > 299 ) {
-// 			$rsm.removeClass( 'd-none' );
-// 			flag = 1;
-// 		}
-// // 		if( $element[0].getBoundingClientRect().top > 0 ) {
-// // 			$element.removeClass( 'clearstyles' );
-
-
-// // 			// $( '.right-social-media' ).removeClass( 'd-none' );
-// // 		}
-// 	}
-}, 100 ) );
-
-
-
-$( '.dropdown' ).on( 'show.bs.dropdown', function () {
-	$( '.overlay' ).show();
-	// $( '#svg-down' ).hide();
-
-
-	// $( this ).css( { 'width': $(window).width(), 'position': 'absolute', 'left': 0 } );
-
-	$( this ).closest( '.ct' ).removeClass( 'container' );
-	if( $element[0].getBoundingClientRect().top > 0 ) {
-		$element.css( {
-			'background-color': 'transparent',
-			'outline': 'none'
-		} );
+	var $element = $('.sticky-top'),
+		$rsm = $('.right-social-media'),
 		flag = 0;
+	Stickyfill.add($element);
+	$(window).on('scroll', _.throttle(function (e) {
+		if ($('.overlay').is(':visible')) {
+			$('.dropdown').dropdown('toggle');
+		}
+	}));
+	$(window).on('load scroll resize', _.throttle(function (e) {
+		// console.log( document.documentElement.scrollTop )
+
+
+		// $('[data-toggle="dropdown"]').parent().removeClass('show');
+
+		$rsm.css('left', $('main').offset().left + $('main').outerWidth() - 50 + "px");
+
+		if (document.documentElement.scrollTop > 279) {
+			$rsm.css('opacity', '1');
+		} else {
+			$rsm.css('opacity', '0');
+		}
+
+		$('.overlay').hide();
+
+		// 	if( flag === 0 ) {
+		// 		if ( document.documentElement.scrollTop <= 299 ) {
+		// 			$rsm.addClass( 'd-none' );
+		// 			flag = 0;
+		// 		}
+		// // 		if( $element[0].getBoundingClientRect().top <= 0 ) {
+		// // 			$element.addClass( 'clearstyles' );
+
+		// // 		}
+		// 	} else {
+		// 		if ( $rsm[0].getBoundingClientRect().top > 299 ) {
+		// 			$rsm.removeClass( 'd-none' );
+		// 			flag = 1;
+		// 		}
+		// // 		if( $element[0].getBoundingClientRect().top > 0 ) {
+		// // 			$element.removeClass( 'clearstyles' );
+
+
+		// // 			// $( '.right-social-media' ).removeClass( 'd-none' );
+		// // 		}
+		// 	}
+	}, 100));
+
+
+
+	$('.dropdown.section-nav').on('show.bs.dropdown', function () {
+		$('.overlay').show();
+		// $( '#svg-down' ).hide();
+
+
+		// $( this ).css( { 'width': $(window).width(), 'position': 'absolute', 'left': 0 } );
+
+		$(this).closest('.ct').removeClass('container');
+		if ($element[0].getBoundingClientRect().top > 0) {
+			$element.css({
+				'background-color': 'transparent',
+				'outline': 'none'
+			});
+			flag = 0;
+		}
+	});
+
+	$('.dropdown.section-nav').on('hide.bs.dropdown', function () {
+		$('.overlay').hide();
+		// $( '#svg-down' ).show();
+
+		// $( this ).closest( '.ct' ).addClass( 'container' );
+		$element[0].removeAttribute('style');
+	});
+
+	// $.ajaxSetup({
+	//     beforeSend:function(){
+	//         $( '#loading' ).show();
+	//     },
+	//     complete:function(){
+	//         $( '#loading' ).hide();
+	//     }
+	// });
+
+	$(function () {
+		// $('html').addClass('theme-blue');
+		// $('.config-panel #color-options .list-inline-item a').each(function () {
+		// 	$(this).css('background-color', $(this).data('color'));
+		// });
+		// $('.config-panel').css({
+		// 	'right': '-190px',
+		// 	'display': 'block!important'
+		// });
+	});
+	// $('#config-trigger').click(function (e) {
+	// 	e.preventDefault();
+	// 	if ($(this).hasClass('config-panel-open')) {
+	// 		$("#config-panel").animate({
+	// 			right: "-=190" //same as the panel width
+	// 		}, 500);
+	// 		$(this).removeClass('config-panel-open').addClass('config-panel-hide');
+	// 	} else {
+	// 		$("#config-panel").animate({
+	// 			right: "+=190" //same as the panel width
+	// 		}, 500);
+	// 		$(this).removeClass('config-panel-hide').addClass('config-panel-open');
+	// 	}
+	// });
+	// $('#config-close').on('click', function (e) {
+	// 	e.preventDefault();
+	// 	$('#config-trigger').click();
+	// });
+	// $('#color-options a').on('click', function (e) {
+	// 	alert('')
+	// 	e.preventDefault();
+	// 	var $styleSheet = $(this).attr('data-style'),
+	// 		$color = $(this).attr('data-color');
+	// 	// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
+	// 	// $( '#theme-style' ).attr( 'href', $styleSheet );
+
+	// 	$('html').removeClass().addClass($styleSheet);
+	// 	var $listItem = $(this).closest('li');
+	// 	$listItem.addClass('active');
+	// 	$listItem.siblings().removeClass('active');
+	// });
+
+	// var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code/';
+	// var crossorigin = 'https://crossorigin.me/' + lipsum,
+	// 	allowanyorigin = 'https://allow-any-origin.appspot.com/' + lipsum,
+	// 	anyorigin = 'https://anyorigin.com/go?url=' + lipsum;
+
+
+	// $.get( allowanyorigin, function( data ) {
+	//   $('.content').html( data );
+	// });
+
+	window.onresize = handleOnEvents;
+	window.onload = handleOnEvents;
+
+	var vps = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
+		vp = '',
+		idx = 0,
+		cloned = false;
+
+	function handleOnEvents() {
+		vp = getViewport('body', 'before');
+		idx = vps.indexOf(vp);
+
+		// VP by index
+		if (idx < 3 && !cloned) {
+			var clone = $('.left-nav').clone();
+
+			// give the new nav a new id
+			clone.attr('id', 'leftnav');
+
+			// update the primary data-parent nodes
+			clone.find('*[data-parent]').each(function () {
+				if ($(this).data('parent') === '#leftnav') {
+					$(this).attr('data-parent', '#leftnav-mobile')
+				}
+			});
+
+			// update the href on the
+			clone.find('a[data-toggle="collapse"]').each(function (i, t) {
+				t.href = t.hash + '1';
+			});
+
+			clone.find('.collapse').each(function (i, t) {
+				t.id += '1';
+			});
+
+
+			// do the clone!
+			clone.appendTo('.mobile-nav');
+
+			// don't run again
+			cloned = true;
+		}
+
+		// or VP by name
+		// 	if ( vp === 'xs' ) {
+
+		// 	} else if ( vp === 'sm' ) {
+
+		// 	} else if ( vp === 'md' ) {
+
+		// 	} else if ( vp === 'lg' ) {
+
+		// 	} else if ( vp === 'xl' ) {
+
+		// 	} else if ( vp === 'xxl' ) {
+
+		// 	} else {
+
+		// 	}
 	}
-} );
 
-$( '.dropdown' ).on( 'hide.bs.dropdown', function () {
-	$( '.overlay' ).hide();
-	// $( '#svg-down' ).show();
-
-	// $( this ).closest( '.ct' ).addClass( 'container' );
-	$element[0].removeAttribute( 'style' );
-} );
-
-// $.ajaxSetup({
-//     beforeSend:function(){
-//         $( '#loading' ).show();
-//     },
-//     complete:function(){
-//         $( '#loading' ).hide();
-//     }
-// });
-
-$( function() {
-	$( 'html' ).addClass( 'theme-blue' );
-	$( '.config-panel #color-options .list-inline-item a' ).each( function() {
-		$( this ).css( 'background-color', $( this ).data( 'color' ) );
-	} );
-	$( '.config-panel' ).css( {
-		'right': '-190px',
-		'display': 'block!important'
-	} );
-} );
-$( '#config-trigger' ).click( function( e ) {
-	e.preventDefault();
-	if ( $( this ).hasClass( 'config-panel-open' ) ) {
-		$( "#config-panel" ).animate( {
-			right: "-=190" //same as the panel width
-		}, 500 );
-		$( this ).removeClass( 'config-panel-open' ).addClass( 'config-panel-hide' );
-	} else {
-		$( "#config-panel" ).animate( {
-			right: "+=190" //same as the panel width
-		}, 500 );
-		$( this ).removeClass( 'config-panel-hide' ).addClass( 'config-panel-open' );
-	}
-} );
-$( '#config-close' ).on( 'click', function( e ) {
-	e.preventDefault();
-	$( '#config-trigger' ).click();
-} );
-$( '#color-options a' ).on( 'click', function( e ) {
-	e.preventDefault();
-	var $styleSheet = $( this ).attr( 'data-style' ),
-		$color = $( this ).attr( 'data-color' );
-	// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
-	// $( '#theme-style' ).attr( 'href', $styleSheet );
-
-	$( 'html' ).removeClass().addClass( $styleSheet );
-	var $listItem = $( this ).closest( 'li' );
-	$listItem.addClass( 'active' );
-	$listItem.siblings().removeClass( 'active' );
-} );
-
-var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code/';
-var crossorigin = 'https://crossorigin.me/' + lipsum,
-	allowanyorigin = 'https://allow-any-origin.appspot.com/' + lipsum,
-	anyorigin = 'https://anyorigin.com/go?url=' + lipsum;
-
-
-// $.get( allowanyorigin, function( data ) {
-//   $('.content').html( data );
-// });
-
-window.onresize = handleOnEvents;
-window.onload = handleOnEvents;
-
-var vps = ['xs','sm','md','lg','xl','xxl'],
-	vp = '',
-	idx = 0,
-	cloned = false;
-
-function handleOnEvents() {
-	vp = getViewport( 'body', 'before' );
-	idx = vps.indexOf( vp );
-
-	// VP by index
-	if( idx < 3 && !cloned ) {
-		var clone = $( '.left-nav' ).clone();
-
-		// give the new nav a new id
-		clone.attr( 'id', 'leftnav' );
-
-		// update the primary data-parent nodes
-		clone.find( '*[data-parent]' ).each( function() {
-			if ( $( this ).data( 'parent' ) === '#leftnav' ) {
-				$( this ).attr( 'data-parent', '#leftnav-mobile' )
-			}
-		} );
-
-		// update the href on the
-		clone.find( 'a[data-toggle="collapse"]' ).each( function( i, t ) {
-			t.href = t.hash + '1';
-		} );
-
-		clone.find( '.collapse' ).each( function( i, t ) {
-			t.id += '1';
-		} );
-
-
-		// do the clone!
-		clone.appendTo( '.mobile-nav' );
-
-		// don't run again
-		cloned = true;
+	function getViewport(element, pseudo) {
+		return window
+			.getComputedStyle(document.querySelector(element), ':' + pseudo)
+			.getPropertyValue('content')
+			.replace(/\"/g, '')
+			.replace(/\'/g, '');
 	}
 
-	// or VP by name
-// 	if ( vp === 'xs' ) {
+	// document.documentElement.setAttribute("lang", "en");
+	// document.documentElement.removeAttribute("class");
 
-// 	} else if ( vp === 'sm' ) {
-
-// 	} else if ( vp === 'md' ) {
-
-// 	} else if ( vp === 'lg' ) {
-
-// 	} else if ( vp === 'xl' ) {
-
-// 	} else if ( vp === 'xxl' ) {
-
-// 	} else {
-
-// 	}
-}
-
-function getViewport( element, pseudo ) {
-	return window
-		.getComputedStyle( document.querySelector( element ), ':' + pseudo )
-		.getPropertyValue( 'content' )
-		.replace( /\"/g, '' )
-		.replace( /\'/g, '' );
-}
-
-document.documentElement.setAttribute("lang", "en");
-document.documentElement.removeAttribute("class");
-
-axe.run( function(err, results) {
-  console.log( results.violations );
-} );
-    </script>
-
+	axe.run(function (err, results) {
+		console.log(results.violations);
+	});
+</script>
 
 
 
