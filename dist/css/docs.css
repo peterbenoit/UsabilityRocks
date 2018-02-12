@@ -1334,6 +1334,11 @@ body.no-js {
   list-style-position: outside;
 }
 
+.demo .lsp-out li, .bd-example .lsp-out li {
+  margin-left: 1rem;
+  padding-left: .4rem;
+}
+
 .demo .card.flush .card, .bd-example .card.flush .card {
   border: 0;
 }
@@ -3543,6 +3548,7 @@ body.no-js {
 .demo sub, .demo sup, .demo .superscript, .demo .extrasmall, .bd-example sub, .bd-example sup, .bd-example .superscript, .bd-example .extrasmall {
   font-size: .7rem;
   line-height: 1.15;
+  text-decoration: none;
 }
 
 .demo a, .bd-example a {
