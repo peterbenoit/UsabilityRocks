@@ -34,7 +34,7 @@ ______            _ _     _____                     _____ _     _       _____   
 <link rel='stylesheet prefetch' href='https://usability.rocks/css/bootstrap.css?2'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
-<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?34'>
+<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?35'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
 
@@ -53,7 +53,7 @@ ______            _ _     _____                     _____ _     _       _____   
     border-top: 1px solid orange;
   }
  .smb {
-background: #005eaa; /* Old browsers */
+background: #712177 ; /* Old browsers */
  }
   .top-nav .nav-item {
     -webkit-box-flex: 0;
@@ -743,9 +743,9 @@ address.address li {
 		<!-- section nav area -->
 		<nav role="navigation" aria-label="Section Nav" class="d-md-none">
 
-			<div class="dropdown">
+			<div class="dropdown section-nav">
 				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="-font-weight:bold; font-size: 23px">
-						Who is at High Risk? 	<svg id="svg-down" style="width:40px;height:40px; right: 30px;z-index:1002; top:10px;" viewBox="0 0 24 24" class="p-abs ds-7 mt-3 ba-1 rounded-circle bg-primary">
+						Who is at High Risk? 	<svg id="svg-down" style="width:40px;height:40px; right: 30px;z-index:1002;" viewBox="0 0 24 24" class="p-abs ds-7 mt-3 ba-1 rounded-circle bg-primary">
                     			<path fill="#ffffff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
                 			</svg>
 		  </button>
@@ -755,13 +755,11 @@ address.address li {
 							<a class="list-group-item" href="https://usability.rocks/demos/flu.html" style="margin-left:20px;">Adults 65+</a>
 							<a class="list-group-item" href="#" style="margin-left:20px;">Pregnant Women</a>
 							<a class="list-group-item" href="#" style="margin-left:20px;">Young Children</a>
-							<a class="list-group-item" href="#" style="margin-left:20px;">Asthma</a>
-							<a class="list-group-item" href="#" style="margin-left:20px;">Heart Disease</a>
 							<a class="list-group-item" href="#" style="margin-left:20px;">Diabetes</a>
 							<a class="list-group-item" href="#" style="margin-left:20px;">HIV/AIDS</a>
-							<a class="list-group-item bg-primary text-white bb-0" href="https://usability.rocks/demos/flu.html"><div class="row"><div class="col-1 p-0"><svg style="width:24px;height:24px;vertical-align:bottom" viewBox="0 0 24 24">
-    <path fill="#ffffff" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-</svg></div> <div class="col p-0">Flu</div></div></a>
+							<a class="list-group-item bg-primary text-white bb-0" href="https://usability.rocks/demos/flu.html">								<div>
+								<i class="material-icons" style="vertical-align: bottom;margin-left: -10px;margin-right: 5px;">home</i> Flu
+							</div></a>
 						</div>
 					</nav>
 				</div>
@@ -771,7 +769,7 @@ address.address li {
 </div>
 <div class="container">
 	<div class="d-flex flex-wrap bg-white pl-md-3">
-		<a href="#" class="d-md-none mt-3 mb-3 d-block language-link">En Español</a>
+		<a href="#" class="d-md-none mt-3 mb-0 d-block language-link">En Español</a>
 		<!-- /section nav area -->
 
 		<nav role="navigation" aria-label="Social Media" class="d-none pin-bottom">
@@ -824,7 +822,7 @@ address.address li {
 		<!-- /nav area -->
 
 		<!-- content area -->
-		<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
+		<main class="bg-white col-12 col-md-9 pt-md-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
 			<!-- <div class="row">
 				<div class="col-12">
 					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/unnamed.jpg" class="w-100" alt="">
@@ -959,7 +957,7 @@ address.address li {
 				</div>
 			</div>
 			<div class="row d-md-none mb-4">
-				<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Reviewed: Nov. 9, 2017</div>
+				<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Updated: Nov. 9, 2017</div>
 			</div>
 
 			<div class="container">
@@ -1153,6 +1151,8 @@ address.address li {
 	var selected = 'left';
 	$(function () {
 		$('#leftnav .list-group .list-group a.selected').siblings('a').css('border-left-color', '#e0e0e0');
+
+		console.log( $('.dropdown.section-nav').find('.selected'))
 	})
 
 
@@ -1176,15 +1176,17 @@ address.address li {
 		$rsm = $('.right-social-media'),
 		flag = 0;
 	Stickyfill.add($element);
-	$(window).on('scroll', _.throttle(function (e) {
-		if ($('.overlay').is(':visible')) {
-			$('.dropdown').dropdown('toggle');
-		}
-	}));
+	// $(window).on('scroll', _.throttle(function (e) {
+	// 	if ($('.overlay').is(':visible')) {
+	// 		$('.dropdown').dropdown('toggle');
+	// 	}
+	// }));
 	$(window).on('load scroll resize', _.throttle(function (e) {
 		// console.log( document.documentElement.scrollTop )
 
-
+		if ($('.overlay').is(':visible')) {
+			$('.dropdown').dropdown('toggle');
+		}
 		// $('[data-toggle="dropdown"]').parent().removeClass('show');
 
 		$rsm.css('left', $('main').offset().left + $('main').outerWidth() - 50 + "px");
@@ -1229,14 +1231,14 @@ address.address li {
 
 		// $( this ).css( { 'width': $(window).width(), 'position': 'absolute', 'left': 0 } );
 
-		$(this).closest('.ct').removeClass('container');
-		if ($element[0].getBoundingClientRect().top > 0) {
-			$element.css({
-				'background-color': 'transparent',
-				'outline': 'none'
-			});
-			flag = 0;
-		}
+		// $(this).closest('.ct').removeClass('container');
+		// if ($element[0].getBoundingClientRect().top > 0) {
+		// 	$element.css({
+		// 		'background-color': 'transparent',
+		// 		'outline': 'none'
+		// 	});
+		// 	flag = 0;
+		// }
 	});
 
 	$('.dropdown.section-nav').on('hide.bs.dropdown', function () {
@@ -1244,7 +1246,7 @@ address.address li {
 		// $( '#svg-down' ).show();
 
 		// $( this ).closest( '.ct' ).addClass( 'container' );
-		$element[0].removeAttribute('style');
+		// $element[0].removeAttribute('style');
 	});
 
 	// $.ajaxSetup({
