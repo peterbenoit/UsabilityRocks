@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
-<html lang="en" class="theme-blue">
+<html lang="en" class="theme-purple">
 
 <head>
-<!--
+	<!--
 
 ______            _ _     _____                     _____ _     _       _____           _      _ _ 
 |  _  \          ( ) |   /  __ \                   |_   _| |   (_)     /  __ \         | |    | | |
@@ -15,101 +14,113 @@ ______            _ _     _____                     _____ _     _       _____   
                                      |_|    |___/                                                  
 
 -->
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
-  <title>Flu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>Flu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-109054116-1');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
+		gtag('config', 'UA-109054116-1');
+	</script>
 
 
 <link rel='stylesheet prefetch' href='https://usability.rocks/css/bootstrap.css?2'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
-<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?32'>
+<link rel='stylesheet prefetch' href='https://usability.rocks/css/app.css?35'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css'>
 
-      <style>
-.print-only {
-	display:none;
-}
-				body {
-					overflow-x: hidden;
-				}
-			.card-header {
-				margin-bottom: 0!important;
+	<style>
+		.ds-4 {
+			box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
+		}
+		.print-only {
+			display: none;
+		}
+
+		body {
+			overflow-x: hidden;
+		}
+
+		.card-header {
+			margin-bottom: 0 !important;
+		}
+
+		@media (max-width: 767px) {
+			section:not(:first-of-type) {
+				border-top: 1px solid orange;
 			}
-      @media (max-width: 767px) {
-  section:not(:first-of-type) {
-    border-top: 1px solid orange;
-  }
- .smb {
-background: #005eaa; /* Old browsers */
- }
-  .top-nav .nav-item {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-    width: 26%;
-  }
+			.smb {
+				background: #005eaa;
+				/* Old browsers */
+			}
+			.top-nav .nav-item {
+				-webkit-box-flex: 0;
+				-ms-flex: none;
+				flex: none;
+				width: 26%;
+			}
 
-  body {
-    background: #fff !important;
-  }
-}
-.dropdown .dropdown-toggle {
-  background: #f5f5f5;
-}
+			body {
+				background: #fff !important;
+			}
+		}
+
+		.dropdown .dropdown-toggle {
+			background: #f5f5f5;
+		}
 
 
 
-.dropdown, .dropdown-menu {
-  padding: 0;
-  float: none;
-}
+		.dropdown,
+		.dropdown-menu {
+			padding: 0;
+			float: none;
+		}
 
 
-.dropdown a {
-	text-decoration: none;
-}
-.social-media-footer {
-	z-index: 9999;
-}
+		.dropdown a {
+			text-decoration: none;
+		}
 
-.social-media-footer li {
-  width: 33%;
-	padding-left: 0!important;
-	text-align: center;
-}
-.social-media-footer li:not(:first-of-type) {
-  border-left: 1px solid #fff;
-}
+		.social-media-footer {
+			z-index: 9999;
+		}
 
-#svg-down {
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
+		.social-media-footer li {
+			width: 33%;
+			padding-left: 0 !important;
+			text-align: center;
+		}
 
-.dropdown.show #svg-down {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+		.social-media-footer li:not(:first-of-type) {
+			border-left: 1px solid #fff;
+		}
 
-div.mobile-nav #leftnav.mt-3 {
-	margin-top: 0!important;
-}
-/*
+		#svg-down {
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
+
+		.dropdown.show #svg-down {
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		div.mobile-nav #leftnav.mt-3 {
+			margin-top: 0 !important;
+		}
+
+		/*
 #ac-localnav .ac-ln-menucta-chevron::before {
     -webkit-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
@@ -129,519 +140,596 @@ div.mobile-nav #leftnav.mt-3 {
 }
 */
 
-button.section-nav {
-  text-align: left;
-}
-button.section-nav:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
+		button.section-nav {
+			text-align: left;
+		}
 
-.top-nav .dropdown-menu a {
-  border-bottom: 0 !important;
-}
-.top-nav .dropdown-menu a:not(:first-child) {
-  border-top: 1px dashed #e0e0e0 !important;
-}
-.top-nav .dropdown-toggle::after {
-  border: 0 !important;
-}
+		button.section-nav:focus {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin-top: 2rem !important;
-}
+		.top-nav .dropdown-menu a {
+			border-bottom: 0 !important;
+		}
 
-.card h1, .card .h1, .card h2, .card .h2, .card h3, .card .h3, .card h4, .card .h4, .card h5, .card .h5, .card h6, .card .h6 {
-  margin-top: 0 !important;
-}
+		.top-nav .dropdown-menu a:not(:first-child) {
+			border-top: 1px dashed #e0e0e0 !important;
+		}
 
-.breadcrumb a {
-  text-decoration: none;
-}
+		.top-nav .dropdown-toggle::after {
+			border: 0 !important;
+		}
 
-.nav-item {
-  border-right: 1px solid #e0e0e0;
-  width: 20%;
-}
-.nav-item:first-child {
-  border-left: 1px solid #e0e0e0;
-}
-.nav-item.active > a {
-  border-bottom: 5px solid #005eaa;
-}
+		h1,
+		.h1,
+		h2,
+		.h2,
+		h3,
+		.h3,
+		h4,
+		.h4,
+		h5,
+		.h5,
+		h6,
+		.h6 {
+			margin-top: 2rem !important;
+		}
 
-.navbar {
-  padding: 0;
-}
-.navbar a {
-  border-bottom: 5px solid #c0e9ff;
-}
-.navbar a:hover, .navbar a:focus {
-  border-bottom: 5px solid #005eaa;
-  color: #005eaa !important;
-}
+		.card h1,
+		.card .h1,
+		.card h2,
+		.card .h2,
+		.card h3,
+		.card .h3,
+		.card h4,
+		.card .h4,
+		.card h5,
+		.card .h5,
+		.card h6,
+		.card .h6 {
+			margin-top: 0 !important;
+		}
 
-body, .breadcrumb {
-  background: #f5f5f5;
-}
+		.breadcrumb a {
+			text-decoration: none;
+		}
 
-.nav-link:focus {
-  outline: none !important;
-}
+		.nav-item {
+			border-right: 1px solid #e0e0e0;
+			width: 20%;
+		}
 
-.theme-blue #leftnav .list-group a:hover {
-  border-left: 4px solid #005eaa !important;
-}
-.theme-blue #leftnav .list-group .list-group-item.active.highlight {
-  border-color: #005eaa;
-}
-.theme-blue #leftnav .list-group .list-group-item.selected {
-  border-left-color: #005eaa !important;
-  background: #f5f5f5;
-}
+		.nav-item:first-child {
+			border-left: 1px solid #e0e0e0;
+		}
 
-.connect-icons li:not(:last-of-type) {
-  margin-right: 12px;
-}
+		.nav-item.active>a {
+			border-bottom: 5px solid #005eaa;
+		}
 
-.connect-icons img {
-	margin-left: 0;
-}
+		.navbar {
+			padding: 0;
+		}
 
-footer {
-  font-size: 13px;
-}
-footer span {
-  display: block;
-}
-footer ul {
-  padding-left: 0px;
-  list-style-type: none;
-}
-footer ul.list-inline {
-  display: inline-block;
-  margin-bottom: 3px;
-}
-footer ul.list-inline li {
-  float: left;
-}
-footer ul.list-inline li img {
-  width: 24px;
-}
-footer ul.list-inline li.rounded-circle {
-  background: #fff;
-  padding: 7px;
-  margin-right: 7px;
-}
+		.navbar a {
+			border-bottom: 5px solid #c0e9ff;
+		}
 
-.theme-purple #leftnav .list-group a:hover {
-  border-left: 4px solid #712177 !important;
-}
-.theme-purple #leftnav .list-group .list-group-item.active.highlight {
-  border-color: #712177;
-}
-.theme-purple #leftnav .list-group .list-group-item.selected {
-  border-left-color: #712177 !important;
-  background: #f5f5f5;
-}
+		.navbar a:hover,
+		.navbar a:focus {
+			border-bottom: 5px solid #005eaa;
+			color: #005eaa !important;
+		}
 
-.list-group i.fa {
-  margin-right: 10px;
-}
-.list-group .alt-background a.list-group-item {
-  background: #f5f5f5;
-}
-.list-group .alt-background .list-group-submenu a.list-group-item {
-  background: #fff;
-}
-.list-group a {
-  color: #333;
-  border-left: 4px solid #f5f5f5;
-}
+		body,
+		.breadcrumb {
+			background: #f5f5f5;
+		}
 
-.list-group.related a {
-  color: rgb(0, 94, 170);
-  border-left: 0;
-}
-.list-group a:hover {
-  background: #f5f5f5 !important;
-}
-.list-group.related a:hover {
-  background: #fff!important;
-	text-decoration:underline!important;
-}
+		.nav-link:focus {
+			outline: none !important;
+		}
 
-.list-group  a.bg-primary:hover {
-  background-color: rgb(0, 94, 170) !important;
-}
+		.theme-purple #leftnav .list-group a:hover {
+			border-left: 4px solid #005eaa !important;
+		}
 
-.theme-blue #leftnav .list-group a.bg-primary {
-		border-left: 4px solid rgb(0, 94, 170);
-}
+		.theme-purple #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #005eaa;
+		}
 
-.list-group a:focus {
-  															outline: none !important;
-}
-.list-group .list-group-submenu {
-  margin-left: 20px;
-  font-size: 15px;
-}
-.list-group .list-group-submenu .list-group-submenu {
-  font-size: 13px;
-}
-.list-group.no-seperator > .list-group-item {
-  border-bottom: none;
-}
-.list-group .collapsing {
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
-}
-.list-group .list-group-item:first-child,
-.list-group .list-group-item:last-child {
-  border-radius: 0;
-}
-.list-group > .list-group-submenu .list-group-submenu a .list-group-item {
-  background: #f5f5f5;
-}
-.list-group > .list-group-submenu .list-group-submenu a.selected.themed-bg {
-  background: #c0e9ff;
-}
-.list-group > .list-group-submenu.alt-background a.list-group-item {
-  background: #f5f5f5;
-}
-.list-group > .list-group-submenu.alt-background .list-group-submenu a.list-group-item {
-  background: #fff;
-}
-.list-group .list-group-item {
-  border-right: none;
-  border-top: none;
-  border-bottom: 1px dashed #e0e0e0;
-  margin-top: 1px;
-  padding-right: 3px;
-}
+		.theme-purple #leftnav .list-group .list-group-item.selected {
+			border-left-color: #005eaa !important;
+			background: #f5f5f5;
+		}
 
-.list-group.related .list-group-item {
-  border-right: none;
-  border-top: 1px dashed #e0e0e0;
-  border-bottom: none;
-}
+		.connect-icons li:not(:last-of-type) {
+			margin-right: 12px;
+		}
 
-.list-group.related .list-group-item:first-of-type {
-	border-top: none;
-}
+		.connect-icons img {
+			margin-left: 0;
+		}
 
-.list-group .list-group-item.active {
-  background: #fff;
-  color: #333;
-  border-left-color: #fff;
-}
-.list-group .list-group-item.selected {
-  font-weight: bold;
-}
-.list-group.indicator-plus a[data-toggle="collapse"]:after {
-  font-family: 'Material Icons';
-  content: 'add';
-  float: right;
-  font-size: 16px;
-  color: #bdbdbd;
-}
-.list-group.indicator-plus a[data-toggle="collapse"][aria-expanded="true"] {
-  font-weight: bold;
-}
-.list-group.indicator-plus a[data-toggle="collapse"][aria-expanded="true"]:after {
-  content: "remove";
-}
-.list-group.indicator-fancy a[data-toggle="collapse"]:after {
-  font-family: 'FontAwesome';
-  content: "\f067";
-  float: right;
-  font-size: 16px;
-  color: #333;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-.list-group.indicator-fancy a[data-toggle="collapse"][aria-expanded="true"] {
-  font-weight: bold;
-}
-.list-group.indicator-fancy a[data-toggle="collapse"][aria-expanded="true"]:after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  content: "\f00d";
-}
+		footer {
+			font-size: 13px;
+		}
 
-a.language-link {
-  font-size: .8rem;
-}
+		footer span {
+			display: block;
+		}
 
-.social-media {
-  list-style: none;
-  padding-left: 0 !important;
-}
-.social-media li {
-  display: inline-block;
-  padding-left: 12px;
-}
-.social-media img {
-  width: 25px;
-}
+		footer ul {
+			padding-left: 0px;
+			list-style-type: none;
+		}
 
-body {
-  border-top: 5px solid #bdbdbd;
-}
+		footer ul.list-inline {
+			display: inline-block;
+			margin-bottom: 3px;
+		}
 
-.clearstyles {
-  background: transparent;
-  padding: 0;
-  outline: none;
-  -webkit-box-shadow: 0px 5px 5px 0px #949494;
-          box-shadow: 0px 5px 5px 0px #949494;
-}
+		footer ul.list-inline li {
+			float: left;
+		}
 
-.section-dropdown::after {
-  border: 0;
-}
+		footer ul.list-inline li img {
+			width: 24px;
+		}
 
-.btn:focus, .btn.focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: 0px;
-}
+		footer ul.list-inline li.rounded-circle {
+			background: #fff;
+			padding: 7px;
+			margin-right: 7px;
+		}
 
-.dropdown-menu {
-  top: 0 !important;
-  border: 0;
-  -webkit-transform: translate3d(0px, 42px, 0px) !important;
-          transform: translate3d(0px, 42px, 0px) !important;
-}
+		.theme-purple #leftnav .list-group a:hover {
+			border-left: 4px solid #712177 !important;
+		}
 
-.dropdown-toggle.section-nav::after {
-  font-family: 'Material Icons';
-  border: 0 !important;
-  content: 'keyboard_arrow_down';
-  margin-right: 40px;
-  font-size: 42px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+		.theme-purple #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #712177;
+		}
 
-.section-nav {
-  padding: 0;
-}
-.section-nav .dropdown-menu {
-  padding: 0;
-}
-.section-nav .btn {
-  padding: 0;
-}
-.section-nav .dropdown a {
-  padding: 0.75rem 1.25rem;
-  border-right: none;
-  border-top: none;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-.section-nav .dropdown-item {
-  padding: 0.75rem 1.25rem;
-  border-right: none;
-  border-top: none;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-.section-nav .dropdown-item:not(:first-child) {
-  border-top: 1px dashed #e0e0e0;
-}
-.section-nav .dropdown a {
-  text-decoration: none;
-}
-.section-nav .dropdown .btn-secondary, .section-nav .dropdown.show .btn-secondary {
-  background: #f5f5f5;
-  color: #222;
-  text-align: left;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  -webkit-box-shadow: 0px 2px 5px 0px #949494;
-          box-shadow: 0px 2px 5px 0px #949494;
-  padding-right: 50px;
-}
+		.theme-purple #leftnav .list-group .list-group-item.selected {
+			border-left-color: #712177 !important;
+			background: #f5f5f5;
+		}
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  /* Stay in place */
-  z-index: 9998;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  display: none;
-  background-color: black;
-  /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Black w/opacity */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
+		.list-group i.fa {
+			margin-right: 10px;
+		}
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10px;
-}
+		.list-group .alt-background a.list-group-item {
+			background: #f5f5f5;
+		}
 
-.sticky:before,
-.sticky:after {
-  content: '';
-  display: table;
-}
+		.list-group .alt-background .list-group-submenu a.list-group-item {
+			background: #fff;
+		}
 
-address.address ul {
-  padding: 0;
-}
-address.address li {
-  list-style-type: none;
-}
+		.list-group a {
+			color: #333;
+			border-left: 4px solid #f5f5f5;
+		}
 
-.sticky-top, .sticky-top .dropdown {
-  z-index: 9999;
-}
+		.list-group.related a {
+			color:#005eaa;
+			border-left: 0;
+		}
 
-.right-social-media {
-  position: fixed;
-  top: 100px;
-  right: 20px;
-  opacity: 0;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
-  list-style: none;
-}
-.right-social-media li {
-  display: block;
-}
-.right-social-media img {
-  width: 30px;
-  margin-bottom: 10px;
-}
+		.list-group a:hover {
+			background: #f5f5f5 !important;
+		}
 
-.config-trigger {
-  position: absolute;
-  top: 30px;
-  left: -36px;
-  width: 36px;
-  height: 36px;
-  background: #222;
-  color: #fff;
-  text-align: center;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-  background-clip: padding-box;
-  text-decoration: none;
-}
+		.list-group.related a:hover {
+			background: #fff !important;
+			text-decoration: underline !important;
+		}
 
-.config-trigger:hover {
-  background: #000;
-  text-decoration: none;
-}
+		.list-group a.bg-primary:hover {
+			background-color: rgb(113, 33, 119) !important;
+		}
 
-.config-panel:hover .fa {
-  color: #fff;
-}
+		.theme-purple #leftnav .list-group a.bg-primary {
+			border-left: 4px solid rgb(113, 33, 119);
+		}
 
-.config-panel .fa {
-  font-size: 22px;
-  padding-top: 7px;
-  display: block;
-  color: rgba(255, 255, 255, 0.8);
-}
+		.list-group a:focus {
+			outline: none !important;
+		}
 
-.config-panel {
-  position: absolute;
-  top: 200px;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  z-index: 30;
-  width: 190px;
-}
+		.list-group .list-group-submenu {
+			margin-left: 20px;
+			font-size: 15px;
+		}
 
-.config-panel .panel-inner {
-  position: relative;
-  background: #222;
-  color: #fff;
-  padding: 15px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-  background-clip: padding-box;
-}
+		.list-group .list-group-submenu .list-group-submenu {
+			font-size: 13px;
+		}
 
-.config-panel .panel-title {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
+		.list-group.no-seperator>.list-group-item {
+			border-bottom: none;
+		}
 
-.config-panel label {
-  color: #fff;
-}
+		.list-group .collapsing {
+			-webkit-transition: height 0.5s;
+			transition: height 0.5s;
+		}
 
-.config-panel #color-options {
-  margin-bottom: 0px;
-}
+		.list-group .list-group-item:first-child,
+		.list-group .list-group-item:last-child {
+			border-radius: 0;
+		}
 
-.config-panel #color-options li a {
-  display: block;
-  width: 28px;
-  height: 20px;
-  border: 2px solid transparent;
-  margin-bottom: 10px;
-}
+		.list-group>.list-group-submenu .list-group-submenu a .list-group-item {
+			background: #f5f5f5;
+		}
 
-.config-panel #color-options li a:hover {
-  -webkit-opacity: 0.9;
-  -moz-opacity: 0.9;
-  opacity: 0.9;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-}
+		.list-group>.list-group-submenu .list-group-submenu a.selected.themed-bg {
+			background: #c0e9ff;
+		}
 
-.config-panel #color-options li.active a {
-  border: 2px solid #fff;
-}
+		.list-group>.list-group-submenu.alt-background a.list-group-item {
+			background: #f5f5f5;
+		}
 
-.config-panel .close {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  color: #fff;
-}
+		.list-group>.list-group-submenu.alt-background .list-group-submenu a.list-group-item {
+			background: #fff;
+		}
 
-.config-panel .close .fa {
-  color: #fff;
-}
+		.list-group .list-group-item {
+			border-right: none;
+			border-top: none;
+			border-bottom: 1px dashed #e0e0e0;
+			margin-top: 1px;
+			padding-right: 3px;
+		}
 
-.dropdown .dropdown-menu {
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+		.list-group.related .list-group-item {
+			border-right: none;
+			border-top: 1px dashed #e0e0e0;
+			border-bottom: none;
+		}
 
-    max-height: 0;
-    display: block;
-    overflow: hidden;
-}
+		.list-group.related .list-group-item:first-of-type {
+			border-top: none;
+		}
 
-.dropdown.show .dropdown-menu {
-    max-height: 300px;
-}
+		.list-group .list-group-item.active {
+			background: #fff;
+			color: #333;
+			border-left-color: #fff;
+		}
 
-    </style>
+		.list-group .list-group-item.selected {
+			font-weight: bold;
+		}
+
+		.list-group.indicator-plus a[data-toggle="collapse"]:after {
+			font-family: 'Material Icons';
+			content: 'add';
+			float: right;
+			font-size: 16px;
+			color: #bdbdbd;
+		}
+
+		.list-group.indicator-plus a[data-toggle="collapse"][aria-expanded="true"] {
+			font-weight: bold;
+		}
+
+		.list-group.indicator-plus a[data-toggle="collapse"][aria-expanded="true"]:after {
+			content: "remove";
+		}
+
+		.list-group.indicator-fancy a[data-toggle="collapse"]:after {
+			font-family: 'FontAwesome';
+			content: "\f067";
+			float: right;
+			font-size: 16px;
+			color: #333;
+			-webkit-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+		}
+
+		.list-group.indicator-fancy a[data-toggle="collapse"][aria-expanded="true"] {
+			font-weight: bold;
+		}
+
+		.list-group.indicator-fancy a[data-toggle="collapse"][aria-expanded="true"]:after {
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+			content: "\f00d";
+		}
+
+		a.language-link {
+			font-size: .8rem;
+		}
+
+		.social-media {
+			list-style: none;
+			padding-left: 0 !important;
+		}
+
+		.social-media li {
+			display: inline-block;
+			padding-left: 12px;
+		}
+
+		.social-media img {
+			width: 25px;
+		}
+
+		body {
+			border-top: 5px solid #bdbdbd;
+		}
+
+		.clearstyles {
+			background: transparent;
+			padding: 0;
+			outline: none;
+			-webkit-box-shadow: 0px 5px 5px 0px #949494;
+			box-shadow: 0px 5px 5px 0px #949494;
+		}
+
+		.section-dropdown::after {
+			border: 0;
+		}
+
+		.btn:focus,
+		.btn.focus {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			outline: 0px;
+		}
+
+		.dropdown-menu {
+			top: 0 !important;
+			border: 0;
+			-webkit-transform: translate3d(0px, 42px, 0px) !important;
+			transform: translate3d(0px, 42px, 0px) !important;
+		}
+
+		.dropdown-toggle.section-nav::after {
+			font-family: 'Material Icons';
+			border: 0 !important;
+			content: 'keyboard_arrow_down';
+			margin-right: 40px;
+			font-size: 42px;
+			-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		}
+
+		.section-nav {
+			padding: 0;
+		}
+
+		.section-nav .dropdown-menu {
+			padding: 0;
+		}
+
+		.section-nav .btn {
+			padding: 0;
+		}
+
+		.section-nav .dropdown a {
+			padding: 0.75rem 1.25rem;
+			border-right: none;
+			border-top: none;
+			margin-top: 1px;
+			margin-bottom: 1px;
+		}
+
+		.section-nav .dropdown-item {
+			padding: 0.75rem 1.25rem;
+			border-right: none;
+			border-top: none;
+			margin-top: 1px;
+			margin-bottom: 1px;
+		}
+
+		.section-nav .dropdown-item:not(:first-child) {
+			border-top: 1px dashed #e0e0e0;
+		}
+
+		.section-nav .dropdown a {
+			text-decoration: none;
+		}
+
+		.section-nav .dropdown .btn-secondary,
+		.section-nav .dropdown.show .btn-secondary {
+			background: #f5f5f5;
+			color: #222;
+			text-align: left;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			border: none;
+			-webkit-box-shadow: 0px 2px 5px 0px #949494;
+			box-shadow: 0px 2px 5px 0px #949494;
+			padding-right: 50px;
+		}
+
+		.overlay {
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			/* Stay in place */
+			z-index: 9998;
+			/* Sit on top */
+			left: 0;
+			top: 0;
+			display: none;
+			background-color: black;
+			/* Black fallback color */
+			background-color: rgba(0, 0, 0, 0.5);
+			/* Black w/opacity */
+			overflow-x: hidden;
+			/* Disable horizontal scroll */
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+		}
+
+		.sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 10px;
+		}
+
+		.sticky:before,
+		.sticky:after {
+			content: '';
+			display: table;
+		}
+
+		address.address ul {
+			padding: 0;
+		}
+
+		address.address li {
+			list-style-type: none;
+		}
+
+		.sticky-top,
+		.sticky-top .dropdown {
+			z-index: 9999;
+		}
+
+		.right-social-media {
+			position: fixed;
+			top: 100px;
+			right: 20px;
+			opacity: 0;
+			-webkit-transition: opacity .5s;
+			transition: opacity .5s;
+			list-style: none;
+		}
+
+		.right-social-media li {
+			display: block;
+		}
+
+		.right-social-media img {
+			width: 30px;
+			margin-bottom: 10px;
+		}
+
+		.config-trigger {
+			position: absolute;
+			top: 30px;
+			left: -36px;
+			width: 36px;
+			height: 36px;
+			background: #222;
+			color: #fff;
+			text-align: center;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 4px;
+			border-top-left-radius: 4px;
+			background-clip: padding-box;
+			text-decoration: none;
+		}
+
+		.config-trigger:hover {
+			background: #000;
+			text-decoration: none;
+		}
+
+		.config-panel:hover .fa {
+			color: #fff;
+		}
+
+		.config-panel .fa {
+			font-size: 22px;
+			padding-top: 7px;
+			display: block;
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		.config-panel {
+			position: absolute;
+			top: 200px;
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%);
+			z-index: 30;
+			width: 190px;
+		}
+
+		.config-panel .panel-inner {
+			position: relative;
+			background: #222;
+			color: #fff;
+			padding: 15px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 4px;
+			border-top-left-radius: 4px;
+			background-clip: padding-box;
+		}
+
+		.config-panel .panel-title {
+			font-weight: 600;
+			margin-bottom: 15px;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+
+		.config-panel label {
+			color: #fff;
+		}
+
+		.config-panel #color-options {
+			margin-bottom: 0px;
+		}
+
+		.config-panel #color-options li a {
+			display: block;
+			width: 28px;
+			height: 20px;
+			border: 2px solid transparent;
+			margin-bottom: 10px;
+		}
+
+		.config-panel #color-options li a:hover {
+			-webkit-opacity: 0.9;
+			-moz-opacity: 0.9;
+			opacity: 0.9;
+			border: 2px solid rgba(255, 255, 255, 0.8);
+		}
+
+		.config-panel #color-options li.active a {
+			border: 2px solid #fff;
+		}
+
+		.config-panel .close {
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			color: #fff;
+		}
+
+		.config-panel .close .fa {
+			color: #fff;
+		}
+
+		.dropdown .dropdown-menu {
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-ms-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
+
+			max-height: 0;
+			display: block;
+			overflow: hidden;
+		}
+
+		.dropdown.show .dropdown-menu {
+			max-height: 300px;
+		}
+	</style>
 
 
 
@@ -650,190 +738,262 @@ address.address li {
 
 </head>
 
-<body translate="no" >
+<body translate="no">
 
-  <div class="container-fluid bg-white -pt-3 -pb-3">
-	<div class="container text-right">
+	<div class="container-fluid bg-white -pt-3 -pb-3">
+		<div class="container text-right">
 
-	</div>
-	<div class="container mt-2">
-		<header role="banner" aria-label="Header">
-			<div class="row">
-				<div class="col">
-					<img src="https://www.cdc.gov/TemplatePackage/3.0/images/masthead_subpage.svg" alt="Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People" class="d-none d-md-block pt-3" width="570px">
-					<img style="position:absolute;left:0" src="https://www.cdc.gov/TemplatePackage/3.0/images/masthead_1-col.svg" alt="Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People" class="d-md-none mt-2">
-				</div>
-				<div class="col-2 col-lg-4 col-xl-3">
-					<div class="d-lg-block d-none">
-					<a href="https://s.codepen.io/peterbenoit/debug/JMMQdQ" class="d-inline-block fs0875 float-right" target="_blank">All A-Z Topics</a>
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="Search" aria-label="Search">
-						<div class="input-group-append">
-							<button class="btn" type="button"><i class="material-icons" style="color: #555;font-weight:bold;font-size: 24px;padding-top:4px">search</i></button>
+		</div>
+		<div class="container mt-2">
+			<header role="banner" aria-label="Header">
+				<div class="row">
+					<div class="col">
+						<img src="https://www.cdc.gov/TemplatePackage/3.0/images/masthead_subpage.svg" alt="Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People"
+						  class="d-none d-md-block pt-3" width="570px">
+						<img style="position:absolute;left:0" src="https://www.cdc.gov/TemplatePackage/3.0/images/masthead_1-col.svg" alt="Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives, Protecting People"
+						  class="d-md-none mt-2">
+					</div>
+					<div class="col-2 col-lg-4 col-xl-3">
+						<div class="d-lg-block d-none">
+							<a href="https://s.codepen.io/peterbenoit/debug/JMMQdQ" class="d-inline-block fs0875 float-right" target="_blank">All A-Z Topics</a>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Search" aria-label="Search">
+								<div class="input-group-append">
+									<button class="btn" type="button">
+										<i class="material-icons" style="color: #555;font-weight:bold;font-size: 24px;padding-top:4px">search</i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="d-lg-none">
+							<i class="material-icons" style="color: #555;font-weight:bold;font-size: 36px;padding-top:4px">search</i>
 						</div>
 					</div>
-					</div>
-					<div class="d-lg-none">
-						<i class="material-icons" style="color: #555;font-weight:bold;font-size: 36px;padding-top:4px">search</i>
-					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</div>
 	</div>
-</div>
-<!-- /header -->
+	<!-- /header -->
 
-<!-- title bar area -->
-<div class="container-fluid bg-primary d-none d-md-block" style="height: 60px;">
-	<div class="container pl-0 pr-0">
-		<div class="site-title pt-3 pl-3">
-			<div class="row">
-				<div class="col">
-					<!-- 					<div class="display-6 display-lg-5">National Center for Health Statistics</div>
+	<!-- title bar area -->
+	<div class="container-fluid bg-primary d-none d-md-block" style="height: 60px;">
+		<div class="container pl-0 pr-0">
+			<div class="site-title pt-3 pl-3">
+				<div class="row">
+					<div class="col">
+						<!-- 					<div class="display-6 display-lg-5">National Center for Health Statistics</div>
 					<p class="lead d-none d-md-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
-					<div class="display-6 text-white fw-500 text-uppercase">Influenza (Flu)</div>
-					<p class="d-none ">Promotion productive workplaces through safety and health research</p>
-				</div>
-				<div class="col-3 text-right d-none">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/NIOSH_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline" style="margin-top: -9px; width: 130px;">
+						<div class="display-6 text-white fw-500 text-uppercase">Influenza (Flu)</div>
+						<p class="d-none ">Promotion productive workplaces through safety and health research</p>
+					</div>
+					<div class="col-3 text-right d-none">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/FLU_logo-small-white.png" alt="VP4_935_NVSS" border="0" class="d-none d-md-inline"
+						  style="margin-top: -9px; width: 130px;">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="container-fluid bg-secondary d-none d-md-block" style="height:3px"></div>
-<!-- /title bar area -->
-<div class="container-fluid bg-primary p-1 d-md-none mt-3">
-	<div class="container text-white">
+	<div class="container-fluid bg-secondary d-none d-md-block" style="height:3px"></div>
+	<!-- /title bar area -->
+	<div class="container-fluid bg-primary p-1 d-md-none mt-3">
+		<div class="container text-white">
+			<div class="row">
+				<div class="col-1 pt-3 d-none">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="24"
+					  height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve">
+						<path fill="#ffffff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 18.414,7.41398L 17,6L 11,12L 17,18L 18.414,16.586L 13.828,12L 18.414,7.41398 Z M 12.414,7.41398L 11,6L 5.00001,12L 11,18L 12.414,16.586L 7.82801,12L 12.414,7.41398 Z "
+						/>
+					</svg>
+				</div>
+				<div class="col">
+					<a href="#" class="d-md-none mt-1 mb-0 d-inline-block text-uppercase text-white td-none pt-md-2 pb-md-2">Influenza (Flu)</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="container-fluid bg-secondary d-md-none" style="padding: 2px"></div>
+
+	<div class="container">
 		<div class="row">
-			<div class="col-1 pt-3 d-none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve">
-	<path fill="#ffffff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 18.414,7.41398L 17,6L 11,12L 17,18L 18.414,16.586L 13.828,12L 18.414,7.41398 Z M 12.414,7.41398L 11,6L 5.00001,12L 11,18L 12.414,16.586L 7.82801,12L 12.414,7.41398 Z "/>
-</svg></div>
-			<div class="col"><a href="#" class="d-md-none mt-1 mb-0 d-inline-block text-uppercase text-white td-none pt-md-2 pb-md-2">Influenza (Flu)</a></div>
-		</div>
-
-	</div>
-</div>
-<div class="container-fluid bg-secondary d-md-none" style="padding: 2px"></div>
-
-<div class="container">
-<div class="row">
-	<div class="col-sm-8">
-		<nav role="navigation" aria-label="Breadcrumb">
-			<ol class="breadcrumb fs0875 mb-0 d-none d-md-flex">
-				<li class="breadcrumb-item"><a href="#">CDC</a></li>
-				<li class="breadcrumb-item"><a href="#">FLU</a></li>
-<!-- 					<li class="breadcrumb-item active d-none d-md-inline" aria-current="page">National Vital Statistics System</li> -->
-			</ol>
-		</nav>
-	</div>
-	<div class="col-sm-4 mt-2 d-none d-md-block">
-		<!-- d-lg-block -->
-		<nav role="navigation" aria-label="Social Media">
-			<ul class="social-media float-right">
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt=""></a></li>
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/email.svg" alt=""></a></li>
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt=""></a></li>
-			</ul>
-		</nav>
-	</div>
-</div>
-	</div>
-<div class="-container-fluid bg-gray-l3 bb-2 bb-md-0 b-gray-l2 sticky-top">
-	<div class="-container ct">
-		<!-- section nav area -->
-		<nav role="navigation" aria-label="Section Nav" class="d-md-none">
-
-			<div class="dropdown">
-				<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="-font-weight:bold; font-size: 23px">
-			About Flu 	<svg id="svg-down" style="width:40px;height:40px; right: 30px;z-index:1002; top:10px;" viewBox="0 0 24 24" class="p-abs ds-7 mt-3 ba-1 rounded-circle bg-primary">
-                    			<path fill="#ffffff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
-                			</svg>
-		  </button>
-				<div class="dropdown-menu w-100 rounded-0 m-0" aria-labelledby="dropdownMenuButton">
-					<nav role="navigation" aria-label="Left Nav" id="leftnav" class="left-nav-ish">
-						<div class="list-group indicator-plus">
-							<a class="list-group-item" href="https://cdc.gov#99" style="margin-left:20px;">Flu Season</a>
-							<a class="list-group-item" href="#" style="margin-left:20px;">About Flu</a>
-							<a class="list-group-item" href="#" style="margin-left:20px;">Prevention</a>
-							<a class="list-group-item" href="#" style="margin-left:20px;">Symptoms</a>
-							<a class="list-group-item bg-primary text-white bb-0" href="https://cdc.gov#99"><div class="row"><div class="col-1 p-0"><svg style="width:24px;height:24px;vertical-align:bottom" viewBox="0 0 24 24">
-    <path fill="#ffffff" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-</svg></div> <div class="col p-0">Flu</div></div></a>
-						</div>
-					</nav>
-				</div>
+			<div class="col-sm-8">
+				<nav role="navigation" aria-label="Breadcrumb">
+					<ol class="breadcrumb fs0875 mb-0 d-none d-md-flex">
+						<li class="breadcrumb-item">
+							<a href="#">CDC</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a href="#">FLU</a>
+						</li>
+						<!-- 					<li class="breadcrumb-item active d-none d-md-inline" aria-current="page">National Vital Statistics System</li> -->
+					</ol>
+				</nav>
 			</div>
-		</nav>
+			<div class="col-sm-4 mt-2 d-none d-md-block">
+				<!-- d-lg-block -->
+				<nav role="navigation" aria-label="Social Media">
+					<ul class="social-media float-right">
+						<li>
+							<a href="#">
+								<img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="https://usability.rocks/assets/icons/social/round/email.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</div>
-</div>
-<div class="container">
-	<div class="d-flex flex-wrap bg-white pl-md-3">
-		<a href="#" class="d-md-none mt-3 mb-3 d-block language-link">En Español</a>
-		<!-- /section nav area -->
+	<div class="-container-fluid bg-gray-l3 bb-2 bb-md-0 b-gray-l2 sticky-top">
+		<div class="-container ct">
+			<!-- section nav area -->
+			<nav role="navigation" aria-label="Section Nav" class="d-md-none">
 
-		<nav role="navigation" aria-label="Social Media" class="d-none pin-bottom">
-			<ul class="social-media">
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt=""></a></li>
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/email.svg" alt=""></a></li>
-				<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt=""></a></li>
-			</ul>
-		</nav>
-		<!-- nav area -->
-		<div class="col-12 col-md-3 p-0 d-none d-md-block mt-2">
-			<nav role="navigation" aria-label="Left Nav" id="leftnav" class="mb-2 mt-3 left-nav">
-				<div class="list-group indicator-plus">
-					<a class="list-group-item" data-parent="#leftnav" -data-toggle="collapse" href="#lvl1" aria-expanded="false">Flu Season</a>
-					<a class="list-group-item active font-weight-bold" data-parent="#leftnav" data-toggle="collapse" href="#lvl2" Raria-expanded="true">About Flu</a>
-					<div class="collapse show list-group-submenu" id="lvl2">
-						<a class="list-group-item active themed-bg" data-parent="#lvl1-sub" data-toggle="collapse" href="#lvl1-sub" aria-expanded="true" href="https://usability.rocks/demos/flu2.html">Who is at High Risk from Flu</a>
-						<div class="collapse show list-group-submenu alt-highlight" id="lvl1-sub">
+				<div class="dropdown">
+					<button class="btn dropdown-toggle w-100 text-left pl-0 section-dropdown pl-3 rounded-0 bb-1" type="button" id="dropdownMenuButton"
+					  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="-font-weight:bold; font-size: 23px">
+					  Pregnant women
+						<svg id="svg-down" style="width:40px;height:40px; right: 30px;z-index:1002; top:10px;" viewBox="0 0 24 24"
+						  class="p-abs ds-7 mt-3 ba-1 rounded-circle bg-primary">
+							<path fill="#ffffff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+						</svg>
+					</button>
+					<div class="dropdown-menu w-100 rounded-0 m-0" aria-labelledby="dropdownMenuButton">
+						<nav role="navigation" aria-label="Left Nav" id="leftnav" class="left-nav-ish">
+							<div class="list-group indicator-plus">
+								<a class="list-group-item" href="https://usability.rocks/demos/flu.html" style="margin-left:20px;">Adults 65+</a>
+								<a class="list-group-item" href="#" style="margin-left:20px;">Pregnant Women</a>
+								<a class="list-group-item" href="#" style="margin-left:20px;">Young Children</a>
+								<a class="list-group-item" href="#" style="margin-left:20px;">Asthma</a>
+								<a class="list-group-item" href="#" style="margin-left:20px;">Heart Disease</a>
+								<a class="list-group-item" href="#" style="margin-left:20px;">Diabetes</a>
+								<a class="list-group-item" href="#" style="margin-left:20px;">HIV/AIDS</a>
+								<a class="list-group-item bg-primary text-white bb-0" href="https://usability.rocks/demos/flu.html">
+									<div class="row">
+										<div class="col-1 p-0">
+											<svg style="width:24px;height:24px;vertical-align:bottom" viewBox="0 0 24 24">
+												<path fill="#ffffff" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+											</svg>
+										</div>
+										<div class="col p-0">Flu</div>
+									</div>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="d-flex flex-wrap bg-white pl-md-3">
+			<!-- <a href="#" class="d-md-none mt-3 mb-3 d-block language-link">En Español</a> -->
+			<!-- /section nav area -->
+
+			<nav role="navigation" aria-label="Social Media" class="d-none pin-bottom">
+				<ul class="social-media">
+					<li>
+						<a href="#">
+							<img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://usability.rocks/assets/icons/social/round/email.svg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://usability.rocks/assets/icons/social/round/syndication.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- nav area -->
+			<div class="col-12 col-md-3 p-0 d-none d-md-block mt-2">
+				<nav role="navigation" aria-label="Left Nav" id="leftnav" class="mb-2 mt-3 left-nav">
+					<div class="list-group indicator-plus">
+						<a class="list-group-item" data-parent="#leftnav" -data-toggle="collapse" href="#lvl1" aria-expanded="false">Flu Season</a>
+						<a class="list-group-item active font-weight-bold" data-parent="#leftnav" data-toggle="collapse" href="#lvl2" Raria-expanded="true">About Flu</a>
+						<div class="collapse show list-group-submenu" id="lvl2">
+							<a class="list-group-item active themed-bg" data-parent="#lvl1-sub" data-toggle="collapse" href="#lvl1-sub" aria-expanded="true"
+							  href="https://usability.rocks/demos/flu2.html">Who is at High Risk from Flu</a>
+							<div class="collapse show list-group-submenu alt-highlight" id="lvl1-sub">
 								<a class="list-group-item" data-parent="#lvl1-sub" href="#4">Adults 65 Years and Older</a>
 								<a class="list-group-item selected" data-parent="#lvl1-sub" href="https://usability.rocks/demos/flu3.html">Pregnant Women</a>
 								<a class="list-group-item" data-parent="#lvl1-sub" href="#4">Young Children</a>
+							</div>
+							<a class="list-group-item" href="#7">What Parents Need to Know</a>
+							<a class="list-group-item" href="#8">Understanding Influenza Viruses</a>
 						</div>
-						<a class="list-group-item" href="#7">What Parents Need to Know</a>
-						<a class="list-group-item" href="#8">Understanding Influenza Viruses</a>
+						<a class="list-group-item" href="#9">Prevention</a>
+						<a class="list-group-item" data-parent="#leftnav" -data-toggle="collapse" href="#lvl4">Symptoms</a>
+						<a class="list-group-item" href="#9">Diagnosis</a>
+						<a class="list-group-item" href="#9">Treatment</a>
 					</div>
-					<a class="list-group-item" href="#9">Prevention</a>
-					<a class="list-group-item" data-parent="#leftnav" -data-toggle="collapse" href="#lvl4">Symptoms</a>
-					<a class="list-group-item" href="#9">Diagnosis</a>
-					<a class="list-group-item" href="#9">Treatment</a>					
-				</div>
-			</nav>
-			<div class="col-12 mt-5">
-				<div class="card mt-5 mr-3 mb-5">
-					<div class="card-header bg-gray-l3 h5 mt-0">
-						Influenza Types
-					</div>
-					<div class="card-body">
-						<ul class="list-group -list-group-flush related">
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Seasonal</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Avian</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Swine/Variant</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Pandemic</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Other</a></li>
-						</ul>
+				</nav>
+				<div class="col-12 mt-5">
+					<div class="card mt-5 mr-3 mb-5">
+						<div class="card-header bg-gray-l3 h5 mt-0">
+							Influenza Types
+						</div>
+						<div class="card-body pl-3 pr-3 pb-0 pt-0">
+							<ul class="list-group -list-group-flush related">
+								<li class="list-group-item bl-0 pl-0">
+									<a class="bl-0 td-none" href="#">Seasonal</a>
+								</li>
+								<li class="list-group-item bl-0 pl-0">
+									<a class="bl-0 td-none" href="#">Avian</a>
+								</li>
+								<li class="list-group-item bl-0 pl-0">
+									<a class="bl-0 td-none" href="#">Swine/Variant</a>
+								</li>
+								<li class="list-group-item bl-0 pl-0">
+									<a class="bl-0 td-none" href="#">Pandemic</a>
+								</li>
+								<li class="list-group-item bl-0 pl-0">
+									<a class="bl-0 td-none" href="#">Other</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- /nav area -->
+			<!-- /nav area -->
 
-		<!-- content area -->
-		<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
-			<!-- <div class="row">
+			<!-- content area -->
+			<main class="bg-white col-12 col-md-9 pt-4 pb-0 -ml-lg-4 demo pl-0 pr-0 pl-md-5 pr-md-4" role="main" aria-label="Main Content Area">
+				<!-- <div class="row">
 				<div class="col-12">
 					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/unnamed.jpg" class="w-100" alt="">
 				</div>
 			</div> -->
-			<div class="row">
-				<div class="col-12">
-					<h1 class="d-none d-md-inline-block" style="margin-top:20px!important">Pregnant Women &amp; Influenza (Flu)</h1>
-					<div class="dropdown" style="margin-top:-10px; margin-bottom:13px;">
-							<button class="btn bg-white dropdown-toggle fs08 c-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+				<div class="row">
+					<div class="col-12">
+							<img src="https://www.cdc.gov/flu/images/protect/flu-pregnancy-banner.jpg" class="d-none d-md-block w-100 mb-3" alt="">
+						<h1 class="d-none d-md-inline-block" style="margin-top:20px!important">Pregnant Women &amp; Influenza (Flu)</h1>
+						<div class="dropdown" style="margin-top:-10px; margin-bottom:13px;">
+							<button class="btn bg-white dropdown-toggle fs08 c-blue" type="button" id="dropdownMenuButton" data-toggle="dropdown"
 							  aria-haspopup="true" aria-expanded="false" style="padding-left:0">
 								OTHER LANGUAGES
 							</button>
@@ -842,230 +1002,404 @@ address.address li {
 								<a class="dropdown-item fs08" href="#">用中文（表达</a>
 								<a class="dropdown-item fs08" href="#">En français</a>
 							</div>
-						</div>					
-					<!-- <a href="#" class="d-none d-md-block language-link mb-3">En Español</a> -->
+						</div>
+						<!-- <a href="#" class="d-none d-md-block language-link mb-3">En Español</a> -->
+					</div>
 				</div>
-			</div>
-			<div class="row mt-3 mt-md-0">
-				<!-- content class is just to set a min-height, and should not be used normally -->
-				<div class="col-12 content theme-orange">
-					<img src="https://www.cdc.gov/flu/images/protect/flu-pregnancy-banner.jpg" class="d-none d-md-block w-100 mb-3" alt="">
-<div class="row">
-					<div class="-col-md-9 col-md-12"><p>Flu is more likely to cause severe illness in pregnant women than in women who are not pregnant. Changes in the immune system, heart, and lungs during pregnancy make pregnant women (and women up to two weeks postpartum) more prone to severe illness from flu, including illness resulting in hospitalization. Flu also may be harmful for a pregnant woman’s developing baby. A common flu symptom is fever, which may be associated with neural tube defects and other adverse outcomes for a developing baby.</p></div>
-					<div class="col-md-3 d-none">
-						<div class="card">
-							<div class="card-header h4">On This Page</div>
-							<ul>
-								<li><a href="#1">Infographic and Fact Sheet</li>
-									<li><a href="#2">Additional Resources</li>
-							</ul>
+				<div class="row mt-3 mt-md-0">
+					<!-- content class is just to set a min-height, and should not be used normally -->
+					<div class="col-12 content theme-orange">
+						<div class="col-4 float-right d-none d-md-block">
+
+
+											<div class="card mb-3">
+												<div class="card-header bg-primary h4">Infographic</div>
+												<div class="card-body bg-gray-l3">
+															<img class="w-100 mb-3" alt="Flu vaccination: a growing trend among pregnant women" src="https://www.cdc.gov/flu/images/partners/flu-vaccine-infographic.jpg">
+															<a href="/flu/pdf/partners/flu-pregnancy-infographic-updated.pdf" class="tp-link-policy nonHtml noDecoration plugin" target="_blank"><span class="tp-label">Flu vaccination: a growing trend among pregnant women</span><span class="tp-size"><span class="sprite-16-pdf" alt="Adobe PDF file"></span>[311 KB, 1 page]<span class="print-only">(https://www.cdc.gov/flu/pdf/partners/flu-pregnancy-infographic-updated.pdf)</span></span></a>
+												</div>
+											</div>
+
+											<div class="card">
+												<div class="card-header bg-primary h4">Fact Sheet</div>
+												<div class="card-body bg-gray-l3">
+
+															<img class="w-100 mb-3" alt="Pregnant women and the flu shot fact sheet." src="https://www.cdc.gov/flu/images/protect/pregnant-women-vaccine-160x206.jpg">
+															<a href="/flu/pdf/freeresources/pregnant/flushot_pregnant_factsheet.pdf" class="tp-link-policy nonHtml noDecoration plugin" target="_blank"><span class="tp-label">Fact Sheet</span><span class="tp-size"><span class="sprite-16-pdf" alt="Adobe PDF file"></span>[521 KB, 2 Pages, 8.5″ x 11″]<span class="print-only">(https://www.cdc.gov/flu/pdf/freeresources/pregnant/flushot_pregnant_factsheet.pdf)</span></span></a>
+												</div>
+											</div>								
+
+
+						</div>
+						<p>Flu is more likely to cause severe illness in pregnant women than in women who are not pregnant. Changes in the immune
+							system, heart, and lungs during pregnancy make pregnant women (and women up to two weeks postpartum) more prone to
+							severe illness from flu, including illness resulting in hospitalization. Flu also may be harmful for a pregnant woman’s
+							developing baby. A common flu symptom is fever, which may be associated with neural tube defects and other adverse
+							outcomes for a developing baby.</p>
+						<h3>The Flu Shot is the Best Protection Against Flu</h3>
+						<p>Getting a flu shot is the first and most important step in protecting against flu. The flu shot given during pregnancy
+							has been shown to protect both the mother and her baby for several months after birth from flu. Studies in young healthy
+							adults show that getting a flu shot reduces the risk of illness by 40% to 60% during seasons when the flu vaccine
+							is well-matched to circulating viruses. There also are studies that show that a baby whose mother was vaccinated during
+							her pregnancy is protected from flu infection for several months after they are born, before the baby is old enough
+							to be vaccinated. Pregnant women should get an inactivated influenza vaccine (flu shot); the nasal spray vaccine should
+							not be given to women who are pregnant. Learn more about the
+							<a href="/flu/protect/keyfacts.htm" class="tp-link-policy">flu vaccine
+								<span class="print-only">(https://www.cdc.gov/flu/protect/keyfacts.htm)</span>
+							</a>.</p>
+						<h3>A Long Record of Safety for Flu Shots in Pregnant Women</h3>
+						<p>Flu shots have been given to millions of pregnant women over many years with a good safety record. There is a lot of
+							evidence that flu vaccines can be given safely during pregnancy; though these data are limited for the first trimester.
+							CDC and ACIP recommend that pregnant women get vaccinated during any trimester of their pregnancy. It is very important
+							for pregnant women to get the flu shot. See&nbsp;
+							<a href="/flu/protect/vaccine/qa_vacpregnant.htm" class="tp-link-policy">Seasonal Flu Vaccine Safety and Pregnant Women
+								<span class="print-only">(https://www.cdc.gov/flu/protect/vaccine/qa_vacpregnant.htm)</span>
+							</a> for more information.</p>
+						<h3>Other Preventive Actions</h3>
+						<p>In addition to getting the flu shot, pregnant women should take additional
+							<a href="https://www.cdc.gov/flu/protect/habits/index.htm"
+							  class="tp-link-policy">everyday preventive actions</a>.</p>
+						<h3>Early Treatment is Important for Pregnant Women</h3>
+						<p>
+							<strong>If you get sick with flu symptoms call your doctor right away. There are antiviral drugs that can treat flu illness
+								and prevent serious flu complications. CDC recommends prompt treatment for people who have influenza infection or
+								suspected influenza infection and who are at high risk of serious flu complications, such as pregnant women.</strong>
+						</p>
+						<ul>
+							<li>Treatment should begin as soon as possible because antiviral drugs work best when started early (within 48 hours after
+								symptoms start).</li>
+							<li>Antiviral drugs can make your flu illness milder and make you feel better faster. They may also prevent serious health
+								problems that can result from flu illness.</li>
+							<li>Oral oseltamivir is the preferred for treatment of pregnant women because it has the most studies available to suggest
+								that it is safe and beneficial.</li>
+							<li>Antiviral drugs require a prescription from your doctor.</li>
+							<li>Having a fever caused by flu infection or other infections early in pregnancy may be linked to birth defects in a
+								baby. In addition to taking antiviral drugs, pregnant women who get a fever should treat their fever with Tylenol®
+								(or store brand equivalent) and contact their doctor immediately.</li>
+						</ul>
+						<h3>When to Seek Emergency Medical Care</h3>
+						<p>If you are pregnant and have any of these signs, call 911 right away:</p>
+						<ul class="list-bullet">
+							<li>Difficulty breathing or shortness of breath</li>
+							<li>Pain or pressure in the chest or abdomen</li>
+							<li>Sudden dizziness</li>
+							<li>Confusion</li>
+							<li>Severe or persistent vomiting</li>
+							<li>High fever that is not responding to Tylenol® (or store brand equivalent)</li>
+							<li>Decreased or no movement of your baby</li>
+						</ul>
+						<p>
+							<strong>Note</strong>: There is no recommendation for pregnant women or people with pre-existing medical conditions to get
+							special permission or written consent from their doctor or health care professional for influenza vaccination if they
+							get vaccinated at a worksite clinic, pharmacy or other location outside of their physician’s office. For more information,
+							visit
+							<a href="/flu/about/qa/misconceptions.htm#misconception-consent" class="tp-link-policy">Misconceptions about Seasonal Flu and Flu Vaccines
+								<span class="print-only">(https://www.cdc.gov/flu/about/qa/misconceptions.htm#misconception-consent)</span>
+							</a>.</p>
+						<div class="row d-md-none">
+							<div class="col-md-6 mb-3 mb-md-0">
+								<div class="card">
+									<div class="card-header bg-primary h4">Infographic</div>
+									<div class="card-body bg-gray-l3">
+										<div class="row">
+											<div class="col-md-4">
+												<img class="w-100" alt="Flu vaccination: a growing trend among pregnant women" src="https://www.cdc.gov/flu/images/partners/flu-vaccine-infographic.jpg">
+											</div>
+											<div class="col">
+												<a href="/flu/pdf/partners/flu-pregnancy-infographic-updated.pdf" class="tp-link-policy nonHtml noDecoration plugin" target="_blank"><span class="tp-label">Flu vaccination: a growing trend among pregnant women</span><span class="tp-size"><span class="sprite-16-pdf" alt="Adobe PDF file"></span>[311 KB, 1 page]<span class="print-only">(https://www.cdc.gov/flu/pdf/partners/flu-pregnancy-infographic-updated.pdf)</span></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-3 mb-md-0">
+								<div class="card">
+									<div class="card-header bg-primary h4">Fact Sheet</div>
+									<div class="card-body bg-gray-l3">
+										<div class="row">
+											<div class="col-md-4">
+												<img class="w-100" alt="Pregnant women and the flu shot fact sheet." src="https://www.cdc.gov/flu/images/protect/pregnant-women-vaccine-160x206.jpg">
+											</div>
+											<div class="col">
+												<a href="/flu/pdf/freeresources/pregnant/flushot_pregnant_factsheet.pdf" class="tp-link-policy nonHtml noDecoration plugin" target="_blank"><span class="tp-label">Fact Sheet</span><span class="tp-size"><span class="sprite-16-pdf" alt="Adobe PDF file"></span>[521 KB, 2 Pages, 8.5″ x 11″]<span class="print-only">(https://www.cdc.gov/flu/pdf/freeresources/pregnant/flushot_pregnant_factsheet.pdf)</span></span></a>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+				<div class="row d-md-none mt-2 mb-2">
+					<div class="col-12">
+						<div class="card mb-3">
+							<div class="card-header bg-gray-l3 h5 mt-0">
+								Influenza Types
+							</div>
+							<div class="card-body pl-3 pr-3 pb-0 pt-0">
+								<ul class="list-group -list-group-flush related">
+									<li class="list-group-item bl-0 pl-0">
+										<a class="bl-0 td-none" href="#">Seasonal</a>
+									</li>
+									<li class="list-group-item bl-0 pl-0">
+										<a class="bl-0 td-none" href="#">Avian</a>
+									</li>
+									<li class="list-group-item bl-0 pl-0">
+										<a class="bl-0 td-none" href="#">Swine/Variant</a>
+									</li>
+									<li class="list-group-item bl-0 pl-0">
+										<a class="bl-0 td-none" href="#">Pandemic</a>
+									</li>
+									<li class="list-group-item bl-0 pl-0">
+										<a class="bl-0 td-none" href="#">Other</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-</div>
-		content			
 				</div>
-			</div>
-			<div class="row d-md-none mt-2 mb-2">
-				<div class="col-12">
-				<div class="card mb-3">
-					<div class="card-header bg-gray-l3 h5 mt-0">
-						Influenza Types
+				<div class="row d-none d-md-flex">
+					<div class="col mt-3 mb-3 d-none">
+						<nav role="navigation" aria-label="Social Media">
+							<ol class="social-media">
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/Media_004.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_syndication.svg" alt="">
+									</a>
+								</li>
+							</ol>
+						</nav>
 					</div>
-					<div class="card-body">
-						<ul class="list-group -list-group-flush related">
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Seasonal</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Avian</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Swine/Variant</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Pandemic</a></li>
-							<li class="list-group-item bl-0"><a class="bl-0 td-none" href="#">Other</a></li>
-						</ul>
+					<div class="col last-reviewed mt-3">
+						<span class="float-right fs08 c-gray-d3">
+							<!-- 						Last Reviewed:  Nov. 19, 2017<br> -->
+							Last Updated: 02/09/2018
+						</span>
 					</div>
 				</div>
-				</div>
-			</div>
-			<div class="row d-none d-md-flex">
-				<div class="col mt-3 mb-3 d-none">
-					<nav role="navigation" aria-label="Social Media">
-						<ol class="social-media">
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt=""></a></li>
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt=""></a></li>
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/Media_004.svg" alt=""></a></li>
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_syndication.svg" alt=""></a></li>
-						</ol>
-					</nav>
-				</div>
-				<div class="col last-reviewed mt-3">
-					<span class="float-right fs08 c-gray-d3">
-<!-- 						Last Reviewed:  Nov. 19, 2017<br> -->
-						Last Updated:  02/09/2018
-					</span>
-				</div>
-			</div>
-			<div class="row mb-3 d-none d-md-flex">
-				<div class="col">
-					<span class="float-right fs08 c-gray-d3 text-right">Content source: <a href="#" class="td-none"> National Center for Immunization and Respiratory Diseases (NCIRD)</a></span>	
- 
-				</div>
-			</div>				
-			<div class="row d-none">
-				<div class="col-12">
-					<nav role="navigation" aria-label="Social Media">
-						<ul class="social-media mt-5">
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt=""></a></li>
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt=""></a></li>
-							<li><a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/Media_004.svg" alt=""></a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="row d-md-none mb-4">
-				<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Reviewed: Nov. 9, 2017</div>
-			</div>
+				<div class="row mb-3 d-none d-md-flex">
+					<div class="col">
+						<span class="float-right fs08 c-gray-d3 text-right">Content source:
+							<a href="#" class="td-none"> National Center for Immunization and Respiratory Diseases (NCIRD)</a>
+						</span>
 
-			<div class="container">
-			<div class="row d-md-none" style="border-bottom: 1px dashed #e0e0e0">
-				<div class="col-1 p-2" style="min-width: 40px;max-width:40px;border-top: 2px solid #005eaa">
-					<i class="material-icons" style="font-size: 22px;padding-top:4px;color:#005eaa">home</i>
+					</div>
 				</div>
-				<div class="col p-2 text-white" style="border-top: 2px solid #005eaa"><a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">NIOSH</a></div>
-			</div>
+				<div class="row d-none">
+					<div class="col-12">
+						<nav role="navigation" aria-label="Social Media">
+							<ul class="social-media mt-5">
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_fb.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/social_twitter.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/Media_004.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row d-md-none mb-4">
+					<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Reviewed: Nov. 9, 2017</div>
+				</div>
+
+				<div class="container">
+					<div class="row d-md-none" style="border-bottom: 1px dashed #e0e0e0">
+						<div class="col-1 p-2" style="min-width: 40px;max-width:40px;border-top: 2px solid rgb(113, 33, 119)">
+							<i class="material-icons" style="font-size: 22px;padding-top:4px;color:rgb(113, 33, 119)">home</i>
+						</div>
+						<div class="col p-2 text-white" style="border-top: 2px solid rgb(113, 33, 119)">
+							<a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">FLU</a>
+						</div>
+					</div>
+				</div>
+				<div class="row d-md-none">
+					<div class="col mobile-nav">
+						<!-- mobile navigation is copied here -->
+					</div>
+				</div>
+			</main>
+			<!-- /content area -->
 		</div>
-			<div class="row d-md-none">
-				<div class="col mobile-nav">
-					<!-- mobile navigation is copied here -->
-				</div>
-			</div>
-		</main>
-		<!-- /content area -->
 	</div>
-</div>
 
-<!-- footer -->
-<div class="container-fluid bg-gray-d2 pt-3 pb-3 mt-3 text-white">
-	<footer role="contentinfo" aria-label="Footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 pl-md-5">
-					<strong>CONTACT CDC-INFO</strong>
-					<div class="row mt-2">
-						<div class="col-2 pt-1"><i class="material-icons" style="font-size: 24px;">phone</i></div>
-						<div class="col" style="margin-left: -20px;">
-							<span>Have questions? We have answers.</span>
-							<span>1-800-CDC-INFO (800-232-4636)</span>
-							<span>TTY: 888-232-6348</span>
+	<!-- footer -->
+	<div class="container-fluid bg-gray-d2 pt-3 pb-3 mt-3 text-white">
+		<footer role="contentinfo" aria-label="Footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 pl-md-5">
+						<strong>CONTACT CDC-INFO</strong>
+						<div class="row mt-2">
+							<div class="col-2 pt-1">
+								<i class="material-icons" style="font-size: 24px;">phone</i>
+							</div>
+							<div class="col" style="margin-left: -20px;">
+								<span>Have questions? We have answers.</span>
+								<span>1-800-CDC-INFO (800-232-4636)</span>
+								<span>TTY: 888-232-6348</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-2 pt-1">
+								<i class="material-icons" style="font-size: 24px;">email</i>
+							</div>
+							<div class="col" style="margin-left: -20px;">
+								<a href="#" style="color: #fff; margin-top: 5px;display: inline-block">Email CDC-INFO</a>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-2 pt-1"><i class="material-icons" style="font-size: 24px;">email</i></div>
-						<div class="col" style="margin-left: -20px;">
-							<a href="#" style="color: #fff; margin-top: 5px;display: inline-block">Email CDC-INFO</a>
+					<div class="col-md-4 -offset-md-1 mt-3 mt-md-0">
+						<strong>CDC INFORMATION</strong>
+						<div class="row mt-2">
+							<div class="col">
+								<ul>
+									<li>About CDC
+										<li>Jobs
+											<li>Funding
+												<li>Policies
+													<li>File Viewers &amp; Players
+								</ul>
+							</div>
+							<div class="col">
+								<ul>
+									<li>Privacy
+										<li>FOIA
+											<li>No Fear Act
+												<li>OIG
+													<li>Nondiscrimination
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 -offset-md-1 mt-3 mt-md-0">
-					<strong>CDC INFORMATION</strong>
-					<div class="row mt-2">
-						<div class="col">
-							<ul>
-								<li>About CDC
-									<li>Jobs
-										<li>Funding
-											<li>Policies
-												<li>File Viewers &amp; Players
-							</ul>
-						</div>
-						<div class="col">
-							<ul>
-								<li>Privacy
-									<li>FOIA
-										<li>No Fear Act
-											<li>OIG
-												<li>Nondiscrimination
-							</ul>
-						</div>
+					<div class="col-md-3 mt-2 mt-md-0 connect-icons text-md-right pr-5">
+						<strong>CONNECT WITH CDC</strong>
+						<br>
+						<ul class="list-inline mt-3">
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/fb.svg">
+							</li>
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/twitter.svg">
+							</li>
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/youtube.svg">
+							</li>
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/IG.svg">
+							</li>
+						</ul>
+						<br class="d-none d-md-block">
+						<ul class="list-inline mt-2">
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/syndication.svg">
+							</li>
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/CDC-tv.svg">
+							</li>
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/rss.svg">
+							</li>
+							<li>
+								<img src="https://usability.rocks/assets/icons/social/white/email.svg">
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="col-md-3 mt-2 mt-md-0 connect-icons text-md-right pr-5">
-					<strong>CONNECT WITH CDC</strong><br>
-					<ul class="list-inline mt-3">
-						<li><img src="https://usability.rocks/assets/icons/social/white/fb.svg"></li>
-						<li><img src="https://usability.rocks/assets/icons/social/white/twitter.svg"></li>
-						<li><img src="https://usability.rocks/assets/icons/social/white/youtube.svg"></li>
-						<li><img src="https://usability.rocks/assets/icons/social/white/IG.svg"></li>
-					</ul><br class="d-none d-md-block">
-					<ul class="list-inline mt-2">
-						<li><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></li>
-						<li><img src="https://usability.rocks/assets/icons/social/white/CDC-tv.svg"></li>
-						<li><img src="https://usability.rocks/assets/icons/social/white/rss.svg"></li>
-						<li><img src="https://usability.rocks/assets/icons/social/white/email.svg"></li>
-					</ul>
 				</div>
 			</div>
-		</div>
-	</footer>
-</div>
-<div class="container-fluid bg-gray-l2 pt-2 pb-5 mb-3">
-	<footer role="contentinfo" aria-label="Footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-5 pl-md-5 d-none d-md-block">
-					U.S. Department of Health &amp; Human Services
-				</div>
-				<div class="col-5">
-					HHS.gov
-				</div>
-				<div class="col-4 col-md-2 -offset-md-1">
-					USA.gov
+		</footer>
+	</div>
+	<div class="container-fluid bg-gray-l2 pt-2 pb-5 mb-3">
+		<footer role="contentinfo" aria-label="Footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 pl-md-5 d-none d-md-block">
+						U.S. Department of Health &amp; Human Services
+					</div>
+					<div class="col-5">
+						HHS.gov
+					</div>
+					<div class="col-4 col-md-2 -offset-md-1">
+						USA.gov
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-</div>
+		</footer>
+	</div>
 
-<!-- overlay for VP1 dropdown -->
-<div class="overlay"></div>
+	<!-- overlay for VP1 dropdown -->
+	<div class="overlay"></div>
 
-<!-- side picker -->
-<div class="config-panel d-none -d-lg-block" id="config-panel">
-	<div class="panel-inner">
-		<a class="config-trigger config-panel-hide" href="#" id="config-trigger"><i class="fa fa-cog"></i></a>
-		<p class="panel-title">Choose Theme</p>
-		<ul class="list-unstyled list-inline" id="color-options">
-			<li class="active list-inline-item">
-				<a data-color="#005eaa" data-style="theme-blue" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#712177" data-style="theme-purple" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#705043" data-style="theme-brown" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#00695c" data-style="theme-teal" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#af4448" data-style="theme-pink" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#bb4d00" data-style="theme-orange" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#4b830d" data-style="theme-green" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#29434e" data-style="theme-slate" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#26418f" data-style="theme-indigo" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#007c91" data-style="theme-cyan" href="#"></a>
-			</li>
-			<li class="list-inline-item">
-				<a data-color="#fbab18" data-style="theme-amber" href="#"></a>
-			</li>
-		</ul>
-		<!-- 		<p class="panel-title">Choose Nav</p>
+	<!-- side picker -->
+	<div class="config-panel d-none -d-lg-block" id="config-panel">
+		<div class="panel-inner">
+			<a class="config-trigger config-panel-hide" href="#" id="config-trigger">
+				<i class="fa fa-cog"></i>
+			</a>
+			<p class="panel-title">Choose Theme</p>
+			<ul class="list-unstyled list-inline" id="color-options">
+				<li class="active list-inline-item">
+					<a data-color="#005eaa" data-style="theme-blue" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#712177" data-style="theme-purple" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#705043" data-style="theme-brown" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#00695c" data-style="theme-teal" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#af4448" data-style="theme-pink" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#bb4d00" data-style="theme-orange" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#4b830d" data-style="theme-green" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#29434e" data-style="theme-slate" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#26418f" data-style="theme-indigo" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#007c91" data-style="theme-cyan" href="#"></a>
+				</li>
+				<li class="list-inline-item">
+					<a data-color="#fbab18" data-style="theme-amber" href="#"></a>
+				</li>
+			</ul>
+			<!-- 		<p class="panel-title">Choose Nav</p>
 		<ul class="list-unstyled list-inline" id="nav-options">
 			<li class="active list-inline-item">
 				<a href="#left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
@@ -1074,13 +1408,15 @@ address.address li {
 				<a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 			</li>
 		</ul> -->
-		<a class="close" href="#" id="config-close"><i class="fa fa-times-circle"></i></a>
+			<a class="close" href="#" id="config-close">
+				<i class="fa fa-times-circle"></i>
+			</a>
+		</div>
 	</div>
-</div>
 
-<!-- right side social media -->
+	<!-- right side social media -->
 
-<!-- <nav role="navigation" aria-label="Social Media">
+	<!-- <nav role="navigation" aria-label="Social Media">
 	<ul class="right-social-media float-right d-none">
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/fb.svg" alt=""></a></li>
 		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/round/twitter.svg" alt=""></a></li>
@@ -1089,25 +1425,37 @@ address.address li {
 	</ul>
 </nav> -->
 
-<nav role="navigation" aria-label="Social Media" class="d-md-none -bg-gray-d2 w-100 op-100 z-max smb" style="position: fixed; bottom: 0; -background: #005eaa">
-	<ul class="social-media social-media-footer d-flex flex-nowrap mt-0 mb-0 pt-2 pb-2">
-		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/fb.svg" alt=""></a></li>
-		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/twitter.svg" alt=""></a></li>
-		<li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/email.svg"></a></li>
-		<!-- <li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></a></li> -->
-	</ul>
-</nav>
+	<nav role="navigation" aria-label="Social Media" class="d-md-none -bg-gray-d2 w-100 op-100 z-max smb" style="position: fixed; bottom: 0; -background: #005eaa">
+		<ul class="social-media social-media-footer d-flex flex-nowrap mt-0 mb-0 pt-2 pb-2">
+			<li>
+				<a href="#">
+					<img src="https://usability.rocks/assets/icons/social/white/fb.svg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="https://usability.rocks/assets/icons/social/white/twitter.svg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="https://usability.rocks/assets/icons/social/white/email.svg">
+				</a>
+			</li>
+			<!-- <li><a href="#"><img src="https://usability.rocks/assets/icons/social/white/syndication.svg"></a></li> -->
+		</ul>
+	</nav>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.bundle.js'></script>
-<script src='https://codepen.io/peterbenoit/pen/eezagz.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/axe-core/2.4.2/axe.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.0.3/stickyfill.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.bundle.js'></script>
+	<script src='https://codepen.io/peterbenoit/pen/eezagz.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/axe-core/2.4.2/axe.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.0.3/stickyfill.js'></script>
 
 
 
-<script>
+	<script>
 		'use strict';
 
 		var selected = 'left';
@@ -1217,50 +1565,51 @@ address.address li {
 		// });
 
 		$(function () {
-			$('html').addClass('theme-blue');
-			$('.config-panel #color-options .list-inline-item a').each(function () {
-				$(this).css('background-color', $(this).data('color'));
-			});
-			$('.config-panel').css({
-				'right': '-190px',
-				'display': 'block!important'
-			});
+			// $('html').addClass('theme-blue');
+			// $('.config-panel #color-options .list-inline-item a').each(function () {
+			// 	$(this).css('background-color', $(this).data('color'));
+			// });
+			// $('.config-panel').css({
+			// 	'right': '-190px',
+			// 	'display': 'block!important'
+			// });
 		});
-		$('#config-trigger').click(function (e) {
-			e.preventDefault();
-			if ($(this).hasClass('config-panel-open')) {
-				$("#config-panel").animate({
-					right: "-=190" //same as the panel width
-				}, 500);
-				$(this).removeClass('config-panel-open').addClass('config-panel-hide');
-			} else {
-				$("#config-panel").animate({
-					right: "+=190" //same as the panel width
-				}, 500);
-				$(this).removeClass('config-panel-hide').addClass('config-panel-open');
-			}
-		});
-		$('#config-close').on('click', function (e) {
-			e.preventDefault();
-			$('#config-trigger').click();
-		});
-		$('#color-options a').on('click', function (e) {
-			e.preventDefault();
-			var $styleSheet = $(this).attr('data-style'),
-				$color = $(this).attr('data-color');
-			// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
-			// $( '#theme-style' ).attr( 'href', $styleSheet );
+		// $('#config-trigger').click(function (e) {
+		// 	e.preventDefault();
+		// 	if ($(this).hasClass('config-panel-open')) {
+		// 		$("#config-panel").animate({
+		// 			right: "-=190" //same as the panel width
+		// 		}, 500);
+		// 		$(this).removeClass('config-panel-open').addClass('config-panel-hide');
+		// 	} else {
+		// 		$("#config-panel").animate({
+		// 			right: "+=190" //same as the panel width
+		// 		}, 500);
+		// 		$(this).removeClass('config-panel-hide').addClass('config-panel-open');
+		// 	}
+		// });
+		// $('#config-close').on('click', function (e) {
+		// 	e.preventDefault();
+		// 	$('#config-trigger').click();
+		// });
+		// $('#color-options a').on('click', function (e) {
+		// 	alert('')
+		// 	e.preventDefault();
+		// 	var $styleSheet = $(this).attr('data-style'),
+		// 		$color = $(this).attr('data-color');
+		// 	// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
+		// 	// $( '#theme-style' ).attr( 'href', $styleSheet );
 
-			$('html').removeClass().addClass($styleSheet);
-			var $listItem = $(this).closest('li');
-			$listItem.addClass('active');
-			$listItem.siblings().removeClass('active');
-		});
+		// 	$('html').removeClass().addClass($styleSheet);
+		// 	var $listItem = $(this).closest('li');
+		// 	$listItem.addClass('active');
+		// 	$listItem.siblings().removeClass('active');
+		// });
 
-		var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code/';
-		var crossorigin = 'https://crossorigin.me/' + lipsum,
-			allowanyorigin = 'https://allow-any-origin.appspot.com/' + lipsum,
-			anyorigin = 'https://anyorigin.com/go?url=' + lipsum;
+		// var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code/';
+		// var crossorigin = 'https://crossorigin.me/' + lipsum,
+		// 	allowanyorigin = 'https://allow-any-origin.appspot.com/' + lipsum,
+		// 	anyorigin = 'https://anyorigin.com/go?url=' + lipsum;
 
 
 		// $.get( allowanyorigin, function( data ) {
@@ -1336,8 +1685,8 @@ address.address li {
 				.replace(/\'/g, '');
 		}
 
-		document.documentElement.setAttribute("lang", "en");
-		document.documentElement.removeAttribute("class");
+		// document.documentElement.setAttribute("lang", "en");
+		// document.documentElement.removeAttribute("class");
 
 		axe.run(function (err, results) {
 			console.log(results.violations);

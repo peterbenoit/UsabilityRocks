@@ -449,6 +449,7 @@ a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend
 .lst-ur, .lur { list-style-type: upper-roman; }
 .list-block, .list-group, .lb, .lg {}
 .lsp-in { list-style-position: inside; }
+.lsp-out { list-style-position: outside; li { margin-left: 1rem; padding-left: .4rem; } }
 
 // ===============================================================
 // Cards

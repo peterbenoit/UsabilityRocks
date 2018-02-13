@@ -1308,6 +1308,15 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   list-style-position: inside;
 }
 
+.lsp-out {
+  list-style-position: outside;
+}
+
+.lsp-out li {
+  margin-left: 1rem;
+  padding-left: .4rem;
+}
+
 .card.flush .card {
   border: 0;
 }
@@ -3517,6 +3526,7 @@ small, .small {
 sub, sup, .superscript, .extrasmall {
   font-size: .7rem;
   line-height: 1.15;
+  text-decoration: none;
 }
 
 /* links */
