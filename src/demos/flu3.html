@@ -54,14 +54,12 @@ ______            _ _     _____                     _____ _     _       _____   
 		.card-header {
 			margin-bottom: 0 !important;
 		}
-
+#config-close {
+	text-decoration: none;
+}
 		@media (max-width: 767px) {
 			section:not(:first-of-type) {
 				border-top: 1px solid orange;
-			}
-			.smb {
-				background: #712177 ;
-				/* Old browsers */
 			}
 			.top-nav .nav-item {
 				-webkit-box-flex: 0;
@@ -296,6 +294,138 @@ ______            _ _     _____                     _____ _     _       _____   
 			border-left-color: #712177 !important;
 			background: #f5f5f5;
 		}
+
+		.theme-blue #leftnav .list-group a:hover {
+			border-left: 4px solid #005eaa !important;
+		}
+
+		.theme-blue #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #005eaa;
+		}
+
+		.theme-blue #leftnav .list-group .list-group-item.selected {
+			border-left-color: #005eaa !important;
+			background: #f5f5f5;
+		}
+
+		.theme-teal #leftnav .list-group a:hover {
+			border-left: 4px solid #00695c !important;
+		}
+
+		.theme-teal #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #00695c;
+		}
+
+		.theme-teal #leftnav .list-group .list-group-item.selected {
+			border-left-color: #00695c !important;
+			background: #f5f5f5;
+		}
+		.theme-brown #leftnav .list-group a:hover {
+			border-left: 4px solid #705043 !important;
+		}
+
+		.theme-brown #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #705043;
+		}
+
+		.theme-brown #leftnav .list-group .list-group-item.selected {
+			border-left-color: #705043 !important;
+			background: #f5f5f5;
+		}
+
+		.theme-pink #leftnav .list-group a:hover {
+			border-left: 4px solid #af4448 !important;
+		}
+
+		.theme-pink #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #af4448;
+		}
+
+		.theme-pink #leftnav .list-group .list-group-item.selected {
+			border-left-color: #af4448 !important;
+			background: #f5f5f5;
+		}
+
+
+		.theme-orange #leftnav .list-group a:hover {
+			border-left: 4px solid #bb4d00 !important;
+		}
+
+		.theme-orange #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #bb4d00;
+		}
+
+		.theme-orange #leftnav .list-group .list-group-item.selected {
+			border-left-color: #bb4d00 !important;
+			background: #f5f5f5;
+		}
+
+			.theme-slate #leftnav .list-group a:hover {
+			border-left: 4px solid #29434e !important;
+		}
+
+		.theme-slate #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #29434e;
+		}
+
+		.theme-slate #leftnav .list-group .list-group-item.selected {
+			border-left-color: #29434e !important;
+			background: #f5f5f5;
+		}	
+		
+		.theme-indigo #leftnav .list-group a:hover {
+			border-left: 4px solid #26418f !important;
+		}
+
+		.theme-indigo #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #26418f;
+		}
+
+		.theme-indigo #leftnav .list-group .list-group-item.selected {
+			border-left-color: #26418f !important;
+			background: #f5f5f5;
+		}	
+
+		.theme-green #leftnav .list-group a:hover {
+			border-left: 4px solid #4b830d !important;
+		}
+
+		.theme-green #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #4b830d;
+		}
+
+		.theme-green #leftnav .list-group .list-group-item.selected {
+			border-left-color: #4b830d !important;
+			background: #f5f5f5;
+		}	
+
+
+		.theme-cyan #leftnav .list-group a:hover {
+			border-left: 4px solid #007c91 !important;
+		}
+
+		.theme-cyan #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #007c91;
+		}
+
+		.theme-cyan #leftnav .list-group .list-group-item.selected {
+			border-left-color: #007c91 !important;
+			background: #f5f5f5;
+		}
+
+		.theme-amber #leftnav .list-group a:hover {
+			border-left: 4px solid #fbab18 !important;
+		}
+
+		.theme-amber #leftnav .list-group .list-group-item.active.highlight {
+			border-color: #fbab18;
+		}
+
+		.theme-amber #leftnav .list-group .list-group-item.selected {
+			border-left-color: #fbab18 !important;
+			background: #f5f5f5;
+		}		
+
 
 		.list-group i.fa {
 			margin-right: 10px;
@@ -985,7 +1115,7 @@ ______            _ _     _____                     _____ _     _       _____   
 					<div class="col-12">
 							<img src="https://www.cdc.gov/flu/images/protect/flu-pregnancy-banner.jpg" class="d-none d-md-block w-100 mb-3" alt="">
 						<h1 class="d-none d-md-inline-block" style="margin-top:20px!important">Pregnant Women &amp; Influenza (Flu)</h1>
-						<div class="dropdown" style="margin-top:-10px; margin-bottom:13px;">
+						<div class="dropdown" style="margin-top:-5px; margin-bottom:33px;">
 							<button class="btn bg-white dropdown-toggle fs08 c-blue" type="button" id="dropdownMenuButton" data-toggle="dropdown"
 							  aria-haspopup="true" aria-expanded="false" style="border: 1px solid #f5f5f5">
 								OTHER LANGUAGES
@@ -1001,12 +1131,12 @@ ______            _ _     _____                     _____ _     _       _____   
 				</div>
 				<div class="row mt-3 mt-md-0">
 					<!-- content class is just to set a min-height, and should not be used normally -->
-					<div class="col-12 content theme-orange">
+					<div class="col-12 content">
 						<div class="col-4 float-right d-none d-md-block">
 
 
 											<div class="card mb-3">
-												<div class="card-header bg-primary h4">Infographic</div>
+												<div class="card-header bg-secondary h4">Infographic</div>
 												<div class="card-body bg-gray-l3">
 															<img class="w-100 mb-3" alt="Flu vaccination: a growing trend among pregnant women" src="https://www.cdc.gov/flu/images/partners/flu-vaccine-infographic.jpg">
 															<a href="/flu/pdf/partners/flu-pregnancy-infographic-updated.pdf" class="tp-link-policy nonHtml noDecoration plugin" target="_blank"><span class="tp-label">Flu vaccination: a growing trend among pregnant women</span><span class="tp-size"><span class="sprite-16-pdf" alt="Adobe PDF file"></span>[311 KB, 1 page]<span class="print-only">(https://www.cdc.gov/flu/pdf/partners/flu-pregnancy-infographic-updated.pdf)</span></span></a>
@@ -1014,7 +1144,7 @@ ______            _ _     _____                     _____ _     _       _____   
 											</div>
 
 											<div class="card">
-												<div class="card-header bg-primary h4">Fact Sheet</div>
+												<div class="card-header bg-secondary h4">Fact Sheet</div>
 												<div class="card-body bg-gray-l3">
 
 															<img class="w-100 mb-3" alt="Pregnant women and the flu shot fact sheet." src="https://www.cdc.gov/flu/images/protect/pregnant-women-vaccine-160x206.jpg">
@@ -1223,25 +1353,23 @@ ______            _ _     _____                     _____ _     _       _____   
 					<div class="col last-reviewed fs0875 text-right c-gray-d3">Last Updated: Nov. 9, 2017</div>
 				</div>
 
-				<div class="container">
-					<div class="row d-md-none" style="border-bottom: 1px dashed #e0e0e0">
-						<div class="col-1 p-2" style="min-width: 40px;max-width:40px;border-top: 2px solid rgb(113, 33, 119)">
-							<i class="material-icons" style="font-size: 22px;padding-top:4px;color:rgb(113, 33, 119)">home</i>
-						</div>
-						<div class="col p-2 text-white" style="border-top: 2px solid rgb(113, 33, 119)">
-							<a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">FLU</a>
-						</div>
-					</div>
+			<div class="container">
+			<div class="row d-md-none" style="border-bottom: 1px dashed #e0e0e0">
+				<div class="col-1 p-2 bt-2 bt-primary" style="min-width: 40px;max-width:40px;">
+					<i class="material-icons c-primary" style="font-size: 22px;padding-top:4px;">home</i>
 				</div>
-				<div class="row d-md-none">
-					<div class="col mobile-nav">
-						<!-- mobile navigation is copied here -->
-					</div>
-				</div>
-			</main>
-			<!-- /content area -->
+				<div class="col p-2 text-white bt-2 bt-primary"><a href="#" style="font-weight: bold; text-decoration:none;position: relative; top:4px">FLU</a></div>
+			</div>
 		</div>
+			<div class="row d-md-none">
+				<div class="col mobile-nav">
+					<!-- mobile navigation is copied here -->
+				</div>
+			</div>
+		</main>
+		<!-- /content area -->
 	</div>
+</div>
 
 	<!-- footer -->
 	<div class="container-fluid bg-gray-d2 pt-3 pb-3 mt-3 text-white">
@@ -1351,7 +1479,7 @@ ______            _ _     _____                     _____ _     _       _____   
 	<div class="overlay"></div>
 
 	<!-- side picker -->
-	<div class="config-panel d-none -d-lg-block" id="config-panel">
+	<div class="config-panel" id="config-panel">
 		<div class="panel-inner">
 			<a class="config-trigger config-panel-hide" href="#" id="config-trigger">
 				<i class="fa fa-cog"></i>
@@ -1418,7 +1546,7 @@ ______            _ _     _____                     _____ _     _       _____   
 	</ul>
 </nav> -->
 
-	<nav role="navigation" aria-label="Social Media" class="d-md-none -bg-gray-d2 w-100 op-100 z-max smb" style="position: fixed; bottom: 0; -background: #005eaa">
+	<nav role="navigation" aria-label="Social Media" class="d-md-none -bg-gray-d2 w-100 op-100 z-max smb bg-primary" style="position: fixed; bottom: 0;">
 		<ul class="social-media social-media-footer d-flex flex-nowrap mt-0 mb-0 pt-2 pb-2">
 			<li>
 				<a href="#">
@@ -1562,45 +1690,44 @@ ______            _ _     _____                     _____ _     _       _____   
 
 		$(function () {
 			// $('html').addClass('theme-blue');
-			// $('.config-panel #color-options .list-inline-item a').each(function () {
-			// 	$(this).css('background-color', $(this).data('color'));
-			// });
-			// $('.config-panel').css({
-			// 	'right': '-190px',
-			// 	'display': 'block!important'
-			// });
+			$('.config-panel #color-options .list-inline-item a').each(function () {
+				$(this).css('background-color', $(this).data('color'));
+			});
+			$('.config-panel').css({
+				'right': '-190px',
+				'display': 'block!important'
+			});
 		});
-		// $('#config-trigger').click(function (e) {
-		// 	e.preventDefault();
-		// 	if ($(this).hasClass('config-panel-open')) {
-		// 		$("#config-panel").animate({
-		// 			right: "-=190" //same as the panel width
-		// 		}, 500);
-		// 		$(this).removeClass('config-panel-open').addClass('config-panel-hide');
-		// 	} else {
-		// 		$("#config-panel").animate({
-		// 			right: "+=190" //same as the panel width
-		// 		}, 500);
-		// 		$(this).removeClass('config-panel-hide').addClass('config-panel-open');
-		// 	}
-		// });
-		// $('#config-close').on('click', function (e) {
-		// 	e.preventDefault();
-		// 	$('#config-trigger').click();
-		// });
-		// $('#color-options a').on('click', function (e) {
-		// 	alert('')
-		// 	e.preventDefault();
-		// 	var $styleSheet = $(this).attr('data-style'),
-		// 		$color = $(this).attr('data-color');
-		// 	// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
-		// 	// $( '#theme-style' ).attr( 'href', $styleSheet );
+		$('#config-trigger').click(function (e) {
+			e.preventDefault();
+			if ($(this).hasClass('config-panel-open')) {
+				$("#config-panel").animate({
+					right: "-=190" //same as the panel width
+				}, 500);
+				$(this).removeClass('config-panel-open').addClass('config-panel-hide');
+			} else {
+				$("#config-panel").animate({
+					right: "+=190" //same as the panel width
+				}, 500);
+				$(this).removeClass('config-panel-hide').addClass('config-panel-open');
+			}
+		});
+		$('#config-close').on('click', function (e) {
+			e.preventDefault();
+			$('#config-trigger').click();
+		});
+		$('#color-options a').on('click', function (e) {
+			e.preventDefault();
+			var $styleSheet = $(this).attr('data-style'),
+				$color = $(this).attr('data-color');
+			// $( 'p' ).removeClass().find( 'span' ).text( $styleSheet );
+			// $( '#theme-style' ).attr( 'href', $styleSheet );
 
-		// 	$('html').removeClass().addClass($styleSheet);
-		// 	var $listItem = $(this).closest('li');
-		// 	$listItem.addClass('active');
-		// 	$listItem.siblings().removeClass('active');
-		// });
+			$('html').removeClass().addClass($styleSheet);
+			var $listItem = $(this).closest('li');
+			$listItem.addClass('active');
+			$listItem.siblings().removeClass('active');
+		});
 
 		// var lipsum = 'https://loripsum.net/api/10/bq/decorate/link/ol/ul/dl/headers/code/';
 		// var crossorigin = 'https://crossorigin.me/' + lipsum,
