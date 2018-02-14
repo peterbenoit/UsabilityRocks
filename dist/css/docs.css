@@ -2909,20 +2909,84 @@ body.no-js {
   border-radius: 0 !important;
 }
 
-.demo .r-tr, .bd-example .r-tr {
+.demo .r-tr-0, .bd-example .r-tr-0 {
+  border-top-right-radius: 0 !important;
+}
+
+.demo .r-tl-0, .bd-example .r-tl-0 {
+  border-top-left-radius: 0 !important;
+}
+
+.demo .r-br-0, .bd-example .r-br-0 {
+  border-bottom-right-radius: 0 !important;
+}
+
+.demo .r-bl-0, .bd-example .r-bl-0 {
+  border-bottom-left-radius: 0 !important;
+}
+
+.demo .r-tr-1, .bd-example .r-tr-1 {
   border-top-right-radius: 0.25rem !important;
 }
 
-.demo .r-tl, .bd-example .r-tl {
+.demo .r-tl-1, .bd-example .r-tl-1 {
   border-top-left-radius: 0.25rem !important;
 }
 
-.demo .r-br, .bd-example .r-br {
+.demo .r-br-1, .bd-example .r-br-1 {
   border-bottom-right-radius: 0.25rem !important;
 }
 
-.demo .r-bl, .bd-example .r-bl {
+.demo .r-bl-1, .bd-example .r-bl-1 {
   border-bottom-left-radius: 0.25rem !important;
+}
+
+.demo .r-tr-2, .bd-example .r-tr-2 {
+  border-top-right-radius: 0.5rem !important;
+}
+
+.demo .r-tl-2, .bd-example .r-tl-2 {
+  border-top-left-radius: 0.5rem !important;
+}
+
+.demo .r-br-2, .bd-example .r-br-2 {
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+.demo .r-bl-2, .bd-example .r-bl-2 {
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+.demo .r-tr-3, .bd-example .r-tr-3 {
+  border-top-right-radius: 0.75rem !important;
+}
+
+.demo .r-tl-3, .bd-example .r-tl-3 {
+  border-top-left-radius: 0.75rem !important;
+}
+
+.demo .r-br-3, .bd-example .r-br-3 {
+  border-bottom-right-radius: 0.75rem !important;
+}
+
+.demo .r-bl-3, .bd-example .r-bl-3 {
+  border-bottom-left-radius: 0.75rem !important;
+}
+
+.demo .r-tr-4, .bd-example .r-tr-4 {
+  border-top-right-radius: 1rem !important;
+}
+
+.demo .r-tl-4, .bd-example .r-tl-4 {
+  border-top-left-radius: 1rem !important;
+}
+
+.demo .r-br-4, .bd-example .r-br-4 {
+  border-bottom-right-radius: 1rem !important;
+}
+
+.demo .r-bl-4, .bd-example .r-bl-4 {
+  border-bottom-left-radius: 1rem !important;
 }
 
 .demo .r-top-0, .bd-example .r-top-0 {

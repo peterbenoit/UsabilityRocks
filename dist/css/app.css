@@ -2875,20 +2875,84 @@ a.c-white:focus, [tabindex].c-white:focus, input.c-white:focus, radio.c-white:fo
   border-radius: 0 !important;
 }
 
-.r-tr {
+.r-tr-0 {
+  border-top-right-radius: 0 !important;
+}
+
+.r-tl-0 {
+  border-top-left-radius: 0 !important;
+}
+
+.r-br-0 {
+  border-bottom-right-radius: 0 !important;
+}
+
+.r-bl-0 {
+  border-bottom-left-radius: 0 !important;
+}
+
+.r-tr-1 {
   border-top-right-radius: 0.25rem !important;
 }
 
-.r-tl {
+.r-tl-1 {
   border-top-left-radius: 0.25rem !important;
 }
 
-.r-br {
+.r-br-1 {
   border-bottom-right-radius: 0.25rem !important;
 }
 
-.r-bl {
+.r-bl-1 {
   border-bottom-left-radius: 0.25rem !important;
+}
+
+.r-tr-2 {
+  border-top-right-radius: 0.5rem !important;
+}
+
+.r-tl-2 {
+  border-top-left-radius: 0.5rem !important;
+}
+
+.r-br-2 {
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+.r-bl-2 {
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+.r-tr-3 {
+  border-top-right-radius: 0.75rem !important;
+}
+
+.r-tl-3 {
+  border-top-left-radius: 0.75rem !important;
+}
+
+.r-br-3 {
+  border-bottom-right-radius: 0.75rem !important;
+}
+
+.r-bl-3 {
+  border-bottom-left-radius: 0.75rem !important;
+}
+
+.r-tr-4 {
+  border-top-right-radius: 1rem !important;
+}
+
+.r-tl-4 {
+  border-top-left-radius: 1rem !important;
+}
+
+.r-br-4 {
+  border-bottom-right-radius: 1rem !important;
+}
+
+.r-bl-4 {
+  border-bottom-left-radius: 1rem !important;
 }
 
 .r-top-0 {
