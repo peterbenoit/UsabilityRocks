@@ -1,0 +1,18 @@
+/* JS related classes */
+
+// visibility
+.no-js {
+    .js-hidden { display: inherit; }
+    .js-hidden-block { display: block; }
+    .js-hidden-inline { display: inline; }
+    .js-hidden-inline-block { display: inline-block; }
+    .js-visible { visibility: hidden; }
+}
+
+.js {
+    .js-hidden { display: hidden; }
+    .js-hidden-block { display: hidden; }
+    .js-hidden-inline { display: hidden; }
+    .js-hidden-inline-block { display: hidden; }
+    .js-visible { visibility: visible; }
+}

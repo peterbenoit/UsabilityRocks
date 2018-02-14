@@ -1,0 +1,342 @@
+/* colors */
+
+.bg-red, .bg-r { background-color: $red!important; }
+
+.bg-blue-p { background-color: $primary!important; color: $white; a { color: $white; } }
+.bg-blue-s { background-color: $secondary!important; color: $black; a { color: $black; } }
+.bg-blue-t { background-color: $tertiary!important; }
+.b-blue-p { border-color: $primary!important; }
+.b-blue-s { border-color: $secondary!important; }
+.b-blue-t { border-color: $tertiary!important; }
+
+.bg-purple-p { background-color: $purple-primary!important; color: $white; a { color: $white; } }
+.bg-purple-s { background-color: $purple-secondary!important; color: $black; a { color: $black; } }
+.bg-purple-t { background-color: $purple-tertiary!important; }
+.b-purple-p { border-color: $purple-primary!important; }
+.b-purple-s { border-color: $purple-secondary!important; }
+.b-purple-t { border-color: $purple-tertiary!important; }
+
+.bg-brown-p { background-color: $brown-primary!important; color: $white; a { color: $white; } }
+.bg-brown-s { background-color: $brown-secondary!important; color: $black; a { color: $black; } }
+.bg-brown-t { background-color: $brown-tertiary!important; }
+.b-brown-p { border-color: $brown-primary!important; }
+.b-brown-s { border-color: $brown-secondary!important; }
+.b-brown-t { border-color: $brown-tertiary!important; }
+
+.bg-teal-p { background-color: $teal-primary!important; color: $white; a { color: $white; } }
+.bg-teal-s { background-color: $teal-secondary!important; color: $black; a { color: $black; } }
+.bg-teal-t { background-color: $teal-tertiary!important; }
+.b-teal-p { border-color: $teal-primary!important; }
+.b-teal-s { border-color: $teal-secondary!important; }
+.b-teal-t { border-color: $teal-tertiary!important; }
+
+.bg-orange-p { background-color: $orange-primary!important; color: $white; a { color: $white; } }
+.bg-orange-s { background-color: $orange-secondary!important; color: $black; a { color: $black; } }
+.bg-orange-t { background-color: $orange-tertiary!important; }
+.b-orange-p { border-color: $orange-primary!important; }
+.b-orange-s { border-color: $orange-secondary!important; }
+.b-orange-t { border-color: $orange-tertiary!important; }
+
+.bg-pink-p { background-color: $pink-primary!important; color: $white; a { color: $white; } }
+.bg-pink-s { background-color: $pink-secondary!important; color: $black; a { color: $black; } }
+.bg-pink-t { background-color: $pink-tertiary!important; }
+.b-pink-primary { border-color: $pink-primary!important; }
+.b-pink-secondary { border-color: $pink-secondary!important; }
+.b-pink-tertiary { border-color: $pink-tertiary!important; }
+
+.bg-slate-p { background-color: $slate-primary!important; color: $white; a { color: $white; } }
+.bg-slate-s { background-color: $slate-secondary!important; color: $black; a { color: $black; } }
+.bg-slate-t { background-color: $slate-tertiary!important; }
+.b-slate-primary { border-color: $slate-primary!important; }
+.b-slate-secondary { border-color: $slate-secondary!important; }
+.b-slate-tertiary { border-color: $slate-tertiary!important; }
+
+.bg-indigo-p { background-color: $indigo-primary!important; color: $white; a { color: $white; } }
+.bg-indigo-s { background-color: $indigo-secondary!important; color: $black; a { color: $black; } }
+.bg-indigo-t { background-color: $indigo-tertiary!important; }
+.b-indigo-primary { border-color: $indigo-primary!important; }
+.b-indigo-secondary { border-color: $indigo-secondary!important; }
+.b-indigo-tertiary { border-color: $indigo-tertiary!important; }
+
+.bg-cyan-p { background-color: $cyan-primary!important; color: $white; a { color: $white; } }
+.bg-cyan-s { background-color: $cyan-secondary!important; color: $black; a { color: $black; } }
+.bg-cyan-t { background-color: $cyan-tertiary!important; }
+.b-cyan-primary { border-color: $cyan-primary!important; }
+.b-cyan-secondary { border-color: $cyan-secondary!important; }
+.b-cyan-tertiary { border-color: $cyan-tertiary!important; }
+
+.bg-green-p { background-color: $green-primary!important; color: $white; a { color: $white; } }
+.bg-green-s { background-color: $green-secondary!important; color: $black; a { color: $black; } }
+.bg-green-t { background-color: $green-tertiary!important; }
+.b-green-primary { border-color: $green-primary!important; }
+.b-green-secondary { border-color: $green-secondary!important; }
+.b-green-tertiary { border-color: $green-tertiary!important; }
+
+.bg-amber-p { background-color: $amber-primary!important; color: $white; a { color: $white; } }
+.bg-amber-s { background-color: $amber-secondary!important; color: $black; a { color: $black; } }
+.bg-amber-t { background-color: $amber-tertiary!important; }
+.b-amber-primary { border-color: $amber-primary!important; }
+.b-amber-secondary { border-color: $amber-secondary!important; }
+.b-amber-tertiary { border-color: $amber-tertiary!important; }
+
+// alerts
+.bg-alert-red, .bg-alert-r { background-color: $alert-red!important; }
+
+// grays
+.bg-gray-d2 { background-color: $graydarker!important; }
+.bg-gray-d1 { background-color: $graydark!important; }
+.bg-gray { background-color: $gray!important; }
+.bg-gray-l1 { background-color: $graylight!important; }
+.bg-gray-l2 { background-color: $graylighter!important; }
+.bg-gray-l3 { background-color: $graylightest!important; }
+
+.b-gray-d2 { border-color: $graydarker!important; }
+.b-gray-d1 { border-color: $graydark!important; }
+.b-gray { border-color: $gray!important; }
+.b-gray-l1 { border-color: $graylight!important; }
+.b-gray-l2 { border-color: $graylighter!important; }
+.b-gray-l3 { border-color: $graylightest!important; }
+
+// colors
+.c-white { color: $white!important; }
+.c-black { color: $black!important; }
+.c-red  { color: $red!important; }
+.c-primary { color: $primary!important; }
+.c-gray-d2 { color: $graydarker!important; }
+.c-gray-d1 { color: $graydark!important; }
+.c-gray { color: $gray!important; }
+.c-gray-l1 { color: $graylight!important; }
+.c-gray-l2 { color: $graylighter!important; }
+.c-gray-l3 { color: $graylightest!important; }
+
+// theme colors as primary (blue is default)
+.bg-primary { background-color: $primary!important; }
+.bg-secondary { background-color: $secondary!important; }
+.bg-tertiary { background-color: $tertiary!important; }
+.b-primary { border-color: $primary!important; }
+.b-secondary { border-color: $secondary!important; }
+.b-tertiary { border-color: $tertiary!important; }
+.bt-primary { border-top-color: $primary!important; }
+.bt-secondary { border-top-color: $secondary!important; }
+.bt-tertiary { border-top-color: $tertiary!important; }
+.br-primary { border-right-color: $primary!important; }
+.br-secondary { border-right-color: $secondary!important; }
+.br-tertiary { border-right-color: $tertiary!important; }
+.bb-primary { border-bottom-color: $primary!important; }
+.bb-secondary { border-bottom-color: $secondary!important; }
+.bb-tertiary { border-bottom-color: $tertiary!important; }
+.bl-primary { border-left-color: $primary!important; }
+.bl-secondary { border-left-color: $secondary!important; }
+.bl-tertiary { border-left-color: $tertiary!important; }
+.c-primary { color: $primary!important; }
+
+.theme-purple {
+	.bg-primary { background-color: $purple-primary!important; }
+	.bg-secondary { background-color: $purple-secondary!important; }
+	.bg-tertiary { background-color: $purple-tertiary!important; }
+	.b-primary { border-color: $purple-primary!important; }
+	.b-secondary { border-color: $purple-secondary!important; }
+	.b-tertiary { border-color: $purple-tertiary!important; }
+	.bt-primary { border-top-color: $purple-primary!important; }
+	.bt-secondary { border-top-color: $purple-secondary!important; }
+	.bt-tertiary { border-top-color: $purple-tertiary!important; }
+	.br-primary { border-right-color: $purple-primary!important; }
+	.br-secondary { border-right-color: $purple-secondary!important; }
+	.br-tertiary { border-right-color: $purple-tertiary!important; }
+	.bb-primary { border-bottom-color: $purple-primary!important; }
+	.bb-secondary { border-bottom-color: $purple-secondary!important; }
+	.bb-tertiary { border-bottom-color: $purple-tertiary!important; }
+	.bl-primary { border-left-color: $purple-primary!important; }
+	.bl-secondary { border-left-color: $purple-secondary!important; }
+	.bl-tertiary { border-left-color: $purple-tertiary!important; }
+	.c-primary { color: $purple-primary!important; }
+}
+.theme-brown {
+	.bg-primary { background-color: $brown-primary!important; }
+	.bg-secondary { background-color: $brown-secondary!important; }
+	.bg-tertiary { background-color: $brown-tertiary!important; }
+	.b-primary { border-color: $brown-primary!important; }
+	.b-secondary { border-color: $brown-secondary!important; }
+	.b-tertiary { border-color: $brown-tertiary!important; }
+	.bt-primary { border-top-color: $brown-primary!important; }
+	.bt-secondary { border-top-color: $brown-secondary!important; }
+	.bt-tertiary { border-top-color: $brown-tertiary!important; }
+	.br-primary { border-right-color: $brown-primary!important; }
+	.br-secondary { border-right-color: $brown-secondary!important; }
+	.br-tertiary { border-right-color: $brown-tertiary!important; }
+	.bb-primary { border-bottom-color: $brown-primary!important; }
+	.bb-secondary { border-bottom-color: $brown-secondary!important; }
+	.bb-tertiary { border-bottom-color: $brown-tertiary!important; }
+	.bl-primary { border-left-color: $brown-primary!important; }
+	.bl-secondary { border-left-color: $brown-secondary!important; }
+	.bl-tertiary { border-left-color: $brown-tertiary!important; }
+	.c-primary { color: $brown-primary!important; }
+}
+.theme-teal {
+	.bg-primary { background-color: $teal-primary!important; }
+	.bg-secondary { background-color: $teal-secondary!important; }
+	.bg-tertiary { background-color: $teal-tertiary!important; }
+	.b-primary { border-color: $teal-primary!important; }
+	.b-secondary { border-color: $teal-secondary!important; }
+	.b-tertiary { border-color: $teal-tertiary!important; }
+	.bt-primary { border-top-color: $teal-primary!important; }
+	.bt-secondary { border-top-color: $teal-secondary!important; }
+	.bt-tertiary { border-top-color: $teal-tertiary!important; }
+	.br-primary { border-right-color: $teal-primary!important; }
+	.br-secondary { border-right-color: $teal-secondary!important; }
+	.br-tertiary { border-right-color: $teal-tertiary!important; }
+	.bb-primary { border-bottom-color: $teal-primary!important; }
+	.bb-secondary { border-bottom-color: $teal-secondary!important; }
+	.bb-tertiary { border-bottom-color: $teal-tertiary!important; }
+	.bl-primary { border-left-color: $teal-primary!important; }
+	.bl-secondary { border-left-color: $teal-secondary!important; }
+	.bl-tertiary { border-left-color: $teal-tertiary!important; }
+	.c-primary { color: $teal-primary!important; }
+}
+.theme-pink {
+	.bg-primary { background-color: $pink-primary!important; }
+	.bg-secondary { background-color: $pink-secondary!important; }
+	.bg-tertiary { background-color: $pink-tertiary!important; }
+	.b-primary { border-color: $pink-primary!important; }
+	.b-secondary { border-color: $pink-secondary!important; }
+	.b-tertiary { border-color: $pink-tertiary!important; }
+	.bt-primary { border-top-color: $pink-primary!important; }
+	.bt-secondary { border-top-color: $pink-secondary!important; }
+	.bt-tertiary { border-top-color: $pink-tertiary!important; }
+	.br-primary { border-right-color: $pink-primary!important; }
+	.br-secondary { border-right-color: $pink-secondary!important; }
+	.br-tertiary { border-right-color: $pink-tertiary!important; }
+	.bb-primary { border-bottom-color: $pink-primary!important; }
+	.bb-secondary { border-bottom-color: $pink-secondary!important; }
+	.bb-tertiary { border-bottom-color: $pink-tertiary!important; }
+	.bl-primary { border-left-color: $pink-primary!important; }
+	.bl-secondary { border-left-color: $pink-secondary!important; }
+	.bl-tertiary { border-left-color: $pink-tertiary!important; }
+	.c-primary { color: $pink-primary!important; }
+}
+.theme-orange {
+	.bg-primary { background-color: $orange-primary!important; }
+	.bg-secondary { background-color: $orange-secondary!important; }
+	.bg-tertiary { background-color: $orange-tertiary!important; }
+	.b-primary { border-color: $orange-primary!important; }
+	.b-secondary { border-color: $orange-secondary!important; }
+	.b-tertiary { border-color: $orange-tertiary!important; }
+	.bt-primary { border-top-color: $orange-primary!important; }
+	.bt-secondary { border-top-color: $orange-secondary!important; }
+	.bt-tertiary { border-top-color: $orange-tertiary!important; }
+	.br-primary { border-right-color: $orange-primary!important; }
+	.br-secondary { border-right-color: $orange-secondary!important; }
+	.br-tertiary { border-right-color: $orange-tertiary!important; }
+	.bb-primary { border-bottom-color: $orange-primary!important; }
+	.bb-secondary { border-bottom-color: $orange-secondary!important; }
+	.bb-tertiary { border-bottom-color: $orange-tertiary!important; }
+	.bl-primary { border-left-color: $orange-primary!important; }
+	.bl-secondary { border-left-color: $orange-secondary!important; }
+	.bl-tertiary { border-left-color: $orange-tertiary!important; }
+	.c-primary { color: $orange-primary!important; }
+}
+.theme-slate {
+	.bg-primary { background-color: $slate-primary!important; }
+	.bg-secondary { background-color: $slate-secondary!important; }
+	.bg-tertiary { background-color: $slate-tertiary!important; }
+	.b-primary { border-color: $slate-primary!important; }
+	.b-secondary { border-color: $slate-secondary!important; }
+	.b-tertiary { border-color: $slate-tertiary!important; }
+	.bt-primary-color { border-top-color: $slate-primary!important; }
+	.bt-secondary-color { border-top-color: $slate-secondary!important; }
+	.bt-tertiary-color { border-top-color: $slate-tertiary!important; }
+	.br-primary-color { border-right-color: $slate-primary!important; }
+	.br-secondary-color { border-right-color: $slate-secondary!important; }
+	.br-tertiary-color { border-right-color: $slate-tertiary!important; }
+	.bb-primary-color { border-bottom-color: $slate-primary!important; }
+	.bb-secondary-color { border-bottom-color: $slate-secondary!important; }
+	.bb-tertiary-color { border-bottom-color: $slate-tertiary!important; }
+	.bl-primary-color { border-left-color: $slate-primary!important; }
+	.bl-secondary-color { border-left-color: $slate-secondary!important; }
+	.bl-tertiary-color { border-left-color: $slate-tertiary!important; }
+	.c-primary { color: $slate-primary!important; }
+}
+.theme-indigo {
+	.bg-primary { background-color: $indigo-primary!important; }
+	.bg-secondary { background-color: $indigo-secondary!important; }
+	.bg-tertiary { background-color: $indigo-tertiary!important; }
+	.b-primary { border-color: $indigo-primary!important; }
+	.b-secondary { border-color: $indigo-secondary!important; }
+	.b-tertiary { border-color: $indigo-tertiary!important; }
+	.bt-primary-color { border-top-color: $indigo-primary!important; }
+	.bt-secondary-color { border-top-color: $indigo-secondary!important; }
+	.bt-tertiary-color { border-top-color: $indigo-tertiary!important; }
+	.br-primary-color { border-right-color: $indigo-primary!important; }
+	.br-secondary-color { border-right-color: $indigo-secondary!important; }
+	.br-tertiary-color { border-right-color: $indigo-tertiary!important; }
+	.bb-primary-color { border-bottom-color: $indigo-primary!important; }
+	.bb-secondary-color { border-bottom-color: $indigo-secondary!important; }
+	.bb-tertiary-color { border-bottom-color: $indigo-tertiary!important; }
+	.bl-primary-color { border-left-color: $indigo-primary!important; }
+	.bl-secondary-color { border-left-color: $indigo-secondary!important; }
+	.bl-tertiary-color { border-left-color: $indigo-tertiary!important; }
+	.c-primary { color: $indigo-primary!important; }
+}
+.theme-cyan {
+	.bg-primary { background-color: $cyan-primary!important; }
+	.bg-secondary { background-color: $cyan-secondary!important; }
+	.bg-tertiary { background-color: $cyan-tertiary!important; }
+	.b-primary { border-color: $cyan-primary!important; }
+	.b-secondary { border-color: $cyan-secondary!important; }
+	.b-tertiary { border-color: $cyan-tertiary!important; }
+	.bt-primary-color { border-top-color: $cyan-primary!important; }
+	.bt-secondary-color { border-top-color: $cyan-secondary!important; }
+	.bt-tertiary-color { border-top-color: $cyan-tertiary!important; }
+	.br-primary-color { border-right-color: $cyan-primary!important; }
+	.br-secondary-color { border-right-color: $cyan-secondary!important; }
+	.br-tertiary-color { border-right-color: $cyan-tertiary!important; }
+	.bb-primary-color { border-bottom-color: $cyan-primary!important; }
+	.bb-secondary-color { border-bottom-color: $cyan-secondary!important; }
+	.bb-tertiary-color { border-bottom-color: $cyan-tertiary!important; }
+	.bl-primary-color { border-left-color: $cyan-primary!important; }
+	.bl-secondary-color { border-left-color: $cyan-secondary!important; }
+	.bl-tertiary-color { border-left-color: $cyan-tertiary!important; }
+	.c-primary { color: $cyan-primary!important; }
+}
+.theme-green {
+	.bg-primary { background-color: $green-primary!important; }
+	.bg-secondary { background-color: $green-secondary!important; }
+	.bg-tertiary { background-color: $green-tertiary!important; }
+	.b-primary { border-color: $green-primary!important; }
+	.b-secondary { border-color: $green-secondary!important; }
+	.b-tertiary { border-color: $green-tertiary!important; }
+	.bt-primary { border-top-color: $green-primary!important; }
+	.bt-secondary { border-top-color: $green-secondary!important; }
+	.bt-tertiary { border-top-color: $green-tertiary!important; }
+	.br-primary { border-right-color: $green-primary!important; }
+	.br-secondary { border-right-color: $green-secondary!important; }
+	.br-tertiary { border-right-color: $green-tertiary!important; }
+	.bb-primary { border-bottom-color: $green-primary!important; }
+	.bb-secondary { border-bottom-color: $green-secondary!important; }
+	.bb-tertiary { border-bottom-color: $green-tertiary!important; }
+	.bl-primary { border-left-color: $green-primary!important; }
+	.bl-secondary { border-left-color: $green-secondary!important; }
+	.bl-tertiary { border-left-color: $green-tertiary!important; }
+	.c-primary { color: $green-primary!important; }
+}
+.theme-amber {
+	.bg-primary { background-color: $amber-primary!important; }
+	.bg-secondary { background-color: $amber-secondary!important; }
+	.bg-tertiary { background-color: $amber-tertiary!important; }
+	.b-primary { border-color: $amber-primary!important; }
+	.b-secondary { border-color: $amber-secondary!important; }
+	.b-tertiary { border-color: $amber-tertiary!important; }
+	.bt-primary { border-top-color: $amber-primary!important; }
+	.bt-secondary { border-top-color: $amber-secondary!important; }
+	.bt-tertiary { border-top-color: $amber-tertiary!important; }
+	.br-primary { border-right-color: $amber-primary!important; }
+	.br-secondary { border-right-color: $amber-secondary!important; }
+	.br-tertiary { border-right-color: $amber-tertiary!important; }
+	.bb-primary { border-bottom-color: $amber-primary!important; }
+	.bb-secondary { border-bottom-color: $amber-secondary!important; }
+	.bb-tertiary { border-bottom-color: $amber-tertiary!important; }
+	.bl-primary { border-left-color: $amber-primary!important; }
+	.bl-secondary { border-left-color: $amber-secondary!important; }
+	.bl-tertiary { border-left-color: $amber-tertiary!important; }
+	.c-primary { color: $amber-primary!important; }
+}

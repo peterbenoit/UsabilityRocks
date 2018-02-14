@@ -1,0 +1,80 @@
+/* Position */
+
+.p-rel { position: relative!important; }
+.p-sta { position: static!important; }
+.p-abs { position: absolute!important; }
+.p-fix { position: fixed!important; }
+.p-sti { position: sticky!important; }
+.p-cen { margin-left: auto!important; margin-right: auto!important; }
+.p-mid { position: absolute; top: 50%; transform: translateY(-50%)!important; }
+.p-abs-cen {
+	position: absolute;
+	top: 50%!important;
+	left: 50%!important;
+	margin-right: -50%!important;
+	transform: translate(-50%, -50%)!important;
+}
+.p-top { top: 0!important; }
+.p-right { right: 0!important; }
+.p-bottom { bottom: 0!important; }
+.p-left { left: 0!important; }
+.p-edges { top: 0!important; right: 0!important; bottom: 0!important; left: 0!important; }
+
+.pin-top { position: absolute; top: 0; }
+.pin-right { position: absolute; right: 0; }
+.pin-bottom { position: absolute; bottom: 0; }
+.pin-left { position: absolute;	left: 0; }
+.pin-top-left { position: absolute; top: 0; left: 0; }
+.pin-top-right { position: absolute; top: 0; right: 0; }
+.pin-bottom-right { position: absolute; bottom: 0; right: 0; }
+.pin-bottom-left { position: absolute; bottom: 0; left: 0; }
+
+.p-x-0 { left: 0!important; }
+.p-x-25 {
+	left: 25%!important;
+	margin-right: -25%!important;
+	transform: translate(-25%)!important;
+}
+
+.p-x-33 {
+	left: 33%!important;
+	margin-right: -33%!important;
+	transform: translate(-33%)!important;
+}
+
+.p-x-50 {
+	left: 50%!important;
+	margin-right: -50%!important;
+	transform: translate(-50%)!important;
+}
+
+.p-x-66 {
+	left: 66%!important;
+	margin-right: -66%!important;
+	transform: translate(-66%)!important;
+}
+
+.p-x-75 {
+	left: 75%!important;
+	margin-right: -75%!important;
+	transform: translate(-75%)!important;
+}
+.p-x-100 { right: 0!important; }
+
+.p-y-0 { top: 0!important; }
+.p-y-25 { top: 25%!important; }
+.p-y-33 { top: 33%!important; }
+.p-y-50 { top: 50%!important; }
+.p-y-66 { top: 66%!important; }
+.p-y-75 { top: 75%!important; }
+.p-y-100 { bottom: 0!important; }
+
+// Z-Index
+.z-0	{ z-index: 0; }
+.z-10	{ z-index: 10; }
+.z-20	{ z-index: 20; }
+.z-30	{ z-index: 30; }
+.z-40	{ z-index: 40; }
+.z-50	{ z-index: 50; }
+.z-max  { z-index: 2147483647; }
+.z-auto	{ z-index: auto; }

@@ -9,7 +9,7 @@
     display: none;
     content: "xs";
   }
-  
+
   @media (min-width: 576px) {
     body:before {
       content: "sm";

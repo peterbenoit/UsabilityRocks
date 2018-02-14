@@ -1,0 +1,7 @@
+/* clears */
+
+.cl { clear:left; }
+.rl, .cr { clear:right; }
+.clear, .cb { clear:both; }
+.cf:before, .cf:after { content:" "; display:table; }
+.cf:after { clear:both; }

@@ -9,3 +9,35 @@ a {
         text-decoration: none;
     }
 }
+
+a, [tabindex], input, radio, select, checkbox, textarea, label, fieldset, legend, datalist, output, .focus {
+	&:focus {
+    	outline: 1px dashed $black;
+	}
+	&.c-white:focus {
+		outline: 1px dashed $white;
+	}
+}
+
+// text decoration
+.td-none {
+	text-decoration: none!important;
+
+	a {
+		text-decoration: none!important;
+	}
+}
+.td-ul { text-decoration: underline!important; }
+.td-lt { text-decoration: line-through!important; }
+
+.td-none-hover {
+	&:hover {
+		text-decoration: none!important;
+	}
+}
+
+.td-ul-hover {
+	&:hover {
+		text-decoration: underline!important;
+	}
+}

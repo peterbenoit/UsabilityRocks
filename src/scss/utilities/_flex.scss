@@ -1,0 +1,37 @@
+/* flex */
+
+// order
+.or-1 { order: 1; }
+.or-2 { order: 2; }
+.or-3 { order: 3; }
+.or-4 { order: 4; }
+.or-5 { order: 5; }
+.or-6 { order: 6; }
+.or-7 { order: 7; }
+.or-8 { order: 8; }
+.or-9 { order: 9; }
+.or-10 { order: 10; }
+.or-11 { order: 11; }
+.or-12 { order: 12; }
+
+// flex align
+.fa-start { align-content: flex-start!important; }
+.fa-end { align-content: flex-end!important; }
+.fa-center { align-content: center!important; }
+.fa-between { align-content: space-between!important; }
+.fa-around { align-content: space-around!important; }
+.fa-stretch { align-content: stretch!important; }
+
+// flex justify - check bootstrap 4
+.fj-start { justify-content: flex-start!important; }
+.fj-end { justify-content: flex-end!important; }
+.fj-center { justify-content: center!important; }
+.fj-between { justify-content: space-between!important; }
+.fj-around { justify-content: space-around!important; }
+.fj-stretch { justify-content: space-evenly!important; }
+
+// flex direction
+.fd-row { flex-direction: row!important; }
+.fd-row-reverse { flex-direction: row-reverse!important; }
+.fd-col { flex-direction: column!important; }
+.fd-col-reverse { flex-direction: column-reverse!important; }

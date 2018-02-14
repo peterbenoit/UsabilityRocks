@@ -1,0 +1,104 @@
+/* responsive */
+
+
+.pl-15 { padding-left: 15px!important; }
+.pr-15 { padding-right: 15px!important; }
+
+// responsive utilities
+@media (max-width: 575px) {
+	.pl-xs-15 { padding-left: 15px!important; }
+	.pr-xs-15 { padding-right: 15px!important; }
+
+	.display-xs-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-xs-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xs-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-xs-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xs-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xs-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-xs-0 {	border-top: none!important; }
+	.br-xs-0 {	border-right: none!important; }
+	.bb-xs-0 {	border-bottom: none!important; }
+	.bl-xs-0 {	border-left: none!important; }
+}
+@media (min-width: 576px) {
+	.pl-sm-15 { padding-left: 15px!important; }
+	.pr-sm-15 { padding-right: 15px!important; }
+
+	.display-sm-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-sm-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-sm-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-sm-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-sm-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-sm-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-sm-0 {	border-top: none!important; }
+	.br-sm-0 {	border-right: none!important; }
+	.bb-sm-0 {	border-bottom: none!important; }
+	.bl-sm-0 {	border-left: none!important; }
+}
+@media (min-width: 768px) {
+	.pl-md-15 { padding-left: 15px!important; }
+	.pr-md-15 { padding-right: 15px!important; }
+
+	.display-md-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-md-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-md-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-md-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-md-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-md-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-md-0 {	border-top: none!important; }
+	.br-md-0 {	border-right: none!important; }
+	.bb-md-0 {	border-bottom: none!important; }
+	.bl-md-0 {	border-left: none!important; }
+}
+@media (min-width: 992px) {
+	.pl-lg-15 { padding-left: 15px!important; }
+	.pr-lg-15 { padding-right: 15px!important; }
+
+	.display-lg-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-lg-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-lg-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-lg-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-lg-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-lg-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-lg-0 {	border-top: none!important; }
+	.br-lg-0 {	border-right: none!important; }
+	.bb-lg-0 {	border-bottom: none!important; }
+	.bl-lg-0 {	border-left: none!important; }
+}
+@media (min-width: 1200px) {
+	.pl-xl-15 { padding-left: 15px!important; }
+	.pr-xl-15 { padding-right: 15px!important; }
+
+	.display-xl-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-xl-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xl-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-xl-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xl-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xl-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-xl-0 {	border-top: none!important; }
+	.br-xl-0 {	border-right: none!important; }
+	.bb-xl-0 {	border-bottom: none!important; }
+	.bl-xl-0 {	border-left: none!important; }
+}
+
+@media (min-width: 1440px) {
+	.pl-xxl-15 { padding-left: 15px!important; }
+	.pr-xxl-15 { padding-right: 15px!important; }
+
+	.display-xxl-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-3 { font-size: 5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-4 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+	.display-xxl-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+	.bt-xxl-0 {	border-top: none!important; }
+	.br-xxl-0 {	border-right: none!important; }
+	.bb-xxl-0 {	border-bottom: none!important; }
+	.bl-xxl-0 {	border-left: none!important; }
+}

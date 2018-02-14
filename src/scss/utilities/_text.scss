@@ -1,0 +1,66 @@
+/* fonts */
+.fw-100 { font-weight: 100!important; }
+.fw-200 { font-weight: 200!important; }
+.fw-300 { font-weight: 300!important; }
+.fw-400 { font-weight: 400!important; }
+.fw-500 { font-weight: 500!important; }
+.fw-600 { font-weight: 600!important; }
+.fw-700 { font-weight: 700!important; }
+.fw-800 { font-weight: 800!important; }
+.fw-900 { font-weight: 900!important; }
+.fw-light { font-weight: 300!important; }
+.fw-heavy { font-weight: 700!important; }
+
+.fs4 { font-size: 4rem; }
+.fs35 { font-size: 3.5rem; }
+.fs3 { font-size: 3rem; }
+.fs25 { font-size: 2.5rem; }
+.fs2 { font-size: 2rem; }
+.fs15 { font-size: 1.5rem; }
+.fs14 { font-size: 1.4rem; }
+.fs13 { font-size: 1.3rem; }
+.fs12 { font-size: 1.2rem; }
+.fs11 { font-size: 1.1rem; }
+.fs1 { font-size: 1rem; }
+.fs0875 { font-size: .875rem; }
+.fs08 { font-size: .8rem; }
+.fs07 { font-size: .7rem; }
+
+// text-rendering
+.t-leg { text-rendering: optimizeLegibility!important; }
+.t-spd { text-rendering: optimizespeed!important; }
+
+// display ( 5 & 6 not in BS )
+.display-5 { font-size: 2.5rem; font-weight: 300; line-height: 1.1; }
+.display-6 { font-size: 1.5rem; font-weight: 300; line-height: 1.1; }
+
+.text-monospace { font-family: $monospace; }
+.text-ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.text-black { color: $black!important; }
+
+.pad-italics {
+	// per Lisa, don't pad italics on headings
+	h1, h2, h3, h4, h5, h6 {
+		i:after, em:after, .font-italic:after {
+			content: "";
+		}
+	}
+	i:after, em:after, .font-italic:after {
+		content: "\00a0";
+	}
+}
+
+// marks
+.mark.mark-yellow { background-color: $yellow; }
+.mark.mark-green { background-color: $green; }
+
+
+.blockquote, blockquote {
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	&.with-quote {
+		p:before, p:after {
+			content: '\201C';
+		}
+	}
+}

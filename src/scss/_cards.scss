@@ -8,9 +8,12 @@
 
         a {
             text-decoration: none;
-            // &:hover {
-            //     text-decoration: underline;
-            // }
+        }
+    }
+
+    &.flush {
+        .card {
+            border: 0;
         }
     }
 }

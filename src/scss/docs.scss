@@ -13,7 +13,32 @@ body {
 
 // demo's placed in the page
 .demo, .bd-example {
-	@import 'app';
+	@import 'breakpoints';
+	@import 'variables';
+	@import 'themes';
+	@import 'theme';
+	@import 'mixins';
+
+	@import 'utility';
+	@import 'typography';
+	@import 'links';
+	@import 'containers';
+	@import 'nav';
+	@import 'components';
+	@import 'themeconfig';
+	@import 'accordion';
+	@import 'containers';
+	@import 'cards';
+	@import 'audio';
+	@import 'tabs';
+	@import 'sliders';
+	@import 'forms';
+	@import 'jumbotron';
+	@import 'mobile';
+	@import 'onthispage';
+	@import 'timeline';
+	@import 'widgets';
+	@import 'footer';
 	// body {
 	// 	font-family: "Open Sans", sans-serif;
 	// 	font-size: 17px;

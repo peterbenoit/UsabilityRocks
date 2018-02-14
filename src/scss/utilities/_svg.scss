@@ -1,0 +1,23 @@
+/* svg */
+
+.fill-p { fill: $primary!important; }
+.fill-s { fill: $secondary!important; }
+.fill-t { fill: $tertiary!important; }
+.fill-w { fill: $white!important; }
+.fill-epub { fill: $epub!important; }
+.fill-excel { fill: $excel!important; }
+.fill-govd { fill: $govd!important; }
+.fill-pdf { fill: $pdf!important; }
+.fill-ppt { fill: $ppt!important; }
+.fill-fb { fill: $fb!important; }
+.fill-h {
+	fill: $primary!important;
+	&:hover {
+		fill: lighten( $primary, 15% )!important;
+	}
+}
+
+.fill-lg { fill:url(#linear-gradient); }
+.fill-mask { mask:url(#mask); }
+.fill-op-2 { opacity: 0.2; }
+.fr-evenodd { fill-rule: evenodd; }
