@@ -1,11 +1,25 @@
 {% extends "templates/_demo.njk" %}
 {% block main %}
 
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="icon" viewBox="0 0 24 24">
+		<path fill="#005eaa" d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M3.05,13H1V11H3.05C3.5,6.83 6.83,3.5 11,3.05V1H13V3.05C17.17,3.5 20.5,6.83 20.95,11H23V13H20.95C20.5,17.17 17.17,20.5 13,20.95V23H11V20.95C6.83,20.5 3.5,17.17 3.05,13M12,5A7,7 0 0,0 5,12A7,7 0 0,0 12,19A7,7 0 0,0 19,12A7,7 0 0,0 12,5Z" />
+	</symbol>
+</svg>
+
+<style>
+
+	.icon {
+		width: 24px;
+		height: 24px;
+	}
+</style>
+
 <div class="container">
 	<ul class="cdc-timeline">
 		<li>
 			<div class="timeline-badge primary">
-				<a><i class="material-icons">highlight_off</i></a>
+				<a><svg class="icon"><use xlink:href="#icon" /></svg></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-heading"><img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/750x464-2.jpg"></div>
@@ -17,7 +31,7 @@
 		</li>
 		<li class="timeline-inverted">
 			<div class="timeline-badge primary">
-				<a><i class="material-icons">highlight_off</i></a>
+				<a><svg class="icon"><use xlink:href="#icon" /></svg></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-heading"><img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/750x464-1.jpg"></div>
@@ -28,7 +42,7 @@
 		</li>
 		<li>
 			<div class="timeline-badge primary">
-				<a><i class="material-icons">highlight_off</i></a>
+				<a><svg class="icon"><use xlink:href="#icon" /></svg></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-heading"><img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/750x464-3.jpg"></div>
@@ -39,7 +53,7 @@
 		</li>
 		<li class="timeline-inverted">
 			<div class="timeline-badge primary">
-				<a><i class="material-icons">highlight_off</i></a>
+				<a><svg class="icon"><use xlink:href="#icon" /></svg></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-body">
@@ -49,7 +63,7 @@
 		</li>
 		<li>
 			<div class="timeline-badge primary">
-				<a><i class="material-icons">highlight_off</i></a>
+				<a><svg class="icon"><use xlink:href="#icon" /></svg></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-heading"><img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/750x464-4.jpg"></div>
@@ -60,7 +74,7 @@
 		</li>
 		<li class="timeline-inverted">
 			<div class="timeline-badge primary">
-				<a><i class="material-icons">highlight_off</i></a>
+				<a><svg class="icon"><use xlink:href="#icon" /></svg></a>
 			</div>
 			<div class="timeline-panel">
 				<div class="timeline-heading"><img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/750x464-5.jpg"></div>

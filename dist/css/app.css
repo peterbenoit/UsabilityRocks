@@ -6802,8 +6802,8 @@ iframe.f-small {
   float: left;
   border: 1px solid #d4d4d4;
   position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
   border-radius: .25rem;
 }
 
@@ -6844,7 +6844,7 @@ iframe.f-small {
   font-size: 1.4em;
   text-align: center;
   position: absolute;
-  top: 16px;
+  top: 20px;
   right: -12px;
   z-index: 100;
 }
@@ -6889,6 +6889,7 @@ iframe.f-small {
 .cdc-timeline > li .timeline-title {
   margin: .75rem 1rem;
   color: inherit;
+  font-family: "Open Sans", sans-serif;
 }
 
 .cdc-timeline > li .timeline-body > p, .cdc-timeline > li .timeline-body > ul {
@@ -6912,7 +6913,7 @@ iframe.f-small {
 
 @media (max-width: 767px) {
   .cdc-timeline:before {
-    left: 40px;
+    left: 10px;
   }
   .cdc-timeline > li {
     margin-bottom: 20px;
@@ -6922,12 +6923,11 @@ iframe.f-small {
     clear: left;
   }
   .cdc-timeline > li > .timeline-panel {
-    width: calc(100% - 70px);
+    width: calc(100% - 40px);
   }
   .cdc-timeline > li > .timeline-badge {
-    left: 28px;
+    left: -2px;
     margin-left: 0;
-    top: 16px;
   }
   .cdc-timeline > li > .timeline-panel {
     float: right;
@@ -6951,7 +6951,7 @@ iframe.f-small {
     margin-bottom: 30px;
   }
   .cdc-timeline > li.timeline-inverted > .timeline-badge {
-    left: 28px;
+    left: -2px;
   }
 }
 
