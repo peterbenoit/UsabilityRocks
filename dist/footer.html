@@ -250,6 +250,9 @@
 						<li>
 							<a href="on-this-page.html">On This Page</a>
 						</li>
+						<li>
+							<a href="timeline.html">Timeline</a>
+						</li>
 					</ul>
 				</div>
 				<div class="bd-toc-item">
@@ -280,6 +283,9 @@
 						</li>
 						<li>
 							<a href="#template-top-nav.html"><strike>Top Navigation</strike></a>
+						</li>
+						<li>
+							<a href="footer.html">Footer</a>
 						</li>
 					</ul>
 				</div>
@@ -331,7 +337,7 @@
 				</div>
 				<div class="bd-toc-item">
 					<a class="bd-toc-link" href="help.html">Help</a>
-				</div>				
+				</div>
 			</nav>
 		</div>
 
@@ -347,6 +353,24 @@
 <h1 class="bd-title" id="content">Footer</h1>
 <p class="bd-lead"><span class="mark mark-yellow">Footer</span></p>
 
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+<symbol id="phone" viewBox="0 0 24 24">
+        <path fill="#fff" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+</symbol>
+
+<symbol id="email" viewBox="0 0 24 24">
+        <path fill="#fff" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+</symbol>
+
+</svg>
+
+<style>
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+</style>
 
 <div class="bd-example">
     <div class="container-fluid bg-gray-d2 pt-3 pb-3 mt-3 text-white">
@@ -356,7 +380,7 @@
                     <div class="col-md-5 pl-md-5">
                         <strong>CONTACT CDC-INFO</strong>
                         <div class="row mt-2">
-                            <div class="col-2 pt-1"><i class="material-icons" style="font-size: 24px;">phone</i></div>
+                            <div class="col-2 pt-1"><svg class="icon"><use xlink:href="#phone" /></svg></div>
                             <div class="col" style="margin-left: -20px;">
                                 <span>Have questions? We have answers.</span>
                                 <span>1-800-CDC-INFO (800-232-4636)</span>
@@ -364,7 +388,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2 pt-1"><i class="material-icons" style="font-size: 24px;">email</i></div>
+                            <div class="col-2 pt-1"><svg class="icon"><use xlink:href="#email" /></svg></div>
                             <div class="col" style="margin-left: -20px;">
                                 <a href="#" style="color: #fff; margin-top: 5px;display: inline-block">Email CDC-INFO</a>
                             </div>

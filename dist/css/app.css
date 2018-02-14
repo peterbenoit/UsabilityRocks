@@ -7266,4 +7266,37 @@ iframe.f-small {
   padding: 6px 12px;
 }
 
+footer {
+  font-size: 13px;
+}
+
+footer span {
+  display: block;
+}
+
+footer ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+footer ul.list-inline {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+footer ul.list-inline li {
+  float: left;
+  margin-left: 10px;
+}
+
+footer ul.list-inline li img {
+  width: 24px;
+}
+
+footer ul.list-inline li.rounded-circle {
+  background: #fff;
+  padding: 7px;
+  margin-right: 7px;
+}
+
 /*# sourceMappingURL=app.css.map */
