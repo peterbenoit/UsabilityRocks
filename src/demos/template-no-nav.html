@@ -1,31 +1,6 @@
-<!DOCTYPE html>
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-	<title>Usability Rocks!</title>
-	<link rel="stylesheet prefetch" href="../css/bootstrap.css?01">
-	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
-	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet prefetch" href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
-	
-	<link href="../css/app.css?24" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-109054116-1');
-	</script>
-</head>
-<body class="no-js">
-
-		
+{% extends "templates/_demo.njk" %}
+{% block main %}
 
 <style>
 .borderriffic {
@@ -69,7 +44,9 @@
 	<header role="banner" aria-label="Header">
 		<span class="dot"></span>Header
 	</header>
-	
+	{# <div class="site-title d-none d-md-block">
+		<span class="dot"></span>Intranet
+	</div> #}
 </div>
 
 <div class="container-fluid site-title d-none d-md-block">
@@ -87,20 +64,22 @@
 </div>
 
 <div class="container">
-	
+	{# <nav role="navigation" aria-label="Top Nav" class="d-none d-md-block">
+		<span class="dot"></span>Top Nav
+	</nav> #}
 	<nav role="navigation" aria-label="Breadcrumb" class="d-none d-md-block">
 		<span class="dot"></span>Breadcrumbs
 	</nav>
 	<div class="d-flex flex-wrap">
-		<div class="col-12 col-md-3 p-0 d-none d-md-block">
+		{# <div class="col-12 col-md-3 p-0 d-none d-md-block">
 			<nav role="navigation" aria-label="Left Nav" class="left-nav">
 				<span class="dot"></span>Left Nav
 			</nav>
 			<div class="col-12">
 				<span class="dot"></span>Under Left Nav
 			</div>
-		</div>
-		<main class="col-12 col-md-9 pt-0 pb-0" role="main" aria-label="Main Content Area">
+		</div> #}
+		<main class="col-12 -col-md-9 pt-0 pb-0" role="main" aria-label="Main Content Area">
 			<div class="row">
 				<div class="col-12">
 					<span class="dot"></span>Section/Audience Identity
@@ -153,14 +132,4 @@
 </div>
 
 
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src='../contrib/bootstrap.bundle.min.js'></script>
-	<script src='../contrib/underscore-min.js'></script>
-
-	<script src="../js/app.js?01"></script>
-	<script src="../js/audio.js?01"></script>
-	<script src="../js/demo.js?01"></script>
-</body>
-</html>
+{% endblock %}

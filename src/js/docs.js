@@ -44,9 +44,9 @@ $( function() {
 		$( t ).prev().append( a );
 	} );
 
-	$( '.dot' ).each( function( i ) {
-		$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
-	} );
+	// $( '.dot' ).each( function( i ) {
+	// 	$( this ).text( i + 1 ).parent().addClass( 'borderriffic' );
+	// } );
 
 	$( '.bd-example:not(.prism-ignore)' ).each( function() {
 		var $t = $( this ),

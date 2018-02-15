@@ -1,31 +1,6 @@
-<!DOCTYPE html>
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-	<title>Usability Rocks!</title>
-	<link rel="stylesheet prefetch" href="../css/bootstrap.css?01">
-	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700">
-	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet prefetch" href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
-	
-	<link href="../css/app.css?24" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109054116-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-109054116-1');
-	</script>
-</head>
-<body class="no-js">
-
-		
+{% extends "templates/_demo.njk" %}
+{% block main %}
 
 
 <div class="container italicize demo">
@@ -277,14 +252,4 @@
 
 </div>
 
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src='../contrib/bootstrap.bundle.min.js'></script>
-	<script src='../contrib/underscore-min.js'></script>
-
-	<script src="../js/app.js?01"></script>
-	<script src="../js/audio.js?01"></script>
-	<script src="../js/demo.js?01"></script>
-</body>
-</html>
+{% endblock %}
